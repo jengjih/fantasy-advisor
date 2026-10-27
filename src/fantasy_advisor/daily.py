@@ -15,10 +15,12 @@ def _plain(msg: str) -> str:
     return re.sub(r"\*\*(.+?)\*\*", r"\1", msg)
 
 
-def build_report(schedule, players, injuries, day=None) -> str:
+def build_report(schedule, players, injuries, fetched_at: str = "", day=None) -> str:
     day = day or an.today_et()
     state = state_store.load()
     lines = [f"🏀 LeSunshine 今日指令", f"NBA 比賽日 {day:%m/%d}（週{an.WEEKDAY[day.weekday()]}）・開打時間為台北時間"]
+    if fetched_at:
+        lines.append(f"球員數據：{fetched_at}・傷病：即時")
 
     for label in LEAGUES:
         lg = state_store.league_view(label, state)

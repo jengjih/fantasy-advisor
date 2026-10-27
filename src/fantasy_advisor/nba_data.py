@@ -1,6 +1,11 @@
 """抓 NBA 公開數據：賽程（NBA 官方）、球員數據（NBA 官方）、傷病（ESPN 公開資料）。"""
 
+import json
+import os
 import unicodedata
+from datetime import datetime
+from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import requests
@@ -9,6 +14,8 @@ from nba_api.stats.endpoints import leaguedashplayerstats, playerindex, schedule
 SEASON = "2026-27"
 PREV_SEASON = "2025-26"
 TIMEOUT = 60
+# NBA 官網會擋雲端主機：Mac 抓好的數據存成快照，雲端（GitHub Actions）讀快照
+SNAPSHOT_DIR = Path(__file__).resolve().parents[2] / "data" / "snapshot"
 
 
 def normalize(name: str) -> str:
@@ -38,19 +45,47 @@ def fetch_player_stats(season: str) -> pd.DataFrame:
     ).get_data_frames()[0]
 
 
-def fetch_positions() -> pd.DataFrame:
-    df = playerindex.PlayerIndex(season=SEASON, timeout=TIMEOUT).get_data_frames()[0]
-    return df[["PERSON_ID", "POSITION"]].rename(columns={"PERSON_ID": "PLAYER_ID"})
-
-
-def load_all():
-    """一次抓齊分析需要的數據：（賽程, 球員場均, 傷病）。"""
+def fetch_live() -> tuple[pd.DataFrame, pd.DataFrame]:
+    """直接從 NBA 官網抓（賽程, 球員場均）；只在 Mac 上可用。"""
     from . import analysis as an  # 避免循環匯入
 
     schedule = fetch_schedule()
     index = playerindex.PlayerIndex(season=SEASON, timeout=TIMEOUT).get_data_frames()[0]
     players = an.build_players(fetch_player_stats(SEASON), fetch_player_stats(PREV_SEASON), index)
-    return schedule, players, fetch_injuries()
+    return schedule, players
+
+
+def save_snapshot(schedule: pd.DataFrame, players: pd.DataFrame) -> None:
+    SNAPSHOT_DIR.mkdir(parents=True, exist_ok=True)
+    sched = schedule.assign(date=schedule["date"].astype(str), tip_taipei=schedule["tip_taipei"].map(lambda t: t.isoformat()))
+    sched.to_json(SNAPSHOT_DIR / "schedule.json", orient="records", force_ascii=False, indent=0)
+    players.to_json(SNAPSHOT_DIR / "players.json", orient="records", force_ascii=False, indent=0)
+    meta = {"fetched_at": datetime.now(ZoneInfo("Asia/Taipei")).strftime("%Y-%m-%d %H:%M")}
+    (SNAPSHOT_DIR / "meta.json").write_text(json.dumps(meta, ensure_ascii=False))
+
+
+def load_snapshot() -> tuple[pd.DataFrame, pd.DataFrame, str]:
+    sched = pd.read_json(SNAPSHOT_DIR / "schedule.json", orient="records", dtype={"game_id": str})
+    sched["date"] = pd.to_datetime(sched["date"]).dt.date
+    sched["tip_taipei"] = pd.to_datetime(sched["tip_taipei"], utc=True).dt.tz_convert("Asia/Taipei")
+    players = pd.read_json(SNAPSHOT_DIR / "players.json", orient="records")
+    fetched_at = json.loads((SNAPSHOT_DIR / "meta.json").read_text())["fetched_at"]
+    return sched, players, fetched_at
+
+
+def load_all():
+    """（賽程, 球員場均, 傷病, 數據時間）。NBA_SOURCE=snapshot 時只讀快照（雲端用）；
+    否則抓即時數據並順便更新快照，失敗時退回快照。傷病一律抓即時（ESPN 不擋雲端）。"""
+    if os.getenv("NBA_SOURCE") == "snapshot":
+        schedule, players, fetched_at = load_snapshot()
+    else:
+        try:
+            schedule, players = fetch_live()
+            save_snapshot(schedule, players)
+            fetched_at = datetime.now(ZoneInfo("Asia/Taipei")).strftime("%Y-%m-%d %H:%M")
+        except Exception:
+            schedule, players, fetched_at = load_snapshot()
+    return schedule, players, fetch_injuries(), fetched_at
 
 
 def fetch_injuries() -> pd.DataFrame:

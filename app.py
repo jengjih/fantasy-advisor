@@ -12,7 +12,6 @@ from zoneinfo import ZoneInfo
 warnings.filterwarnings("ignore")
 
 import streamlit as st
-from nba_api.stats.endpoints import playerindex
 
 from fantasy_advisor import analysis as an
 from fantasy_advisor import nba_data as nd
@@ -47,12 +46,13 @@ button[data-baseweb="tab"] p {font-size:1.05rem; font-weight:600;}
 
 @st.cache_data(ttl=3600, show_spinner="正在抓 NBA 數據（約 30 秒）…")
 def load_data():
-    schedule = nd.fetch_schedule()
-    cur = nd.fetch_player_stats(nd.SEASON)
-    prev = nd.fetch_player_stats(nd.PREV_SEASON)
-    index = playerindex.PlayerIndex(season=nd.SEASON, timeout=nd.TIMEOUT).get_data_frames()[0]
-    players = an.build_players(cur, prev, index)
-    loaded_at = datetime.now(ZoneInfo("Asia/Taipei")).strftime("%m/%d %H:%M")
+    try:
+        schedule, players = nd.fetch_live()
+        nd.save_snapshot(schedule, players)  # 順便更新快照，給雲端推播用
+        loaded_at = datetime.now(ZoneInfo("Asia/Taipei")).strftime("%m/%d %H:%M")
+    except Exception:
+        schedule, players, loaded_at = nd.load_snapshot()
+        loaded_at += "（快照）"
     return schedule, players, loaded_at
 
 
