@@ -4,14 +4,19 @@
     ~/.local/bin/uv run streamlit run app.py
 """
 
+import os
 import re
+import sys
 import warnings
 from datetime import datetime
+from pathlib import Path
 from zoneinfo import ZoneInfo
 
 warnings.filterwarnings("ignore")
 
 import streamlit as st
+
+sys.path.insert(0, str(Path(__file__).parent / "src"))  # 雲端部署時不安裝套件，直接從 src 匯入
 
 from fantasy_advisor import analysis as an
 from fantasy_advisor import nba_data as nd
@@ -20,6 +25,7 @@ from fantasy_advisor import zh
 from fantasy_advisor.leagues import LEAGUES
 
 st.set_page_config(page_title="LeSunshine 作戰室", page_icon="🏀", layout="wide")
+CLOUD = os.getenv("APP_MODE") == "cloud"  # 雲端版：唯讀、讀 Mac 上傳的數據快照
 
 st.markdown("""
 <style>
@@ -46,6 +52,9 @@ button[data-baseweb="tab"] p {font-size:1.05rem; font-weight:600;}
 
 @st.cache_data(ttl=3600, show_spinner="正在抓 NBA 數據（約 30 秒）…")
 def load_data():
+    if os.getenv("NBA_SOURCE") == "snapshot":  # 雲端連不到 NBA 官網
+        schedule, players, loaded_at = nd.load_snapshot()
+        return schedule, players, loaded_at[5:] + "（Mac 同步）"
     try:
         schedule, players = nd.fetch_live()
         nd.save_snapshot(schedule, players)  # 順便更新快照，給雲端推播用
@@ -233,8 +242,12 @@ with st.sidebar:
         st.cache_data.clear()
         st.rerun()
     st.divider()
-    st.info("Yahoo API 審核中：陣容與比分請在「✏️ 陣容與對戰」分頁更新。"
-            "推薦名單是否為 FA，請到 Yahoo 確認。", icon="ℹ️")
+    if CLOUD:
+        st.info("☁️ 雲端唯讀版：陣容與比分請在 Mac 版網頁編輯，"
+                "Mac 每天 12:30／18:30／23:30 自動同步上來。", icon="ℹ️")
+    else:
+        st.info("Yahoo API 審核中：陣容與比分請在「✏️ 陣容與對戰」分頁更新。"
+                "推薦名單是否為 FA，請到 Yahoo 確認。", icon="ℹ️")
     st.caption("開打時間皆為台北時間。價值：0 ≈ 該聯盟可上場球員平均，越高越好。")
 
 st.markdown(
@@ -242,10 +255,11 @@ st.markdown(
     f'<p>{datetime.now(ZoneInfo("Asia/Taipei")):%m月%d日}（台北）・NBA 比賽日 {day:%m/%d} 週{an.WEEKDAY[day.weekday()]}・'
     f'本週 {monday:%m/%d}–{sunday:%m/%d}</p></div>', unsafe_allow_html=True)
 
-tab_labels = [f"🏆 {k}・{v['name']}" for k, v in LEAGUES.items()] + ["✏️ 陣容與對戰"]
+tab_labels = [f"🏆 {k}・{v['name']}" for k, v in LEAGUES.items()] + ([] if CLOUD else ["✏️ 陣容與對戰"])
 tabs = st.tabs(tab_labels)
 for tab, label in zip(tabs, LEAGUES):
     with tab:
         render_league(label)
-with tabs[-1]:
-    render_editor()
+if not CLOUD:
+    with tabs[-1]:
+        render_editor()
