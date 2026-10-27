@@ -44,4 +44,8 @@
 - 曾經做過網頁內建 AI 對話（Claude API），但使用者**不想額外付費**，已經移除。截圖分析改在 Claude Code 裡做（Pro 方案內含），用 `/sync` 指令。不要再提議需要付費 API 的功能
 - [ ] Yahoo 核准後：接上 `yahoo_client.py`，自動抓陣容、FA、對戰比分
 - [x] LINE 推播：`notify.py`（`--dry-run` 可以預覽）、`daily.py` 負責組訊息、`line_push.py` 負責發送；`.env` 要有 LINE_CHANNEL_ACCESS_TOKEN 和 LINE_USER_ID。10/27 測試推播成功
-- [ ] 每日排程（優先用 GitHub Actions；如果雲端被 stats.nba.com 擋，就改用 Mac 的 launchd）、上傳 GitHub（private repo）、部署網頁
+- [x] GitHub 私人 repo jengjih/fantasy-advisor（gh CLI 在 ~/.local/bin/gh）。stats.nba.com 會擋雲端主機，所以：
+  - Mac 用 launchd（com.lesunshine.sync，每天 12:30、18:30、23:30）跑 `sync.py`：抓 NBA 數據 → 存 `data/snapshot/` → 跟 `data/state.json` 一起 commit、push。安裝檔是 `scripts/install_sync.sh`
+  - GitHub Actions 在台北 06:30（cron 30 22 * * * UTC）用 NBA_SOURCE=snapshot 執行 `notify.py`；傷病從 ESPN 即時抓。LINE 金鑰存在 repo secrets
+  - 程式碼改完要自己 commit、push（sync.py 只會 add data/）
+- [x] Streamlit Community Cloud 已部署：https://lesunshine-advisor.streamlit.app（唯讀模式，secrets 設 APP_MODE=cloud、NBA_SOURCE=snapshot；依賴用 requirements.txt）。Streamlit 拿不到私人 repo 的權限，所以 10/28 使用者決定把 repo 改成 public（已確認裡面沒有金鑰和個資）。repo 公開後，任何新檔案都不能放金鑰或個資
