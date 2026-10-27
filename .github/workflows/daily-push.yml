@@ -1,0 +1,19 @@
+name: 每日 LINE 推播
+
+on:
+  schedule:
+    - cron: "30 22 * * *"   # UTC 22:30 = 台北 06:30（GitHub 排程偶爾會延遲幾分鐘）
+  workflow_dispatch:         # 允許在 GitHub 網頁上手動觸發
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: 產生並推播今日指令
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: uv run python notify.py

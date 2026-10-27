@@ -1,0 +1,48 @@
+{
+  "聯盟一": {
+    "roster": [
+      "Victor Wembanyama",
+      "Jalen Brunson",
+      "Devin Booker",
+      "Bam Adebayo",
+      "De'Aaron Fox",
+      "LeBron James",
+      "Derrick White",
+      "Austin Reaves",
+      "Wendell Carter Jr.",
+      "Zach Edey",
+      "Alex Sarr",
+      "Matas Buzelis",
+      "Dylan Harper",
+      "Toumani Camara"
+    ],
+    "il": [
+      "Jalen Williams",
+      "Cason Wallace"
+    ],
+    "matchup": null,
+    "updated_at": "2026-10-27 17:44"
+  },
+  "聯盟二": {
+    "roster": [
+      "Luka Dončić",
+      "Anthony Davis",
+      "Joel Embiid",
+      "DeMar DeRozan",
+      "Myles Turner",
+      "Deandre Ayton",
+      "Jabari Smith Jr.",
+      "Payton Pritchard",
+      "Ayo Dosunmu",
+      "LaMelo Ball",
+      "Nickeil Alexander-Walker",
+      "Kyshawn George",
+      "Mitchell Robinson"
+    ],
+    "il": [
+      "Kon Knueppel"
+    ],
+    "matchup": null,
+    "updated_at": "2026-10-27 17:44"
+  }
+}
