@@ -89,7 +89,7 @@ def load_all():
 
 
 def fetch_injuries() -> pd.DataFrame:
-    """ESPN 傷病名單：status 為 Out / Day-To-Day 等。"""
+    """ESPN 傷病名單：status 為 Out / Day-To-Day 等；return_date 是 ESPN 預估的回歸日。"""
     r = requests.get("https://site.api.espn.com/apis/site/v2/sports/basketball/nba/injuries", timeout=30)
     r.raise_for_status()
     rows = []
@@ -97,7 +97,13 @@ def fetch_injuries() -> pd.DataFrame:
         for inj in team["injuries"]:
             rows.append({
                 "key": normalize(inj["athlete"]["displayName"]),
+                "name": inj["athlete"]["displayName"],
                 "injury_status": inj["status"],
                 "injury_note": inj.get("shortComment", ""),
+                "injury_long": inj.get("longComment", ""),
+                "return_date": (inj.get("details") or {}).get("returnDate", ""),
+                "injury_type": " ".join(str(v) for v in [(inj.get("details") or {}).get("type"),
+                                                        (inj.get("details") or {}).get("detail")] if v),
             })
-    return pd.DataFrame(rows, columns=["key", "injury_status", "injury_note"]).drop_duplicates("key")
+    cols = ["key", "name", "injury_status", "injury_note", "injury_long", "return_date", "injury_type"]
+    return pd.DataFrame(rows, columns=cols).drop_duplicates("key")

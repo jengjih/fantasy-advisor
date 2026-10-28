@@ -80,20 +80,13 @@ IMG = st.column_config.ImageColumn("", width="small")
 NUM = lambda label, fmt="%.2f": st.column_config.NumberColumn(label, format=fmt)
 
 
-def matchup_table(m: dict) -> tuple[list[dict], int, int]:
-    """把記錄的比分整理成表格，並算出目前幾勝幾敗（失誤 TO 越少越好）。"""
-    rows, w, l = [], 0, 0
-    for c in m.get("categories", []):
-        try:
-            mine, opp = float(c["mine"]), float(c["opponent"])
-            better = mine < opp if c["category"] == "TO" else mine > opp
-            result = "✅ 領先" if better else ("➖ 平手" if mine == opp else "❌ 落後")
-            w += better
-            l += (not better) and mine != opp
-        except ValueError:
-            result = ""
-        rows.append({"比項": zh.cat(c["category"]), "我": c["mine"], "對手": c["opponent"], "狀態": result})
-    return rows, w, l
+def matchup_table(m: dict, punt: list[str]) -> tuple[list[dict], int, int]:
+    """比分表格（含領先／落後、搖擺項標記）與目前幾勝幾敗。"""
+    rows, w, l = an.matchup_rows(m, punt)
+    status = lambda r: ("✅ 領先" if r["lead"] else "❌ 落後") if r["lead"] is not None else "➖ 平手"
+    table = [{"比項": zh.cat(r["cat"]), "我": r["mine"], "對手": r["opp"],
+              "狀態": status(r) + ("（搖擺）" if r["swing"] else "")} for r in rows]
+    return table, w, l
 
 
 def render_alerts(alerts):
@@ -121,7 +114,7 @@ def render_league(label: str):
     c1.metric("今天出賽", f"{int(active['_plays_today'].sum())} / {lg['starters']} 人")
     c2.metric("本週剩餘出賽人次", int(active["本週剩餘"].sum()))
     if m:
-        _, w, l = matchup_table(m)
+        _, w, l = matchup_table(m, lg["punt"])
         c3.metric(f"第 {m['week']} 週 vs {m['opponent']}", f"{w} 勝 {l} 敗")
         c4.metric("本週 Adds", f"{m['adds_used']} / {lg['weekly_adds']}" if m["adds_used"] >= 0 else f"? / {lg['weekly_adds']}")
     else:
@@ -151,7 +144,7 @@ def render_league(label: str):
     with right:
         st.subheader("⚔️ 本週對戰")
         if m:
-            rows, _, _ = matchup_table(m)
+            rows, _, _ = matchup_table(m, lg["punt"])
             st.dataframe(rows, hide_index=True, width="stretch")
             st.caption(f"記錄於 {m['saved_at']}　{m.get('note', '')}")
         else:
@@ -184,7 +177,7 @@ def render_editor():
 
     label = st.radio("選擇聯盟", list(LEAGUES), horizontal=True,
                      format_func=lambda k: f"{k}・{LEAGUES[k]['name']}")
-    lg = LEAGUES[label]
+    lg = state_store.league_view(label, state)
     s = state[label]
     team_of = dict(zip(players["name"], players["team"]))
     who = lambda n: f"{n}（{zh.team(team_of[n])}）" if n in team_of else n
@@ -220,6 +213,10 @@ def render_editor():
             week = c1.number_input("第幾週", 1, 25, int(m.get("week", 1)))
             opponent = c2.text_input("對手隊名", m.get("opponent", ""))
             adds = c3.number_input("已用 Adds", 0, lg["weekly_adds"], max(0, int(m.get("adds_used", 0))))
+            mine_left = an.my_games_left(lg, players, injuries, schedule, day)
+            opp_left = st.number_input(
+                f"對手本週剩餘出賽人次（Yahoo Matchup 頁可看到；不知道填 -1）　｜　我方剩 {mine_left}",
+                -1, 100, int(m.get("opp_games_left", -1)))
             table = st.data_editor(
                 [{"比項": zh.cat(c), "我": saved.get(c, {}).get("mine", ""),
                   "對手": saved.get(c, {}).get("opponent", "")} for c in lg["categories"]],
@@ -227,7 +224,7 @@ def render_editor():
             if st.form_submit_button("💾 儲存比分", type="primary", width="stretch"):
                 cats = [{"category": c, "mine": str(r["我"]).strip(), "opponent": str(r["對手"]).strip()}
                         for c, r in zip(lg["categories"], table) if str(r["我"]).strip() or str(r["對手"]).strip()]
-                state_store.save_matchup(label, int(week), opponent.strip(), cats, int(adds))
+                state_store.save_matchup(label, int(week), opponent.strip(), cats, int(adds), int(opp_left))
                 st.session_state["flash"] = [("success", f"已儲存第 {week} 週 vs {opponent} 的比分")]
                 st.rerun()
 

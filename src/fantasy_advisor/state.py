@@ -4,7 +4,7 @@
 """
 
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -77,9 +77,17 @@ def apply_roster_changes(label: str, add: list[str], drop: list[str],
     return done, warnings
 
 
-def save_matchup(label: str, week: int, opponent: str, categories: list[dict], adds_used: int) -> None:
+def save_matchup(label: str, week: int, opponent: str, categories: list[dict], adds_used: int,
+                 opp_games_left: int = -1) -> None:
+    """opp_games_left：對手本週剩餘出賽人次（Yahoo Matchup 頁可看到），-1＝不知道。"""
+    now = datetime.now(ZoneInfo("Asia/Taipei"))
+    et_today = datetime.now(ZoneInfo("America/New_York")).date()
     state = load()
-    state[label]["matchup"] = {"week": week, "opponent": opponent, "categories": categories,
-                               "adds_used": adds_used, "note": "", "saved_at": _now()[5:]}
+    state[label]["matchup"] = {
+        "week": week, "opponent": opponent, "categories": categories,
+        "adds_used": adds_used, "opp_games_left": opp_games_left, "note": "",
+        "saved_at": now.strftime("%m-%d %H:%M"), "saved_ts": now.isoformat(timespec="minutes"),
+        "week_monday": str(et_today - timedelta(days=et_today.weekday())),
+    }
     touch(state, label)
     save(state)

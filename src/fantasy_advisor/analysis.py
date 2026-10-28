@@ -285,3 +285,57 @@ def player_lines(players: pd.DataFrame, names: list[str]) -> list[dict]:
         line["z"] = {c[2:]: round(float(p[c]), 2) for c in p.index if c.startswith("z_")}
         out.append(line)
     return out
+
+
+# ---------- 對戰分析（下午搶人推播用） ----------
+
+# 計數比項的「搖擺」門檻：差距在 max(絕對值, 比例) 以內就算還能翻
+SWING_ABS = {"FGM": 8, "3PTM": 4, "PTS": 25, "REB": 10, "AST": 8, "ST": 3, "BLK": 3, "TO": 4}
+SWING_PCT_OF_LARGER = 0.08
+SWING_RATE = 0.015  # 命中率比項：差 1.5 個百分點以內
+
+
+def _num(v: str) -> float | None:
+    try:
+        return float(str(v).replace("%", "").strip())
+    except ValueError:
+        return None
+
+
+def matchup_rows(m: dict, punt: list[str]) -> tuple[list[dict], int, int]:
+    """把記錄的比分整理成逐項狀態，並算出幾勝幾敗（失誤 TO 越少越好）。"""
+    rows, w, l = [], 0, 0
+    for c in m.get("categories", []):
+        cat, mine, opp = c["category"], _num(c["mine"]), _num(c["opponent"])
+        row = {"cat": cat, "mine": c["mine"], "opp": c["opponent"], "lead": None, "swing": False}
+        if mine is not None and opp is not None:
+            if cat in PCT_CATS:  # 統一成小數：48.2 → .482
+                mine, opp = (x / 100 if x > 1 else x for x in (mine, opp))
+                close = abs(mine - opp) <= SWING_RATE
+            else:
+                close = abs(mine - opp) <= max(SWING_ABS.get(cat, 0), SWING_PCT_OF_LARGER * max(mine, opp))
+            if mine != opp:
+                row["lead"] = (mine < opp) if cat == "TO" else (mine > opp)
+                w += row["lead"]
+                l += not row["lead"]
+            row["swing"] = close and cat not in punt
+        rows.append(row)
+    return rows, w, l
+
+
+def my_games_left(league: dict, players: pd.DataFrame, injuries: pd.DataFrame,
+                  schedule: pd.DataFrame, day: date) -> int:
+    """本週（含今天）可上場的出賽人次：每天以先發位數為上限，排除缺陣球員。"""
+    _, sunday = week_range(day)
+    out = set(injuries.loc[injuries["injury_status"] == "Out", "key"])
+    teams = []
+    for name in league["roster"]:
+        p = find_player(players, name)
+        if p is not None and p["key"] not in out:
+            teams.append(p["team"])
+    total, d = 0, day
+    while d <= sunday:
+        playing = games_on(schedule, d)
+        total += min(sum(t in playing for t in teams), league["starters"])
+        d += timedelta(days=1)
+    return total

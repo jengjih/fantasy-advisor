@@ -1,0 +1,35 @@
+name: 重大傷病監控
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"  # 每 30 分鐘檢查一次 ESPN 傷病
+  workflow_dispatch:
+
+permissions:
+  contents: write           # 要把「已通知過」的紀錄存回 repo，避免重複推播
+
+concurrency: injury-watch
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: 檢查陣容球員有沒有新的重大傷病
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+          NBA_SOURCE: snapshot
+        run: uv run python notify.py --mode injury
+      - name: 記錄已通知的傷病
+        run: |
+          if [ -n "$(git status --porcelain data/alerts.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/alerts.json
+            git commit -m "記錄已通知的重大傷病"
+            git pull --rebase
+            git push
+          fi

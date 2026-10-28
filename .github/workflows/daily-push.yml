@@ -1,9 +1,9 @@
-name: 每日 LINE 推播
+name: 每晚 22:00 今日指令
 
 on:
   schedule:
-    - cron: "30 22 * * *"   # UTC 22:30 = 台北 06:30（GitHub 排程偶爾會延遲幾分鐘）
-  workflow_dispatch:         # 允許在 GitHub 網頁上手動觸發
+    - cron: "0 14 * * *"   # UTC 14:00 = 台北 22:00（GitHub 排程偶爾會延遲幾分鐘）
+  workflow_dispatch:        # 允許在 GitHub 網頁上手動觸發
 
 jobs:
   push:

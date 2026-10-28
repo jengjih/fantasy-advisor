@@ -1,6 +1,15 @@
-"""每日推播：把兩個聯盟的「今日指令」整理成一則純文字訊息（LINE 不支援粗體）。"""
+"""推播訊息產生器（純文字，LINE 不支援粗體）。
+
+- build_report：每晚 22:00 的今日指令
+- build_afternoon：16:00 的條件式搶人推播（沒有需要就回傳 None，不推）
+- find_major_injuries / injury_message：重大傷病（預估缺陣 4 週以上）即時通知
+"""
 
 import re
+from datetime import date, datetime
+from zoneinfo import ZoneInfo
+
+import pandas as pd
 
 from . import analysis as an
 from . import state as state_store
@@ -9,55 +18,181 @@ from .leagues import LEAGUES
 from .nba_data import normalize
 
 STREAM_PICKS = 3
+FRESH_HOURS = 36          # 比分在這個時間內更新過，才拿來判斷搶人
+STALE_REMIND_DAYS = 3     # 超過這麼多天沒更新比分，提醒使用者
+GAMES_GAP_ALERT = 3       # 對手剩餘出賽人次多我 3 以上就提醒
+CLOSE_MATCH_MARGIN = 2    # 聯盟二週一到週四：勝敗差在 2 以內才破例建議用 adds
+MAJOR_INJURY_DAYS = 28
+MAJOR_KEYWORDS = re.compile(
+    r"surgery|torn|tear\b|fractur|acl\b|achilles|season-ending|rest of the season|indefinitely|"
+    r"\b(?:four|five|six|seven|eight|[4-9]|1[0-9])\s*(?:-|to)?\s*(?:\w+\s+)?weeks|\bmonths?\b", re.I)
 
 
 def _plain(msg: str) -> str:
     return re.sub(r"\*\*(.+?)\*\*", r"\1", msg)
 
 
+def _scored(players, lg):
+    return an.add_zscores(players, lg["categories"], lg["punt"], lg["teams"])
+
+
+def _stream_lines(lg, players, injuries, schedule, day, focus, only_today) -> list[str]:
+    my = {normalize(n) for n in lg["roster"] + lg["il"]}
+    cands = an.stream_candidates(lg, _scored(players, lg), injuries, schedule, day, my, focus,
+                                 only_today=only_today, skip_top=True, limit=STREAM_PICKS)
+    return [f"  • {c['球員']}（{c['位置']}，{c['球隊']}，{c['今天']}，本週 {c['本週剩餘']} 場）{c['強項']}"
+            for _, c in cands.iterrows()]
+
+
+# ---------- 每晚 22:00：今日指令 ----------
+
 def build_report(schedule, players, injuries, fetched_at: str = "", day=None) -> str:
     day = day or an.today_et()
     state = state_store.load()
-    lines = [f"🏀 LeSunshine 今日指令", f"NBA 比賽日 {day:%m/%d}（週{an.WEEKDAY[day.weekday()]}）・開打時間為台北時間"]
+    lines = ["🏀 LeSunshine 今日指令",
+             f"NBA 比賽日 {day:%m/%d}（週{an.WEEKDAY[day.weekday()]}）・開打時間為台北時間"]
     if fetched_at:
         lines.append(f"球員數據：{fetched_at}・傷病：即時")
 
     for label in LEAGUES:
         lg = state_store.league_view(label, state)
-        p = an.add_zscores(players, lg["categories"], lg["punt"], lg["teams"])
-        roster, alerts = an.roster_report(lg, p, injuries, schedule, day)
+        roster, alerts = an.roster_report(lg, _scored(players, lg), injuries, schedule, day)
 
         lines += ["", f"【{label}・{lg['name']}】"]
         playing = roster[(roster["名單"] == "陣容") & roster["_plays_today"] & (roster["_status"] != "Out")]
         for _, r in playing.iterrows():
-            lines.append(f"  • {r['球員']}　{r['今天']}")
-        for level, msg in alerts:
+            gtd = "　⚠️每日觀察，賽前可能變動" if r["_status"] == "Day-To-Day" else ""
+            lines.append(f"  • {r['球員']}　{r['今天']}{gtd}")
+        for _, msg in alerts:
             if msg.startswith("▶️"):  # 出賽名單上面已列出，這裡只留按鈕提醒
                 lines.append("▶️ 記得到 Yahoo 按 Start Active Players")
-            else:
+            elif not msg.startswith("⚠️"):  # GTD 已經標在名單上
                 lines.append(_plain(msg))
 
         m = state[label].get("matchup")
         if m:
-            w = l = 0
-            for c in m["categories"]:
-                try:
-                    a, b = float(c["mine"]), float(c["opponent"])
-                    better = a < b if c["category"] == "TO" else a > b
-                    w += better
-                    l += (not better) and a != b
-                except ValueError:
-                    pass
+            _, w, l = an.matchup_rows(m, lg["punt"])
             lines.append(f"⚔️ 第 {m['week']} 週 vs {m['opponent']}：目前 {w} 勝 {l} 敗（{m['saved_at']} 記錄）")
 
-        adds_ok = day.weekday() >= lg.get("adds_from_weekday", 0)
-        if adds_ok:
-            my = {normalize(n) for n in lg["roster"] + lg["il"]}
-            cands = an.stream_candidates(lg, p, injuries, schedule, day, my, [], only_today=True,
-                                         skip_top=True, limit=STREAM_PICKS)
-            if not cands.empty:
-                lines.append("🎯 今日串流候選（請到 Yahoo 確認是 FA）：")
-                for _, c in cands.iterrows():
-                    lines.append(f"  • {c['球員']}（{c['球隊']}，本週 {c['本週剩餘']} 場）{c['強項']}")
+        if day.weekday() >= lg.get("adds_from_weekday", 0):
+            picks = _stream_lines(lg, players, injuries, schedule, day, [], only_today=True)
+            if picks:
+                lines += ["🎯 今日串流候選（請到 Yahoo 確認是 FA）："] + picks
 
+    return "\n".join(lines)
+
+
+# ---------- 16:00：條件式搶人推播 ----------
+
+def _matchup_age_hours(m: dict) -> float:
+    tz = ZoneInfo("Asia/Taipei")
+    if m.get("saved_ts"):
+        saved = datetime.fromisoformat(m["saved_ts"])
+    else:  # 舊格式只有「月-日 時:分」
+        saved = datetime.strptime(f"{datetime.now(tz).year}-{m['saved_at']}", "%Y-%m-%d %H:%M").replace(tzinfo=tz)
+    return (datetime.now(tz) - saved).total_seconds() / 3600
+
+
+def build_afternoon(schedule, players, injuries, day=None) -> str | None:
+    """美東剛進入新的一天：搖擺項落後、或出賽人次輸對手時才推；都沒有就回傳 None（不推）。"""
+    day = day or an.today_et()
+    monday, _ = an.week_range(day)
+    state = state_store.load()
+    sections, reminders = [], []
+
+    for label in LEAGUES:
+        lg = state_store.league_view(label, state)
+        m = state[label].get("matchup")
+        age = _matchup_age_hours(m) if m else None
+        if age is None or age > STALE_REMIND_DAYS * 24:
+            how = "從未記錄" if age is None else f"已 {int(age // 24)} 天沒更新"
+            reminders.append(f"⏰ {label}的對戰比分{how}，請在 Mac 網頁或傳截圖更新，搶人分析才準。")
+        if not m or age > FRESH_HOURS or m.get("week_monday") != str(monday):
+            continue
+
+        rows, w, l = an.matchup_rows(m, lg["punt"])
+        losing = [r for r in rows if r["swing"] and r["lead"] is False]
+        shaky = [r for r in rows if r["swing"] and r["lead"] is True]
+        mine_left = an.my_games_left(lg, players, injuries, schedule, day)
+        opp_left = m.get("opp_games_left", -1)
+        gap = opp_left - mine_left if opp_left >= 0 else 0
+        adds_left = lg["weekly_adds"] - max(m["adds_used"], 0)
+        if adds_left <= 0 or not (losing or gap >= GAMES_GAP_ALERT):
+            continue
+
+        exception = False
+        if day.weekday() < lg.get("adds_from_weekday", 0):  # 聯盟二週一到週四原則上不用 adds
+            if not (losing and abs(w - l) <= CLOSE_MATCH_MARGIN):
+                continue
+            exception = True
+
+        out = [f"【{label}・{lg['name']}】vs {m['opponent']}：{w} 勝 {l} 敗",
+               f"Adds 剩 {adds_left} 次" + ("　📌 週間破例：比分迫近，建議出手" if exception else "")]
+        fmt = lambda rs: "、".join(f"{zh.cat(r['cat'])} {r['mine']} vs {r['opp']}" for r in rs)
+        if losing:
+            out.append("🔻 落後但追得回：" + fmt(losing))
+        if shaky:
+            out.append("🔸 領先但不穩：" + fmt(shaky))
+        if opp_left >= 0:
+            out.append(f"🏃 本週剩餘出賽：我 {mine_left} vs 對手 {opp_left}"
+                       + ("　⚠️ 場次落後" if gap >= GAMES_GAP_ALERT else ""))
+
+        focus = [r["cat"] for r in losing]
+        picks = _stream_lines(lg, players, injuries, schedule, day, focus, only_today=True)
+        if picks:
+            target = "、".join(zh.CATEGORY[c] for c in focus) if focus else "補出賽人次"
+            out += [f"🎯 建議搶人（補{target}，今天有比賽，請確認是 FA）："] + picks
+        sections.append("\n".join(out))
+
+    if not sections and not reminders:
+        return None
+    head = f"⚡ LeSunshine 搶人時間（美東 {day:%m/%d} 週{an.WEEKDAY[day.weekday()]}）"
+    return "\n\n".join([head] + sections + reminders)
+
+
+# ---------- 重大傷病即時通知 ----------
+
+def is_major(row: pd.Series, today: date) -> bool:
+    if row["injury_status"] != "Out":
+        return False
+    try:
+        if (date.fromisoformat(str(row["return_date"])[:10]) - today).days >= MAJOR_INJURY_DAYS:
+            return True
+    except ValueError:
+        pass
+    return bool(MAJOR_KEYWORDS.search(f"{row['injury_note']} {row['injury_long']}"))
+
+
+def find_major_injuries(injuries: pd.DataFrame, alerted: dict) -> list[tuple[str, str, pd.Series]]:
+    """[(聯盟, 球員, 傷病資料)]：陣容裡（不含 IL）新出現的重大傷病；30 天內通知過的跳過。"""
+    today = datetime.now(ZoneInfo("Asia/Taipei")).date()
+    state = state_store.load()
+    inj = injuries.set_index("key")
+    hits = []
+    for label in LEAGUES:
+        for name in state[label]["roster"]:
+            key = normalize(name)
+            if key not in inj.index or not is_major(inj.loc[key], today):
+                continue
+            last = alerted.get(f"{label}|{key}")
+            if last and (today - date.fromisoformat(last)).days < 30:
+                continue
+            hits.append((label, name, inj.loc[key]))
+    return hits
+
+
+def injury_message(hits, schedule, players, injuries) -> str:
+    day = an.today_et()
+    state = state_store.load()
+    lines = ["🚨 重大傷病通知"]
+    for label, name, row in hits:
+        lg = state_store.league_view(label, state)
+        il_free = 3 - len(lg["il"])
+        ret = f"，ESPN 預估 {str(row['return_date'])[:10]} 回歸" if row["return_date"] else ""
+        lines += ["", f"【{label}】{name}：{zh.injury(row['injury_status'])}{ret}",
+                  f"ESPN：{row['injury_note']}",
+                  "👉 建議：" + (f"移入 IL（還有 {il_free} 格），再簽人補位" if il_free > 0 else "IL 已滿，考慮 Drop 換人")]
+        picks = _stream_lines(lg, players, injuries, schedule, day, [], only_today=False)
+        if picks:
+            lines += ["🎯 替補候選（請到 Yahoo 確認是 FA）："] + picks
     return "\n".join(lines)
