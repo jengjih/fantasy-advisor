@@ -123,7 +123,7 @@
       "LaMelo Ball",
       "Nickeil Alexander-Walker",
       "Kyshawn George",
-      "Mitchell Robinson"
+      "Saddiq Bey"
     ],
     "il": [
       "Kon Knueppel"
@@ -178,15 +178,15 @@
           "opponent": "22"
         }
       ],
-      "adds_used": 0,
+      "adds_used": 1,
       "opp_games_left": 21,
-      "my_games_left": 24,
+      "my_games_left": 25,
       "note": "",
-      "saved_at": "10-28 14:02",
-      "saved_ts": "2026-10-28T14:02+08:00",
+      "saved_at": "10-28 21:56",
+      "saved_ts": "2026-10-28T21:56+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-28 14:02",
+    "updated_at": "2026-10-28 21:56",
     "free_agents": {
       "names": [
         "Scoot Henderson",
