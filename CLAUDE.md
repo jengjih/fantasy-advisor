@@ -45,10 +45,10 @@
 - [ ] Yahoo 核准後：接上 `yahoo_client.py`，自動抓陣容、FA、對戰比分
 - [x] LINE 推播：`notify.py`（`--dry-run` 可以預覽）、`daily.py` 負責組訊息、`line_push.py` 負責發送；`.env` 要有 LINE_CHANNEL_ACCESS_TOKEN 和 LINE_USER_ID。10/27 測試推播成功
 - [x] GitHub 私人 repo jengjih/fantasy-advisor（gh CLI 在 ~/.local/bin/gh）。stats.nba.com 會擋雲端主機，所以：
-  - Mac 用 launchd（com.lesunshine.sync，每天 12:30、18:30、23:30）跑 `sync.py`：抓 NBA 數據 → 存 `data/snapshot/` → 跟 `data/state.json` 一起 commit、push。安裝檔是 `scripts/install_sync.sh`
+  - Mac 用 launchd（com.lesunshine.sync，每天 15:30、21:30、23:30；配合 16:00 和 22:00 的推播）跑 `sync.py`：抓 NBA 數據 → 存 `data/snapshot/` → 跟 `data/state.json` 一起 commit、push。安裝檔是 `scripts/install_sync.sh`
   - GitHub Actions（都用 NBA_SOURCE=snapshot；傷病從 ESPN 即時抓；LINE 金鑰存在 repo secrets）：
     - 每晚 22:00 台北（`daily-push.yml`）：`notify.py` 推今日指令。原本是早上 6:30，使用者睡覺來不及調整，10/28 改到晚上
     - 16:00 台北（`afternoon.yml`）：`--mode afternoon`，搖擺項落後或出賽人次輸對手 3 以上才推；比分超過 36 小時就不用；超過 3 天沒更新就提醒。聯盟二週一到週四原則上不推，勝敗差在 2 以內且有落後的搖擺項才破例。兩個聯盟合成一則
     - 每 30 分鐘（`injury-watch.yml`）：`--mode injury`，陣容裡（不含 IL）的球員 ESPN 預估缺陣 28 天以上或出現重傷關鍵字就推；`data/alerts.json` 記錄已通知過的，30 天內不重複推
-  - 程式碼改完要自己 commit、push（sync.py 只會 add data/）
+  - 程式碼改完要自己 commit、push（sync.py 和網頁的「儲存」只會 add data/）。網頁編輯頁儲存時會自動同步（cloud_sync.push_data），也有「立即同步」按鈕
 - [x] Streamlit Community Cloud 已部署：https://lesunshine-advisor.streamlit.app（唯讀模式，secrets 設 APP_MODE=cloud、NBA_SOURCE=snapshot；依賴用 requirements.txt）。Streamlit 拿不到私人 repo 的權限，所以 10/28 使用者決定把 repo 改成 public（已確認裡面沒有金鑰和個資）。repo 公開後，任何新檔案都不能放金鑰或個資

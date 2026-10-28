@@ -1,5 +1,5 @@
 #!/bin/zsh
-# 安裝 Mac 端排程：每天 12:30、18:30、23:30 抓 NBA 數據並同步到 GitHub（給雲端 6:30 推播用）
+# 安裝 Mac 端排程：每天 15:30、21:30、23:30 抓 NBA 數據並同步到 GitHub（給雲端 6:30 推播用）
 # 同時移除舊的「Mac 6:30 推播」排程（已由 GitHub 雲端接手）
 set -e
 P="$HOME/Desktop/Claude Code實驗室/fantasy-advisor"
@@ -27,8 +27,8 @@ cat > "$AGENTS/com.lesunshine.sync.plist" <<PLIST
   <key>EnvironmentVariables</key><dict><key>PATH</key><string>$HOME/.local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string></dict>
   <key>StartCalendarInterval</key>
   <array>
-    <dict><key>Hour</key><integer>12</integer><key>Minute</key><integer>30</integer></dict>
-    <dict><key>Hour</key><integer>18</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>15</integer><key>Minute</key><integer>30</integer></dict>
+    <dict><key>Hour</key><integer>21</integer><key>Minute</key><integer>30</integer></dict>
     <dict><key>Hour</key><integer>23</integer><key>Minute</key><integer>30</integer></dict>
   </array>
   <key>StandardOutPath</key><string>$P/logs/sync.log</string>
@@ -38,7 +38,7 @@ cat > "$AGENTS/com.lesunshine.sync.plist" <<PLIST
 PLIST
 launchctl unload "$AGENTS/com.lesunshine.sync.plist" 2>/dev/null || true
 launchctl load "$AGENTS/com.lesunshine.sync.plist"
-echo "✓ 已安裝同步排程（每天 12:30、18:30、23:30）"
+echo "✓ 已安裝同步排程（每天 15:30、21:30、23:30）"
 
 # 3. 立刻試跑一次
 echo "… 試跑同步（約 30 秒）"

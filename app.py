@@ -22,6 +22,7 @@ from fantasy_advisor import analysis as an
 from fantasy_advisor import nba_data as nd
 from fantasy_advisor import state as state_store
 from fantasy_advisor import zh
+from fantasy_advisor.cloud_sync import push_data
 from fantasy_advisor.leagues import LEAGUES
 
 st.set_page_config(page_title="LeSunshine 作戰室", page_icon="🏀", layout="wide")
@@ -175,8 +176,14 @@ def render_editor():
         for kind, msg in flash:
             getattr(st, kind)(msg)
 
-    label = st.radio("選擇聯盟", list(LEAGUES), horizontal=True,
-                     format_func=lambda k: f"{k}・{LEAGUES[k]['name']}")
+    top = st.columns([3, 1])
+    label = top[0].radio("選擇聯盟", list(LEAGUES), horizontal=True,
+                         format_func=lambda k: f"{k}・{LEAGUES[k]['name']}")
+    if top[1].button("☁️ 立即同步到雲端", width="stretch", help="儲存時已會自動同步；同步失敗時可以再按一次"):
+        with st.spinner("同步中…"):
+            ok, msg = push_data("手動同步陣容與比分")
+        st.session_state["flash"] = [("success" if ok else "error", f"☁️ {msg}")]
+        st.rerun()
     lg = state_store.league_view(label, state)
     s = state[label]
     team_of = dict(zip(players["name"], players["team"]))
@@ -194,8 +201,11 @@ def render_editor():
             from_il = st.multiselect("↩️ 從 IL 移回陣容", s["il"], format_func=who)
             if st.form_submit_button("💾 儲存異動", type="primary", width="stretch"):
                 done, warns = state_store.apply_roster_changes(label, add, drop, to_il, from_il)
-                st.session_state["flash"] = ([("success", "已更新：" + "、".join(done))] if done else []) + \
-                                            [("warning", w) for w in warns]
+                flash = ([("success", "已更新：" + "、".join(done))] if done else []) + [("warning", w) for w in warns]
+                if done:
+                    ok, msg = push_data("更新陣容")
+                    flash.append(("success" if ok else "error", f"☁️ {msg}"))
+                st.session_state["flash"] = flash
                 st.rerun()
 
         rows = [{"頭貼": zh.headshot(players.loc[players["name"] == n, "PLAYER_ID"].iloc[0])
@@ -225,7 +235,9 @@ def render_editor():
                 cats = [{"category": c, "mine": str(r["我"]).strip(), "opponent": str(r["對手"]).strip()}
                         for c, r in zip(lg["categories"], table) if str(r["我"]).strip() or str(r["對手"]).strip()]
                 state_store.save_matchup(label, int(week), opponent.strip(), cats, int(adds), int(opp_left))
-                st.session_state["flash"] = [("success", f"已儲存第 {week} 週 vs {opponent} 的比分")]
+                ok, msg = push_data("更新對戰比分")
+                st.session_state["flash"] = [("success", f"已儲存第 {week} 週 vs {opponent} 的比分"),
+                                             ("success" if ok else "error", f"☁️ {msg}")]
                 st.rerun()
 
 
@@ -241,7 +253,7 @@ with st.sidebar:
     st.divider()
     if CLOUD:
         st.info("☁️ 雲端唯讀版：陣容與比分請在 Mac 版網頁編輯，"
-                "Mac 每天 12:30／18:30／23:30 自動同步上來。", icon="ℹ️")
+                "Mac 每天 15:30／21:30／23:30 自動同步上來。", icon="ℹ️")
     else:
         st.info("Yahoo API 審核中：陣容與比分請在「✏️ 陣容與對戰」分頁更新。"
                 "推薦名單是否為 FA，請到 Yahoo 確認。", icon="ℹ️")
