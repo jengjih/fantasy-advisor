@@ -18,12 +18,19 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).parent / "src"))  # 雲端部署時不安裝套件，直接從 src 匯入
 
+import importlib
+
 from fantasy_advisor import analysis as an
+from fantasy_advisor import leagues, zh
 from fantasy_advisor import nba_data as nd
 from fantasy_advisor import state as state_store
-from fantasy_advisor import zh
-from fantasy_advisor.cloud_sync import push_data
-from fantasy_advisor.leagues import LEAGUES
+from fantasy_advisor import cloud_sync
+
+# 雲端更新程式後，Python 會沿用記憶體裡的舊模組；每次執行都重新載入，確保用到最新版
+for _mod in (zh, leagues, nd, state_store, an, cloud_sync):
+    importlib.reload(_mod)
+LEAGUES = leagues.LEAGUES
+push_data = cloud_sync.push_data
 
 st.set_page_config(page_title="LeSunshine 作戰室", page_icon="🏀", layout="wide")
 CLOUD = os.getenv("APP_MODE") == "cloud"  # 雲端版：唯讀、讀 Mac 上傳的數據快照
@@ -113,7 +120,11 @@ def render_league(label: str):
 
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("今天出賽", f"{int(active['_plays_today'].sum())} / {lg['starters']} 人")
-    c2.metric("本週剩餘出賽人次", int(active["本週剩餘"].sum()))
+    if m and m.get("my_games_left", -1) >= 0 and m.get("week_monday") == str(monday):
+        opp = f"（對手 {m['opp_games_left']}）" if m.get("opp_games_left", -1) >= 0 else ""
+        c2.metric("本週剩餘出賽人次", f"{m['my_games_left']}{opp}", help=f"Yahoo 數字，{m['saved_at']} 記錄")
+    else:
+        c2.metric("本週剩餘出賽人次", an.my_games_left(lg, players, injuries, schedule, day), help="系統估算")
     if m:
         _, w, l = matchup_table(m, lg["punt"])
         c3.metric(f"第 {m['week']} 週 vs {m['opponent']}", f"{w} 勝 {l} 敗")
