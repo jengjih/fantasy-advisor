@@ -226,10 +226,15 @@ def roster_report(league: dict, players: pd.DataFrame, injuries: pd.DataFrame,
 
 def stream_candidates(league: dict, players: pd.DataFrame, injuries: pd.DataFrame,
                       schedule: pd.DataFrame, day: date, my_keys: set[str],
-                      focus: list[str], only_today: bool, skip_top: bool, limit: int = 25) -> pd.DataFrame:
-    """串流推薦：排除自己陣容、缺陣球員；依「焦點比項價值 × 本週剩餘場次」排序。"""
+                      focus: list[str], only_today: bool, skip_top: bool, limit: int = 25,
+                      only_keys: set[str] | None = None, count_days: list[date] | None = None) -> pd.DataFrame:
+    """串流推薦：排除自己陣容、缺陣球員；依「焦點比項價值 × 本週剩餘場次」排序。
+    only_keys：只從這些球員挑（使用者截圖確認過的 FA）。count_days：只計算這幾天的場次（我方有空位的日子）。"""
     _, sunday = week_range(day)
-    left = team_games(schedule, day, sunday)
+    if count_days is None:
+        left = team_games(schedule, day, sunday)
+    else:
+        left = pd.Series([t for d in count_days for t in games_on(schedule, d)]).value_counts()
     today = games_on(schedule, day)
     b2b = b2b_teams(schedule, day)
     inj = injuries.set_index("key")["injury_status"]
@@ -237,7 +242,9 @@ def stream_candidates(league: dict, players: pd.DataFrame, injuries: pd.DataFram
     df = players[~players["key"].isin(my_keys)].copy()
     df["status"] = df["key"].map(inj).fillna("")
     df = df[(df["status"] != "Out") & (df["MIN"] >= MIN_STREAM_MINUTES)]
-    if skip_top:  # 排名太前面的幾乎一定被別人持有
+    if only_keys is not None:
+        df = df[df["key"].isin(only_keys)]
+    elif skip_top:  # 排名太前面的幾乎一定被別人持有
         df = df[df["rank"] > league["teams"] * ROSTER_SIZE]
 
     df["left"] = df["team"].map(left).fillna(0).astype(int)
@@ -321,6 +328,20 @@ def matchup_rows(m: dict, punt: list[str]) -> tuple[list[dict], int, int]:
             row["swing"] = close and cat not in punt
         rows.append(row)
     return rows, w, l
+
+
+def open_slots_by_day(league: dict, players: pd.DataFrame, injuries: pd.DataFrame,
+                      schedule: pd.DataFrame, day: date) -> dict[date, int]:
+    """本週剩下每天（含今天）還空著幾個先發位：先發數 − 當天有比賽且沒缺陣的陣容人數。"""
+    _, sunday = week_range(day)
+    out = set(injuries.loc[injuries["injury_status"] == "Out", "key"])
+    teams = [p["team"] for n in league["roster"] if (p := find_player(players, n)) is not None and p["key"] not in out]
+    slots, d = {}, day
+    while d <= sunday:
+        playing = games_on(schedule, d)
+        slots[d] = max(0, league["starters"] - sum(t in playing for t in teams))
+        d += timedelta(days=1)
+    return slots
 
 
 def my_games_left(league: dict, players: pd.DataFrame, injuries: pd.DataFrame,

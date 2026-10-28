@@ -20,8 +20,8 @@ from .nba_data import normalize
 STREAM_PICKS = 3
 FRESH_HOURS = 36          # 比分在這個時間內更新過，才拿來判斷搶人
 STALE_REMIND_DAYS = 3     # 超過這麼多天沒更新比分，提醒使用者
+FA_FRESH_HOURS = 48       # 截圖確認過的 FA 名單有效時間
 GAMES_GAP_ALERT = 3       # 對手剩餘出賽人次多我 3 以上就提醒
-CLOSE_MATCH_MARGIN = 2    # 聯盟二週一到週四：勝敗差在 2 以內才破例建議用 adds
 MAJOR_INJURY_DAYS = 28
 MAJOR_KEYWORDS = re.compile(
     r"surgery|torn|tear\b|fractur|acl\b|achilles|season-ending|rest of the season|indefinitely|"
@@ -36,12 +36,23 @@ def _scored(players, lg):
     return an.add_zscores(players, lg["categories"], lg["punt"], lg["teams"])
 
 
-def _stream_lines(lg, players, injuries, schedule, day, focus, only_today) -> list[str]:
+def _fresh_fa_keys(state: dict, label: str) -> set[str] | None:
+    """使用者 48 小時內截圖確認過的 FA 名單；沒有就回傳 None（改用「排除排名前段」的估計）。"""
+    fa = state[label].get("free_agents")
+    if not fa or (datetime.now(ZoneInfo("Asia/Taipei")) - datetime.fromisoformat(fa["saved_ts"])).total_seconds() > FA_FRESH_HOURS * 3600:
+        return None
+    return {normalize(n) for n in fa["names"]}
+
+
+def _stream_lines(lg, players, injuries, schedule, day, focus, only_today,
+                  fa_keys=None, count_days=None) -> list[str]:
     my = {normalize(n) for n in lg["roster"] + lg["il"]}
     cands = an.stream_candidates(lg, _scored(players, lg), injuries, schedule, day, my, focus,
-                                 only_today=only_today, skip_top=True, limit=STREAM_PICKS)
-    return [f"  • {c['球員']}（{c['位置']}，{c['球隊']}，{c['今天']}，本週 {c['本週剩餘']} 場）{c['強項']}"
-            for _, c in cands.iterrows()]
+                                 only_today=only_today, skip_top=True, limit=STREAM_PICKS,
+                                 only_keys=fa_keys, count_days=count_days)
+    games = "空位日可上" if count_days is not None else "本週"
+    return [f"  • {c['球員']}（{c['位置']}，{c['球隊']}，{c['今天']}，{games} {c['本週剩餘']} 場）{c['強項']}"
+            for _, c in cands.iterrows() if c["本週剩餘"] > 0]
 
 
 # ---------- 每晚 22:00：今日指令 ----------
@@ -75,9 +86,11 @@ def build_report(schedule, players, injuries, fetched_at: str = "", day=None) ->
             lines.append(f"⚔️ 第 {m['week']} 週 vs {m['opponent']}：目前 {w} 勝 {l} 敗（{m['saved_at']} 記錄）")
 
         if day.weekday() >= lg.get("adds_from_weekday", 0):
-            picks = _stream_lines(lg, players, injuries, schedule, day, [], only_today=True)
+            fa_keys = _fresh_fa_keys(state, label)
+            picks = _stream_lines(lg, players, injuries, schedule, day, [], only_today=True, fa_keys=fa_keys)
             if picks:
-                lines += ["🎯 今日串流候選（請到 Yahoo 確認是 FA）："] + picks
+                note = "（從你截圖的 FA 名單挑）" if fa_keys else "（請到 Yahoo 確認是 FA）"
+                lines += [f"🎯 今日串流候選{note}："] + picks
 
     return "\n".join(lines)
 
@@ -113,16 +126,20 @@ def build_afternoon(schedule, players, injuries, day=None) -> str | None:
         rows, w, l = an.matchup_rows(m, lg["punt"])
         losing = [r for r in rows if r["swing"] and r["lead"] is False]
         shaky = [r for r in rows if r["swing"] and r["lead"] is True]
-        mine_left = an.my_games_left(lg, players, injuries, schedule, day)
+        chase = [r for r in losing if r["cat"] != "TO"]  # 只差失誤 TO 不值得為它搶人
+        mine_left = m.get("my_games_left", -1)
+        if mine_left < 0:
+            mine_left = an.my_games_left(lg, players, injuries, schedule, day)
         opp_left = m.get("opp_games_left", -1)
         gap = opp_left - mine_left if opp_left >= 0 else 0
         adds_left = lg["weekly_adds"] - max(m["adds_used"], 0)
-        if adds_left <= 0 or not (losing or gap >= GAMES_GAP_ALERT):
+        if adds_left <= 0 or not (chase or gap >= GAMES_GAP_ALERT):
             continue
 
         exception = False
         if day.weekday() < lg.get("adds_from_weekday", 0):  # 聯盟二週一到週四原則上不用 adds
-            if not (losing and abs(w - l) <= CLOSE_MATCH_MARGIN):
+            # 破例條件：把「落後但追得回」的比項追回來，就能扭轉整場勝負
+            if not (chase and w + len(losing) > l - len(losing)):
                 continue
             exception = True
 
@@ -137,11 +154,20 @@ def build_afternoon(schedule, players, injuries, day=None) -> str | None:
             out.append(f"🏃 本週剩餘出賽：我 {mine_left} vs 對手 {opp_left}"
                        + ("　⚠️ 場次落後" if gap >= GAMES_GAP_ALERT else ""))
 
-        focus = [r["cat"] for r in losing]
-        picks = _stream_lines(lg, players, injuries, schedule, day, focus, only_today=True)
+        slots = an.open_slots_by_day(lg, players, injuries, schedule, day)
+        open_days = [d for d, n in slots.items() if n > 0]
+        if open_days:
+            out.append("📅 有空先發位的日子：" + "、".join(f"週{an.WEEKDAY[d.weekday()]}（空 {slots[d]}）" for d in open_days))
+        else:
+            out.append("📅 本週剩下每天先發都已排滿：新簽的人要換掉陣容裡價值最低、場次少的球員才有用")
+        focus = [r["cat"] for r in chase]
+        fa_keys = _fresh_fa_keys(state, label)
+        picks = _stream_lines(lg, players, injuries, schedule, day, focus, only_today=False,
+                              fa_keys=fa_keys, count_days=open_days or None)
         if picks:
-            target = "、".join(zh.CATEGORY[c] for c in focus) if focus else "補出賽人次"
-            out += [f"🎯 建議搶人（補{target}，今天有比賽，請確認是 FA）："] + picks
+            target = "、".join(zh.CATEGORY[c] for c in focus) if focus else "出賽人次"
+            src = "從你截圖的 FA 名單挑" if fa_keys else "請確認是 FA"
+            out += [f"🎯 建議搶人（補{target}，{src}）："] + picks
         sections.append("\n".join(out))
 
     if not sections and not reminders:

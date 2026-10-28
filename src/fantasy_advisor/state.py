@@ -78,16 +78,25 @@ def apply_roster_changes(label: str, add: list[str], drop: list[str],
 
 
 def save_matchup(label: str, week: int, opponent: str, categories: list[dict], adds_used: int,
-                 opp_games_left: int = -1) -> None:
-    """opp_games_left：對手本週剩餘出賽人次（Yahoo Matchup 頁可看到），-1＝不知道。"""
+                 opp_games_left: int = -1, my_games_left: int = -1) -> None:
+    """opp_games_left / my_games_left：雙方本週剩餘出賽人次（Yahoo Matchup 頁「Games Played 已打/總數」
+    相減即可），-1＝不知道（我方會改用系統估算）。"""
     now = datetime.now(ZoneInfo("Asia/Taipei"))
     et_today = datetime.now(ZoneInfo("America/New_York")).date()
     state = load()
     state[label]["matchup"] = {
         "week": week, "opponent": opponent, "categories": categories,
-        "adds_used": adds_used, "opp_games_left": opp_games_left, "note": "",
+        "adds_used": adds_used, "opp_games_left": opp_games_left, "my_games_left": my_games_left, "note": "",
         "saved_at": now.strftime("%m-%d %H:%M"), "saved_ts": now.isoformat(timespec="minutes"),
         "week_monday": str(et_today - timedelta(days=et_today.weekday())),
     }
+    touch(state, label)
+    save(state)
+
+
+def save_free_agents(label: str, names: list[str]) -> None:
+    """記錄 Yahoo 上確認是 FA（綠色 +）的球員；推播的推薦會優先只從這份名單挑（48 小時內有效）。"""
+    state = load()
+    state[label]["free_agents"] = {"names": names, "saved_ts": datetime.now(ZoneInfo("Asia/Taipei")).isoformat(timespec="minutes")}
     touch(state, label)
     save(state)

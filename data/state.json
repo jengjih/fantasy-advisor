@@ -20,8 +20,94 @@
       "Jalen Williams",
       "Cason Wallace"
     ],
-    "matchup": null,
-    "updated_at": "2026-10-27 17:44"
+    "matchup": {
+      "week": 2,
+      "opponent": "永吉路懂球帝",
+      "categories": [
+        {
+          "category": "FGM",
+          "mine": "58",
+          "opponent": "56"
+        },
+        {
+          "category": "FG%",
+          "mine": ".483",
+          "opponent": ".459"
+        },
+        {
+          "category": "FT%",
+          "mine": ".811",
+          "opponent": ".861"
+        },
+        {
+          "category": "3PTM",
+          "mine": "14",
+          "opponent": "13"
+        },
+        {
+          "category": "3PT%",
+          "mine": ".311",
+          "opponent": ".260"
+        },
+        {
+          "category": "PTS",
+          "mine": "173",
+          "opponent": "156"
+        },
+        {
+          "category": "REB",
+          "mine": "57",
+          "opponent": "53"
+        },
+        {
+          "category": "AST",
+          "mine": "55",
+          "opponent": "39"
+        },
+        {
+          "category": "ST",
+          "mine": "11",
+          "opponent": "10"
+        },
+        {
+          "category": "BLK",
+          "mine": "12",
+          "opponent": "7"
+        },
+        {
+          "category": "TO",
+          "mine": "20",
+          "opponent": "17"
+        }
+      ],
+      "adds_used": 2,
+      "opp_games_left": 25,
+      "my_games_left": 22,
+      "note": "",
+      "saved_at": "10-28 14:02",
+      "saved_ts": "2026-10-28T14:02+08:00",
+      "week_monday": "2026-10-26"
+    },
+    "updated_at": "2026-10-28 14:02",
+    "free_agents": {
+      "names": [
+        "Collin Gillespie",
+        "Cameron Johnson",
+        "Jared McCain",
+        "Christian Braun",
+        "Day'Ron Sharpe",
+        "Collin Murray-Boyles",
+        "Myles Turner",
+        "Egor Dëmin",
+        "Brandin Podziemski",
+        "Devin Vassell",
+        "Davion Mitchell",
+        "Aaron Nesmith",
+        "Reed Sheppard",
+        "Miles McBride"
+      ],
+      "saved_ts": "2026-10-28T14:02+08:00"
+    }
   },
   "聯盟二": {
     "roster": [
@@ -42,7 +128,80 @@
     "il": [
       "Kon Knueppel"
     ],
-    "matchup": null,
-    "updated_at": "2026-10-27 17:44"
+    "matchup": {
+      "week": 2,
+      "opponent": "LALA好",
+      "categories": [
+        {
+          "category": "FG%",
+          "mine": ".484",
+          "opponent": ".500"
+        },
+        {
+          "category": "FT%",
+          "mine": ".737",
+          "opponent": ".661"
+        },
+        {
+          "category": "3PTM",
+          "mine": "26",
+          "opponent": "27"
+        },
+        {
+          "category": "PTS",
+          "mine": "204",
+          "opponent": "210"
+        },
+        {
+          "category": "REB",
+          "mine": "59",
+          "opponent": "63"
+        },
+        {
+          "category": "AST",
+          "mine": "43",
+          "opponent": "47"
+        },
+        {
+          "category": "ST",
+          "mine": "11",
+          "opponent": "9"
+        },
+        {
+          "category": "BLK",
+          "mine": "10",
+          "opponent": "6"
+        },
+        {
+          "category": "TO",
+          "mine": "30",
+          "opponent": "22"
+        }
+      ],
+      "adds_used": 0,
+      "opp_games_left": 21,
+      "my_games_left": 24,
+      "note": "",
+      "saved_at": "10-28 14:02",
+      "saved_ts": "2026-10-28T14:02+08:00",
+      "week_monday": "2026-10-26"
+    },
+    "updated_at": "2026-10-28 14:02",
+    "free_agents": {
+      "names": [
+        "Scoot Henderson",
+        "Tre Jones",
+        "Egor Dëmin",
+        "Aaron Nesmith",
+        "Miles McBride",
+        "De'Anthony Melton",
+        "Saddiq Bey",
+        "Derrick Jones Jr.",
+        "Ja'Kobe Walter",
+        "Jaylon Tyson",
+        "Sam Merrill"
+      ],
+      "saved_ts": "2026-10-28T14:02+08:00"
+    }
   }
 }
