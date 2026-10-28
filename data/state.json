@@ -12,9 +12,9 @@
       "Wendell Carter Jr.",
       "Zach Edey",
       "Alex Sarr",
-      "Matas Buzelis",
       "Dylan Harper",
-      "Toumani Camara"
+      "Toumani Camara",
+      "Moussa Diabaté"
     ],
     "il": [
       "Jalen Williams",
@@ -80,15 +80,15 @@
           "opponent": "17"
         }
       ],
-      "adds_used": 2,
+      "adds_used": 3,
       "opp_games_left": 25,
-      "my_games_left": 22,
+      "my_games_left": 23,
       "note": "",
-      "saved_at": "10-28 14:02",
-      "saved_ts": "2026-10-28T14:02+08:00",
+      "saved_at": "10-28 20:10",
+      "saved_ts": "2026-10-28T20:10+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-28 14:02",
+    "updated_at": "2026-10-28 20:10",
     "free_agents": {
       "names": [
         "Collin Gillespie",
