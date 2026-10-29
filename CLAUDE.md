@@ -17,6 +17,7 @@
 3. **直接在 main 分支 commit 並 push**（先 `git checkout main && git pull`），不要開新分支或 PR；網頁和推播都讀 main。執行 `uv run python sync.py` 會自動 commit、push data/。
 4. 對話結尾更新 `data/advisor_notes.md`，寫下新的決定和接下來的計劃。
 5. repo 是公開的：筆記和程式裡不能放金鑰、Email 或任何個資。
+6. **每次回覆結束前，用 PushNotification 工具推一則手機通知**（一行、200 字內，先講結論，例如「懂球帝：週五放 Edey 簽 G. Allen，回來看細節」）。使用者會切去做別的事，靠通知回來看對話。
 
 ## 目標
 連結 Yahoo Fantasy API 和 NBA 數據，替兩個聯盟產生每日建議，最後部署成網頁，再加上 LINE 推播（LINE Notify 已停用，要用 Messaging API）。
