@@ -131,11 +131,16 @@ def load_all():
 
 
 def fetch_injuries() -> pd.DataFrame:
-    """ESPN 傷病名單：status 為 Out / Day-To-Day 等；return_date 是 ESPN 預估的回歸日。"""
-    r = requests.get(f"{ESPN}/injuries", timeout=TIMEOUT)
-    r.raise_for_status()
+    """ESPN 傷病名單：status 為 Out / Day-To-Day 等；return_date 是 ESPN 預估的回歸日。
+    連不到 ESPN（例如雲端對話的網路限制）時回傳空表，分析照常進行，只是少了傷病資訊。"""
+    cols = ["key", "name", "injury_status", "injury_note", "injury_long", "return_date", "injury_type"]
+    try:
+        data = _get_json(f"{ESPN}/injuries", {})
+    except Exception as e:
+        print(f"⚠️ 抓不到 ESPN 傷病資料（{type(e).__name__}），這次分析沒有傷病資訊")
+        return pd.DataFrame(columns=cols)
     rows = []
-    for team in r.json().get("injuries", []):
+    for team in data.get("injuries", []):
         for inj in team["injuries"]:
             rows.append({
                 "key": normalize(inj["athlete"]["displayName"]),
@@ -147,5 +152,4 @@ def fetch_injuries() -> pd.DataFrame:
                 "injury_type": " ".join(str(v) for v in [(inj.get("details") or {}).get("type"),
                                                         (inj.get("details") or {}).get("detail")] if v),
             })
-    cols = ["key", "name", "injury_status", "injury_note", "injury_long", "return_date", "injury_type"]
     return pd.DataFrame(rows, columns=cols).drop_duplicates("key")
