@@ -69,7 +69,7 @@ def build_report(schedule, players, injuries, fetched_at: str = "", day=None) ->
         lg = state_store.league_view(label, state)
         roster, alerts = an.roster_report(lg, _scored(players, lg), injuries, schedule, day)
 
-        lines += ["", f"【{label}・{lg['name']}】"]
+        lines += ["", f"【{lg['name']}】"]
         playing = roster[(roster["名單"] == "陣容") & roster["_plays_today"] & (roster["_status"] != "Out")]
         for _, r in playing.iterrows():
             gtd = "　⚠️每日觀察，賽前可能變動" if r["_status"] == "Day-To-Day" else ""
@@ -119,7 +119,7 @@ def build_afternoon(schedule, players, injuries, day=None) -> str | None:
         age = _matchup_age_hours(m) if m else None
         if age is None or age > STALE_REMIND_DAYS * 24:
             how = "從未記錄" if age is None else f"已 {int(age // 24)} 天沒更新"
-            reminders.append(f"⏰ {label}的對戰比分{how}，請在 Mac 網頁或傳截圖更新，搶人分析才準。")
+            reminders.append(f"⏰ {lg['name']} 的對戰比分{how}，請在 Mac 網頁或傳截圖更新，搶人分析才準。")
         if not m or age > FRESH_HOURS or m.get("week_monday") != str(monday):
             continue
 
@@ -143,7 +143,7 @@ def build_afternoon(schedule, players, injuries, day=None) -> str | None:
                 continue
             exception = True
 
-        out = [f"【{label}・{lg['name']}】vs {m['opponent']}：{w} 勝 {l} 敗",
+        out = [f"【{lg['name']}】vs {m['opponent']}：{w} 勝 {l} 敗",
                f"Adds 剩 {adds_left} 次" + ("　📌 週間破例：比分迫近，建議出手" if exception else "")]
         fmt = lambda rs: "、".join(f"{zh.cat(r['cat'])} {r['mine']} vs {r['opp']}" for r in rs)
         if losing:
@@ -215,7 +215,7 @@ def injury_message(hits, schedule, players, injuries) -> str:
         lg = state_store.league_view(label, state)
         il_free = 3 - len(lg["il"])
         ret = f"，ESPN 預估 {str(row['return_date'])[:10]} 回歸" if row["return_date"] else ""
-        lines += ["", f"【{label}】{name}：{zh.injury(row['injury_status'])}{ret}",
+        lines += ["", f"【{lg['name']}】{name}：{zh.injury(row['injury_status'])}{ret}",
                   f"ESPN：{row['injury_note']}",
                   "👉 建議：" + (f"移入 IL（還有 {il_free} 格），再簽人補位" if il_free > 0 else "IL 已滿，考慮 Drop 換人")]
         picks = _stream_lines(lg, players, injuries, schedule, day, [], only_today=False)
