@@ -12,6 +12,7 @@
 - 計劃：週五用 2 次，Edey、Camara 換「週五＋週日都有賽」的人（BKN BOS GSW IND LAC LAL ORL TOR），挑三分、籃板多的。
   週日再用 2 次，Wells、Diabaté 打完週六後換週日有賽的人。
 - 預測結算約 8-3：三分、籃板接近平手是關鍵；FT%、TO 會輸。
+- 賽程（美東）：週五 8 人有賽（空 2 格＝換 Edey、Camara 的理由）；週六 8 人；週日只有 White、Reaves、WCJ 3 人。
 - 對手陣容（10/29）：Curry、RJ Barrett、Dejounte Murray、Saddiq Bey、Jalen Johnson、Achiuwa、Jokić、Jarrett Allen、Kyrie、
   Robert Williams III、Wiggins、Markkanen（Q）、Jalen Smith、Paul George；IL Banchero。
 
