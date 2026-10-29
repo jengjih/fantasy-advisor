@@ -118,14 +118,14 @@
       "Joel Embiid",
       "DeMar DeRozan",
       "Myles Turner",
-      "Deandre Ayton",
       "Jabari Smith Jr.",
       "Payton Pritchard",
       "Ayo Dosunmu",
       "LaMelo Ball",
       "Nickeil Alexander-Walker",
       "Kyshawn George",
-      "Saddiq Bey"
+      "Saddiq Bey",
+      "Scotty Pippen Jr."
     ],
     "il": [
       "Kon Knueppel"
@@ -180,7 +180,7 @@
           "opponent": "40"
         }
       ],
-      "adds_used": 1,
+      "adds_used": 2,
       "opp_games_left": 15,
       "my_games_left": 16,
       "note": "",
@@ -188,7 +188,7 @@
       "saved_ts": "2026-10-29T15:50+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-29 15:50",
+    "updated_at": "2026-10-29 22:28",
     "free_agents": {
       "names": [
         "Keegan Murray",
