@@ -13,11 +13,11 @@
 ## 手機（雲端 Claude Code）工作流程
 使用者主要用手機 Claude App 的 Code 分頁開雲端對話，傳 Yahoo 截圖討論陣容。雲端對話不記得之前的事，所以：
 1. **每次對話開頭先讀 `data/advisor_notes.md`**（本週計劃、已做的換人、交易決定），再讀 `data/state.json`。
-2. 收到截圖照 `.claude/commands/sync.md` 的步驟更新資料。
+2. 收到截圖照 `.claude/commands/同步.md`（使用者打 `/同步`）的步驟更新資料。
 3. **直接在 main 分支 commit 並 push**（先 `git checkout main && git pull`），不要開新分支或 PR；網頁和推播都讀 main。執行 `uv run python sync.py` 會自動 commit、push data/。
 4. 對話結尾更新 `data/advisor_notes.md`，寫下新的決定和接下來的計劃。
 5. repo 是公開的：筆記和程式裡不能放金鑰、Email 或任何個資。
-6. **每次回覆結束前，用 PushNotification 工具推一則手機通知**（一行、200 字內，先講結論，例如「懂球帝：週五放 Edey 簽 G. Allen，回來看細節」）。使用者會切去做別的事，靠通知回來看對話。
+6. **每次回覆的最後一步，用 PushNotification 工具推一則手機通知**（一行、200 字內，先講結論，例如「懂球帝：週五放 Edey 簽 G. Allen，回來看細節」）。一定要等回覆文字全部寫完才推，不要在開頭或中途推：太早推的時候使用者可能還在看畫面，通知會被略過，等他切去別的 App 就收不到了。
 
 ## 目標
 連結 Yahoo Fantasy API 和 NBA 數據，替兩個聯盟產生每日建議，最後部署成網頁，再加上 LINE 推播（LINE Notify 已停用，要用 Messaging API）。
@@ -50,6 +50,7 @@
 - 每天先發：當天有比賽、沒缺陣的人依「每場價值」排序填滿先發位；GTD 以 75% 機率計
 - 結算預測：Matchup 截圖的比分＋截圖後剩下的賽程（雙方陣容）；命中率用「命中數 ÷ 命中率」反推已出手數。需要 state.json 的 `opponent_roster`（本週）
 - Adds 規劃：貪婪法，每步挑「哪天、放誰、簽誰」讓本週預期價值增加最多；`untouchable`＋`core`（leagues.py）不釋出；長期價值比新簽的人高 2.5 以上也不釋出（但長期排名落在全聯盟持有球員後 20% 的串流位隨時可換）；候選人優先用截圖的 FA 名單
+- 勝率模擬（`simulate()`，10/30 加入）：蒙地卡羅 5000 次，出手／籃板等用卜瓦松、命中用二項分布，GTD 依機率上場；plan.py 會列出「不換人」和「照 Adds 規劃換人」兩種情況的本週勝率與搖擺項機率
 - 網頁每個聯盟頁的「📊 本週推演」、下午推播的雙方剩餘出賽都用這套
 
 ## 每日建議 SOP
@@ -69,7 +70,7 @@
 - [x] v2（10/27）：全中文化（`zh.py`）、球員頭貼（cdn.nba.com headshots）、介面美化（`.streamlit/config.toml` + CSS）
 - [x] 陣容改存在 `data/state.json`（`state.py`）；`leagues.py` 的 initial_roster 只用來初始化
 - [x] 「✏️ 陣容與對戰」編輯頁：手動同步陣容異動與本週比分（存進 state.json）
-- 曾經做過網頁內建 AI 對話（Claude API），但使用者**不想額外付費**，已經移除。截圖分析改在 Claude Code 裡做（Pro 方案內含），用 `/sync` 指令。不要再提議需要付費 API 的功能
+- 曾經做過網頁內建 AI 對話（Claude API），但使用者**不想額外付費**，已經移除。截圖分析改在 Claude Code 裡做（Pro 方案內含），用 `/同步` 指令。不要再提議需要付費 API 的功能
 - [ ] Yahoo 核准後：接上 `yahoo_client.py`，自動抓陣容、FA、對戰比分
 - [x] LINE 推播：`notify.py`（`--dry-run` 可以預覽）、`daily.py` 負責組訊息、`line_push.py` 負責發送；`.env` 要有 LINE_CHANNEL_ACCESS_TOKEN 和 LINE_USER_ID。10/27 測試推播成功
 - [x] GitHub repo jengjih/fantasy-advisor（公開；gh CLI 在 ~/.local/bin/gh）：

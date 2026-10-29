@@ -8,6 +8,7 @@ from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
+import numpy as np
 import pandas as pd
 
 from . import analysis as an
@@ -21,6 +22,7 @@ LONG_TERM_WEIGHT = 0.5    # 長期價值差 1 分 ≈ 本週價值 0.5 分
 STREAMER_RANK = 0.8       # 排名在「隊數 × 13 人」的後 20% 以下＝串流位，隨時可換
 DROP_MARGIN = 2.5         # 長期價值（z 分數）比新簽的人高出這麼多的，不為了這週多幾場就釋出
 POOL_SIZE = 40            # 規劃時只從價值前 40 名的候選人裡挑，加快速度
+SIM_RUNS = 5000           # 勝率模擬的次數
 TOTALS = ["FGM", "FGA", "FG3M", "FG3A", "FTM", "FTA", "PTS", "REB", "AST", "STL", "BLK", "TOV"]
 
 
@@ -192,6 +194,63 @@ def predict(lg: dict, m: dict, mine: list[Member], opp: list[Member], schedule: 
             "my_games": sides[0][0], "opp_games": sides[1][0]}
 
 
+def simulate(lg: dict, m: dict, mine: list[Member], opp: list[Member], schedule: pd.DataFrame,
+             runs: int = SIM_RUNS, seed: int = 0) -> dict:
+    """蒙地卡羅：截圖比分＋剩下每場比賽的隨機表現（出手、籃板等用卜瓦松，命中用二項分布；GTD 依機率上場），
+    重複 runs 次，回傳各比項我方贏的機率、本週贏的機率、平均勝敗場。"""
+    monday, sunday = an.week_range(date.fromisoformat(m["week_monday"]))
+    start = max(remaining_start(m), monday)
+    playing = teams_playing(schedule)
+    past_days, left_days = days_between(monday, start - timedelta(days=1)), days_between(start, sunday)
+    cur = _current(m)
+    rng = np.random.default_rng(seed)
+
+    sims = []
+    for side, members in enumerate((mine, opp)):
+        _, _, past = expected(members, playing, past_days, lg["starters"])
+        t = {k: np.zeros(runs) for k in TOTALS}
+        for d in left_days:
+            for p, prob in lineup(members, playing.get(d, set()), d, lg["starters"]):
+                on = rng.random(runs) < prob
+                s = p.stats.astype(float)
+                fga = rng.poisson(s["FGA"], runs)
+                fgm = rng.binomial(fga, min(s["FGM"] / s["FGA"], 1.0) if s["FGA"] > 0 else 0.0)
+                f3a = rng.poisson(s["FG3A"], runs)
+                f3m = np.minimum(rng.binomial(f3a, min(s["FG3M"] / s["FG3A"], 1.0) if s["FG3A"] > 0 else 0.0), fgm)
+                fta = rng.poisson(s["FTA"], runs)
+                ftm = rng.binomial(fta, min(s["FTM"] / s["FTA"], 1.0) if s["FTA"] > 0 else 0.0)
+                game = {"FGM": fgm, "FGA": fga, "FG3M": f3m, "FG3A": f3a, "FTM": ftm, "FTA": fta,
+                        "PTS": 2 * fgm + f3m + ftm}
+                game.update({k: rng.poisson(s[k], runs) for k in ["REB", "AST", "STL", "BLK", "TOV"]})
+                for k, v in game.items():
+                    t[k] += v * on
+        final = {}
+        for c in lg["categories"]:
+            if c not in cur:
+                continue
+            if c in an.PCT_CATS:
+                made, att = an.PCT_CATS[c]
+                pct = cur[c][side]
+                made_cat = {"FGM": "FGM", "FG3M": "3PTM"}.get(made)
+                past_att = cur[made_cat][side] / pct if made_cat in cur and pct > 0 else past[att]
+                total_att = past_att + t[att]
+                final[c] = np.where(total_att > 0, (pct * past_att + t[made]) / np.maximum(total_att, 1e-9), pct)
+            else:
+                final[c] = cur[c][side] + t[an.COUNTING_CATS[c]]
+        sims.append(final)
+
+    wins, losses, cats = np.zeros(runs), np.zeros(runs), {}
+    for c in sims[0]:
+        a, b = sims[0][c], sims[1][c]
+        if c == "TO":  # 失誤越少越好
+            a, b = -a, -b
+        wins += a > b
+        losses += a < b
+        cats[c] = float((a > b).mean())
+    return {"cats": cats, "win": float((wins > losses).mean()),
+            "w": float(wins.mean()), "l": float(losses.mean())}
+
+
 # ---------- Adds 規劃 ----------
 
 def candidate_pool(lg: dict, scored: pd.DataFrame, injuries: pd.DataFrame, empty: dict, focus: list[str],
@@ -285,6 +344,7 @@ def league_report(label: str, lg: dict, state: dict, players: pd.DataFrame, inju
     games, _, _ = expected(mine, playing, days_between(day, sunday), lg["starters"])
     out.append(f"  本週剩餘出賽人次（預期）：{games:.1f}")
 
+    opp = None
     if m and opp_info:
         opp, opp_missing = resolve(opp_info["roster"], scored, injuries, lg, empty)
         p = predict(lg, m, mine, opp, schedule)
@@ -306,6 +366,8 @@ def league_report(label: str, lg: dict, state: dict, players: pd.DataFrame, inju
     adds_left = lg["weekly_adds"] - max(m["adds_used"], 0) if m else lg["weekly_adds"]
     if adds_left <= 0:
         out.append("🔁 本週 Adds 已用完")
+        if opp is not None:
+            out.append(_sim_line(lg, m, mine, opp, schedule, "🎲 勝率模擬"))
         return "\n".join(out)
     from_wd = 0 if allow_weekday else lg.get("adds_from_weekday", 0)
     add_days = [d for d in days_between(day, sunday) if d.weekday() >= from_wd]
@@ -327,4 +389,26 @@ def league_report(label: str, lg: dict, state: dict, players: pd.DataFrame, inju
                    f"出賽 {'、'.join(wd(d) for d in s['add_days'])}；淨多 {s['games']:+.1f} 場）")
     if steps and len(steps) < adds_left:
         out.append(f"  剩下 {adds_left - len(steps)} 次先留著（目前沒有更划算的換法）")
+    if opp is not None:
+        out.append(_sim_line(lg, m, mine, opp, schedule, "🎲 勝率模擬（都不換人）"))
+        if steps:
+            out.append(_sim_line(lg, m, apply_steps(mine, pool, steps), opp, schedule, "🎲 照上面的 Adds 規劃換人"))
     return "\n".join(out)
+
+
+def apply_steps(members: list[Member], pool: list[Member], steps: list[dict]) -> list[Member]:
+    """把 Adds 規劃套到陣容上：釋出的人只算到換人前一天，簽進來的人從換人當天開始算。"""
+    roster = list(members)
+    for s in steps:
+        drop = next(x for x in roster if x.name == s["drop"] and x.end == date.max)
+        cand = next(x for x in pool if x.name == s["add"])
+        roster = [x for x in roster if x is not drop] + [Member(**{**drop.__dict__, "end": s["day"]}),
+                                                         Member(**{**cand.__dict__, "start": s["day"]})]
+    return roster
+
+
+def _sim_line(lg: dict, m: dict, mine: list[Member], opp: list[Member], schedule: pd.DataFrame, title: str) -> str:
+    r = simulate(lg, m, mine, opp, schedule)
+    close = [f"{zh.cat(c)} {p:.0%}" for c, p in r["cats"].items() if 0.2 <= p <= 0.8]
+    line = f"{title}：本週贏 {r['win']:.0%}，平均 {r['w']:.1f} 勝 {r['l']:.1f} 敗"
+    return line + (f"\n  搖擺項（我方贏的機率）：{'、'.join(close)}" if close else "")
