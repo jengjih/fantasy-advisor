@@ -14,7 +14,10 @@
 - 10/30 看 FA 截圖後決定：Edey、Camara 美東週四（台北 10/30 10:00 MEM@POR）還有比賽，要等這場打完再換（Daily-Today，太早換會少一場）。
   Edey → Day'Ron Sharpe（BKN C，籃板、抄截）；Camara → Aaron Nesmith（IND SG/SF，三分、命中率）。都是純 FA。
   備案：Mitchell Robinson（BOS，籃板但罰球很差）、Poeltl／Murray-Boyles（TOR）、Draymond Green（GSW）。避開 Dëmin（O）、Hachimura（Q）。
-- 預測結算約 8-3：三分、籃板接近平手是關鍵；FT%、TO 會輸。
+- 10/30 模擬（賽程＋場均，2 萬次）：照計劃換 4 人 → 本週贏 76%，平均 6.6 勝 4.2 敗；完全不換人 → 只剩 46%。
+  對手依賽程還有 23 場（Yahoo 寫 18 是低估），我方換完 26 場。Jokić 本週只剩週五 1 場、Curry 剩週五＋週日 2 場。
+  搖擺：3PTM（贏 39%）、REB（64%）、FGM（65%）；穩：AST、ST、BLK（約 90%）；FT%、TO 幾乎必輸。
+  週日人選差別不大（Green／Poeltl／Robinson／Murray-Boyles 都約 76%）；Hachimura 若不掛 Q 可補三分。
 - 賽程（美東）：週五 8 人有賽（空 2 格＝換 Edey、Camara 的理由）；週六 8 人；週日只有 White、Reaves、WCJ 3 人。
 - 對手陣容（10/29）：Curry、RJ Barrett、Dejounte Murray、Saddiq Bey、Jalen Johnson、Achiuwa、Jokić、Jarrett Allen、Kyrie、
   Robert Williams III、Wiggins、Markkanen（Q）、Jalen Smith、Paul George；IL Banchero。
