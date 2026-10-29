@@ -18,6 +18,7 @@ DTD_PLAY_PROB = 0.75      # 每日觀察（GTD）的人，大約七成五會上�
 FOCUS_WEIGHT = 2.0        # 規劃 Adds 時，想追的比項加倍計分
 MIN_ADD_GAIN = 3.0        # 一次 Add 至少要多這麼多價值（約 1/4 場串流）才值得用
 LONG_TERM_WEIGHT = 0.5    # 長期價值差 1 分 ≈ 本週價值 0.5 分
+STREAMER_RANK = 0.8       # 排名在「隊數 × 13 人」的後 20% 以下＝串流位，隨時可換
 DROP_MARGIN = 2.5         # 長期價值（z 分數）比新簽的人高出這麼多的，不為了這週多幾場就釋出
 POOL_SIZE = 40            # 規劃時只從價值前 40 名的候選人裡挑，加快速度
 TOTALS = ["FGM", "FGA", "FG3M", "FG3A", "FTM", "FTA", "PTS", "REB", "AST", "STL", "BLK", "TOV"]
@@ -35,6 +36,7 @@ class Member:
     end: date = date.max
     keep: bool = False        # 核心／主力，不考慮釋出
     season_z: float = 0.0     # 長期價值（各比項 z 分數總和）
+    streamer: bool = False    # 長期排名在全聯盟持有球員的後段：可以拿來串流
 
     def play_prob(self, d: date) -> float:
         if not (self.start <= d < self.end):
@@ -76,6 +78,7 @@ def resolve(names: list[str], scored: pd.DataFrame, injuries: pd.DataFrame, lg: 
             name=name, team=p["team"], stats=p[TOTALS], value=game_value(p, lg, empty, focus),
             status=status or "", return_date=date.fromisoformat(ret) if ret else None,
             keep=name in lg.get("untouchable", []) + lg.get("core", []), season_z=float(p["z_total"]),
+            streamer=p["rank"] > STREAMER_RANK * lg["teams"] * an.ROSTER_SIZE,
         ))
     return members, missing
 
@@ -219,18 +222,20 @@ def plan_adds(lg: dict, members: list[Member], pool: list[Member], schedule: pd.
         best = None
         for d in add_days:
             for drop in roster:
-                if drop.keep or drop.end <= d or drop.start >= d:
+                if drop.keep or drop.end != date.max or drop.start >= d:  # 已經排定釋出的不能再放一次
                     continue
                 cut = Member(**{**drop.__dict__, "end": d})
                 others = [x for x in roster if x is not drop] + [cut]
                 for cand in pool:
-                    if drop.season_z > cand.season_z + DROP_MARGIN and drop.start == date.min:
+                    if (not drop.streamer and drop.start == date.min
+                            and drop.season_z > cand.season_z + DROP_MARGIN):
                         continue
                     new = Member(**{**cand.__dict__, "start": d})
                     games, value, _ = expected(others + [new], playing, days, lg["starters"])
                     gain = value - base_value
-                    # 本週多的價值為主；同分時留下長期價值高的人
-                    rank = gain - LONG_TERM_WEIGHT * (drop.season_z - cand.season_z)
+                    # 本週多的價值為主；差不多時留下長期價值高的人
+                    rank = gain - LONG_TERM_WEIGHT * (drop.season_z - cand.season_z) + 0.01 * (d - day).days
+                    # ↑ 一樣划算時晚點換：多保留一點應變空間（傷病消息）
                     if gain >= MIN_ADD_GAIN and (best is None or rank > best[0]):
                         best = (rank, gain, games - base_games, d, drop, cut, cand, new)
         if best is None:
