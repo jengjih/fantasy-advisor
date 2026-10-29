@@ -49,5 +49,7 @@ LEAGUES = {
         ],
         "initial_il": ["Kon Knueppel"],
         "untouchable": ["Luka Dončić", "Anthony Davis", "Joel Embiid"],
+        # 主力：不交易也不會為了串流釋出（Adds 規劃器會跳過）
+        "core": ["DeMar DeRozan", "Myles Turner", "Jabari Smith Jr.", "Payton Pritchard"],
     },
 }

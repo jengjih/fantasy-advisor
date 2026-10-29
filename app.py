@@ -25,9 +25,10 @@ from fantasy_advisor import leagues, zh
 from fantasy_advisor import nba_data as nd
 from fantasy_advisor import state as state_store
 from fantasy_advisor import cloud_sync
+from fantasy_advisor import projection as pj
 
 # 雲端更新程式後，Python 會沿用記憶體裡的舊模組；每次執行都重新載入，確保用到最新版
-for _mod in (zh, leagues, nd, state_store, an, cloud_sync):
+for _mod in (zh, leagues, nd, state_store, an, cloud_sync, pj):
     importlib.reload(_mod)
 LEAGUES = leagues.LEAGUES
 push_data = cloud_sync.push_data
@@ -120,11 +121,8 @@ def render_league(label: str):
 
     c1, c2, c3, c4 = st.columns(4)
     c1.metric("今天出賽", f"{int(active['_plays_today'].sum())} / {lg['starters']} 人")
-    if m and m.get("my_games_left", -1) >= 0 and m.get("week_monday") == str(monday):
-        opp = f"（對手 {m['opp_games_left']}）" if m.get("opp_games_left", -1) >= 0 else ""
-        c2.metric("本週剩餘出賽人次", f"{m['my_games_left']}{opp}", help=f"Yahoo 數字，{m['saved_at']} 記錄")
-    else:
-        c2.metric("本週剩餘出賽人次", an.my_games_left(lg, players, injuries, schedule, day), help="系統估算")
+    c2.metric("本週剩餘出賽人次", an.my_games_left(lg, players, injuries, schedule, day),
+              help="依賽程計算（Yahoo 的數字只算目前排先發的人，會偏低）")
     if m:
         _, w, l = matchup_table(m, lg["punt"])
         c3.metric(f"第 {m['week']} 週 vs {m['opponent']}", f"{w} 勝 {l} 敗")
@@ -135,6 +133,10 @@ def render_league(label: str):
 
     st.subheader("📋 今日指令")
     render_alerts(alerts)
+
+    st.subheader("📊 本週推演")
+    st.caption("依賽程推算每天出賽、預測結算比數、規劃 Adds。對手陣容與 FA 名單來自最近一次截圖。")
+    st.code(pj.league_report(label, lg, state, players, injuries, schedule, day), language=None, wrap_lines=True)
 
     st.subheader("👥 我的陣容")
     st.dataframe(

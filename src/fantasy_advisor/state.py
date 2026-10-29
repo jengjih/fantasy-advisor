@@ -94,6 +94,19 @@ def save_matchup(label: str, week: int, opponent: str, categories: list[dict], a
     save(state)
 
 
+def save_opponent_roster(label: str, opponent: str, roster: list[str]) -> None:
+    """記錄本週對手的陣容（不含 IL），用來預測結算比數、比較雙方剩餘出賽。"""
+    et_today = datetime.now(ZoneInfo("America/New_York")).date()
+    state = load()
+    state[label]["opponent_roster"] = {
+        "opponent": opponent, "roster": roster,
+        "week_monday": str(et_today - timedelta(days=et_today.weekday())),
+        "saved_ts": datetime.now(ZoneInfo("Asia/Taipei")).isoformat(timespec="minutes"),
+    }
+    touch(state, label)
+    save(state)
+
+
 def save_free_agents(label: str, names: list[str]) -> None:
     """記錄 Yahoo 上確認是 FA（綠色 +）的球員；推播的推薦會優先只從這份名單挑（48 小時內有效）。"""
     state = load()

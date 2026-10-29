@@ -12,6 +12,7 @@ from zoneinfo import ZoneInfo
 import pandas as pd
 
 from . import analysis as an
+from . import projection as pj
 from . import state as state_store
 from . import zh
 from .leagues import LEAGUES
@@ -97,6 +98,22 @@ def build_report(schedule, players, injuries, fetched_at: str = "", day=None) ->
 
 # ---------- 16:00：條件式搶人推播 ----------
 
+def games_left_both(label, lg, state, players, injuries, schedule, day) -> tuple[float, float]:
+    """雙方本週剩餘出賽人次。有對手陣容就都用賽程算；沒有就都用 Yahoo 截圖的數字
+    （Yahoo 只算目前先發、雙方一樣低估，至少能互相比較）。對手不知道時回傳 -1。"""
+    monday, sunday = an.week_range(day)
+    opp = state[label].get("opponent_roster")
+    if opp and opp.get("week_monday") == str(monday):
+        scored, empty = pj.score(players, lg)
+        playing, days = pj.teams_playing(schedule), pj.days_between(day, sunday)
+        sides = [pj.resolve(names, scored, injuries, lg, empty)[0] for names in (lg["roster"], opp["roster"])]
+        return tuple(pj.expected(s, playing, days, lg["starters"])[0] for s in sides)
+    m = state[label]["matchup"]
+    if m.get("my_games_left", -1) >= 0 and m.get("opp_games_left", -1) >= 0:
+        return m["my_games_left"], m["opp_games_left"]
+    return an.my_games_left(lg, players, injuries, schedule, day), -1
+
+
 def _matchup_age_hours(m: dict) -> float:
     tz = ZoneInfo("Asia/Taipei")
     if m.get("saved_ts"):
@@ -127,10 +144,7 @@ def build_afternoon(schedule, players, injuries, day=None) -> str | None:
         losing = [r for r in rows if r["swing"] and r["lead"] is False]
         shaky = [r for r in rows if r["swing"] and r["lead"] is True]
         chase = [r for r in losing if r["cat"] != "TO"]  # 只差失誤 TO 不值得為它搶人
-        mine_left = m.get("my_games_left", -1)
-        if mine_left < 0:
-            mine_left = an.my_games_left(lg, players, injuries, schedule, day)
-        opp_left = m.get("opp_games_left", -1)
+        mine_left, opp_left = games_left_both(label, lg, state, players, injuries, schedule, day)
         gap = opp_left - mine_left if opp_left >= 0 else 0
         adds_left = lg["weekly_adds"] - max(m["adds_used"], 0)
         if adds_left <= 0 or not (chase or gap >= GAMES_GAP_ALERT):
@@ -151,7 +165,7 @@ def build_afternoon(schedule, players, injuries, day=None) -> str | None:
         if shaky:
             out.append("🔸 領先但不穩：" + fmt(shaky))
         if opp_left >= 0:
-            out.append(f"🏃 本週剩餘出賽：我 {mine_left} vs 對手 {opp_left}"
+            out.append(f"🏃 本週剩餘出賽：我 {mine_left:.0f} vs 對手 {opp_left:.0f}"
                        + ("　⚠️ 場次落後" if gap >= GAMES_GAP_ALERT else ""))
 
         slots = an.open_slots_by_day(lg, players, injuries, schedule, day)

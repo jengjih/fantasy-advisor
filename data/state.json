@@ -88,7 +88,7 @@
       "saved_ts": "2026-10-30T01:24+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-30 01:27",
+    "updated_at": "2026-10-30 01:32",
     "free_agents": {
       "names": [
         "Jalen Green",
@@ -130,6 +130,27 @@
         "Isaiah Stewart"
       ],
       "saved_ts": "2026-10-30T01:27+08:00"
+    },
+    "opponent_roster": {
+      "opponent": "永吉路懂球帝",
+      "roster": [
+        "Stephen Curry",
+        "RJ Barrett",
+        "Dejounte Murray",
+        "Saddiq Bey",
+        "Jalen Johnson",
+        "Precious Achiuwa",
+        "Nikola Jokić",
+        "Jarrett Allen",
+        "Kyrie Irving",
+        "Robert Williams III",
+        "Andrew Wiggins",
+        "Lauri Markkanen",
+        "Jalen Smith",
+        "Paul George"
+      ],
+      "week_monday": "2026-10-26",
+      "saved_ts": "2026-10-30T01:32+08:00"
     }
   },
   "聯盟二": {
@@ -209,7 +230,7 @@
       "saved_ts": "2026-10-29T15:50+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-29 22:28",
+    "updated_at": "2026-10-30 01:32",
     "free_agents": {
       "names": [
         "Keegan Murray",
@@ -230,6 +251,26 @@
         "Meleek Thomas"
       ],
       "saved_ts": "2026-10-29T15:50+08:00"
+    },
+    "opponent_roster": {
+      "opponent": "LALA好",
+      "roster": [
+        "Ja Morant",
+        "Deni Avdija",
+        "Kyrie Irving",
+        "Brandon Miller",
+        "Matas Buzelis",
+        "Anthony Black",
+        "Donovan Clingan",
+        "Rudy Gobert",
+        "Damian Lillard",
+        "De'Aaron Fox",
+        "Josh Giddey",
+        "Ryan Rollins",
+        "Jalen Green"
+      ],
+      "week_monday": "2026-10-26",
+      "saved_ts": "2026-10-30T01:32+08:00"
     }
   }
 }
