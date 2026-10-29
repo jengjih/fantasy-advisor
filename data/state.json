@@ -11,10 +11,10 @@
       "Austin Reaves",
       "Wendell Carter Jr.",
       "Zach Edey",
-      "Alex Sarr",
       "Dylan Harper",
       "Toumani Camara",
-      "Moussa Diabaté"
+      "Moussa Diabaté",
+      "Jaylen Wells"
     ],
     "il": [
       "Jalen Williams",
@@ -80,7 +80,7 @@
           "opponent": "34"
         }
       ],
-      "adds_used": 3,
+      "adds_used": 4,
       "opp_games_left": 17,
       "my_games_left": 15,
       "note": "",
@@ -88,7 +88,7 @@
       "saved_ts": "2026-10-29T15:50+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-29 15:50",
+    "updated_at": "2026-10-29 22:12",
     "free_agents": {
       "names": [
         "Jaylon Tyson",
