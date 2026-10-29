@@ -11,6 +11,9 @@
 - 拒絕交易：桐生一馬用 Edgecombe + Kawhi（膝傷，ESPN 預估 11/23 回）+ Randle 換 Brunson + Bam。
 - 計劃：週五用 2 次，Edey、Camara 換「週五＋週日都有賽」的人（BKN BOS GSW IND LAC LAL ORL TOR），挑三分、籃板多的。
   週日再用 2 次，Wells、Diabaté 打完週六後換週日有賽的人。
+- 10/30 看 FA 截圖後決定：Edey、Camara 美東週四（台北 10/30 10:00 MEM@POR）還有比賽，要等這場打完再換（Daily-Today，太早換會少一場）。
+  Edey → Day'Ron Sharpe（BKN C，籃板、抄截）；Camara → Aaron Nesmith（IND SG/SF，三分、命中率）。都是純 FA。
+  備案：Mitchell Robinson（BOS，籃板但罰球很差）、Poeltl／Murray-Boyles（TOR）、Draymond Green（GSW）。避開 Dëmin（O）、Hachimura（Q）。
 - 預測結算約 8-3：三分、籃板接近平手是關鍵；FT%、TO 會輸。
 - 賽程（美東）：週五 8 人有賽（空 2 格＝換 Edey、Camara 的理由）；週六 8 人；週日只有 White、Reaves、WCJ 3 人。
 - 對手陣容（10/29）：Curry、RJ Barrett、Dejounte Murray、Saddiq Bey、Jalen Johnson、Achiuwa、Jokić、Jarrett Allen、Kyrie、
