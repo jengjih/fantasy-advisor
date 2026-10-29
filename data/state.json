@@ -26,87 +26,89 @@
       "categories": [
         {
           "category": "FGM",
-          "mine": "58",
-          "opponent": "56"
+          "mine": "124",
+          "opponent": "112"
         },
         {
           "category": "FG%",
-          "mine": ".483",
-          "opponent": ".459"
+          "mine": ".473",
+          "opponent": ".438"
         },
         {
           "category": "FT%",
-          "mine": ".811",
-          "opponent": ".861"
+          "mine": ".802",
+          "opponent": ".892"
         },
         {
           "category": "3PTM",
-          "mine": "14",
-          "opponent": "13"
+          "mine": "32",
+          "opponent": "32"
         },
         {
           "category": "3PT%",
-          "mine": ".311",
-          "opponent": ".260"
+          "mine": ".352",
+          "opponent": ".311"
         },
         {
           "category": "PTS",
-          "mine": "173",
-          "opponent": "156"
+          "mine": "357",
+          "opponent": "322"
         },
         {
           "category": "REB",
-          "mine": "57",
-          "opponent": "53"
+          "mine": "123",
+          "opponent": "120"
         },
         {
           "category": "AST",
-          "mine": "55",
-          "opponent": "39"
+          "mine": "100",
+          "opponent": "93"
         },
         {
           "category": "ST",
-          "mine": "11",
-          "opponent": "10"
+          "mine": "30",
+          "opponent": "21"
         },
         {
           "category": "BLK",
-          "mine": "12",
-          "opponent": "7"
+          "mine": "19",
+          "opponent": "15"
         },
         {
           "category": "TO",
-          "mine": "20",
-          "opponent": "17"
+          "mine": "47",
+          "opponent": "34"
         }
       ],
       "adds_used": 3,
-      "opp_games_left": 25,
-      "my_games_left": 23,
+      "opp_games_left": 17,
+      "my_games_left": 15,
       "note": "",
-      "saved_at": "10-28 20:10",
-      "saved_ts": "2026-10-28T20:10+08:00",
+      "saved_at": "10-29 15:50",
+      "saved_ts": "2026-10-29T15:50+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-28 20:10",
+    "updated_at": "2026-10-29 15:50",
     "free_agents": {
       "names": [
-        "Collin Gillespie",
-        "Cameron Johnson",
-        "Jared McCain",
-        "Christian Braun",
-        "Day'Ron Sharpe",
-        "Collin Murray-Boyles",
-        "Myles Turner",
-        "Egor Dëmin",
-        "Brandin Podziemski",
-        "Devin Vassell",
-        "Davion Mitchell",
-        "Aaron Nesmith",
-        "Reed Sheppard",
-        "Miles McBride"
+        "Jaylon Tyson",
+        "Jaylen Wells",
+        "Scoot Henderson",
+        "Sam Merrill",
+        "Keegan Murray",
+        "Herbert Jones",
+        "Jeremiah Fears",
+        "Yves Missi",
+        "Scotty Pippen Jr.",
+        "De'Andre Hunter",
+        "Jerami Grant",
+        "Malik Monk",
+        "Luguentz Dort",
+        "Nique Clifford",
+        "Robert Williams III",
+        "Isaiah Stewart"
       ],
-      "saved_ts": "2026-10-28T14:02+08:00"
+      "saved_ts": "2026-10-29T15:50+08:00"
     }
   },
   "聯盟二": {
@@ -134,74 +136,79 @@
       "categories": [
         {
           "category": "FG%",
-          "mine": ".484",
-          "opponent": ".500"
+          "mine": ".443",
+          "opponent": ".449"
         },
         {
           "category": "FT%",
-          "mine": ".737",
-          "opponent": ".661"
+          "mine": ".808",
+          "opponent": ".675"
         },
         {
           "category": "3PTM",
-          "mine": "26",
-          "opponent": "27"
+          "mine": "39",
+          "opponent": "38"
         },
         {
           "category": "PTS",
-          "mine": "204",
-          "opponent": "210"
+          "mine": "315",
+          "opponent": "310"
         },
         {
           "category": "REB",
-          "mine": "59",
-          "opponent": "63"
+          "mine": "89",
+          "opponent": "103"
         },
         {
           "category": "AST",
-          "mine": "43",
-          "opponent": "47"
+          "mine": "80",
+          "opponent": "79"
         },
         {
           "category": "ST",
-          "mine": "11",
-          "opponent": "9"
+          "mine": "20",
+          "opponent": "21"
         },
         {
           "category": "BLK",
-          "mine": "10",
-          "opponent": "6"
+          "mine": "17",
+          "opponent": "11"
         },
         {
           "category": "TO",
-          "mine": "30",
-          "opponent": "22"
+          "mine": "45",
+          "opponent": "40"
         }
       ],
       "adds_used": 1,
-      "opp_games_left": 21,
-      "my_games_left": 25,
+      "opp_games_left": 15,
+      "my_games_left": 16,
       "note": "",
-      "saved_at": "10-28 21:56",
-      "saved_ts": "2026-10-28T21:56+08:00",
+      "saved_at": "10-29 15:50",
+      "saved_ts": "2026-10-29T15:50+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-28 21:56",
+    "updated_at": "2026-10-29 15:50",
     "free_agents": {
       "names": [
+        "Keegan Murray",
         "Scoot Henderson",
-        "Tre Jones",
-        "Egor Dëmin",
-        "Aaron Nesmith",
-        "Miles McBride",
-        "De'Anthony Melton",
-        "Saddiq Bey",
-        "Derrick Jones Jr.",
-        "Ja'Kobe Walter",
         "Jaylon Tyson",
-        "Sam Merrill"
+        "Sam Merrill",
+        "Scotty Pippen Jr.",
+        "De'Andre Hunter",
+        "Malik Monk",
+        "Luguentz Dort",
+        "Nique Clifford",
+        "Robert Williams III",
+        "Isaiah Stewart",
+        "Maxime Raynaud",
+        "Cam Spencer",
+        "Kam Flemings",
+        "Thomas Bryant",
+        "Matt Thomas"
       ],
-      "saved_ts": "2026-10-28T14:02+08:00"
+      "saved_ts": "2026-10-29T15:50+08:00"
     }
   }
 }
