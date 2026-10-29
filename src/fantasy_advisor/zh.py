@@ -36,6 +36,3 @@ def pos(p: str) -> str:
 def injury(status: str) -> str:
     return INJURY.get(status, status) if status else ""
 
-
-def headshot(player_id) -> str:
-    return f"https://cdn.nba.com/headshots/nba/latest/260x190/{int(player_id)}.png"

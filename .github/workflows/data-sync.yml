@@ -1,0 +1,26 @@
+name: 同步 NBA 數據
+
+on:
+  schedule:
+    - cron: "30 7 * * *"    # 台北 15:30（16:00 搶人推播前）
+    - cron: "30 13 * * *"   # 台北 21:30（22:00 今日指令前）
+    - cron: "30 15 * * *"   # 台北 23:30
+  workflow_dispatch:
+
+permissions:
+  contents: write           # 要把快照存回 repo
+
+concurrency: data-sync
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: 從 ESPN 抓數據並存回 repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          uv run python sync.py

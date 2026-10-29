@@ -1,4 +1,4 @@
-"""把 data/（陣容、比分、數據快照）commit 並推上 GitHub，給雲端推播用。只在 Mac 上執行。"""
+"""把 data/（陣容、比分、數據快照）commit 並推上 GitHub，給網頁和推播用。"""
 
 import subprocess
 from datetime import datetime

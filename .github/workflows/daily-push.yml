@@ -16,5 +16,5 @@ jobs:
         env:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
           LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
-          NBA_SOURCE: snapshot   # NBA 官網擋雲端主機，改讀 Mac 上傳的快照
+          NBA_SOURCE: snapshot   # 讀 data-sync 存好的快照，速度快
         run: uv run python notify.py

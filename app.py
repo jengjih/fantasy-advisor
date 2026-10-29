@@ -219,7 +219,7 @@ def render_editor():
                 st.session_state["flash"] = flash
                 st.rerun()
 
-        rows = [{"頭貼": zh.headshot(players.loc[players["name"] == n, "PLAYER_ID"].iloc[0])
+        rows = [{"頭貼": players.loc[players["name"] == n, "headshot"].iloc[0]
                  if n in team_of else None, "球員": n, "球隊": zh.team(team_of.get(n, "")),
                  "名單": "傷兵 IL" if n in s["il"] else "陣容"} for n in s["roster"] + s["il"]]
         st.dataframe(rows, hide_index=True, width="stretch", row_height=48, column_config={"頭貼": IMG})

@@ -29,30 +29,24 @@ def today_et() -> date:
 # ---------- 球員數據 ----------
 
 def build_players(cur: pd.DataFrame, prev: pd.DataFrame, index: pd.DataFrame) -> pd.DataFrame:
-    """合併本季與上季，算出平滑後的場均數據。index 為 PlayerIndex（現役名單、球隊、位置）。"""
-    players = pd.DataFrame({
-        "PLAYER_ID": index["PERSON_ID"],
-        "name": index["PLAYER_FIRST_NAME"] + " " + index["PLAYER_LAST_NAME"],
-        "team": index["TEAM_ABBREVIATION"],
-        "pos": index["POSITION"],
-    })
-    cur = cur.set_index("PLAYER_ID")
-    prev = prev.set_index("PLAYER_ID")
+    """合併本季與上季，算出平滑後的場均數據。
+    cur / prev：以 PLAYER_ID 為索引，含 GP 與各項總和；index：PLAYER_ID、name、team、pos、headshot。"""
+    players = index[["PLAYER_ID", "name", "team", "pos", "headshot"]].copy()
+    ids = players["PLAYER_ID"]
 
-    gp_cur = cur["GP"].reindex(players["PLAYER_ID"]).fillna(0).to_numpy()
-    gp_prev = prev["GP"].reindex(players["PLAYER_ID"]).fillna(0).to_numpy()
+    gp_cur = cur["GP"].reindex(ids).fillna(0).to_numpy()
+    gp_prev = prev["GP"].reindex(ids).fillna(0).to_numpy()
     prior_w = np.where(gp_prev >= 10, PRIOR_GAMES, 0)
     denom = gp_cur + prior_w
 
     for stat in COUNT_STATS:
-        tot_cur = cur[stat].reindex(players["PLAYER_ID"]).fillna(0).to_numpy()
-        pg_prev = (prev[stat] / prev["GP"]).reindex(players["PLAYER_ID"]).fillna(0).to_numpy()
+        tot_cur = cur[stat].reindex(ids).fillna(0).to_numpy()
+        pg_prev = (prev[stat] / prev["GP"]).reindex(ids).fillna(0).to_numpy()
         with np.errstate(invalid="ignore", divide="ignore"):
             players[stat] = np.where(denom > 0, (tot_cur + pg_prev * prior_w) / denom, np.nan)
 
     players["GP"] = gp_cur.astype(int)
     players["key"] = players["name"].map(normalize)
-    players["headshot"] = players["PLAYER_ID"].map(zh.headshot)
     return players.dropna(subset=["MIN"]).reset_index(drop=True)
 
 
