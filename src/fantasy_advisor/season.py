@@ -121,7 +121,9 @@ def round_robin(teams: list[str], n: int, rng) -> list[list[tuple[str, str]]]:
     return [rounds[order[k % len(rounds)]] for k in range(n)]
 
 
-def simulate_season(label: str, runs: int = 2000, seed: int = 0, log=print) -> dict:
+def simulate_season(label: str, runs: int = 2000, seed: int = 0, log=print, tweak=None) -> dict:
+    """tweak(rosters, scored, injuries, lg, empty)：模擬前改陣容（試算交易、串流）。
+    回傳的 place[隊] 是每次模擬的最終名次（季後賽打得越遠越前面，同一輪出局依例行賽名次）。"""
     lg = LEAGUES[label]
     data = json.loads(ROSTERS_FILE.read_text())[label]
     schedule = load_season_schedule()
@@ -135,6 +137,8 @@ def simulate_season(label: str, runs: int = 2000, seed: int = 0, log=print) -> d
         if missing:
             log(f"  （{team} 找不到數據：{'、'.join(missing)}）")
         rosters[team] = members
+    if tweak:
+        tweak(rosters, scored, injuries, lg, empty)
     teams = list(rosters)
     playing = pj.teams_playing(schedule)
     first = min(schedule["date"])
@@ -185,10 +189,13 @@ def simulate_season(label: str, runs: int = 2000, seed: int = 0, log=print) -> d
     n_po = PLAYOFF_TEAMS[label]
     champ = {t: 0 for t in teams}
     final = {t: 0 for t in teams}
+    reached = {t: np.zeros(runs) for t in teams}  # 季後賽打到第幾輪（沒進＝0）
     for r in range(runs):
         seeds = sorted(teams, key=lambda t: rank[teams.index(t), r])[:n_po]
         alive = list(seeds)
         for p in range(len(playoff)):
+            for t in alive:
+                reached[t][r] = p + 1
             if len(alive) == 2:
                 for t in alive:
                     final[t] += 1
@@ -203,6 +210,7 @@ def simulate_season(label: str, runs: int = 2000, seed: int = 0, log=print) -> d
             if len(alive) == 1:
                 break
         champ[alive[0]] += 1
+        reached[alive[0]][r] = len(playoff) + 1
 
     out = []
     for i, t in enumerate(teams):
@@ -215,4 +223,6 @@ def simulate_season(label: str, runs: int = 2000, seed: int = 0, log=print) -> d
             "cats": {c: v / games_per_period for c, v in cat_rate[t].items()},
         })
     out.sort(key=lambda x: x["avg_rank"])
-    return {"teams": out, "regular": len(regular), "playoff_start": playoff[0][0], "runs": runs}
+    key = np.stack([reached[t] * 100 - rank[i] for i, t in enumerate(teams)])
+    place = {t: p for t, p in zip(teams, (-key).argsort(axis=0).argsort(axis=0) + 1)}
+    return {"teams": out, "rank": {t: rank[i] for i, t in enumerate(teams)}, "place": place, "regular": len(regular), "playoff_start": playoff[0][0], "runs": runs}
