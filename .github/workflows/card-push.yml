@@ -1,0 +1,37 @@
+name: 作戰卡推播
+
+# 台北 16:00（前一晚的比賽打完，很多換人這時才能做）和 22:00（隔天早上比賽前排先發）。
+# 只有「現在就能做、還沒推過」的動作或重要提醒才推；沒事就不推。推過的記在 data/pushed.json。
+on:
+  schedule:
+    - cron: "0 8 * * *"    # UTC 08:00 = 台北 16:00
+    - cron: "0 14 * * *"   # UTC 14:00 = 台北 22:00
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: card-push
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: 有事要做才推播
+        env:
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+          LINE_USER_ID: ${{ secrets.LINE_USER_ID }}
+        run: uv run python notify.py
+      - name: 記錄推過的項目
+        run: |
+          if [ -n "$(git status --porcelain data/pushed.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/pushed.json
+            git commit -m "記錄作戰卡已推播的項目"
+            git pull --rebase
+            git push
+          fi
