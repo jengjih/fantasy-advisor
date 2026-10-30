@@ -39,6 +39,10 @@
   板凳 Camara、Champagnie；IL Duren（O）。第 2 週對溜馬三劍客 4-5，模擬只有 15% 贏。
   除了 SGA、Cade 之外很薄，PTS/REB/AST 量不夠；長處 FG%、FT%、TO。曾想用 Grant 換 Dosunmu，可能還會找交易。
 
+- 10/30 季末強弱初估（ESPN 全季賽程、上季 20 場先驗、每日先發上限、傷病回歸日；兩隊陣容固定、不算串流）：
+  誰是懂球帝 我 vs 尚恩 每週贏約 40%（5.1-5.7；我強 FT%、TO、BLK，弱 REB 15%、AST 14%）；
+  baek's 我 vs 伊古達拉 每週贏約 90%。要做全聯盟季末排名，需要使用者提供：每隊陣容、戰績表、賽程（每週對手）、季後賽／All-Star 週設定。
+
 ## 長期備忘
 - Jalen Williams（腓骨骨折開刀）、Cason Wallace（肩膀盂唇撕裂開刀）ESPN 預估都要到 2027-03 才回。
 - Kon Knueppel（baek's IL，腿後肌）預計 11/2 前後回來（10/30 ESPN 改說「沒有時間表」），回來要記得移出 IL（要先釋出一人）。
