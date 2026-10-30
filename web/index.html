@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LeSunshine 顧問</title>
+<meta name="description" content="兩個 Fantasy 籃球聯盟的每日作戰卡：今天要做什麼、本週比項、宿敵、陣容。">
+<meta name="theme-color" content="#F3F4F7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0D14" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="顧問">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<script>
+  // 主題覆寫（?theme=dark / ?theme=light），要在畫面出現前設定，避免閃爍
+  (function () {
+    try {
+      var t = new URLSearchParams(location.search).get('theme');
+      if (t === 'dark' || t === 'light') {
+        document.documentElement.setAttribute('data-theme', t);
+        var metas = document.querySelectorAll('meta[name="theme-color"]');
+        for (var i = 0; i < metas.length; i++) {
+          metas[i].removeAttribute('media');
+          metas[i].setAttribute('content', t === 'dark' ? '#0A0D14' : '#F3F4F7');
+        }
+      }
+    } catch (e) {}
+  })();
+</script>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="topbar" id="topbar">
+    <div class="brand">
+      <img class="brand-mark" src="icons/icon-192.png" alt="" width="28" height="28">
+      <span class="brand-name">LeSunshine <b>顧問</b></span>
+    </div>
+    <div class="fresh">
+      <span class="fresh-label" id="freshLabel"></span>
+      <button class="icon-btn" id="refreshBtn" type="button" aria-label="重新整理">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M20 4v4.5h-4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="main" aria-live="polite"></main>
+
+  <nav class="tabbar" id="tabbar" aria-label="分頁">
+    <button type="button" data-tab="today" aria-label="今天">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4.5" width="17" height="16" rx="3.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 2.8v3.4M16 2.8v3.4M3.8 9.5h16.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="m8.6 14.6 2.3 2.3 4.6-4.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>今天</span>
+    </button>
+    <button type="button" data-tab="week" aria-label="本週">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><rect x="5" y="11" width="3.6" height="7" rx="1.2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="10.2" y="5" width="3.6" height="13" rx="1.2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="15.4" y="8.5" width="3.6" height="9.5" rx="1.2" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+      <span>本週</span>
+    </button>
+    <button type="button" data-tab="rivals" aria-label="宿敵">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/></svg>
+      <span>宿敵</span>
+    </button>
+    <button type="button" data-tab="roster" aria-label="陣容">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.5 3.5 5 5 2.8 9.6l3 1.4 1-1.7V20.5h10.4V9.3l1 1.7 3-1.4L19 5l-3.5-1.5c-.6 1.6-2 2.6-3.5 2.6s-2.9-1-3.5-2.6Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      <span>陣容</span>
+    </button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,940 @@
+{
+ "version": 1,
+ "generated_at": "2026-10-31T14:21+08:00",
+ "generated_label": "10/31 14:21 更新",
+ "nba_day": "2026-10-31",
+ "nba_day_label": "週六 10/31（台北 11/1 早上開打）",
+ "actions": [],
+ "alerts": [
+  {
+   "level": "success",
+   "league": "聯盟一",
+   "league_name": "誰是懂球帝",
+   "text": "FG%、抄截、阻攻已經穩贏，不用再特別補"
+  }
+ ],
+ "leagues": [
+  {
+   "key": "聯盟一",
+   "name": "誰是懂球帝",
+   "week": 2,
+   "week_label": "第 2 週（10/26–11/1）",
+   "opponent": "永吉路懂球帝",
+   "score": {
+    "w": 6,
+    "l": 4,
+    "t": 1,
+    "source": "espn",
+    "source_label": "ESPN 估算・10/31 14:21"
+   },
+   "forecast": {
+    "w": 9,
+    "l": 2,
+    "t": 0,
+    "win_prob": 0.93,
+    "win_prob_no_action": 0.86
+   },
+   "adds": {
+    "used": 6,
+    "total": 8
+   },
+   "games_left": {
+    "mine": 12,
+    "opp": 9
+   },
+   "categories": [
+    {
+     "cat": "FGM",
+     "label": "命中數",
+     "mine": "139",
+     "opp": "139",
+     "mine_final": "201",
+     "opp_final": "188",
+     "win_prob": 0.72,
+     "status": "swing"
+    },
+    {
+     "cat": "FG%",
+     "label": "命中率",
+     "mine": ".481",
+     "opp": ".457",
+     "mine_final": ".478",
+     "opp_final": ".462",
+     "win_prob": 0.82,
+     "status": "lead"
+    },
+    {
+     "cat": "FT%",
+     "label": "罰球%",
+     "mine": ".802",
+     "opp": ".880",
+     "mine_final": ".795",
+     "opp_final": ".861",
+     "win_prob": 0.08,
+     "status": "punt"
+    },
+    {
+     "cat": "3PTM",
+     "label": "三分命中",
+     "mine": "38",
+     "opp": "36",
+     "mine_final": "55",
+     "opp_final": "50",
+     "win_prob": 0.58,
+     "status": "swing"
+    },
+    {
+     "cat": "3PT%",
+     "label": "三分%",
+     "mine": ".355",
+     "opp": ".319",
+     "mine_final": ".352",
+     "opp_final": ".330",
+     "win_prob": 0.74,
+     "status": "swing"
+    },
+    {
+     "cat": "PTS",
+     "label": "得分",
+     "mine": "393",
+     "opp": "387",
+     "mine_final": "571",
+     "opp_final": "540",
+     "win_prob": 0.84,
+     "status": "lead"
+    },
+    {
+     "cat": "REB",
+     "label": "籃板",
+     "mine": "133",
+     "opp": "149",
+     "mine_final": "201",
+     "opp_final": "205",
+     "win_prob": 0.46,
+     "status": "swing"
+    },
+    {
+     "cat": "AST",
+     "label": "助攻",
+     "mine": "101",
+     "opp": "106",
+     "mine_final": "150",
+     "opp_final": "148",
+     "win_prob": 0.52,
+     "status": "swing"
+    },
+    {
+     "cat": "ST",
+     "label": "抄截",
+     "mine": "32",
+     "opp": "25",
+     "mine_final": "46",
+     "opp_final": "37",
+     "win_prob": 0.91,
+     "status": "lead"
+    },
+    {
+     "cat": "BLK",
+     "label": "阻攻",
+     "mine": "21",
+     "opp": "17",
+     "mine_final": "33",
+     "opp_final": "25",
+     "win_prob": 0.93,
+     "status": "lead"
+    },
+    {
+     "cat": "TO",
+     "label": "失誤",
+     "mine": "49",
+     "opp": "41",
+     "mine_final": "72",
+     "opp_final": "60",
+     "win_prob": 0.06,
+     "status": "punt"
+    }
+   ],
+   "days": [
+    {
+     "date": "2026-10-26",
+     "label": "週一 10/26",
+     "playing": 6,
+     "slots": 10,
+     "open": 4,
+     "starters": [
+      "Devin Booker",
+      "Bam Adebayo",
+      "Derrick White",
+      "Grayson Allen",
+      "Ayo Dosunmu",
+      "Moussa Diabaté"
+     ],
+     "bench": []
+    },
+    {
+     "date": "2026-10-27",
+     "label": "週二 10/27",
+     "playing": 7,
+     "slots": 10,
+     "open": 3,
+     "starters": [
+      "Victor Wembanyama",
+      "Jalen Brunson",
+      "Austin Reaves",
+      "De'Aaron Fox",
+      "Derrick White",
+      "Dylan Harper",
+      "Toumani Camara"
+     ],
+     "bench": []
+    },
+    {
+     "date": "2026-10-28",
+     "label": "週三 10/28",
+     "playing": 11,
+     "slots": 10,
+     "open": 0,
+     "starters": [
+      "Victor Wembanyama",
+      "LeBron James",
+      "Jalen Brunson",
+      "Austin Reaves",
+      "Bam Adebayo",
+      "De'Aaron Fox",
+      "Grayson Allen",
+      "Wendell Carter Jr.",
+      "Dylan Harper",
+      "Ayo Dosunmu"
+     ],
+     "bench": [
+      "Moussa Diabaté"
+     ]
+    },
+    {
+     "date": "2026-10-29",
+     "label": "週四 10/29",
+     "playing": 1,
+     "slots": 10,
+     "open": 9,
+     "starters": [
+      "Toumani Camara"
+     ],
+     "bench": []
+    },
+    {
+     "date": "2026-10-30",
+     "label": "週五 10/30",
+     "playing": 10,
+     "slots": 10,
+     "open": 0,
+     "starters": [
+      "LeBron James",
+      "Jalen Brunson",
+      "Austin Reaves",
+      "Devin Booker",
+      "Bam Adebayo",
+      "Derrick White",
+      "Grayson Allen",
+      "Wendell Carter Jr.",
+      "Ayo Dosunmu",
+      "Moussa Diabaté"
+     ],
+     "bench": []
+    },
+    {
+     "date": "2026-10-31",
+     "label": "週六 10/31",
+     "playing": 8,
+     "slots": 10,
+     "open": 2,
+     "starters": [
+      "Victor Wembanyama",
+      "LeBron James",
+      "De'Aaron Fox",
+      "Grayson Allen",
+      "Dylan Harper",
+      "Ayo Dosunmu",
+      "Moussa Diabaté",
+      "Toumani Camara"
+     ],
+     "bench": []
+    },
+    {
+     "date": "2026-11-01",
+     "label": "週日 11/1",
+     "playing": 3,
+     "slots": 10,
+     "open": 7,
+     "starters": [
+      "Austin Reaves",
+      "Derrick White",
+      "Wendell Carter Jr."
+     ],
+     "bench": []
+    }
+   ],
+   "roster": [
+    {
+     "name": "Victor Wembanyama",
+     "team": "SAS",
+     "team_zh": "馬刺",
+     "pos": "前鋒",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5104157.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 18.2,
+     "rank": 1
+    },
+    {
+     "name": "LeBron James",
+     "team": "PHI",
+     "team_zh": "七六人",
+     "pos": "前鋒",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/1966.png",
+     "slot": "active",
+     "injury": "Day-To-Day",
+     "injury_label": "每日觀察",
+     "games_left": 1,
+     "value": 14.0,
+     "rank": 2
+    },
+    {
+     "name": "Jalen Brunson",
+     "team": "NYK",
+     "team_zh": "尼克",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3934672.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 0,
+     "value": 13.7,
+     "rank": 3
+    },
+    {
+     "name": "Austin Reaves",
+     "team": "LAL",
+     "team_zh": "湖人",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066457.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 13.7,
+     "rank": 4
+    },
+    {
+     "name": "Devin Booker",
+     "team": "PHX",
+     "team_zh": "太陽",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3136193.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 0,
+     "value": 13.6,
+     "rank": 5
+    },
+    {
+     "name": "Bam Adebayo",
+     "team": "MIA",
+     "team_zh": "熱火",
+     "pos": "中鋒",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066261.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 0,
+     "value": 12.7,
+     "rank": 6
+    },
+    {
+     "name": "De'Aaron Fox",
+     "team": "SAS",
+     "team_zh": "馬刺",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066259.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 12.1,
+     "rank": 7
+    },
+    {
+     "name": "Derrick White",
+     "team": "BOS",
+     "team_zh": "塞爾提克",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3078576.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 11.3,
+     "rank": 8
+    },
+    {
+     "name": "Grayson Allen",
+     "team": "CHA",
+     "team_zh": "黃蜂",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3135045.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 9.4,
+     "rank": 9
+    },
+    {
+     "name": "Wendell Carter Jr.",
+     "team": "ORL",
+     "team_zh": "魔術",
+     "pos": "中鋒",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4277847.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 9.3,
+     "rank": 10
+    },
+    {
+     "name": "Dylan Harper",
+     "team": "SAS",
+     "team_zh": "馬刺",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5037871.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 9.3,
+     "rank": 11
+    },
+    {
+     "name": "Ayo Dosunmu",
+     "team": "MIN",
+     "team_zh": "灰狼",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397002.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 9.1,
+     "rank": 12
+    },
+    {
+     "name": "Moussa Diabaté",
+     "team": "CHA",
+     "team_zh": "黃蜂",
+     "pos": "前鋒",
+     "headshot": null,
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 9.0,
+     "rank": 13
+    },
+    {
+     "name": "Toumani Camara",
+     "team": "POR",
+     "team_zh": "拓荒者",
+     "pos": "前鋒",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4431736.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 8.7,
+     "rank": 14
+    },
+    {
+     "name": "Jalen Williams",
+     "team": "OKC",
+     "team_zh": "雷霆",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4593803.png",
+     "slot": "il",
+     "injury": "Out",
+     "injury_label": "缺陣（預計 2027-03）",
+     "games_left": null,
+     "value": null,
+     "rank": null
+    },
+    {
+     "name": "Cason Wallace",
+     "team": "OKC",
+     "team_zh": "雷霆",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4683692.png",
+     "slot": "il",
+     "injury": "Out",
+     "injury_label": "缺陣（預計 2027-03）",
+     "games_left": null,
+     "value": 7.0,
+     "rank": null
+    }
+   ],
+   "team_name": "LeSunshine"
+  },
+  {
+   "key": "聯盟二",
+   "name": "baek's Grand League",
+   "week": 2,
+   "week_label": "第 2 週（10/26–11/1）",
+   "opponent": "LALA好",
+   "score": {
+    "w": 4,
+    "l": 5,
+    "t": 0,
+    "source": "yahoo",
+    "source_label": "Yahoo 截圖・10/30 17:13"
+   },
+   "forecast": {
+    "w": 7,
+    "l": 2,
+    "t": 0,
+    "win_prob": 0.91,
+    "win_prob_no_action": 0.91
+   },
+   "adds": {
+    "used": 3,
+    "total": 4
+   },
+   "games_left": {
+    "mine": 11,
+    "opp": null
+   },
+   "categories": [
+    {
+     "cat": "FG%",
+     "label": "命中率",
+     "mine": ".446",
+     "opp": ".444",
+     "mine_final": ".468",
+     "opp_final": ".455",
+     "win_prob": 0.63,
+     "status": "swing"
+    },
+    {
+     "cat": "FT%",
+     "label": "罰球%",
+     "mine": ".833",
+     "opp": ".660",
+     "mine_final": ".821",
+     "opp_final": ".702",
+     "win_prob": 0.97,
+     "status": "lead"
+    },
+    {
+     "cat": "3PTM",
+     "label": "三分命中",
+     "mine": "44",
+     "opp": "42",
+     "mine_final": "68",
+     "opp_final": "58",
+     "win_prob": 0.86,
+     "status": "lead"
+    },
+    {
+     "cat": "PTS",
+     "label": "得分",
+     "mine": "352",
+     "opp": "368",
+     "mine_final": "560",
+     "opp_final": "541",
+     "win_prob": 0.7,
+     "status": "swing"
+    },
+    {
+     "cat": "REB",
+     "label": "籃板",
+     "mine": "96",
+     "opp": "124",
+     "mine_final": "170",
+     "opp_final": "182",
+     "win_prob": 0.25,
+     "status": "behind"
+    },
+    {
+     "cat": "AST",
+     "label": "助攻",
+     "mine": "84",
+     "opp": "92",
+     "mine_final": "133",
+     "opp_final": "128",
+     "win_prob": 0.62,
+     "status": "swing"
+    },
+    {
+     "cat": "ST",
+     "label": "抄截",
+     "mine": "20",
+     "opp": "22",
+     "mine_final": "33",
+     "opp_final": "32",
+     "win_prob": 0.55,
+     "status": "swing"
+    },
+    {
+     "cat": "BLK",
+     "label": "阻攻",
+     "mine": "18",
+     "opp": "17",
+     "mine_final": "28",
+     "opp_final": null,
+     "win_prob": null,
+     "status": "swing"
+    },
+    {
+     "cat": "TO",
+     "label": "失誤",
+     "mine": "46",
+     "opp": "44",
+     "mine_final": "70",
+     "opp_final": "64",
+     "win_prob": 0.1,
+     "status": "punt"
+    }
+   ],
+   "days": [
+    {
+     "date": "2026-10-26",
+     "label": "週一 10/26",
+     "playing": 9,
+     "slots": 10,
+     "open": 1,
+     "starters": [
+      "Anthony Davis",
+      "LaMelo Ball",
+      "Nickeil Alexander-Walker",
+      "Kyshawn George",
+      "Jabari Smith Jr.",
+      "DeMar DeRozan",
+      "Payton Pritchard",
+      "Ayo Dosunmu",
+      "Myles Turner"
+     ],
+     "bench": []
+    },
+    {
+     "date": "2026-10-27",
+     "label": "週二 10/27",
+     "playing": 2,
+     "slots": 10,
+     "open": 8,
+     "starters": [
+      "Luka Dončić",
+      "Payton Pritchard"
+     ],
+     "bench": []
+    },
+    {
+     "date": "2026-10-28",
+     "label": "週三 10/28",
+     "playing": 12,
+     "slots": 10,
+     "open": 0,
+     "starters": [
+      "Luka Dončić",
+      "Joel Embiid",
+      "Anthony Davis",
+      "LaMelo Ball",
+      "Nickeil Alexander-Walker",
+      "Kyshawn George",
+      "Jabari Smith Jr.",
+      "DeMar DeRozan",
+      "Ayo Dosunmu",
+      "Saddiq Bey"
+     ],
+     "bench": [
+      "Myles Turner",
+      "Isaiah Jackson"
+     ]
+    },
+    {
+     "date": "2026-10-29",
+     "label": "週四 10/29",
+     "playing": 2,
+     "slots": 10,
+     "open": 8,
+     "starters": [
+      "Nickeil Alexander-Walker",
+      "Saddiq Bey"
+     ],
+     "bench": []
+    },
+    {
+     "date": "2026-10-30",
+     "label": "週五 10/30",
+     "playing": 10,
+     "slots": 10,
+     "open": 0,
+     "starters": [
+      "Luka Dončić",
+      "Joel Embiid",
+      "Anthony Davis",
+      "LaMelo Ball",
+      "Kyshawn George",
+      "Jabari Smith Jr.",
+      "DeMar DeRozan",
+      "Payton Pritchard",
+      "Ayo Dosunmu",
+      "Isaiah Jackson"
+     ],
+     "bench": []
+    },
+    {
+     "date": "2026-10-31",
+     "label": "週六 10/31",
+     "playing": 7,
+     "slots": 10,
+     "open": 3,
+     "starters": [
+      "Joel Embiid",
+      "LaMelo Ball",
+      "Nickeil Alexander-Walker",
+      "Jabari Smith Jr.",
+      "Ayo Dosunmu",
+      "Saddiq Bey",
+      "Myles Turner"
+     ],
+     "bench": []
+    },
+    {
+     "date": "2026-11-01",
+     "label": "週日 11/1",
+     "playing": 3,
+     "slots": 10,
+     "open": 7,
+     "starters": [
+      "Luka Dončić",
+      "Payton Pritchard",
+      "Isaiah Jackson"
+     ],
+     "bench": []
+    }
+   ],
+   "roster": [
+    {
+     "name": "Luka Dončić",
+     "team": "LAL",
+     "team_zh": "湖人",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3945274.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 20.1,
+     "rank": 1
+    },
+    {
+     "name": "Joel Embiid",
+     "team": "PHI",
+     "team_zh": "七六人",
+     "pos": "中鋒",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3059318.png",
+     "slot": "active",
+     "injury": "Day-To-Day",
+     "injury_label": "每日觀察",
+     "games_left": 1,
+     "value": 15.0,
+     "rank": 2
+    },
+    {
+     "name": "Anthony Davis",
+     "team": "WAS",
+     "team_zh": "巫師",
+     "pos": "前鋒",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/6583.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 0,
+     "value": 14.1,
+     "rank": 3
+    },
+    {
+     "name": "LaMelo Ball",
+     "team": "MIN",
+     "team_zh": "灰狼",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432816.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 11.9,
+     "rank": 4
+    },
+    {
+     "name": "Nickeil Alexander-Walker",
+     "team": "ATL",
+     "team_zh": "老鷹",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4278039.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 11.4,
+     "rank": 5
+    },
+    {
+     "name": "Kyshawn George",
+     "team": "WAS",
+     "team_zh": "巫師",
+     "pos": "前鋒",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/99999999.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 0,
+     "value": 10.9,
+     "rank": 6
+    },
+    {
+     "name": "Jabari Smith Jr.",
+     "team": "HOU",
+     "team_zh": "火箭",
+     "pos": "前鋒",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432639.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 10.4,
+     "rank": 7
+    },
+    {
+     "name": "DeMar DeRozan",
+     "team": "DEN",
+     "team_zh": "金塊",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3978.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 0,
+     "value": 9.4,
+     "rank": 8
+    },
+    {
+     "name": "Payton Pritchard",
+     "team": "BOS",
+     "team_zh": "塞爾提克",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4066354.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 9.3,
+     "rank": 9
+    },
+    {
+     "name": "Ayo Dosunmu",
+     "team": "MIN",
+     "team_zh": "灰狼",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397002.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 9.1,
+     "rank": 10
+    },
+    {
+     "name": "Saddiq Bey",
+     "team": "NOP",
+     "team_zh": "鵜鶘",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4397136.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 8.8,
+     "rank": 11
+    },
+    {
+     "name": "Myles Turner",
+     "team": "MIL",
+     "team_zh": "公鹿",
+     "pos": "中鋒",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/3133628.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 8.4,
+     "rank": 12
+    },
+    {
+     "name": "Isaiah Jackson",
+     "team": "LAC",
+     "team_zh": "快艇",
+     "pos": "前鋒",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/4432170.png",
+     "slot": "active",
+     "injury": null,
+     "injury_label": null,
+     "games_left": 1,
+     "value": 6.7,
+     "rank": 13
+    },
+    {
+     "name": "Kon Knueppel",
+     "team": "CHA",
+     "team_zh": "黃蜂",
+     "pos": "後衛",
+     "headshot": "https://a.espncdn.com/i/headshots/nba/players/full/5061575.png",
+     "slot": "il",
+     "injury": "Out",
+     "injury_label": "缺陣（腿後肌）",
+     "games_left": null,
+     "value": 10.6,
+     "rank": null
+    }
+   ],
+   "team_name": "LeSunshine"
+  }
+ ],
+ "rivals": [
+  {
+   "league": "聯盟一",
+   "league_name": "誰是懂球帝",
+   "rival": "尚恩·李文斯頓",
+   "beat_prob": 0.84,
+   "beat_label": "季末贏他的機率約 84%",
+   "updated_label": "10/30 模擬",
+   "notes": [
+    "他本週只用 1 次 add，串流是我們最大的優勢",
+    "弱點：FT%、3PTM、3PT%、TO",
+    "Brunson → Jalen Johnson 成交的話，贏面再 +5%"
+   ]
+  },
+  {
+   "league": "聯盟二",
+   "league_name": "baek's Grand League",
+   "rival": "安卓·伊古達拉",
+   "beat_prob": 0.99,
+   "beat_label": "季末贏他的機率約 99%",
+   "updated_label": "10/30 模擬",
+   "notes": [
+    "他季後賽機率只有 8%",
+    "原則：不跟他交易、不送他補強"
+   ]
+  }
+ ]
+}

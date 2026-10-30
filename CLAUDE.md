@@ -42,9 +42,9 @@
 2. [x] 剩餘出賽改用賽程計算（Yahoo 的數字只算目前先發，會低估）
 3. [x] 本週比數預測（我方陣容＋對手陣容截圖，逐比項預測結算）
 4. [x] Adds 規劃器（每天先發空位、換誰淨多幾場、哪天換）
-5. [ ] 推播改成「行動卡」：具體 Drop/Add 與理由；沒事不推；週日 Adds 最後提醒；先發球員 Q/GTD 提醒
+5. [~] 推播改成「行動卡」（App 已完成 10/31；LINE 推播改成摘要＋連結待做）：具體 Drop/Add 與理由；沒事不推；週日 Adds 最後提醒；先發球員 Q/GTD 提醒
 6. [ ] 交易評估（傳交易截圖 → 各比項變化）
-7. [ ] 簽人推薦排除小樣本（出賽太少或上場時間短）、W、O、Q
+7. [x] 簽人推薦排除小樣本（出賽太少或上場時間短）、W、O、Q（作戰卡的 Adds 候選）
 
 ## 本週推演（`plan.py` → `projection.py`，10/30 完成）
 - 每天先發：當天有比賽、沒缺陣的人依「每場價值」排序填滿先發位；GTD 以 75% 機率計
@@ -59,6 +59,13 @@
 - 逐週模擬每隊數據總和（每日先發上限、傷兵回歸日），例行賽兩兩比項對決；每週誰對誰不知道時隨機排循環賽；季後賽依 Yahoo 設定（誰是懂球帝 6 隊、3/15 起 3 週、前 2 名輪空、重新排種子）
 - 限制：陣容固定，不算串流、交易
 - `rival.py`：在季末模擬上加「虛擬串流位」和交易，算最終名次贏過宿敵的機率（`--stream 6`、`--give/--get/--partner`）
+
+## 作戰卡 App（v2.0，10/31）
+- 網址 https://jengjih.github.io/fantasy-advisor/（GitHub Pages，`pages.yml` 發布；主畫面 App，取代 Streamlit，Streamlit 暫留備用）
+- 前端 `web/`（純 HTML/CSS/JS，`?data=`、`?tab=`、`?theme=`、`?now=`、`?nosw=1` 方便截圖測試）；資料 `build_app.py` → `src/fantasy_advisor/app_data.py` → `data/app/today.json`（格式 `docs/app-data-contract.md`，不進 git，發布時產生）
+- 比分：Yahoo 截圖＋截圖之後的 ESPN 每場數據（`live_score.py`，陣容每天的變化靠 state 的 `roster_log`）；沒截圖就全部 ESPN 估算
+- 對話決定的換人與保留名單：`state.save_plan(label, planned_adds, keep)`，App 照著列；宿敵資料 `data/rivals.json`
+- 改了前端要截圖自我檢查（淺色／深色、375／390 寬），確認沒有破圖、跑版才推
 
 ## 每日建議 SOP
 1. 陣容檢查：有比賽的球員被放在 BN、掛 O 卻占著先發位置

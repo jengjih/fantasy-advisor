@@ -1,0 +1,48 @@
+name: 發布作戰卡 App
+
+# 資料有更新就重算作戰卡（today.json）並發布到 GitHub Pages：
+# 手機對話推上來的陣容／截圖、程式更新、每天的數據同步之後，以及白天定時（傷病消息）
+on:
+  push:
+    branches: [main]
+    paths: ["data/state.json", "data/rivals.json", "web/**", "src/**", "build_app.py"]
+  workflow_run:
+    workflows: ["同步 NBA 數據"]
+    types: [completed]
+  schedule:
+    - cron: "0 22,1,4,10,23 * * *"   # 台北 06:00、09:00、12:00、18:00、07:00
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main            # workflow_run 也要用最新的 main（含剛同步的快照）
+      - uses: astral-sh/setup-uv@v6
+      - name: 產生作戰卡資料
+        run: uv run python build_app.py
+      - name: 組合網站
+        run: |
+          rm -rf _site && cp -r web _site
+          rm -rf _site/tools _site/data/today-*.json
+          cp data/app/today.json _site/data/today.json
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

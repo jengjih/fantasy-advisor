@@ -19,3 +19,4 @@ logs/
 # 作戰卡資料由 GitHub Actions 產生
 data/app/
 data/snapshot/boxscores.json
+web/data/today-real.json

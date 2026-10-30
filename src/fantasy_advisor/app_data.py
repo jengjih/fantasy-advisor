@@ -385,7 +385,13 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
                 "opp_final": final[c]["opp"] if c in final else None,
                 "win_prob": round(prob, 3) if prob is not None else None, "status": status})
 
-    for r in pj.day_table(mine, playing, pj.days_between(monday, sunday), lg["starters"]):
+    # 已經打完的日子用當天的陣容（roster_log 倒推），之後的日子用現在的陣容
+    past = roster_by_day(lg_state, monday, day - timedelta(days=1)) if day > monday else {}
+    table = []
+    for d, names in past.items():
+        table += pj.day_table(pj.resolve(names, scored, injuries, lg, empty)[0], playing, [d], lg["starters"])
+    table += pj.day_table(mine, playing, pj.days_between(day, sunday), lg["starters"])
+    for r in table:
         league["days"].append({"date": str(r["day"]), "label": f"{_wd(r['day'])} {r['day'].month}/{r['day'].day}",
                                "playing": r["playing"], "slots": lg["starters"], "open": r["open"],
                                "starters": r["started"], "bench": r["bench"]})
