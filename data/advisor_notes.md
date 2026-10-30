@@ -31,6 +31,14 @@
 - 搖擺：FG%、ST、BLK；REB 大概輸；TO 放棄。
 - 對手陣容（10/29）：Morant、Avdija、Kyrie、Brandon Miller、Buzelis、Anthony Black、Clingan、Gobert、Lillard、Fox、Giddey、Rollins、Jalen Green；IL Edey、Banchero、Nurkić。
 
+## 宿敵監控（10/30 截圖）
+- 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
+  板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
+  長處 BLK、FG%、ST、AST（長人多）；弱點 FT%、3PTM、3PT%。對上他時主攻罰球、三分。
+- baek's Grand League「安卓·伊古達拉」（3-6-0、12 隊第 10）：SGA、Cade Cunningham、Vassell、Quentin Grimes、Jerami Grant、Tari Eason、Kalkbrenner、Hartenstein、Reed Sheppard（O）、Poeltl；
+  板凳 Camara、Champagnie；IL Duren（O）。第 2 週對溜馬三劍客 4-5，模擬只有 15% 贏。
+  除了 SGA、Cade 之外很薄，PTS/REB/AST 量不夠；長處 FG%、FT%、TO。曾想用 Grant 換 Dosunmu，可能還會找交易。
+
 ## 長期備忘
 - Jalen Williams（腓骨骨折開刀）、Cason Wallace（肩膀盂唇撕裂開刀）ESPN 預估都要到 2027-03 才回。
 - Kon Knueppel（baek's IL，腿後肌）預計 11/2 前後回來（10/30 ESPN 改說「沒有時間表」），回來要記得移出 IL（要先釋出一人）。
