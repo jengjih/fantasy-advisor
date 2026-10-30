@@ -12,7 +12,7 @@
 
 ## 手機（雲端 Claude Code）工作流程
 使用者主要用手機 Claude App 的 Code 分頁開雲端對話，傳 Yahoo 截圖討論陣容。雲端對話不記得之前的事，所以：
-1. **每次對話開頭先讀 `data/advisor_notes.md`**（本週計劃、已做的換人、交易決定），再讀 `data/state.json`。
+1. **每次對話開頭先讀 `data/advisor_notes.md`**（本週計劃、已做的換人、交易決定），再讀 `data/state.json`。使用者的需求類型、終極目標（兩個聯盟都贏宿敵）與各類請求的處理方式見 `docs/使用者需求與工作流程.md`。
 2. 收到截圖照 `.claude/commands/同步.md`（使用者打 `/同步`）的步驟更新資料。
 3. **直接在 main 分支 commit 並 push**（先 `git checkout main && git pull`），不要開新分支或 PR；網頁和推播都讀 main。執行 `uv run python sync.py` 會自動 commit、push data/。
 4. 對話結尾更新 `data/advisor_notes.md`，寫下新的決定和接下來的計劃。
@@ -58,6 +58,7 @@
 - 球員能力：本季＋上季（當作已打 20 場）；整季賽程存在 `data/snapshot/season_schedule.json`（`--refresh` 重抓）
 - 逐週模擬每隊數據總和（每日先發上限、傷兵回歸日），例行賽兩兩比項對決；每週誰對誰不知道時隨機排循環賽；季後賽依 Yahoo 設定（誰是懂球帝 6 隊、3/15 起 3 週、前 2 名輪空、重新排種子）
 - 限制：陣容固定，不算串流、交易
+- `rival.py`：在季末模擬上加「虛擬串流位」和交易，算最終名次贏過宿敵的機率（`--stream 6`、`--give/--get/--partner`）
 
 ## 每日建議 SOP
 1. 陣容檢查：有比賽的球員被放在 BN、掛 O 卻占著先發位置
