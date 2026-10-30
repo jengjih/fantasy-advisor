@@ -3,7 +3,7 @@
    - index.html / app.js / app.css / manifest：也是網路優先（改版會自動到手機），離線才用快取
    - 圖示：快取優先
    VERSION 只在想強制清掉舊快取時才需要改。 */
-const VERSION = 'v2';
+const VERSION = 'v3';
 const SHELL_CACHE = 'fa-shell-' + VERSION;
 const DATA_CACHE = 'fa-data';
 const SHELL = [
