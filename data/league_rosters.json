@@ -489,17 +489,51 @@
     "Ajay Mitchell",
     "Khaman Maluach",
     "Kris Dunn"
+   ],
+   "火箭發射": [
+    "Zach LaVine",
+    "Desmond Bane",
+    "Andrew Wiggins",
+    "RJ Barrett",
+    "Giannis Antetokounmpo",
+    "Jalen Smith",
+    "Evan Mobley",
+    "Collin Murray-Boyles",
+    "Aaron Wiggins",
+    "Fred VanVleet",
+    "Amen Thompson",
+    "Alperen Şengün",
+    "Dillon Brooks"
+   ],
+   "柏毅's Nice Team": [
+    "Anthony Edwards",
+    "Grayson Allen",
+    "Josh Hart",
+    "AJ Dybantsa",
+    "Yaxel Lendeborg",
+    "Victor Wembanyama",
+    "Sandro Mamukelashvili",
+    "Rui Hachimura",
+    "P.J. Washington",
+    "Christian Braun",
+    "Jonathan Kuminga",
+    "Alex Caruso",
+    "Trevor Brazile"
+   ],
+   "eric's Dazzling Team": [
+    "Naz Reid",
+    "Kel'el Ware",
+    "Dejounte Murray",
+    "Tyler Herro",
+    "Jaime Jaquez Jr.",
+    "Lauri Markkanen",
+    "Mikal Bridges",
+    "Jaren Jackson Jr."
    ]
   },
-  "unknown_page2": [
-   "Naz Reid",
-   "Kel'el Ware",
-   "Dejounte Murray",
-   "Tyler Herro",
-   "Jaime Jaquez Jr.",
-   "Lauri Markkanen",
-   "Mikal Bridges",
-   "Jaren Jackson Jr."
+  "partial": [
+   "eric's Dazzling Team（只有下半部）",
+   "柏毅's Nice Team（Brazile 以下沒截到）"
   ]
  }
 }

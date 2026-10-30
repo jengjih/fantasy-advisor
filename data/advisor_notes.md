@@ -48,6 +48,10 @@
   （季後賽時 Jalen Williams、Cason Wallace 回來，所以奪冠機率比排名高）。我的弱項：REB（對全聯盟只贏 24%）、FG%、FGM、3PT%；強項 BLK、FT%、AST、TO。
   Justin 目前 8-3 第 1，但模擬掉到 6–7 名（Giannis、Tatum 之外偏弱）。
 
+- 10/30 baek's 季末預測（eric's 只有半隊、柏毅's 少最後幾人，先當參考）：安國 .63 第 1、冠軍 38%；我 .59 平均第 3、季後賽 ~100%、冠軍 15%；
+  LALA好（目前 2-7）其實強（REB、AST、BLK），預測第 3–4；溜馬、扣愛接著；無慼 8-1 預測掉到第 6；伊古達拉 .45 第 8–9，季後賽 54%。
+  我的弱項 FG%（33%）、REB（54%）、TO；強項 3PTM 93%、PTS 86%。待補 eric's 上半部陣容後重跑。
+
 ## 長期備忘
 - Jalen Williams（腓骨骨折開刀）、Cason Wallace（肩膀盂唇撕裂開刀）ESPN 預估都要到 2027-03 才回。
 - Kon Knueppel（baek's IL，腿後肌）預計 11/2 前後回來（10/30 ESPN 改說「沒有時間表」），回來要記得移出 IL（要先釋出一人）。
