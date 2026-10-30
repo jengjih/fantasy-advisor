@@ -221,5 +221,285 @@
     "Jaren Jackson Jr."
    ]
   }
+ },
+ "聯盟二": {
+  "updated": "2026-10-30",
+  "standings": {
+   "無慼's Remarkable Team": [
+    8,
+    1,
+    0
+   ],
+   "安國's Terrific Team": [
+    7,
+    2,
+    0
+   ],
+   "扣愛的麵包房": [
+    6,
+    3,
+    0
+   ],
+   "eric's Dazzling Team": [
+    6,
+    3,
+    0
+   ],
+   "溜馬三劍客": [
+    6,
+    3,
+    0
+   ],
+   "滑到什麼用什麼吧": [
+    5,
+    3,
+    1
+   ],
+   "LeSunshine": [
+    3,
+    5,
+    1
+   ],
+   "子毅's Expert Team": [
+    3,
+    6,
+    0
+   ],
+   "火箭發射": [
+    3,
+    6,
+    0
+   ],
+   "安卓·伊古達拉": [
+    3,
+    6,
+    0
+   ],
+   "LALA好": [
+    2,
+    7,
+    0
+   ],
+   "柏毅's Nice Team": [
+    1,
+    8,
+    0
+   ]
+  },
+  "week2_now": [
+   [
+    "LeSunshine",
+    "LALA好",
+    [
+     4,
+     5,
+     0
+    ]
+   ],
+   [
+    "安卓·伊古達拉",
+    "溜馬三劍客",
+    [
+     4,
+     5,
+     0
+    ]
+   ],
+   [
+    "無慼's Remarkable Team",
+    "火箭發射",
+    [
+     3,
+     6,
+     0
+    ]
+   ],
+   [
+    "安國's Terrific Team",
+    "柏毅's Nice Team",
+    [
+     5,
+     4,
+     0
+    ]
+   ],
+   [
+    "扣愛的麵包房",
+    "滑到什麼用什麼吧",
+    [
+     6,
+     3,
+     0
+    ]
+   ],
+   [
+    "子毅's Expert Team",
+    "eric's Dazzling Team",
+    [
+     4,
+     4,
+     1
+    ]
+   ]
+  ],
+  "rosters": {
+   "LeSunshine": [
+    "Luka Dončić",
+    "Anthony Davis",
+    "Joel Embiid",
+    "DeMar DeRozan",
+    "Myles Turner",
+    "Jabari Smith Jr.",
+    "Payton Pritchard",
+    "Ayo Dosunmu",
+    "LaMelo Ball",
+    "Nickeil Alexander-Walker",
+    "Kyshawn George",
+    "Saddiq Bey",
+    "Isaiah Jackson",
+    "Kon Knueppel"
+   ],
+   "LALA好": [
+    "Ja Morant",
+    "Deni Avdija",
+    "Kyrie Irving",
+    "Brandon Miller",
+    "Matas Buzelis",
+    "Anthony Black",
+    "Donovan Clingan",
+    "Rudy Gobert",
+    "Damian Lillard",
+    "De'Aaron Fox",
+    "Josh Giddey",
+    "Ryan Rollins",
+    "Jalen Green",
+    "Zach Edey",
+    "Paolo Banchero",
+    "Jusuf Nurkić"
+   ],
+   "安卓·伊古達拉": [
+    "Shai Gilgeous-Alexander",
+    "Cade Cunningham",
+    "Devin Vassell",
+    "Quentin Grimes",
+    "Jerami Grant",
+    "Tari Eason",
+    "Ryan Kalkbrenner",
+    "Isaiah Hartenstein",
+    "Reed Sheppard",
+    "Jakob Poeltl",
+    "Toumani Camara",
+    "Julian Champagnie",
+    "Jalen Duren"
+   ],
+   "溜馬三劍客": [
+    "Ty Jerome",
+    "Jared McCain",
+    "Davion Mitchell",
+    "Kevin Durant",
+    "John Collins",
+    "Pascal Siakam",
+    "Onyeka Okongwu",
+    "Alex Sarr",
+    "Derik Queen",
+    "Jaylen Wells",
+    "Trey Murphy III",
+    "Ivica Zubac",
+    "Bobby Portis",
+    "Jimmy Butler III",
+    "Tyrese Haliburton"
+   ],
+   "無慼's Remarkable Team": [
+    "Stephen Curry",
+    "VJ Edgecombe",
+    "Immanuel Quickley",
+    "Austin Reaves",
+    "Cameron Boozer",
+    "Duncan Robinson",
+    "Brook Lopez",
+    "Precious Achiuwa",
+    "Andrew Nembhard",
+    "Trae Young",
+    "Daniss Jenkins",
+    "Cedric Coward",
+    "Chet Holmgren",
+    "Kawhi Leonard"
+   ],
+   "安國's Terrific Team": [
+    "Jamal Murray",
+    "Devin Booker",
+    "James Harden",
+    "OG Anunoby",
+    "Julius Randle",
+    "Jaden McDaniels",
+    "Walker Kessler",
+    "Moussa Diabaté",
+    "Derrick White",
+    "Darius Acuff Jr.",
+    "Jayson Tatum",
+    "Day'Ron Sharpe",
+    "Miles Bridges",
+    "Brandin Podziemski",
+    "Mark Williams"
+   ],
+   "扣愛的麵包房": [
+    "Darius Garland",
+    "Ausar Thompson",
+    "Donovan Mitchell",
+    "Jaylen Brown",
+    "Ace Bailey",
+    "Franz Wagner",
+    "Bam Adebayo",
+    "Jarrett Allen",
+    "Peyton Watson",
+    "CJ McCollum",
+    "Andre Drummond",
+    "Paul George",
+    "Michael Porter Jr.",
+    "Cason Wallace",
+    "Nic Claxton"
+   ],
+   "滑到什麼用什麼吧": [
+    "Jrue Holiday",
+    "Dylan Harper",
+    "Tyrese Maxey",
+    "Matisse Thybulle",
+    "Derrick Jones Jr.",
+    "Karl-Anthony Towns",
+    "Daniel Gafford",
+    "Neemias Queta",
+    "Wendell Carter Jr.",
+    "Tristan da Silva",
+    "Jalen Johnson",
+    "Zion Williamson",
+    "Domantas Sabonis",
+    "Coby White"
+   ],
+   "子毅's Expert Team": [
+    "Keyonte George",
+    "Terrence Shannon Jr.",
+    "Darryn Peterson",
+    "Norman Powell",
+    "Aaron Gordon",
+    "Scottie Barnes",
+    "Nikola Jokić",
+    "Aday Mara",
+    "Caleb Wilson",
+    "Dennis Schröder",
+    "Ajay Mitchell",
+    "Khaman Maluach",
+    "Kris Dunn"
+   ]
+  },
+  "unknown_page2": [
+   "Naz Reid",
+   "Kel'el Ware",
+   "Dejounte Murray",
+   "Tyler Herro",
+   "Jaime Jaquez Jr.",
+   "Lauri Markkanen",
+   "Mikal Bridges",
+   "Jaren Jackson Jr."
+  ]
  }
 }
