@@ -245,17 +245,21 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
         started = pj.lineup(mine, playing.get(day, set()), day, lg["starters"])
         sit = [x for x in today_on if x.name not in {s.name for s, _ in started}]
         first_tip = min(tips[(day, x.team)] for x in today_on)
-        players_out = [{**_player_info(scored, x.name), "role": "start"} for x, _ in started]
-        players_out += [{**_player_info(scored, x.name), "role": "bench"} for x in sit]
+        # 只列需要注意的人（坐板凳、每日觀察）；全部人都上先發就不用一一列出
+        players_out = [{**_player_info(scored, x.name), "role": "bench"} for x in sit]
+        players_out += [{**_player_info(scored, x.name), "role": "start"} for x, _ in started if x.status == "Day-To-Day"]
         gtd = [x.name for x in today_on if x.status == "Day-To-Day"]
-        detail = f"{len(today_on)} 人有比賽、先發 {lg['starters']} 格。到 My Team 按 Start Active Players，確認有比賽的人都不在板凳。"
+        detail = "到 My Team 按 Start Active Players，確認有比賽的人都不在板凳（BN）。"
         if sit:
             detail += f"人太多：{'、'.join(x.name for x in sit)} 坐板凳（價值最低）。"
         if gtd:
             detail += f"{'、'.join(gtd)} 每日觀察，開打前再看一次。"
+        busy = bool(sit or gtd)
+        title = (f"排好{_wd(day)}先發（{len(today_on)} 人有比賽）" if busy else
+                 f"確認{_wd(day)}先發（{len(today_on)} 人有比賽，" + ("剛好排滿）" if len(today_on) == lg["starters"] else "全部上先發）"))
         actions.append({
-            "id": f"{day}|{label}|lineup", "league": label, "league_name": name, "type": "lineup",
-            "priority": "high", "title": f"排好{_wd(day)}先發（{len(today_on)} 人有比賽）",
+            "id": f"{day}|{label}|lineup", "league": label, "league_name": name, "type": "lineup" if busy else "check",
+            "priority": "high" if busy else "normal", "title": title,
             "detail": detail, "deadline": first_tip.isoformat(), "deadline_label": _tpe_label(first_tip) + " 前",
             "earliest": None, "earliest_label": None, "impact": None, "players": players_out})
 
@@ -305,19 +309,19 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
             p = scored[scored["key"] == normalize(cand_m.name)].iloc[0]
             cats = [c for c in lg["categories"] if c not in lg["punt"]]
             strong = "、".join(("少失誤" if c == "TO" else zh.CATEGORY[c]) for c in sorted(cats, key=lambda c: -p[f"z_{c}"])[:3] if p[f"z_{c}"] > 0.3)
-            game_days = "、".join(_wd(x) for x in s["add_days"]) or "（本週沒比賽了）"
+            game_days = "、".join(_wd(x) for x in s["add_days"])
             decided = "已討論決定。" if s.get("planned") else "系統建議。"
             actions.append({
                 "id": f"{monday}|{label}|add|{s['drop']}|{s['add']}", "league": label, "league_name": name,
                 "type": "add", "priority": "high" if d == day else "normal",
                 "title": f"放 {s['drop']} → 簽 {s['add']}",
-                "detail": f"{s['add']}（{zh.team(cand_m.team)}）本週還有 {game_days} 比賽，淨多 {s['games']:+.0f} 場"
-                          + (f"，強項 {strong}" if strong else "") + f"。{decided}"
+                "detail": (f"{s['add']}（{zh.team(cand_m.team)}）{game_days}有比賽" if game_days else f"{s['add']}（{zh.team(cand_m.team)}）")
+                          + f"，多打 {s['games']:.0f} 場" + (f"；強項：{strong}" if strong else "") + f"。{decided}"
                           + ("" if s.get("planned") else f"{fa_note}。"),
                 "deadline": deadline.isoformat() if deadline else None,
                 "deadline_label": (_tpe_label(deadline) + " 前") if deadline else f"{_wd(d)}開打前",
                 "earliest": earliest.isoformat() if earliest else None,
-                "earliest_label": (f"{s['drop']} 打完後（約 {_tpe_label(earliest)}）") if earliest else None,
+                "earliest_label": (f"{s['drop']} 打完後・約 {_tpe_label(earliest)}") if earliest else None,
                 "impact": ({"before": round(before, 3), "after": round(after, 3),
                             "label": f"本週勝率 {before:.0%} → {after:.0%}"} if before is not None else None),
                 "players": [{**_player_info(scored, s["drop"]), "role": "drop"},
@@ -344,7 +348,7 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
             alert("info", f"對手 {x.name} {zh.injury(x.status)}")
 
     # ---- 本週戰況 ----
-    league = {"key": label, "name": name,
+    league = {"key": label, "name": name, "team_name": "LeSunshine",
               "week": (m or {}).get("week"), "week_label": f"{monday:%m/%d}–{sunday:%m/%d}".replace("/0", "/").lstrip("0"),
               "opponent": opp_name, "score": None, "forecast": None,
               "adds": {"used": adds_used, "total": lg["weekly_adds"]},
@@ -360,11 +364,13 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
             pred = pj.predict(lg, cur, plan_mine, opp, schedule)
             sim = pj.simulate(lg, cur, plan_mine, opp, schedule, runs=SIM_RUNS)
             final = {r["cat"]: r for r in pred["rows"]}
-            league["forecast"] = {"w": round(sim["w"]), "l": round(sim["l"]),
-                                  "t": len(rows) - round(sim["w"]) - round(sim["l"]),
+            fw = sum(p > 0.5 for p in sim["cats"].values())
+            fl = sum(p < 0.5 for p in sim["cats"].values())
+            league["forecast"] = {"w": fw, "l": fl, "t": len(sim["cats"]) - fw - fl,
                                   "win_prob": round(sim["win"], 3),
                                   "win_prob_no_action": round(win_now, 3) if win_now is not None else None}
-            league["games_left"] = {"mine": _num(pred["my_games"]), "opp": _num(pred["opp_games"])}
+            now_pred = pj.predict(lg, cur, mine, opp, schedule)
+            league["games_left"] = {"mine": round(now_pred["my_games"]), "opp": round(now_pred["opp_games"])}
         for r in rows:
             c = r["cat"]
             prob = (sim["cats"].get(c) if opp else None)
@@ -379,7 +385,7 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
                 "opp_final": final[c]["opp"] if c in final else None,
                 "win_prob": round(prob, 3) if prob is not None else None, "status": status})
 
-    for r in pj.day_table(mine, playing, pj.days_between(day, sunday), lg["starters"]):
+    for r in pj.day_table(mine, playing, pj.days_between(monday, sunday), lg["starters"]):
         league["days"].append({"date": str(r["day"]), "label": f"{_wd(r['day'])} {r['day'].month}/{r['day'].day}",
                                "playing": r["playing"], "slots": lg["starters"], "open": r["open"],
                                "starters": r["started"], "bench": r["bench"]})
@@ -393,10 +399,10 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
             status = inj_status.get(normalize(n), "") if p is not None else ""
             league["roster"].append({**info, "slot": slot, "injury": status or None,
                                      "injury_label": zh.injury(status) or None,
-                                     "games_left": int(left.get(p["team"], 0)) if p is not None else None,
+                                     "games_left": int(left.get(p["team"], 0)) if p is not None and slot == "active" else None,
                                      "value": _num(p["z_total"]) if p is not None else None,
                                      "rank": int(p["rank"]) if p is not None else None})
-    league["roster"].sort(key=lambda r: (r["slot"] != "active", -(r["value"] if r["value"] is not None else -99)))
+    league["roster"].sort(key=lambda r: (r["slot"] != "active", r["rank"] if r["rank"] is not None else 9999))
     return league, actions, alerts
 
 

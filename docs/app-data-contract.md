@@ -37,7 +37,7 @@
               "text": "對手 Ja Morant 每日觀察（腿後肌），可能缺陣"}],   // level: danger | warning | info | success
 
   "leagues": [{
-    "key": "聯盟一", "name": "誰是懂球帝",
+    "key": "聯盟一", "name": "誰是懂球帝", "team_name": "LeSunshine",
     "week": 2, "week_label": "第 2 週（10/26–11/1）",
     "opponent": "永吉路懂球帝",
     "score": {"w": 6, "l": 4, "t": 1,
