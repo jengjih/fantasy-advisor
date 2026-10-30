@@ -60,6 +60,7 @@
     交易（在串流 +6 的基礎上）：Brunson→Jalen Johnson（永吉路）84%、Fox→Clingan（桐生）80%、White→Lendeborg 82%、Booker+Diabaté→Holmgren+Mobley 81%；
     Booker→Towns／Giannis 沒有明顯幫助。交易只多 2–6%，雜訊約 ±3%。
   baek's vs 伊古達拉：現況已經 99%（他季後賽只有 8%）。原則：不跟伊古達拉交易、不送他補強。
+- 交易提案 Brunson → Jalen Johnson（永吉路）：可以現在送。Brunson 本週最後一場是美東週五，JJ 是週六，投票期 1 天，生效時這週兩人都打完了，不影響本週。下週 JJ 4 場、Brunson 3 場。
 - 每週紀律：誰是懂球帝每週用滿 8 adds（優先籃板、命中率高的長人）；對上尚恩那週主攻 FT%、3PTM、3PT%、TO（他的弱項）。
 
 ## 長期備忘
