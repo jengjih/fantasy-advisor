@@ -88,7 +88,7 @@
       "saved_ts": "2026-10-30T17:15+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-30 17:36",
+    "updated_at": "2026-10-31 00:42",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -154,7 +154,53 @@
       ],
       "week_monday": "2026-10-26",
       "saved_ts": "2026-10-30T01:32+08:00"
-    }
+    },
+    "roster_log": [
+      {
+        "date": "2026-10-28",
+        "add": [
+          "Moussa Diabaté"
+        ],
+        "drop": [
+          "Matas Buzelis"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "add": [
+          "Jaylen Wells"
+        ],
+        "drop": [
+          "Alex Sarr"
+        ]
+      },
+      {
+        "date": "2026-10-30",
+        "add": [
+          "Grayson Allen",
+          "Ayo Dosunmu"
+        ],
+        "drop": [
+          "Zach Edey",
+          "Jaylen Wells"
+        ]
+      }
+    ],
+    "planned_adds": [
+      {
+        "day": "2026-11-01",
+        "drop": "Moussa Diabaté",
+        "add": "Brandin Podziemski"
+      },
+      {
+        "day": "2026-11-01",
+        "drop": "Toumani Camara",
+        "add": "Draymond Green"
+      }
+    ],
+    "keep": [
+      "Dylan Harper"
+    ]
   },
   "聯盟二": {
     "roster": [
@@ -233,7 +279,7 @@
       "saved_ts": "2026-10-30T17:15+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-30 17:36",
+    "updated_at": "2026-10-31 00:42",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -286,6 +332,43 @@
       ],
       "week_monday": "2026-10-26",
       "saved_ts": "2026-10-30T01:32+08:00"
-    }
+    },
+    "roster_log": [
+      {
+        "date": "2026-10-28",
+        "add": [
+          "Saddiq Bey"
+        ],
+        "drop": [
+          "Mitchell Robinson"
+        ]
+      },
+      {
+        "date": "2026-10-29",
+        "add": [
+          "Scotty Pippen Jr."
+        ],
+        "drop": [
+          "Deandre Ayton"
+        ]
+      },
+      {
+        "date": "2026-10-30",
+        "add": [
+          "Isaiah Jackson"
+        ],
+        "drop": [
+          "Scotty Pippen Jr."
+        ]
+      }
+    ],
+    "planned_adds": [
+      {
+        "day": "2026-11-01",
+        "drop": "Saddiq Bey",
+        "add": "Draymond Green"
+      }
+    ],
+    "keep": []
   }
 }

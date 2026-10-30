@@ -72,6 +72,11 @@ def apply_roster_changes(label: str, add: list[str], drop: list[str],
     if len(s["roster"]) > cap:
         warnings.append(f"陣容 {len(s['roster'])} 人，超過上限 {cap} 人，是不是漏了釋出？")
     if done:
+        # 換人紀錄（美東生效日）：ESPN 自動比分要知道「每天陣容裡有誰」
+        et_today = datetime.now(ZoneInfo("America/New_York")).date()
+        if add or drop or to_il or from_il:
+            s.setdefault("roster_log", []).append({
+                "date": str(et_today), "add": add + from_il, "drop": drop + to_il})
         touch(state, label)
         save(state)
     return done, warnings
@@ -103,6 +108,19 @@ def save_opponent_roster(label: str, opponent: str, roster: list[str]) -> None:
         "week_monday": str(et_today - timedelta(days=et_today.weekday())),
         "saved_ts": datetime.now(ZoneInfo("Asia/Taipei")).isoformat(timespec="minutes"),
     }
+    touch(state, label)
+    save(state)
+
+
+def save_plan(label: str, planned_adds: list[dict] | None = None, keep: list[str] | None = None) -> None:
+    """記下對話裡已經決定的事，作戰卡 App 會照著排：
+    planned_adds：[{"day": "2026-11-01"（美東生效日）, "drop": "...", "add": "..."}]，換完後自動失效；
+    keep：不考慮釋出的人（例如潛力新秀），Adds 規劃器會跳過。傳 None 表示不改。"""
+    state = load()
+    if planned_adds is not None:
+        state[label]["planned_adds"] = planned_adds
+    if keep is not None:
+        state[label]["keep"] = keep
     touch(state, label)
     save(state)
 
