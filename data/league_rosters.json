@@ -1,0 +1,225 @@
+{
+ "聯盟一": {
+  "updated": "2026-10-30",
+  "standings": {
+   "Justin's Ingenious Team": [
+    8,
+    3,
+    0
+   ],
+   "強力衝擊二連冠": [
+    7,
+    4,
+    0
+   ],
+   "永吉路懂球帝": [
+    6,
+    5,
+    0
+   ],
+   "Sun": [
+    6,
+    5,
+    0
+   ],
+   "LeSunshine": [
+    5,
+    6,
+    0
+   ],
+   "尚恩·李文斯頓": [
+    5,
+    6,
+    0
+   ],
+   "桐生一馬": [
+    4,
+    7,
+    0
+   ],
+   "西瓜爸爸's Nice Team": [
+    3,
+    8,
+    0
+   ]
+  },
+  "week2_now": [
+   [
+    "LeSunshine",
+    "永吉路懂球帝",
+    [
+     6,
+     4,
+     1
+    ]
+   ],
+   [
+    "尚恩·李文斯頓",
+    "Justin's Ingenious Team",
+    [
+     8,
+     3,
+     0
+    ]
+   ],
+   [
+    "強力衝擊二連冠",
+    "西瓜爸爸's Nice Team",
+    [
+     7,
+     4,
+     0
+    ]
+   ],
+   [
+    "Sun",
+    "桐生一馬",
+    [
+     8,
+     1,
+     2
+    ]
+   ]
+  ],
+  "rosters": {
+   "LeSunshine": [
+    "Victor Wembanyama",
+    "Jalen Brunson",
+    "Devin Booker",
+    "Bam Adebayo",
+    "De'Aaron Fox",
+    "LeBron James",
+    "Derrick White",
+    "Austin Reaves",
+    "Wendell Carter Jr.",
+    "Dylan Harper",
+    "Toumani Camara",
+    "Moussa Diabaté",
+    "Grayson Allen",
+    "Ayo Dosunmu",
+    "Jalen Williams",
+    "Cason Wallace"
+   ],
+   "永吉路懂球帝": [
+    "Stephen Curry",
+    "RJ Barrett",
+    "Dejounte Murray",
+    "Saddiq Bey",
+    "Jalen Johnson",
+    "Precious Achiuwa",
+    "Nikola Jokić",
+    "Jarrett Allen",
+    "Kyrie Irving",
+    "Robert Williams III",
+    "Andrew Wiggins",
+    "Lauri Markkanen",
+    "Jalen Smith",
+    "Paul George",
+    "Paolo Banchero"
+   ],
+   "尚恩·李文斯頓": [
+    "Luka Dončić",
+    "Cade Cunningham",
+    "Payton Pritchard",
+    "Mikal Bridges",
+    "Deni Avdija",
+    "Dyson Daniels",
+    "Domantas Sabonis",
+    "Rudy Gobert",
+    "Coby White",
+    "Onyeka Okongwu",
+    "James Harden",
+    "Peyton Watson",
+    "Zion Williamson",
+    "Tyler Herro",
+    "Kon Knueppel"
+   ],
+   "Justin's Ingenious Team": [
+    "Trae Young",
+    "Josh Hart",
+    "Fred VanVleet",
+    "Jayson Tatum",
+    "Jonathan Kuminga",
+    "Anthony Black",
+    "Evan Mobley",
+    "Giannis Antetokounmpo",
+    "Jabari Smith Jr.",
+    "Chet Holmgren",
+    "Ty Jerome",
+    "Zach LaVine",
+    "Cedric Coward",
+    "Jaime Jaquez Jr.",
+    "Jusuf Nurkić"
+   ],
+   "強力衝擊二連冠": [
+    "Andrew Nembhard",
+    "Jaylen Brown",
+    "Ja'Kobe Walter",
+    "Jaden McDaniels",
+    "Michael Porter Jr.",
+    "Desmond Bane",
+    "Walker Kessler",
+    "Bobby Portis",
+    "Amen Thompson",
+    "Darius Garland",
+    "Shai Gilgeous-Alexander",
+    "Donovan Mitchell",
+    "Kel'el Ware",
+    "Stephon Castle"
+   ],
+   "Sun": [
+    "Jamal Murray",
+    "Kevin Durant",
+    "Norman Powell",
+    "AJ Dybantsa",
+    "Anthony Davis",
+    "Franz Wagner",
+    "Pascal Siakam",
+    "Joel Embiid",
+    "John Collins",
+    "Immanuel Quickley",
+    "Damian Lillard",
+    "Nickeil Alexander-Walker",
+    "Ja Morant",
+    "Cameron Boozer",
+    "Jimmy Butler III",
+    "Alperen Şengün"
+   ],
+   "桐生一馬": [
+    "Josh Giddey",
+    "Ausar Thompson",
+    "VJ Edgecombe",
+    "Brandon Miller",
+    "Yaxel Lendeborg",
+    "Terrence Shannon Jr.",
+    "P.J. Washington",
+    "Donovan Clingan",
+    "Julius Randle",
+    "Miles Bridges",
+    "Ajay Mitchell",
+    "Jared McCain",
+    "Kawhi Leonard",
+    "Anthony Edwards",
+    "Tyrese Haliburton",
+    "Ivica Zubac"
+   ],
+   "西瓜爸爸's Nice Team": [
+    "Tyrese Maxey",
+    "Cooper Flagg",
+    "Duncan Robinson",
+    "Leonard Miller",
+    "Karl-Anthony Towns",
+    "Kyshawn George",
+    "Naz Reid",
+    "Paul Reed",
+    "OG Anunoby",
+    "LaMelo Ball",
+    "Trey Murphy III",
+    "Keyonte George",
+    "Isaiah Hartenstein",
+    "Scottie Barnes",
+    "Jaren Jackson Jr."
+   ]
+  }
+ }
+}
