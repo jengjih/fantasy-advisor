@@ -6,8 +6,8 @@
 ## 本週（第 2 週，10/26–11/1）
 
 ### 誰是懂球帝 vs 永吉路懂球帝
-- 10/30 17:14 截圖：6 勝 4 敗 1 平（FGM 139 平）。週四對手爆發：籃板 133-149、助攻 101-106 反超。Adds 已用 4/8（截圖看不出 Edey→Allen 做了沒，要問）。
-- 已做：Buzelis → Diabaté（10/28）、Sarr → Jaylen Wells（10/29）。
+- 10/30 17:14 截圖：6 勝 4 敗 1 平（FGM 139 平）。週四對手爆發：籃板 133-149、助攻 101-106 反超。
+- 已做：Buzelis → Diabaté（10/28）、Sarr → Jaylen Wells（10/29）、Edey → Grayson Allen、Wells → Ayo Dosunmu（10/30 17:30 前）。Adds 6/8。
 - 拒絕交易：桐生一馬用 Edgecombe + Kawhi + Randle 換 Brunson + Bam。
 - 10/30 17:15 計劃（plan.py＋模擬：照做贏 97%，不換 78%）：
   ① 今天～台北 10/31 07:00 前：Edey → Grayson Allen（CHA，週五週六）、Wells → Ayo Dosunmu（MIN，週五週六）。Edey、Wells 週五都沒賽，現在就能換。
@@ -17,14 +17,17 @@
 - 對手陣容（10/29）：Curry、RJ Barrett、Dejounte Murray、Saddiq Bey、Jalen Johnson、Achiuwa、Jokić、Jarrett Allen、Kyrie、
   Robert Williams III（膝，DTD）、Wiggins、Markkanen（腕，DTD）、Jalen Smith（手指，DTD）、Paul George；IL Banchero。
 
+- 10/30 17:35 換完後模擬：不再換 93%（預測 9-2）；週日照計劃換 97%。週六要把板凳的 Wemby、Fox、Harper、Camara 移上先發（週六 8 人有賽）。
+
 ### baek's Grand League vs LALA好
 - 10/30 17:13 截圖：4 勝 5 敗。贏 FG%(.446-.444)、FT%、3PTM(44-42)、BLK(18-17)；輸 PTS(352-368)、REB(96-124)、AST(84-92)、ST(20-22)、TO。Adds 已用 2/4。
-- 已做：Mitchell Robinson → Saddiq Bey（10/28）、Ayton → Scotty Pippen Jr.（10/29）。
+- 已做：Mitchell Robinson → Saddiq Bey（10/28）、Ayton → Scotty Pippen Jr.（10/29）、Pippen → Isaiah Jackson（10/30）。Adds 3/4。
 - 拒絕交易：安卓·伊古達拉用 Jerami Grant 換 Dosunmu。
 - Luka 10/30 已不在 ESPN 傷病名單（健康）。對手 Morant 腿後肌 DTD（預計 10/31）。
 - 10/30 17:15 計劃（模擬：照做贏 96%，不換 89%；plan.py 預測 7-2）：
   ① 今天～台北 10/31 08:00 前：Pippen → Isaiah Jackson（LAC C，週五＋週日；補 FG%、BLK、ST）。plan.py 原本建議 Keaton Wagler，但他命中率 .316，Jackson 讓 FG% 贏面 48%→63%。
   ② 週日（週六打完後、台北 11/2 09:00 前）：Bey → Draymond Green（GSW）。
+- 10/30 17:35 換完後模擬：不再換 91%（預測 7-2）；週日 Bey → Draymond Green 96%。週六要把板凳的 Turner、NAW、Bey 移上先發（週六 7 人有賽）。
 - 搖擺：FG%、ST、BLK；REB 大概輸；TO 放棄。
 - 對手陣容（10/29）：Morant、Avdija、Kyrie、Brandon Miller、Buzelis、Anthony Black、Clingan、Gobert、Lillard、Fox、Giddey、Rollins、Jalen Green；IL Edey、Banchero、Nurkić。
 

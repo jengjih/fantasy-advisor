@@ -10,11 +10,11 @@
       "Derrick White",
       "Austin Reaves",
       "Wendell Carter Jr.",
-      "Zach Edey",
       "Dylan Harper",
       "Toumani Camara",
       "Moussa Diabaté",
-      "Jaylen Wells"
+      "Grayson Allen",
+      "Ayo Dosunmu"
     ],
     "il": [
       "Jalen Williams",
@@ -80,7 +80,7 @@
           "opponent": "41"
         }
       ],
-      "adds_used": 4,
+      "adds_used": 6,
       "opp_games_left": 10,
       "my_games_left": 13,
       "note": "",
@@ -88,10 +88,9 @@
       "saved_ts": "2026-10-30T17:15+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-30 17:16",
+    "updated_at": "2026-10-30 17:36",
     "free_agents": {
       "names": [
-        "Ayo Dosunmu",
         "Collin Gillespie",
         "Aaron Gordon",
         "Christian Braun",
@@ -125,7 +124,6 @@
         "Jakob Poeltl",
         "Draymond Green",
         "Isaiah Jackson",
-        "Grayson Allen",
         "Jeremiah Fears",
         "De'Andre Hunter",
         "Malik Monk",
@@ -172,7 +170,7 @@
       "Nickeil Alexander-Walker",
       "Kyshawn George",
       "Saddiq Bey",
-      "Scotty Pippen Jr."
+      "Isaiah Jackson"
     ],
     "il": [
       "Kon Knueppel"
@@ -227,7 +225,7 @@
           "opponent": "44"
         }
       ],
-      "adds_used": 2,
+      "adds_used": 3,
       "opp_games_left": 13,
       "my_games_left": 14,
       "note": "",
@@ -235,7 +233,7 @@
       "saved_ts": "2026-10-30T17:15+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-30 17:16",
+    "updated_at": "2026-10-30 17:36",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -258,7 +256,6 @@
         "Pelle Larsson",
         "Jake LaRavia",
         "Jamal Shead",
-        "Isaiah Jackson",
         "Adem Bona",
         "Bones Hyland",
         "Zaccharie Risacher",
