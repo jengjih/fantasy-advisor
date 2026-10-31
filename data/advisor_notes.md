@@ -19,6 +19,9 @@
 
 - 10/30 17:35 換完後模擬：不再換 93%（預測 9-2）；週日照計劃換 97%。週六要把板凳的 Wemby、Fox、Harper、Camara 移上先發（週六 8 人有賽）。
 
+- 10/31 13:43 截圖（美東週五打完）：6 勝 5 敗。REB 193-190 反超；3PTM 53-55、3PT%、AST 138-149 被反超。plan.py 預測 9-2；不換 78%，週日照計劃 94%。
+  週日計劃不變：Diabaté → Podziemski、Camara → Draymond Green（94%；plan.py 又建議放 Harper 換 Queta，一樣 94%，不採用）。
+
 ### baek's Grand League vs LALA好
 - 10/30 17:13 截圖：4 勝 5 敗。贏 FG%(.446-.444)、FT%、3PTM(44-42)、BLK(18-17)；輸 PTS(352-368)、REB(96-124)、AST(84-92)、ST(20-22)、TO。Adds 已用 2/4。
 - 已做：Mitchell Robinson → Saddiq Bey（10/28）、Ayton → Scotty Pippen Jr.（10/29）、Pippen → Isaiah Jackson（10/30）。Adds 3/4。
@@ -28,6 +31,7 @@
   ① 今天～台北 10/31 08:00 前：Pippen → Isaiah Jackson（LAC C，週五＋週日；補 FG%、BLK、ST）。plan.py 原本建議 Keaton Wagler，但他命中率 .316，Jackson 讓 FG% 贏面 48%→63%。
   ② 週日（週六打完後、台北 11/2 09:00 前）：Bey → Draymond Green（GSW）。
 - 10/30 17:35 換完後模擬：不再換 91%（預測 7-2）；週日 Bey → Draymond Green 96%。週六要把板凳的 Turner、NAW、Bey 移上先發（週六 7 人有賽）。
+- 10/31 13:43 截圖：5 勝 4 敗（FG% .446-.447 幾乎平手）。預測 7-2，本週贏約 100%。週日 Bey → Draymond Green 照做。
 - 搖擺：FG%、ST、BLK；REB 大概輸；TO 放棄。
 - 對手陣容（10/29）：Morant、Avdija、Kyrie、Brandon Miller、Buzelis、Anthony Black、Clingan、Gobert、Lillard、Fox、Giddey、Rollins、Jalen Green；IL Edey、Banchero、Nurkić。
 
