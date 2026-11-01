@@ -112,6 +112,9 @@
 - 誰是懂球帝設定（11/1 截圖）：交易 League Votes、3 票否決、Trade Reject Time 1 天；交易截止 2027-03-18；季後賽 6 隊 Week 20–22（到 4/4）；
   季後賽同戰績看「兩隊直接交手」→ 第 7、14 週對尚恩特別重要。Waiver 1 天、continual rolling list。
 - 尚恩換人紀錄（11/1 截圖）：整季只有 5 筆——10/6 兩次（Hachimura、Watson）、10/13 交易 Zubac→Knueppel、10/20 Gafford→Zion、10/26 waiver 撿 Pritchard。
+  分析：他是「長期價值型」——Ingram（O）→ Hachimura → Watson（同天反覆，略亂）；Zubac 換 Knueppel（排名 129→33，賺）；Gafford → Zion（150→45，賺）；週一 waiver 撿 Pritchard（56，好）。
+  幾乎不串流，但陣容自然出賽多（第 2 週 47 場，比 Justin 45 還多），輸在比項結構：長人多、罰球三分弱，Zion 更加重這個弱點。
+  注意：Knueppel 約 11/2 回來（場均 3.4 三分）會補他的三分弱點；他也可能繼續低價撿受傷的好球員。
   第 2 週只用 1 次 add，幾乎不串流。每週一看一次他的 Transactions（網頁版 League → Transactions，右上選他的隊）。
 - Yahoo IL 規則（誰是懂球帝 11/1 公告，Yahoo 全站規則，兩聯盟都適用）：掛 O 的人放 IL，O 標記會保留到當晚交易處理時；
   只缺 1–2 場的人狀態恢復後就不再符合 IL 資格 → 要馬上移出 IL（先釋出一人），否則名單不合法，Yahoo 會鎖住所有 Add/Drop。
