@@ -397,13 +397,15 @@ def league_report(label: str, lg: dict, state: dict, players: pd.DataFrame, inju
 
 
 def apply_steps(members: list[Member], pool: list[Member], steps: list[dict]) -> list[Member]:
-    """把 Adds 規劃套到陣容上：釋出的人只算到換人前一天，簽進來的人從換人當天開始算。"""
+    """把 Adds 規劃套到陣容上：釋出的人只算到換人前一天，簽進來的人從換人當天開始算。
+    drop 是空字串＝名單有空位（例如有人移進 IL），直接簽、不用釋出。"""
     roster = list(members)
     for s in steps:
-        drop = next(x for x in roster if x.name == s["drop"] and x.end == date.max)
         cand = next(x for x in pool if x.name == s["add"])
-        roster = [x for x in roster if x is not drop] + [Member(**{**drop.__dict__, "end": s["day"]}),
-                                                         Member(**{**cand.__dict__, "start": s["day"]})]
+        if s["drop"]:
+            drop = next(x for x in roster if x.name == s["drop"] and x.end == date.max)
+            roster = [x for x in roster if x is not drop] + [Member(**{**drop.__dict__, "end": s["day"]})]
+        roster = roster + [Member(**{**cand.__dict__, "start": s["day"]})]
     return roster
 
 

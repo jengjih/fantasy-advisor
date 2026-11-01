@@ -159,7 +159,7 @@ def _planned_steps(lg_state, mine, scored, injuries, lg, empty, focus, schedule,
     steps, members, roster = [], [], list(mine)
     for p in lg_state.get("planned_adds", []):
         d = max(date.fromisoformat(p["day"]), day)
-        if d > sunday or p["drop"] not in names or p["add"] in names:
+        if d > sunday or (p["drop"] and p["drop"] not in names) or p["add"] in names:
             continue
         new, _ = pj.resolve([p["add"]], scored, injuries, lg, empty, focus)
         if not new:
@@ -295,10 +295,10 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
                    if fa else "沒有 FA 截圖，請確認是 FA（綠色 +）")
         for i, s in enumerate(steps):
             d = s["day"]
-            drop_m = next(x for x in pj.apply_steps(mine, pool, steps[:i]) if x.name == s["drop"])
+            drop_m = next((x for x in pj.apply_steps(mine, pool, steps[:i]) if x.name == s["drop"]), None) if s["drop"] else None
             cand_m = next(x for x in pool if x.name == s["add"])
             # 最早：要釋出的人前一場打完；最晚：新簽的人第一場開打前
-            prev = [x for x in pj.days_between(monday, d - timedelta(days=1)) if (x, drop_m.team) in tips]
+            prev = [x for x in pj.days_between(monday, d - timedelta(days=1)) if drop_m and (x, drop_m.team) in tips]
             earliest = tips[(prev[-1], drop_m.team)] + timedelta(hours=GAME_HOURS) if prev else None
             if earliest and earliest <= now:
                 earliest = None
@@ -314,7 +314,7 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
             actions.append({
                 "id": f"{monday}|{label}|add|{s['drop']}|{s['add']}", "league": label, "league_name": name,
                 "type": "add", "priority": "high" if d == day else "normal",
-                "title": f"放 {s['drop']} → 簽 {s['add']}",
+                "title": f"放 {s['drop']} → 簽 {s['add']}" if s["drop"] else f"簽 {s['add']}（名單有空位，不用釋出）",
                 "detail": (f"{s['add']}（{zh.team(cand_m.team)}）{game_days}有比賽" if game_days else f"{s['add']}（{zh.team(cand_m.team)}）")
                           + f"，多打 {s['games']:.0f} 場" + (f"；強項：{strong}" if strong else "") + f"。{decided}"
                           + ("" if s.get("planned") else f"{fa_note}。"),
@@ -324,8 +324,8 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
                 "earliest_label": (f"{s['drop']} 打完後・約 {_tpe_label(earliest)}") if earliest else None,
                 "impact": ({"before": round(before, 3), "after": round(after, 3),
                             "label": f"本週勝率 {before:.0%} → {after:.0%}"} if before is not None else None),
-                "players": [{**_player_info(scored, s["drop"]), "role": "drop"},
-                            {**_player_info(scored, s["add"]), "role": "add"}]})
+                "players": ([{**_player_info(scored, s["drop"]), "role": "drop"}] if s["drop"] else [])
+                           + [{**_player_info(scored, s["add"]), "role": "add"}]})
         if not steps and add_days and adds_left:
             alert("info", f"Adds 還剩 {adds_left} 次，目前 FA 名單裡沒有划算的換法" + ("" if fa else "（傳一張 FA 截圖再算一次）"))
         if day.weekday() == 6 and adds_left and not steps:
