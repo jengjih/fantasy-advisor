@@ -6,7 +6,6 @@
       "Devin Booker",
       "Bam Adebayo",
       "De'Aaron Fox",
-      "LeBron James",
       "Derrick White",
       "Austin Reaves",
       "Wendell Carter Jr.",
@@ -18,7 +17,8 @@
     ],
     "il": [
       "Jalen Williams",
-      "Cason Wallace"
+      "Cason Wallace",
+      "LeBron James"
     ],
     "matchup": {
       "week": 2,
@@ -88,7 +88,7 @@
       "saved_ts": "2026-10-31T13:52+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-11-01 16:40",
+    "updated_at": "2026-11-01 16:41",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -173,6 +173,13 @@
           "Zach Edey",
           "Jaylen Wells"
         ]
+      },
+      {
+        "date": "2026-11-01",
+        "add": [],
+        "drop": [
+          "LeBron James"
+        ]
       }
     ],
     "planned_adds": [
@@ -196,7 +203,6 @@
     "roster": [
       "Luka Dončić",
       "Anthony Davis",
-      "Joel Embiid",
       "DeMar DeRozan",
       "Myles Turner",
       "Jabari Smith Jr.",
@@ -209,7 +215,8 @@
       "Isaiah Jackson"
     ],
     "il": [
-      "Kon Knueppel"
+      "Kon Knueppel",
+      "Joel Embiid"
     ],
     "matchup": {
       "week": 2,
@@ -269,7 +276,7 @@
       "saved_ts": "2026-10-31T13:52+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-11-01 16:40",
+    "updated_at": "2026-11-01 16:41",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -346,6 +353,13 @@
         ],
         "drop": [
           "Scotty Pippen Jr."
+        ]
+      },
+      {
+        "date": "2026-11-01",
+        "add": [],
+        "drop": [
+          "Joel Embiid"
         ]
       }
     ],
