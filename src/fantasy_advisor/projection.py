@@ -339,8 +339,9 @@ def league_report(label: str, lg: dict, state: dict, players: pd.DataFrame, inju
         focus = [r["cat"] for r in rows if r["swing"] and r["cat"] != "TO"]
     scored, empty = score(players, lg)
     mine, missing = resolve(lg["roster"], scored, injuries, lg, empty, focus)
-    for x in mine:  # 對話決定不釋出的人（state.save_plan 的 keep）
+    for x in mine:  # 對話決定不釋出的人（state.save_plan 的 keep）、指定的串流位（state 的 stream_slots，隨時可換）
         x.keep = x.keep or x.name in state[label].get("keep", [])
+        x.streamer = x.streamer or x.name in state[label].get("stream_slots", [])
     out = [f"【{lg['name']}】" + (f"vs {m['opponent']}" if m else "")]
     if missing:
         out.append("❓ 找不到這些球員的 NBA 數據：" + "、".join(missing))
