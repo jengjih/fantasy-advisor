@@ -103,6 +103,11 @@
   之後串流位接力：五 Mitchell → 週五＋六的人（Holiday／Sarr／Vassell），日 → 週日的人（Gafford／Queta／Rollins）。週四只有 4 人有賽、空 6 格。
 - plan.py 的貪婪法一次只看一步，看不出「接力換人」，第 3 週規劃要人工補；待改：多步接力搜尋。
 
+## 整季賽程（11/1 網頁版 League → Standings → Schedule，存在 league_rosters.json 的 my_schedule）
+- 誰是懂球帝：第 7、14 週對尚恩（約 11/30–12/6、1/18–1/24，週次日期以 Yahoo 為準）。季末模擬改用真實賽程後，贏過尚恩約 62%（串流 6 場／週、第 2 週 9-2）。
+- baek's：第 10 週對伊古達拉（約 12/21–12/27）。贏過他約 99%。
+- 第 3 週對手：誰是懂球帝 Justin's Ingenious Team；baek's 安國's Terrific Team（全聯盟最強）。
+
 ## 長期備忘
 - Yahoo IL 規則（誰是懂球帝 11/1 公告，Yahoo 全站規則，兩聯盟都適用）：掛 O 的人放 IL，O 標記會保留到當晚交易處理時；
   只缺 1–2 場的人狀態恢復後就不再符合 IL 資格 → 要馬上移出 IL（先釋出一人），否則名單不合法，Yahoo 會鎖住所有 Add/Drop。

@@ -19,13 +19,15 @@ from . import projection as pj
 from .leagues import LEAGUES
 from .nba_data import PREV_SEASON, SEASON, SNAPSHOT_DIR, fetch_player_stats, fetch_schedule
 
+MY_TEAM = "LeSunshine"
 ROS_PRIOR = 20            # 上季數據的權重（當作已打幾場）
 ROSTERS_FILE = Path(__file__).resolve().parents[2] / "data" / "league_rosters.json"
 SEASON_SCHEDULE = SNAPSHOT_DIR / "season_schedule.json"
 SEASON_END = {"聯盟一": date(2027, 4, 4), "聯盟二": date(2027, 4, 11)}
 PLAYOFF_WEEKS = {"聯盟一": 3, "聯盟二": 3}
 PLAYOFF_TEAMS = {"聯盟一": 6, "聯盟二": 8}
-REG_MATCHUPS = {"聯盟一": 17, "聯盟二": 18}  # 第 3 週起還剩幾場例行賽對戰
+REG_MATCHUPS = {"聯盟一": 17, "聯盟二": 18}
+REG_LAST_WEEK = {"聯盟一": 19, "聯盟二": 20}  # 例行賽最後一週  # 第 3 週起還剩幾場例行賽對戰
 
 
 def load_season_schedule(refresh: bool = False) -> pd.DataFrame:
@@ -158,6 +160,17 @@ def simulate_season(label: str, runs: int = 2000, seed: int = 0, log=print, twea
     n = len(lg["categories"])
     cat_rate = {t: {c: 0.0 for c in lg["categories"]} for t in teams}
     schedules = [round_robin(teams, len(regular), rng) for _ in range(runs)]
+    mine = data.get("my_schedule")  # 我方整季對手（週次 → 隊名）；其他隊每週隨機配對
+    if mine:
+        first_week = REG_LAST_WEEK[label] - len(regular) + 1  # 剩下的例行賽從第幾週開始
+        for r in range(runs):
+            for p in range(len(regular)):
+                opp = mine.get(str(first_week + p))
+                if not opp:
+                    continue
+                rest = [t for t in teams if t not in (MY_TEAM, opp)]
+                rng.shuffle(rest)
+                schedules[r][p] = [(MY_TEAM, opp)] + [(rest[i], rest[i + 1]) for i in range(0, len(rest) - 1, 2)]
     for p, days in enumerate(regular):
         tot = {t: period_totals(rosters[t], days, playing, lg, rng, runs) for t in teams}
         res = {}
