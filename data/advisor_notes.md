@@ -22,6 +22,7 @@
 - 10/31 13:43 截圖（美東週五打完）：6 勝 5 敗。REB 193-190 反超；3PTM 53-55、3PT%、AST 138-149 被反超。plan.py 預測 9-2；不換 78%，週日照計劃 94%。
   週日計劃不變：Diabaté → Podziemski、Camara → Draymond Green（94%；plan.py 又建議放 Harper 換 Queta，一樣 94%，不採用）。
 
+- ⚠️ 11/1 17:35：Draymond Green 美東週日休兵（背，O），Curry 也休（對手少一個射手）。改成 Allen → Neemias Queta（BOS，11/2 04:30 @ORL；M. Robinson 掛 Q 休兵，Queta 可能多打）。週一 LeBron 回來前釋出 Queta。
 - ✅ 11/1 17:00 最終：LeBron（背，DTD，美東週六 B2B 缺陣，預計 11/2 回）移進 IL → 空出一個名單位。
   ① 簽 Podziemski，不用釋出；② Allen → Draymond（週日 1 場租用）；③ 週一 LeBron 回來前釋出 Draymond（釋出不算 add），把 LeBron 移回。
   長期模擬（rival，700 次，含每週串流 6 場）：放 Allen 89%／放 Diabaté 92%／放 Camara 88%／放 Draymond 93%——Allen 和 Diabaté 長期其實差不多（在誤差內），
@@ -39,6 +40,7 @@
   ② 週日（週六打完後、台北 11/2 09:00 前）：Bey → Draymond Green（GSW）。
 - 10/30 17:35 換完後模擬：不再換 91%（預測 7-2）；週日 Bey → Draymond Green 96%。週六要把板凳的 Turner、NAW、Bey 移上先發（週六 7 人有賽）。
 - 10/31 13:43 截圖：5 勝 4 敗（FG% .446-.447 幾乎平手）。預測 7-2，本週贏約 100%。週日 Bey → Draymond Green 照做。
+- ⚠️ 11/1 17:35：Draymond 週日休兵，改用空位簽 Ja'Kobe Walter（TOR，可有可無，本週已近 100%）；週一 Embiid 回來前釋出。
 - ✅ 11/1 17:00：Embiid（腳，DTD，預計 11/2 回）移進 IL → 空出名單位，直接簽 Draymond 不用釋出 Bey；週一 Embiid 回來前再釋出一人（大概是 Draymond）。
 - 10/31 19:50 新 FA 截圖：Bey → Draymond Green 不變（save_plan 已記）；備案 De'Anthony Melton。
 - 搖擺：FG%、ST、BLK；REB 大概輸；TO 放棄。
