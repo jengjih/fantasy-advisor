@@ -51,6 +51,14 @@
 - 搖擺：FG%、ST、BLK；REB 大概輸；TO 放棄。
 - 對手陣容（10/29）：Morant、Avdija、Kyrie、Brandon Miller、Buzelis、Anthony Black、Clingan、Gobert、Lillard、Fox、Giddey、Rollins、Jalen Green；IL Edey、Banchero、Nurkić。
 
+## 第 3 週（11/2–11/8）
+- 對手陣容 11/1 已存（opponent_roster、league_rosters）。
+- 誰是懂球帝 vs Justin（Acuff、LaVine、Trae、Coward、Tatum、Jabari、Mobley、Giannis、A. Black、Vassell；板凳 Ty Jerome Q、Mara、Jaquez、Hart；IL VanVleet Q、Holmgren O、Nurkić O）：
+  不換人模擬贏 78%（6.9-3.9，場次 45 vs 43）。弱項 REB 34%、TO 23%；搖擺 3PTM、3PT%、FG%。串流優先籃板。
+- baek's vs 安國（全聯盟最強：Acuff、Harden、D. White、Anunoby、Randle、Tatum、Kessler、Diabaté、McDaniels、Podziemski；板凳 J. Murray、Booker、Miles Bridges；IL Ingram、Suggs）：
+  不換人只有 29%（3.8-5.0）。REB、AST 各 7% 放棄；搖擺 FG% 36%、ST 42%、BLK 49%、PTS 24%。
+  ⚠️ 這週破例：週一到週四也用 adds（週四我方 0 人有賽、週二全休）。初步：週一 Isaiah Jackson → Collin Gillespie（PHX 一三四六），週日再接力。等 11/2 FA 截圖定案。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
