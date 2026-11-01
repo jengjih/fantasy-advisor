@@ -30,6 +30,9 @@
 - 11/1 16:40 改計劃：週日放 Grayson Allen（不是 Diabaté）→ Podziemski，Camara → Draymond。Allen 本週已打完、本季 FG% .400 REB 3.0；Diabaté 本季 9.3 分 9.8 籃板 1.8 抄截 FG% .622，是籃板來源，保留（keep）。本週勝率三種放法都 96%。
 - 10/31 19:50 新 FA 截圖：計劃不變（Podziemski、Draymond 都還是純 FA；週日 94%）。Draymond 被搶走就改 Queta（BOS，同 94%）。已用 save_plan 記進作戰卡，keep=Harper。
 
+- ✅ 11/1 17:40 已做：+Podziemski（空位）、Allen → Queta。Adds 8/8 用完。週日先發 White、Podziemski、Reaves、WCJ、Queta 都在先發。
+- 週一（台北 11/3 08:30 七六人開打前）：釋出 Queta、LeBron 移出 IL。長期模擬（500 次）：放 Queta 81%、放 Diabaté 80%（打平）、放 Camara 73%、放 Podziemski 73%、放 Dosunmu 76%、放 WCJ 74%。
+
 ### baek's Grand League vs LALA好
 - 10/30 17:13 截圖：4 勝 5 敗。贏 FG%(.446-.444)、FT%、3PTM(44-42)、BLK(18-17)；輸 PTS(352-368)、REB(96-124)、AST(84-92)、ST(20-22)、TO。Adds 已用 2/4。
 - 已做：Mitchell Robinson → Saddiq Bey（10/28）、Ayton → Scotty Pippen Jr.（10/29）、Pippen → Isaiah Jackson（10/30）。Adds 3/4。
@@ -43,6 +46,8 @@
 - ⚠️ 11/1 17:35：Draymond 週日休兵，改用空位簽 Ja'Kobe Walter（TOR，可有可無，本週已近 100%）；週一 Embiid 回來前釋出。
 - ✅ 11/1 17:00：Embiid（腳，DTD，預計 11/2 回）移進 IL → 空出名單位，直接簽 Draymond 不用釋出 Bey；週一 Embiid 回來前再釋出一人（大概是 Draymond）。
 - 10/31 19:50 新 FA 截圖：Bey → Draymond Green 不變（save_plan 已記）；備案 De'Anthony Melton。
+- ✅ 11/1 17:40 已做：+Ja'Kobe Walter（空位）。Adds 4/4 用完。
+- 週一（台北 11/3 08:30 前）：釋出 Walter、Embiid 移出 IL。長期模擬（400 次）放 Walter 勝率最高（.593），其次放 Jackson／Dosunmu（.587），放 Bey .578、Kyshawn .582。
 - 搖擺：FG%、ST、BLK；REB 大概輸；TO 放棄。
 - 對手陣容（10/29）：Morant、Avdija、Kyrie、Brandon Miller、Buzelis、Anthony Black、Clingan、Gobert、Lillard、Fox、Giddey、Rollins、Jalen Green；IL Edey、Banchero、Nurkić。
 
