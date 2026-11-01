@@ -22,6 +22,7 @@
 - 10/31 13:43 截圖（美東週五打完）：6 勝 5 敗。REB 193-190 反超；3PTM 53-55、3PT%、AST 138-149 被反超。plan.py 預測 9-2；不換 78%，週日照計劃 94%。
   週日計劃不變：Diabaté → Podziemski、Camara → Draymond Green（94%；plan.py 又建議放 Harper 換 Queta，一樣 94%，不採用）。
 
+- ✅ 11/1 16:40 改計劃：週日放 Grayson Allen（不是 Diabaté）→ Podziemski，Camara → Draymond。Allen 本週已打完、本季 FG% .400 REB 3.0；Diabaté 本季 9.3 分 9.8 籃板 1.8 抄截 FG% .622，是籃板來源，保留（keep）。本週勝率三種放法都 96%。
 - 10/31 19:50 新 FA 截圖：計劃不變（Podziemski、Draymond 都還是純 FA；週日 94%）。Draymond 被搶走就改 Queta（BOS，同 94%）。已用 save_plan 記進作戰卡，keep=Harper。
 
 ### baek's Grand League vs LALA好

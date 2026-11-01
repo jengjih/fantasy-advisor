@@ -88,7 +88,7 @@
       "saved_ts": "2026-10-31T13:52+08:00",
       "week_monday": "2026-10-26"
     },
-    "updated_at": "2026-10-31 19:49",
+    "updated_at": "2026-11-01 16:35",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -178,7 +178,7 @@
     "planned_adds": [
       {
         "day": "2026-11-01",
-        "drop": "Moussa Diabaté",
+        "drop": "Grayson Allen",
         "add": "Brandin Podziemski"
       },
       {
@@ -188,7 +188,8 @@
       }
     ],
     "keep": [
-      "Dylan Harper"
+      "Dylan Harper",
+      "Moussa Diabaté"
     ]
   },
   "聯盟二": {
