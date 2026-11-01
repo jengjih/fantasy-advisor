@@ -23,6 +23,11 @@ STREAMER_RANK = 0.8       # 排名在「隊數 × 13 人」的後 20% 以下＝�
 DROP_MARGIN = 2.5         # 長期價值（z 分數）比新簽的人高出這麼多的，不為了這週多幾場就釋出
 POOL_SIZE = 40            # 規劃時只從價值前 40 名的候選人裡挑，加快速度
 SIM_RUNS = 5000           # 勝率模擬的次數
+REST_PROB = 0.6           # 常輪休的老將在背靠背第二天上場的機率
+# 背靠背第二天常輪休的人（10/31–11/1 LeBron、Embiid、Curry、Draymond 都休）；名單隨季中觀察調整
+REST_RISK = {"LeBron James", "Stephen Curry", "Draymond Green", "Joel Embiid", "Kevin Durant", "Kawhi Leonard",
+             "Jimmy Butler III", "Al Horford", "Paul George", "Kyrie Irving", "Anthony Davis", "Mike Conley"}
+_B2B: set[tuple[str, date]] = set()  # （球隊, 背靠背第二天）；teams_playing() 每次都會更新
 TOTALS = ["FGM", "FGA", "FG3M", "FG3A", "FTM", "FTA", "PTS", "REB", "AST", "STL", "BLK", "TOV"]
 
 
@@ -44,8 +49,12 @@ class Member:
         if not (self.start <= d < self.end):
             return 0.0
         if self.status == "Out":
-            return 1.0 if self.return_date and d >= self.return_date else 0.0
-        return DTD_PLAY_PROB if self.status == "Day-To-Day" else 1.0
+            prob = 1.0 if self.return_date and d >= self.return_date else 0.0
+        else:
+            prob = DTD_PLAY_PROB if self.status == "Day-To-Day" else 1.0
+        if self.name in REST_RISK and (self.team, d) in _B2B:
+            prob *= REST_PROB
+        return prob
 
 
 # ---------- 準備 ----------
@@ -93,6 +102,8 @@ def teams_playing(schedule: pd.DataFrame) -> dict[date, set[str]]:
     out: dict[date, set[str]] = {}
     for _, g in schedule.iterrows():
         out.setdefault(g["date"], set()).update((g["home"], g["away"]))
+    _B2B.clear()
+    _B2B.update((t, d) for d, teams in out.items() for t in teams & out.get(d - timedelta(days=1), set()))
     return out
 
 
@@ -328,6 +339,8 @@ def league_report(label: str, lg: dict, state: dict, players: pd.DataFrame, inju
         focus = [r["cat"] for r in rows if r["swing"] and r["cat"] != "TO"]
     scored, empty = score(players, lg)
     mine, missing = resolve(lg["roster"], scored, injuries, lg, empty, focus)
+    for x in mine:  # 對話決定不釋出的人（state.save_plan 的 keep）
+        x.keep = x.keep or x.name in state[label].get("keep", [])
     out = [f"【{lg['name']}】" + (f"vs {m['opponent']}" if m else "")]
     if missing:
         out.append("❓ 找不到這些球員的 NBA 數據：" + "、".join(missing))
@@ -339,7 +352,10 @@ def league_report(label: str, lg: dict, state: dict, players: pd.DataFrame, inju
         if r["open"]:
             line += f"，空 {r['open']} 格"
         if r["bench"]:
-            line += f"，坐板凳 {'、'.join(r['bench'])}"
+            line += f"，建議坐板凳 {'、'.join(r['bench'])}"
+        rest = [n for n in r["started"] if n in REST_RISK and any(x.name == n and (x.team, r["day"]) in _B2B for x in mine)]
+        if rest:
+            line += f"（⚠️ 背靠背第二天可能輪休：{'、'.join(rest)}）"
         out.append(line)
     games, _, _ = expected(mine, playing, days_between(day, sunday), lg["starters"])
     out.append(f"  本週剩餘出賽人次（預期）：{games:.1f}")
