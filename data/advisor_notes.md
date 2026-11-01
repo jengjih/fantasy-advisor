@@ -80,6 +80,7 @@
     交易（在串流 +6 的基礎上）：Brunson→Jalen Johnson（永吉路）84%、Fox→Clingan（桐生）80%、White→Lendeborg 82%、Booker+Diabaté→Holmgren+Mobley 81%；
     Booker→Towns／Giannis 沒有明顯幫助。交易只多 2–6%，雜訊約 ±3%。
   baek's vs 伊古達拉：現況已經 99%（他季後賽只有 8%）。原則：不跟伊古達拉交易、不送他補強。
+- ✅ 11/1 18:10 使用者已撤回交易。11/3 早上看 JJ 有沒有上場（ATL @IND 台北 08:30），沒事就重新提出。
 - ⚠️ 11/1 18:00：Jalen Johnson 週六扭傷腳踝沒回場（ESPN DTD，預估 11/2 回，未確認）。建議先 Cancel trade，等他回來打 1–2 場確認沒事再重新提出（同樣 1 換 1）。
 - ✅ 10/30 18:48 已送出 Brunson → Jalen Johnson（永吉路），等對方回覆。1 換 1、不加碼；被拒就不追。Yahoo 排名 JJ 第 20、Brunson 第 73。
 - 交易提案 Brunson → Jalen Johnson（永吉路）：可以現在送。Brunson 本週最後一場是美東週五，JJ 是週六，投票期 1 天，生效時這週兩人都打完了，不影響本週。下週 JJ 4 場、Brunson 3 場。
@@ -94,6 +95,9 @@
   懂球帝每天有賽 14/0/12/4/9/8/5 人（空格 24）；baek's 13/0/13/0/10/5/8（空格 27）。
 
 ## 長期備忘
+- Yahoo IL 規則（誰是懂球帝 11/1 公告，Yahoo 全站規則，兩聯盟都適用）：掛 O 的人放 IL，O 標記會保留到當晚交易處理時；
+  只缺 1–2 場的人狀態恢復後就不再符合 IL 資格 → 要馬上移出 IL（先釋出一人），否則名單不合法，Yahoo 會鎖住所有 Add/Drop。
+  缺 3 場以上或整季報銷的人，到回來前都可以一直放 IL。短期 O（B2B 休兵）也能拿來臨時空出名單位，但隔天就要處理。
 - Jalen Williams（腓骨骨折開刀）、Cason Wallace（肩膀盂唇撕裂開刀）ESPN 預估都要到 2027-03 才回。
 - Kon Knueppel（baek's IL，腿後肌）預計 11/2 前後回來（10/30 ESPN 改說「沒有時間表」），回來要記得移出 IL（要先釋出一人）。
 - Yahoo 「Games Played 已打/總數」的總數只算目前排在先發的人，會低估剩餘場次；以賽程計算為準。
