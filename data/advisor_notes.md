@@ -54,6 +54,10 @@
 
 ## 第 3 週（11/2–11/8）作戰計劃（11/2 16:30 定案，FA 截圖 11/2 16:05）
 - ⚠️ 11/2 16:05 截圖：Queta、Walter 還在、LeBron／Embiid 還在 IL（LeBron 健康、Embiid Q）→ 名單不合法，要先處理才能 Add。
+- ✅ 11/2 16:19：IL 已處理（Queta、Walter 已放；LeBron、Embiid 回陣容），週一先發正確（懂球帝 Harper、White、Podziemski、Diabaté 坐板凳；baek's Bey、Jackson、DeRozan 坐板凳）。
+- 11/2 Sun 提案：Norman Powell + Ryan Rollins 換 WCJ（誰是懂球帝）。模擬（1500 次、含串流）贏尚恩 79% → 86%（Rollins 直接放）／91%（留 Rollins、放 Diabaté）。建議接受。
+  2 換 1 要多放一人：Diabaté 或 Dosunmu 二選一；建議放 Diabaté、Dosunmu 繼續當串流位（留 Diabaté 就得放棄週四起的串流接力）。
+- Fox vs Harper：本季 Fox 16.5/4.8/7.0、1.5 抄、FG% .576；Harper 18.5/5.5/4.8、FG% .473、FT% .895、TO 少；長期模型 Fox 排 65、Harper 158。本週搖擺 FG% → Fox 先發。
 ### 誰是懂球帝 vs Justin（不換 84%，照計劃 92%）
 - 現在：Drop Queta、LeBron 移出 IL。週一先發坐板凳：White、Harper、Diabaté、Podziemski（最晚 11/3 08:00）。週三坐板凳：Harper、Diabaté。
 - 串流位 Dosunmu 接力（3 adds）：① 11/5（四）中午後～11/6 10:00 前 Dosunmu → Dillon Brooks（PHX 四六）
