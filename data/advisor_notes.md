@@ -8,6 +8,7 @@
 ### 誰是懂球帝 vs 永吉路懂球帝
 - 10/30 17:14 截圖：6 勝 4 敗 1 平（FGM 139 平）。週四對手爆發：籃板 133-149、助攻 101-106 反超。
 - 已做：Buzelis → Diabaté（10/28）、Sarr → Jaylen Wells（10/29）、Edey → Grayson Allen、Wells → Ayo Dosunmu（10/30 17:30 前）。Adds 6/8。
+- 11/2 強力衝擊二連冠提案：Garland + Kel'el Ware 換 D. White + Diabaté。模擬（1500 次）贏尚恩 77% → 79%、例行賽 59% → 53%，在誤差內＝打平。建議拒絕（沒好處、White 的 FT%／抄截／阻攻符合打尚恩的方向，Garland TO 多）。
 - 拒絕交易：桐生一馬用 Edgecombe + Kawhi + Randle 換 Brunson + Bam。
 - 10/30 17:15 計劃（plan.py＋模擬：照做贏 97%，不換 78%）：
   ① 今天～台北 10/31 07:00 前：Edey → Grayson Allen（CHA，週五週六）、Wells → Ayo Dosunmu（MIN，週五週六）。Edey、Wells 週五都沒賽，現在就能換。
