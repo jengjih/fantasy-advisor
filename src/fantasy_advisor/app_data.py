@@ -242,7 +242,10 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
     # ---- 排先發（今天） ----
     today_on = [x for x in mine if x.team in playing.get(day, set()) and x.play_prob(day) > 0]
     if today_on:
-        started = pj.lineup(mine, playing.get(day, set()), day, lg["starters"])
+        # 對話決定先坐板凳的人（state 的 sit_first，例如這週要拚阻攻就讓 Bey 坐板凳）排到最後
+        sit_first = set(lg_state.get("sit_first", []))
+        ranked = [pj.Member(**{**x.__dict__, "value": x.value - 1000}) if x.name in sit_first else x for x in mine]
+        started = pj.lineup(ranked, playing.get(day, set()), day, lg["starters"])
         sit = [x for x in today_on if x.name not in {s.name for s, _ in started}]
         first_tip = min(tips[(day, x.team)] for x in today_on)
         # 只列需要注意的人（坐板凳、每日觀察）；全部人都上先發就不用一一列出
@@ -251,7 +254,7 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
         gtd = [x.name for x in today_on if x.status == "Day-To-Day"]
         detail = "到 My Team 按 Start Active Players，確認有比賽的人都不在板凳（BN）。"
         if sit:
-            detail += f"人太多：{'、'.join(x.name for x in sit)} 坐板凳（價值最低）。"
+            detail += f"人太多：{'、'.join(x.name for x in sit)} 坐板凳。"
         if gtd:
             detail += f"{'、'.join(gtd)} 每日觀察，開打前再看一次。"
         busy = bool(sit or gtd)
@@ -284,7 +287,7 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
         planned = _planned_steps(lg_state, mine, scored, injuries, lg, empty, focus, schedule, day)
         pool += [x for x in planned["members"] if x.name not in {p.name for p in pool}]
         steps = planned["steps"][:adds_left]
-        if add_days and adds_left > len(steps):
+        if add_days and adds_left > len(steps) and not lg_state.get("plan_only"):  # plan_only：只列對話決定的換人
             base = pj.apply_steps(mine, pool, steps)
             more = pj.plan_adds(lg, base, [p for p in pool if p.name not in {s["add"] for s in steps}],
                                 schedule, day, adds_left - len(steps), add_days)
