@@ -213,13 +213,23 @@
       }
     ],
     "keep": [
-      "Dylan Harper",
       "Brandin Podziemski",
-      "Toumani Camara"
+      "Dylan Harper",
+      "Moussa Diabaté",
+      "Toumani Camara",
+      "Wendell Carter Jr."
     ],
     "stream_slots": [
       "Ayo Dosunmu"
-    ]
+    ],
+    "sit_first": [
+      "Derrick White",
+      "Brandin Podziemski",
+      "Dylan Harper",
+      "Moussa Diabaté"
+    ],
+    "plan_only": true,
+    "note": "11/4 交易：WCJ → Powell + Rollins，放 Diabaté（處理前不要動這兩人）"
   },
   "聯盟二": {
     "roster": [
@@ -409,6 +419,12 @@
       "Kyshawn George",
       "Saddiq Bey",
       "DeMar DeRozan"
-    ]
+    ],
+    "sit_first": [
+      "DeMar DeRozan",
+      "Isaiah Jackson",
+      "Saddiq Bey"
+    ],
+    "plan_only": true
   }
 }
