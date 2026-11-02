@@ -27,66 +27,66 @@
       "categories": [
         {
           "category": "FGM",
-          "mine": "205",
-          "opponent": "192"
+          "mine": "291",
+          "opponent": "238"
         },
         {
           "category": "FG%",
-          "mine": ".480",
-          "opponent": ".473"
+          "mine": ".498",
+          "opponent": ".483"
         },
         {
           "category": "FT%",
-          "mine": ".815",
-          "opponent": ".870"
+          "mine": ".813",
+          "opponent": ".837"
         },
         {
           "category": "3PTM",
-          "mine": "53",
-          "opponent": "55"
+          "mine": "78",
+          "opponent": "69"
         },
         {
           "category": "3PT%",
-          "mine": ".346",
-          "opponent": ".348"
+          "mine": ".361",
+          "opponent": ".359"
         },
         {
           "category": "PTS",
-          "mine": "564",
-          "opponent": "533"
+          "mine": "795",
+          "opponent": "658"
         },
         {
           "category": "REB",
-          "mine": "193",
-          "opponent": "190"
+          "mine": "271",
+          "opponent": "241"
         },
         {
           "category": "AST",
-          "mine": "138",
-          "opponent": "149"
+          "mine": "179",
+          "opponent": "168"
         },
         {
           "category": "ST",
-          "mine": "47",
-          "opponent": "34"
+          "mine": "59",
+          "opponent": "44"
         },
         {
           "category": "BLK",
-          "mine": "24",
-          "opponent": "22"
+          "mine": "36",
+          "opponent": "28"
         },
         {
           "category": "TO",
-          "mine": "75",
-          "opponent": "61"
+          "mine": "101",
+          "opponent": "82"
         }
       ],
       "adds_used": 8,
-      "opp_games_left": 5,
-      "my_games_left": 7,
-      "note": "",
-      "saved_at": "10-31 13:52",
-      "saved_ts": "2026-10-31T13:52+08:00",
+      "opp_games_left": 0,
+      "my_games_left": 0,
+      "note": "第 2 週最終 9-2",
+      "saved_at": "11-02 13:16",
+      "saved_ts": "2026-11-02T13:16+08:00",
       "week_monday": "2026-10-26"
     },
     "updated_at": "2026-11-01 18:38",
@@ -231,56 +231,56 @@
       "categories": [
         {
           "category": "FG%",
-          "mine": ".446",
-          "opponent": ".447"
+          "mine": ".447",
+          "opponent": ".449"
         },
         {
           "category": "FT%",
-          "mine": ".873",
-          "opponent": ".684"
+          "mine": ".884",
+          "opponent": ".728"
         },
         {
           "category": "3PTM",
-          "mine": "69",
-          "opponent": "57"
+          "mine": "90",
+          "opponent": "69"
         },
         {
           "category": "PTS",
-          "mine": "540",
-          "opponent": "477"
+          "mine": "722",
+          "opponent": "609"
         },
         {
           "category": "REB",
-          "mine": "151",
-          "opponent": "165"
+          "mine": "226",
+          "opponent": "214"
         },
         {
           "category": "AST",
-          "mine": "123",
-          "opponent": "125"
+          "mine": "152",
+          "opponent": "153"
         },
         {
           "category": "ST",
-          "mine": "33",
-          "opponent": "24"
+          "mine": "52",
+          "opponent": "31"
         },
         {
           "category": "BLK",
-          "mine": "28",
-          "opponent": "20"
+          "mine": "34",
+          "opponent": "25"
         },
         {
           "category": "TO",
-          "mine": "69",
-          "opponent": "58"
+          "mine": "94",
+          "opponent": "78"
         }
       ],
       "adds_used": 4,
-      "opp_games_left": 6,
-      "my_games_left": 7,
-      "note": "",
-      "saved_at": "10-31 13:52",
-      "saved_ts": "2026-10-31T13:52+08:00",
+      "opp_games_left": 0,
+      "my_games_left": 0,
+      "note": "第 2 週最終 6-3",
+      "saved_at": "11-02 13:16",
+      "saved_ts": "2026-11-02T13:16+08:00",
       "week_monday": "2026-10-26"
     },
     "updated_at": "2026-11-01 18:38",
