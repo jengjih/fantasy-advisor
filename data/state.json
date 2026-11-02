@@ -22,107 +22,101 @@
       "LeBron James"
     ],
     "matchup": {
-      "week": 2,
-      "opponent": "永吉路懂球帝",
+      "week": 3,
+      "opponent": "Justin's Ingenious Team",
       "categories": [
         {
           "category": "FGM",
-          "mine": "291",
-          "opponent": "238"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "FG%",
-          "mine": ".498",
-          "opponent": ".483"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "FT%",
-          "mine": ".813",
-          "opponent": ".837"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "3PTM",
-          "mine": "78",
-          "opponent": "69"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "3PT%",
-          "mine": ".361",
-          "opponent": ".359"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "PTS",
-          "mine": "795",
-          "opponent": "658"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "REB",
-          "mine": "271",
-          "opponent": "241"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "AST",
-          "mine": "179",
-          "opponent": "168"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "ST",
-          "mine": "59",
-          "opponent": "44"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "BLK",
-          "mine": "36",
-          "opponent": "28"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "TO",
-          "mine": "101",
-          "opponent": "82"
+          "mine": "0",
+          "opponent": "0"
         }
       ],
-      "adds_used": 8,
-      "opp_games_left": 0,
-      "my_games_left": 0,
-      "note": "第 2 週最終 9-2",
-      "saved_at": "11-02 13:16",
-      "saved_ts": "2026-11-02T13:16+08:00",
-      "week_monday": "2026-10-26"
+      "adds_used": 0,
+      "opp_games_left": -1,
+      "my_games_left": -1,
+      "note": "",
+      "saved_at": "11-02 16:05",
+      "saved_ts": "2026-11-02T16:05+08:00",
+      "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-01 18:38",
+    "updated_at": "2026-11-02 16:11",
     "free_agents": {
       "names": [
         "Collin Gillespie",
-        "Ryan Rollins",
         "Cameron Johnson",
-        "Darryn Peterson",
+        "John Collins",
         "Christian Braun",
         "Jrue Holiday",
+        "Darryn Peterson",
         "Aaron Gordon",
         "Collin Murray-Boyles",
-        "Myles Turner",
         "Alex Sarr",
-        "Scoot Henderson",
-        "Devin Vassell",
+        "Myles Turner",
+        "CJ McCollum",
+        "Zach Edey",
         "Rui Hachimura",
-        "Brandin Podziemski",
+        "Scoot Henderson",
         "Keaton Wagler",
         "Davion Mitchell",
-        "Dillon Brooks",
-        "Matas Buzelis",
-        "Tre Jones",
         "Day'Ron Sharpe",
+        "Dillon Brooks",
+        "Tre Jones",
+        "Reed Sheppard",
         "Daniel Gafford",
-        "Aaron Nesmith",
-        "Neemias Queta",
-        "Miles McBride",
-        "Isaiah Joe",
-        "Mitchell Robinson",
-        "Jakob Poeltl",
-        "Draymond Green",
-        "Isaiah Jackson"
+        "Matas Buzelis",
+        "Aaron Nesmith"
       ],
-      "saved_ts": "2026-10-31T19:49+08:00"
+      "saved_ts": "2026-11-02T16:08+08:00"
     },
     "opponent_roster": {
       "opponent": "Justin's Ingenious Team",
@@ -193,7 +187,23 @@
         ]
       }
     ],
-    "planned_adds": [],
+    "planned_adds": [
+      {
+        "day": "2026-11-05",
+        "drop": "Ayo Dosunmu",
+        "add": "Dillon Brooks"
+      },
+      {
+        "day": "2026-11-06",
+        "drop": "Dillon Brooks",
+        "add": "Jrue Holiday"
+      },
+      {
+        "day": "2026-11-08",
+        "drop": "Jrue Holiday",
+        "add": "Myles Turner"
+      }
+    ],
     "keep": [
       "Dylan Harper",
       "Moussa Diabaté",
@@ -226,94 +236,85 @@
       "Joel Embiid"
     ],
     "matchup": {
-      "week": 2,
-      "opponent": "LALA好",
+      "week": 3,
+      "opponent": "安國's Terrific Team",
       "categories": [
         {
           "category": "FG%",
-          "mine": ".447",
-          "opponent": ".449"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "FT%",
-          "mine": ".884",
-          "opponent": ".728"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "3PTM",
-          "mine": "90",
-          "opponent": "69"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "PTS",
-          "mine": "722",
-          "opponent": "609"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "REB",
-          "mine": "226",
-          "opponent": "214"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "AST",
-          "mine": "152",
-          "opponent": "153"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "ST",
-          "mine": "52",
-          "opponent": "31"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "BLK",
-          "mine": "34",
-          "opponent": "25"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "TO",
-          "mine": "94",
-          "opponent": "78"
+          "mine": "0",
+          "opponent": "0"
         }
       ],
-      "adds_used": 4,
-      "opp_games_left": 0,
-      "my_games_left": 0,
-      "note": "第 2 週最終 6-3",
-      "saved_at": "11-02 13:16",
-      "saved_ts": "2026-11-02T13:16+08:00",
-      "week_monday": "2026-10-26"
+      "adds_used": 0,
+      "opp_games_left": -1,
+      "my_games_left": -1,
+      "note": "",
+      "saved_at": "11-02 16:05",
+      "saved_ts": "2026-11-02T16:05+08:00",
+      "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-01 18:38",
+    "updated_at": "2026-11-02 16:11",
     "free_agents": {
       "names": [
         "Collin Gillespie",
         "Scoot Henderson",
-        "Ja'Kobe Walter",
         "Tre Jones",
-        "Herbert Jones",
         "Cameron Johnson",
-        "Mitchell Robinson",
+        "Herbert Jones",
         "Keaton Wagler",
-        "Aaron Nesmith",
         "De'Anthony Melton",
+        "Aaron Nesmith",
         "Jeremiah Fears",
         "Morez Johnson Jr.",
         "Miles McBride",
-        "Draymond Green",
         "Sam Merrill",
-        "Joan Beringer",
-        "Jaylin Williams",
         "Noah Clowney",
         "Kelly Oubre Jr.",
-        "Jamal Shead",
-        "Jake LaRavia",
-        "Mikel Brown Jr.",
-        "Bones Hyland",
-        "Adem Bona",
-        "De'Andre Hunter",
-        "Al Horford"
+        "Robert Williams III",
+        "Joan Beringer",
+        "Jamal Shead"
       ],
-      "saved_ts": "2026-10-31T19:49+08:00"
+      "saved_ts": "2026-11-02T16:08+08:00"
     },
     "opponent_roster": {
       "opponent": "安國's Terrific Team",
@@ -378,10 +379,22 @@
         "drop": []
       }
     ],
-    "planned_adds": [],
+    "planned_adds": [
+      {
+        "day": "2026-11-05",
+        "drop": "Isaiah Jackson",
+        "add": "Collin Gillespie"
+      },
+      {
+        "day": "2026-11-08",
+        "drop": "Collin Gillespie",
+        "add": "Jeremiah Fears"
+      }
+    ],
     "keep": [
       "Kyshawn George",
-      "Saddiq Bey"
+      "Saddiq Bey",
+      "DeMar DeRozan"
     ]
   }
 }

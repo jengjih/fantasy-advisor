@@ -52,13 +52,19 @@
 - 搖擺：FG%、ST、BLK；REB 大概輸；TO 放棄。
 - 對手陣容（10/29）：Morant、Avdija、Kyrie、Brandon Miller、Buzelis、Anthony Black、Clingan、Gobert、Lillard、Fox、Giddey、Rollins、Jalen Green；IL Edey、Banchero、Nurkić。
 
-## 第 3 週（11/2–11/8）
-- 對手陣容 11/1 已存（opponent_roster、league_rosters）。
-- 誰是懂球帝 vs Justin（Acuff、LaVine、Trae、Coward、Tatum、Jabari、Mobley、Giannis、A. Black、Vassell；板凳 Ty Jerome Q、Mara、Jaquez、Hart；IL VanVleet Q、Holmgren O、Nurkić O）：
-  不換人模擬贏 78%（6.9-3.9，場次 45 vs 43）。弱項 REB 34%、TO 23%；搖擺 3PTM、3PT%、FG%。串流優先籃板。
-- baek's vs 安國（全聯盟最強：Acuff、Harden、D. White、Anunoby、Randle、Tatum、Kessler、Diabaté、McDaniels、Podziemski；板凳 J. Murray、Booker、Miles Bridges；IL Ingram、Suggs）：
-  不換人只有 29%（3.8-5.0）。REB、AST 各 7% 放棄；搖擺 FG% 36%、ST 42%、BLK 49%、PTS 24%。
-  ⚠️ 這週破例：週一到週四也用 adds（週四我方 0 人有賽、週二全休）。初步：週一 Isaiah Jackson → Collin Gillespie（PHX 一三四六），週日再接力。等 11/2 FA 截圖定案。
+## 第 3 週（11/2–11/8）作戰計劃（11/2 16:30 定案，FA 截圖 11/2 16:05）
+- ⚠️ 11/2 16:05 截圖：Queta、Walter 還在、LeBron／Embiid 還在 IL（LeBron 健康、Embiid Q）→ 名單不合法，要先處理才能 Add。
+### 誰是懂球帝 vs Justin（不換 84%，照計劃 92%）
+- 現在：Drop Queta、LeBron 移出 IL。週一先發坐板凳：White、Harper、Diabaté、Podziemski（最晚 11/3 08:00）。週三坐板凳：Harper、Diabaté。
+- 串流位 Dosunmu 接力（3 adds）：① 11/5（四）中午後～11/6 10:00 前 Dosunmu → Dillon Brooks（PHX 四六）
+  ② 11/6 13:00 後～11/7 11:00 前 Brooks → Jrue Holiday（POR 五六）③ 11/8 14:00 後～11/9 09:00 前 Holiday → Myles Turner（MIL 日，阻攻）。
+- 比較過：Brooks→Sarr→Gafford 89%、Brooks→Edey→Sharpe 88%（籃板 80% 但三分 40%）；再加 Diabaté 第 2 位 92%（不划算、使用者想留）。
+- 搖擺：3PTM 55%、3PT% 39%、FG% 60%；TO 必輸。剩 5 adds 不用（沒有可放的人）。
+### baek's vs 安國（不換 31%，照計劃 41%）
+- 現在：Drop Walter、Embiid 移出 IL（Q，週一可能打）。週一先發坐板凳：DeRozan、Isaiah Jackson、Bey（Turner 上，搶阻攻）。
+- 串流位 Jackson 接力（2 adds）：① 11/5 14:00 後～11/6 10:00 前 Jackson → Collin Gillespie（PHX 四六，抄截 1.9、三分）② 11/8 13:00 後～11/9 10:00 前 Gillespie → Jeremiah Fears（NOP 日）。
+- 比較過：再放 DeRozan 換 Melton 可到 ~49%，但整季模擬放 DeRozan 平均名次 3.4 → 5.1，不划算；Dosunmu 接力沒幫助。
+- 守住 3PTM 81%、ST 74%、TO 60%、FT% 62%，再從 FG% 45%、BLK 38%、PTS 28% 拿一項就 5-4。REB、AST 放棄。
 
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
