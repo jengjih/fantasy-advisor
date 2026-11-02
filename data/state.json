@@ -14,12 +14,11 @@
       "Moussa Diabaté",
       "Ayo Dosunmu",
       "Brandin Podziemski",
-      "Neemias Queta"
+      "LeBron James"
     ],
     "il": [
       "Jalen Williams",
-      "Cason Wallace",
-      "LeBron James"
+      "Cason Wallace"
     ],
     "matchup": {
       "week": 3,
@@ -89,7 +88,7 @@
       "saved_ts": "2026-11-02T16:05+08:00",
       "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-02 16:11",
+    "updated_at": "2026-11-02 16:21",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -185,6 +184,15 @@
         "drop": [
           "Grayson Allen"
         ]
+      },
+      {
+        "date": "2026-11-02",
+        "add": [
+          "LeBron James"
+        ],
+        "drop": [
+          "Neemias Queta"
+        ]
       }
     ],
     "planned_adds": [
@@ -229,11 +237,10 @@
       "Kyshawn George",
       "Saddiq Bey",
       "Isaiah Jackson",
-      "Ja'Kobe Walter"
+      "Joel Embiid"
     ],
     "il": [
-      "Kon Knueppel",
-      "Joel Embiid"
+      "Kon Knueppel"
     ],
     "matchup": {
       "week": 3,
@@ -293,7 +300,7 @@
       "saved_ts": "2026-11-02T16:05+08:00",
       "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-02 16:11",
+    "updated_at": "2026-11-02 16:21",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -377,6 +384,15 @@
           "Ja'Kobe Walter"
         ],
         "drop": []
+      },
+      {
+        "date": "2026-11-02",
+        "add": [
+          "Joel Embiid"
+        ],
+        "drop": [
+          "Ja'Kobe Walter"
+        ]
       }
     ],
     "planned_adds": [
