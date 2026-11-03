@@ -72,6 +72,9 @@
 - 比較過：再放 DeRozan 換 Melton 可到 ~49%，但整季模擬放 DeRozan 平均名次 3.4 → 5.1，不划算；Dosunmu 接力沒幫助。
 - 守住 3PTM 81%、ST 74%、TO 60%、FT% 62%，再從 FG% 45%、BLK 38%、PTS 28% 拿一項就 5-4。REB、AST 放棄。
 
+- 11/3 14:02 截圖（美東週一打完）：懂球帝 3-8（落後 FGM、FG%、3PTM、3PT%、PTS），預測 6-4-1；含交易＋接力本週約 81%（不交易 77%）。搖擺 FG% 33%、3PTM 59%、REB 47%。
+  baek's 7-2（FG% .519、3PTM 34-15 大勝），不換 78%，照計劃 83–85%。最後一棒 Fears → 改 Tre Jones（FG% .515，保 FG% 領先；85% vs 83%）。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
