@@ -77,7 +77,8 @@
 
 - 11/4 18:45：Sun 交易還沒處理（WCJ、Diabaté 還在）。強力衝擊二連冠又提案 Kel'el Ware 換 Diabaté → 建議拒絕：Diabaté 已綁在 Sun 交易裡（接受可能讓 Sun 交易失效）；
   改用 Dosunmu 換 Ware 模擬只有 70%（失去串流位），連放 Podziemski 留串流也是 91%，都不比現在 92% 好。
-- 週三（台北 11/5 早上）先發：懂球帝 Harper、Diabaté 坐板凳（Fox、White 上）；baek's DeRozan、Bey、Jackson 坐板凳，Pritchard Q（08:30 開打）變 O 就換 Isaiah Jackson。
+- 週三（台北 11/5 早上）先發：懂球帝改成 Diabaté、White 坐板凳（Harper、Fox 都上）——使用者質疑 Harper，模擬 15 種組合：坐 Diabaté+White 78.8% 最好、坐 Harper+Diabaté 76.8%。
+  教訓：Harper 本季 18.3 分、FT% .875、TO 1.7，長期模型低估他（上季先驗拖累）；排先發要用本週模擬比較，不只看長期價值；baek's DeRozan、Bey、Jackson 坐板凳，Pritchard Q（08:30 開打）變 O 就換 Isaiah Jackson。
 
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
