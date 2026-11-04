@@ -75,6 +75,10 @@
 - 11/3 14:02 截圖（美東週一打完）：懂球帝 3-8（落後 FGM、FG%、3PTM、3PT%、PTS），預測 6-4-1；含交易＋接力本週約 81%（不交易 77%）。搖擺 FG% 33%、3PTM 59%、REB 47%。
   baek's 7-2（FG% .519、3PTM 34-15 大勝），不換 78%，照計劃 83–85%。最後一棒 Fears → 改 Tre Jones（FG% .515，保 FG% 領先；85% vs 83%）。
 
+- 11/4 18:45：Sun 交易還沒處理（WCJ、Diabaté 還在）。強力衝擊二連冠又提案 Kel'el Ware 換 Diabaté → 建議拒絕：Diabaté 已綁在 Sun 交易裡（接受可能讓 Sun 交易失效）；
+  改用 Dosunmu 換 Ware 模擬只有 70%（失去串流位），連放 Podziemski 留串流也是 91%，都不比現在 92% 好。
+- 週三（台北 11/5 早上）先發：懂球帝 Harper、Diabaté 坐板凳（Fox、White 上）；baek's DeRozan、Bey、Jackson 坐板凳，Pritchard Q（08:30 開打）變 O 就換 Isaiah Jackson。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
