@@ -86,6 +86,11 @@
 - 計劃不變（模擬 Brooks→Holiday→Turner 95% ≈ 改 Gafford 94%）。Sun 交易 11/5 15:27 截圖顯示沒有處理（WCJ、Diabaté 還在），✅ 確認被聯盟投票否決（Vetoed）。
 - 11/5 改計劃：串流位改用 Diabaté（本週 97% vs 用 Dosunmu 94%；長期打平），Dosunmu 保留。
 
+- ✅ 11/5 18:57：懂球帝 Diabaté → Brooks（adds 1/8）；baek's Jackson → Gillespie、DeRozan 進 IL（背痙攣，預計 11/7 回）（adds 1/4）。
+- baek's 空出名單位：簽 Day'Ron Sharpe（BKN 六日，補 REB/ST；97% vs 不簽 94%）。週五我方 10 人有賽已滿，週六只 5 人。
+  週日：DeRozan 若已恢復（IL 資格消失）→ 放 Gillespie、DeRozan 移出 IL（不簽 Tre Jones）；若仍 O → Gillespie → Tre Jones。
+- 交易被否決的影響（rival，1500 次）：贏尚恩現在約 82%，交易成功約 94%（差 12%）。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。

@@ -11,10 +11,10 @@
       "Wendell Carter Jr.",
       "Dylan Harper",
       "Toumani Camara",
-      "Moussa Diabaté",
       "Ayo Dosunmu",
       "Brandin Podziemski",
-      "LeBron James"
+      "LeBron James",
+      "Dillon Brooks"
     ],
     "il": [
       "Jalen Williams",
@@ -80,7 +80,7 @@
           "opponent": "60"
         }
       ],
-      "adds_used": 0,
+      "adds_used": 1,
       "opp_games_left": 21,
       "my_games_left": 19,
       "note": "",
@@ -88,7 +88,7 @@
       "saved_ts": "2026-11-05T15:23+08:00",
       "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-05 15:29",
+    "updated_at": "2026-11-05 19:01",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -194,6 +194,15 @@
         "drop": [
           "Neemias Queta"
         ]
+      },
+      {
+        "date": "2026-11-05",
+        "add": [
+          "Dillon Brooks"
+        ],
+        "drop": [
+          "Moussa Diabaté"
+        ]
       }
     ],
     "planned_adds": [
@@ -231,7 +240,6 @@
     "roster": [
       "Luka Dončić",
       "Anthony Davis",
-      "DeMar DeRozan",
       "Myles Turner",
       "Jabari Smith Jr.",
       "Payton Pritchard",
@@ -240,11 +248,12 @@
       "Nickeil Alexander-Walker",
       "Kyshawn George",
       "Saddiq Bey",
-      "Isaiah Jackson",
-      "Joel Embiid"
+      "Joel Embiid",
+      "Collin Gillespie"
     ],
     "il": [
-      "Kon Knueppel"
+      "Kon Knueppel",
+      "DeMar DeRozan"
     ],
     "matchup": {
       "week": 3,
@@ -296,7 +305,7 @@
           "opponent": "45"
         }
       ],
-      "adds_used": 0,
+      "adds_used": 1,
       "opp_games_left": 16,
       "my_games_left": 19,
       "note": "",
@@ -304,7 +313,7 @@
       "saved_ts": "2026-11-05T15:23+08:00",
       "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-05 15:23",
+    "updated_at": "2026-11-05 19:02",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -400,13 +409,23 @@
         "drop": [
           "Ja'Kobe Walter"
         ]
+      },
+      {
+        "date": "2026-11-05",
+        "add": [
+          "Collin Gillespie"
+        ],
+        "drop": [
+          "Isaiah Jackson",
+          "DeMar DeRozan"
+        ]
       }
     ],
     "planned_adds": [
       {
-        "day": "2026-11-05",
-        "drop": "Isaiah Jackson",
-        "add": "Collin Gillespie"
+        "day": "2026-11-06",
+        "drop": "",
+        "add": "Day'Ron Sharpe"
       },
       {
         "day": "2026-11-08",
@@ -419,11 +438,7 @@
       "Saddiq Bey",
       "DeMar DeRozan"
     ],
-    "sit_first": [
-      "DeMar DeRozan",
-      "Isaiah Jackson",
-      "Saddiq Bey"
-    ],
+    "sit_first": [],
     "plan_only": true
   }
 }
