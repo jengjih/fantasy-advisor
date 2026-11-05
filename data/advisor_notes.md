@@ -154,6 +154,10 @@
 - baek's：第 10 週對伊古達拉（約 12/21–12/27）。贏過他約 99%。
 - 第 3 週對手：誰是懂球帝 Justin's Ingenious Team；baek's 安國's Terrific Team（全聯盟最強）。
 
+## 串流原則（11/5 驗證）
+- 誰是懂球帝只開 1 個串流位（目前 Brooks 那格）。第 2 個串流位（放 WCJ／Podziemski／Camara、每週 +9 場）長期贏尚恩反而 66–71%，不如 1 個位 86%。
+- 「用滿 8 adds」不是目標，目標是讓串流位每天都有人打（一週約 3–5 次 adds）。
+
 ## 長期備忘
 - 誰是懂球帝設定（11/1 截圖）：交易 League Votes、3 票否決、Trade Reject Time 1 天；交易截止 2027-03-18；季後賽 6 隊 Week 20–22（到 4/4）；
   季後賽同戰績看「兩隊直接交手」→ 第 7、14 週對尚恩特別重要。Waiver 1 天、continual rolling list。
