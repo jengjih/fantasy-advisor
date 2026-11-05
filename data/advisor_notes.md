@@ -80,6 +80,11 @@
 - 週三（台北 11/5 早上）先發：懂球帝改成 Diabaté、White 坐板凳（Harper、Fox 都上）——使用者質疑 Harper，模擬 15 種組合：坐 Diabaté+White 78.8% 最好、坐 Harper+Diabaté 76.8%。
   教訓：Harper 本季 18.3 分、FT% .875、TO 1.7，長期模型低估他（上季先驗拖累）；排先發要用本週模擬比較，不只看長期價值；baek's DeRozan、Bey、Jackson 坐板凳，Pritchard Q（08:30 開打）變 O 就換 Isaiah Jackson。
 
+- 11/5 15:20 截圖（美東週三打完）：懂球帝 6-4（反超；3PTM 29-47、ST 14-20 落後，TO 41-60 大勝），預測 9-2，照計劃 95%。
+  美東週三：Wemby 52 分 24 籃板 8 阻攻（三分 1/8）；Bam 35/10；Brunson、Booker 各 33；Harper 21/5 但 0 助攻；Camara 11 分 FG% .333 最差。
+  baek's 6-2（FG% .530-.426、3PTM 59-28），預測 7-1-1，照計劃 96%。Luka 40 分、Embiid 26/15、Turner 12/9/6。
+- 計劃不變（模擬 Brooks→Holiday→Turner 95% ≈ 改 Gafford 94%）。Sun 交易是否已處理待截圖確認。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
