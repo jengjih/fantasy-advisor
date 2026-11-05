@@ -88,7 +88,7 @@
       "saved_ts": "2026-11-05T15:23+08:00",
       "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-05 15:23",
+    "updated_at": "2026-11-05 15:29",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -199,7 +199,7 @@
     "planned_adds": [
       {
         "day": "2026-11-05",
-        "drop": "Ayo Dosunmu",
+        "drop": "Moussa Diabaté",
         "add": "Dillon Brooks"
       },
       {
@@ -214,22 +214,16 @@
       }
     ],
     "keep": [
+      "Ayo Dosunmu",
       "Brandin Podziemski",
       "Dylan Harper",
-      "Moussa Diabaté",
-      "Norman Powell",
-      "Ryan Rollins",
       "Toumani Camara",
       "Wendell Carter Jr."
     ],
     "stream_slots": [
       "Ayo Dosunmu"
     ],
-    "sit_first": [
-      "Moussa Diabaté",
-      "Derrick White",
-      "Brandin Podziemski"
-    ],
+    "sit_first": [],
     "plan_only": true,
     "note": "11/4 交易：WCJ → Powell + Rollins，放 Diabaté（處理前不要動這兩人）"
   },

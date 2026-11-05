@@ -83,7 +83,8 @@
 - 11/5 15:20 截圖（美東週三打完）：懂球帝 6-4（反超；3PTM 29-47、ST 14-20 落後，TO 41-60 大勝），預測 9-2，照計劃 95%。
   美東週三：Wemby 52 分 24 籃板 8 阻攻（三分 1/8）；Bam 35/10；Brunson、Booker 各 33；Harper 21/5 但 0 助攻；Camara 11 分 FG% .333 最差。
   baek's 6-2（FG% .530-.426、3PTM 59-28），預測 7-1-1，照計劃 96%。Luka 40 分、Embiid 26/15、Turner 12/9/6。
-- 計劃不變（模擬 Brooks→Holiday→Turner 95% ≈ 改 Gafford 94%）。Sun 交易是否已處理待截圖確認。
+- 計劃不變（模擬 Brooks→Holiday→Turner 95% ≈ 改 Gafford 94%）。Sun 交易 11/5 15:27 截圖顯示沒有處理（WCJ、Diabaté 還在），疑似被否決，待使用者看 Transactions 確認。
+- 11/5 改計劃：串流位改用 Diabaté（本週 97% vs 用 Dosunmu 94%；長期打平），Dosunmu 保留。若交易其實還在待處理，改放 Dosunmu（Diabaté 綁在交易裡）。
 
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
