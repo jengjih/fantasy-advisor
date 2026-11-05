@@ -313,7 +313,7 @@
       "saved_ts": "2026-11-05T15:23+08:00",
       "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-05 19:02",
+    "updated_at": "2026-11-05 19:06",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -423,8 +423,13 @@
     ],
     "planned_adds": [
       {
-        "day": "2026-11-06",
+        "day": "2026-11-05",
         "drop": "",
+        "add": "Draymond Green"
+      },
+      {
+        "day": "2026-11-07",
+        "drop": "Draymond Green",
         "add": "Day'Ron Sharpe"
       },
       {
