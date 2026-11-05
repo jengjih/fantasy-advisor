@@ -308,7 +308,13 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
             first = s["add_days"][0] if s["add_days"] else d
             deadline = tips.get((first, cand_m.team))
             before = pj.simulate(lg, sim_m, pj.apply_steps(mine, pool, steps[:i]), opp, schedule, runs=SIM_RUNS)["win"] if sim_m else None
-            after = pj.simulate(lg, sim_m, pj.apply_steps(mine, pool, steps[:i + 1]), opp, schedule, runs=SIM_RUNS)["win"] if sim_m else None
+            # 接力換人（簽進來的人之後又被換掉）只看單一步會低估：把同一條接力後面的計劃一起算
+            chain, last = [s], s["add"]
+            for t in steps[i + 1:]:
+                if t.get("planned") and t["drop"] == last:
+                    chain.append(t)
+                    last = t["add"]
+            after = pj.simulate(lg, sim_m, pj.apply_steps(mine, pool, steps[:i] + chain), opp, schedule, runs=SIM_RUNS)["win"] if sim_m else None
             p = scored[scored["key"] == normalize(cand_m.name)].iloc[0]
             cats = [c for c in lg["categories"] if c not in lg["punt"]]
             strong = "、".join(("少失誤" if c == "TO" else zh.CATEGORY[c]) for c in sorted(cats, key=lambda c: -p[f"z_{c}"])[:3] if p[f"z_{c}"] > 0.3)
@@ -326,7 +332,7 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
                 "earliest": earliest.isoformat() if earliest else None,
                 "earliest_label": (f"{s['drop']} 打完後・約 {_tpe_label(earliest)}") if earliest else None,
                 "impact": ({"before": round(before, 3), "after": round(after, 3),
-                            "label": f"本週勝率 {before:.0%} → {after:.0%}"} if before is not None else None),
+                            "label": f"本週勝率 {before:.0%} → {after:.0%}" + ("（含後續接力）" if len(chain) > 1 else "")} if before is not None else None),
                 "players": ([{**_player_info(scored, s["drop"]), "role": "drop"}] if s["drop"] else [])
                            + [{**_player_info(scored, s["add"]), "role": "add"}]})
         if not steps and add_days and adds_left:
