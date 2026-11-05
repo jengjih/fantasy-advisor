@@ -89,7 +89,8 @@
 - ✅ 11/5 18:57：懂球帝 Diabaté → Brooks（adds 1/8）；baek's Jackson → Gillespie、DeRozan 進 IL（背痙攣，預計 11/7 回）（adds 1/4）。
 - baek's 空出名單位：簽 Day'Ron Sharpe（BKN 六日，補 REB/ST；97% vs 不簽 94%）。週五我方 10 人有賽已滿，週六只 5 人。
   週日：DeRozan 若已恢復（IL 資格消失）→ 放 Gillespie、DeRozan 移出 IL（不簽 Tre Jones）；若仍 O → Gillespie → Tre Jones。
-- 11/5 19:20 改：baek's 空位先簽 Draymond（GSW 週四、六），週六 Draymond → Sharpe，週日 Gillespie → Tre Jones（98.1% vs 97.4%，用完 4 adds）。
+- ✅ 11/5 19:10 使用者已照第一版簽 Sharpe（adds 2/4），Draymond 方案作廢（多 0.7%，不值得再放人）。教訓：已經叫使用者做的動作，改計劃前先確認他做了沒。
+- （作廢）11/5 19:20 改：baek's 空位先簽 Draymond（GSW 週四、六），週六 Draymond → Sharpe，週日 Gillespie → Tre Jones（98.1% vs 97.4%，用完 4 adds）。
   懂球帝不多串：Camara→Gillespie→Sarr 本週 98.4% vs 97.4%，但要永久放 Camara（長期價值高），不划算。
 - 交易被否決的影響（rival，1500 次）：贏尚恩現在約 82%，交易成功約 94%（差 12%）。
 

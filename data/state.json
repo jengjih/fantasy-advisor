@@ -249,7 +249,8 @@
       "Kyshawn George",
       "Saddiq Bey",
       "Joel Embiid",
-      "Collin Gillespie"
+      "Collin Gillespie",
+      "Day'Ron Sharpe"
     ],
     "il": [
       "Kon Knueppel",
@@ -305,7 +306,7 @@
           "opponent": "45"
         }
       ],
-      "adds_used": 1,
+      "adds_used": 2,
       "opp_games_left": 16,
       "my_games_left": 19,
       "note": "",
@@ -313,7 +314,7 @@
       "saved_ts": "2026-11-05T15:23+08:00",
       "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-05 19:06",
+    "updated_at": "2026-11-05 19:10",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -419,19 +420,16 @@
           "Isaiah Jackson",
           "DeMar DeRozan"
         ]
+      },
+      {
+        "date": "2026-11-05",
+        "add": [
+          "Day'Ron Sharpe"
+        ],
+        "drop": []
       }
     ],
     "planned_adds": [
-      {
-        "day": "2026-11-05",
-        "drop": "",
-        "add": "Draymond Green"
-      },
-      {
-        "day": "2026-11-07",
-        "drop": "Draymond Green",
-        "add": "Day'Ron Sharpe"
-      },
       {
         "day": "2026-11-08",
         "drop": "Collin Gillespie",
