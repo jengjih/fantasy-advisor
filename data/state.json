@@ -26,69 +26,69 @@
       "categories": [
         {
           "category": "FGM",
-          "mine": "145",
-          "opponent": "139"
+          "mine": "185",
+          "opponent": "152"
         },
         {
           "category": "FG%",
-          "mine": ".505",
-          "opponent": ".473"
+          "mine": ".518",
+          "opponent": ".468"
         },
         {
           "category": "FT%",
-          "mine": ".807",
-          "opponent": ".773"
+          "mine": ".800",
+          "opponent": ".775"
         },
         {
           "category": "3PTM",
-          "mine": "29",
-          "opponent": "47"
+          "mine": "41",
+          "opponent": "51"
         },
         {
           "category": "3PT%",
-          "mine": ".322",
-          "opponent": ".373"
+          "mine": ".360",
+          "opponent": ".362"
         },
         {
           "category": "PTS",
-          "mine": "411",
-          "opponent": "400"
+          "mine": "519",
+          "opponent": "441"
         },
         {
           "category": "REB",
-          "mine": "125",
-          "opponent": "118"
+          "mine": "156",
+          "opponent": "139"
         },
         {
           "category": "AST",
-          "mine": "82",
-          "opponent": "87"
+          "mine": "96",
+          "opponent": "100"
         },
         {
           "category": "ST",
-          "mine": "14",
-          "opponent": "20"
+          "mine": "22",
+          "opponent": "21"
         },
         {
           "category": "BLK",
-          "mine": "16",
-          "opponent": "16"
+          "mine": "20",
+          "opponent": "18"
         },
         {
           "category": "TO",
-          "mine": "41",
-          "opponent": "60"
+          "mine": "49",
+          "opponent": "72"
         }
       ],
       "adds_used": 1,
-      "opp_games_left": 21,
-      "my_games_left": 19,
+      "opp_games_left": 20,
+      "my_games_left": 14,
       "note": "",
-      "saved_at": "11-05 15:23",
-      "saved_ts": "2026-11-05T15:23+08:00",
+      "saved_at": "11-06 14:22",
+      "saved_ts": "2026-11-06T14:22+08:00",
       "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-05 19:01",
+    "updated_at": "2026-11-06 14:22",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -262,59 +262,59 @@
       "categories": [
         {
           "category": "FG%",
-          "mine": ".530",
-          "opponent": ".426"
+          "mine": ".521",
+          "opponent": ".436"
         },
         {
           "category": "FT%",
           "mine": ".842",
-          "opponent": ".852"
+          "opponent": ".855"
         },
         {
           "category": "3PTM",
-          "mine": "59",
-          "opponent": "28"
+          "mine": "61",
+          "opponent": "37"
         },
         {
           "category": "PTS",
-          "mine": "441",
-          "opponent": "352"
+          "mine": "447",
+          "opponent": "409"
         },
         {
           "category": "REB",
-          "mine": "127",
-          "opponent": "113"
+          "mine": "129",
+          "opponent": "133"
         },
         {
           "category": "AST",
-          "mine": "88",
-          "opponent": "88"
+          "mine": "90",
+          "opponent": "104"
         },
         {
           "category": "ST",
-          "mine": "23",
-          "opponent": "22"
+          "mine": "26",
+          "opponent": "28"
         },
         {
           "category": "BLK",
           "mine": "17",
-          "opponent": "10"
+          "opponent": "11"
         },
         {
           "category": "TO",
-          "mine": "48",
-          "opponent": "45"
+          "mine": "49",
+          "opponent": "50"
         }
       ],
       "adds_used": 2,
-      "opp_games_left": 16,
-      "my_games_left": 19,
+      "opp_games_left": 15,
+      "my_games_left": 18,
       "note": "",
-      "saved_at": "11-05 15:23",
-      "saved_ts": "2026-11-05T15:23+08:00",
+      "saved_at": "11-06 14:22",
+      "saved_ts": "2026-11-06T14:22+08:00",
       "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-05 19:10",
+    "updated_at": "2026-11-06 14:22",
     "free_agents": {
       "names": [
         "Collin Gillespie",

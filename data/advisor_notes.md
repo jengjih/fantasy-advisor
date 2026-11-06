@@ -94,6 +94,9 @@
   懂球帝不多串：Camara→Gillespie→Sarr 本週 98.4% vs 97.4%，但要永久放 Camara（長期價值高），不划算。
 - 交易被否決的影響（rival，1500 次）：贏尚恩現在約 82%，交易成功約 94%（差 12%）。
 
+- 11/6 14:20 截圖（美東週四打完）：懂球帝 8-3（不換 99%）；baek's 5-4（被追近，AST 90-104、ST 26-28、REB 129-133 落後，不換 89%）。
+  週四：WCJ 27 分 13 籃板 10-12（超爆）、Brooks 24 分 4 三分 2 抄、Booker 30/8 助/3 抄、Bam 18/10、Podziemski 9/6 普通；Gillespie 6 分 2-9 但 3 抄。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
