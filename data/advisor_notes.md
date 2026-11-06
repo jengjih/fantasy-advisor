@@ -100,6 +100,9 @@
 - 11/6 安國（本週對手、聯盟第 1）提案：Podziemski + Randle + Anunoby + Suggs（O，膝，約 11/10）換 Luka + Turner。
   整季模擬（2000 次，放 Gillespie、Sharpe）：勝率 .569 vs .571、平均名次都 3.2、贏伊古達拉都 99%＝打平 → 建議拒絕（沒好處、名單被塞滿、送 Luka 給最強隊兼本週對手）。
 
+- ✅ 11/6 23:20：懂球帝 Brooks → Holiday（adds 2/8），週五先發 9 人有賽全上 ✓。baek's 先發 ✓（Pritchard、AD 都 Q，08:00 開打前看）。
+- ⚠️ DeRozan 由 O 改 Q（還在 IL）→ IL 資格可能失效、鎖住 Add/Drop。改計劃：現在就放 Gillespie、DeRozan 移出 IL（DEN 週六有賽，DeRozan > Gillespie）。週日 Tre Jones 那筆取消，剩 2 adds 週日再看。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
