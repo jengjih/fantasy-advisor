@@ -103,6 +103,12 @@
 - ✅ 11/6 23:20：懂球帝 Brooks → Holiday（adds 2/8），週五先發 9 人有賽全上 ✓。baek's 先發 ✓（Pritchard、AD 都 Q，08:00 開打前看）。
 - ⚠️ DeRozan 由 O 改 Q（還在 IL）→ IL 資格可能失效、鎖住 Add/Drop。改計劃：現在就放 Gillespie、DeRozan 移出 IL（DEN 週六有賽，DeRozan > Gillespie）。週日 Tre Jones 那筆取消，剩 2 adds 週日再看。
 
+- 11/7 20:25：懂球帝 8-2（1 平），baek's 5-4。baek's 已放 Gillespie、DeRozan 回陣容；AD 掛 O（腳踝）移進 IL → 空 1 個名單位。
+  週五表現：懂球帝 Wemby 30/14、White 18 分 4 三分 5 助、Camara 18 分 4 三分、Harper 19、Holiday 12/7 助；LeBron 3-12、Reaves 8-22 偏差。
+  baek's Luka 53 分、Kyshawn 33、NAW 28（10-10 罰球）、LaMelo 22/8 助、Dosunmu 26；Embiid 0-9、Turner 0-7 很差。對手 McDaniels 23、Acuff 22/8 助、Harden 17、Tatum 34/9 助（兩聯盟對手都有）。
+- 週六計劃：懂球帝 Booker 在板凳要移上先發（換 Reaves 或 LeBron，他們週六沒賽）。baek's 空位簽 Cameron Johnson（DEN 週六，89.4% vs 不簽 85%）。
+  週日：懂球帝 Holiday → Myles Turner；baek's 剩 1 add，週日看 FA 再決定。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
