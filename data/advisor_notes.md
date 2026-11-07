@@ -106,7 +106,7 @@
 - 11/7 20:25：懂球帝 8-2（1 平），baek's 5-4。baek's 已放 Gillespie、DeRozan 回陣容；AD 掛 O（腳踝）移進 IL → 空 1 個名單位。
   週五表現：懂球帝 Wemby 30/14、White 18 分 4 三分 5 助、Camara 18 分 4 三分、Harper 19、Holiday 12/7 助；LeBron 3-12、Reaves 8-22 偏差。
   baek's Luka 53 分、Kyshawn 33、NAW 28（10-10 罰球）、LaMelo 22/8 助、Dosunmu 26；Embiid 0-9、Turner 0-7 很差。對手 McDaniels 23、Acuff 22/8 助、Harden 17、Tatum 34/9 助（兩聯盟對手都有）。
-- 週六計劃：懂球帝 Booker 在板凳要移上先發（換 Reaves 或 LeBron，他們週六沒賽）。baek's 空位簽 Cameron Johnson（DEN 週六，89.4% vs 不簽 85%）。
+- 週六計劃：懂球帝 Booker 在板凳要移上先發（換 Reaves 或 LeBron，他們週六沒賽）。baek's 空位簽 Cameron Johnson（DEN 週六，89.4% vs 不簽 85%）——11/7 21:00 作廢：AD 改 Q，移回陣容（WAS 週六有賽）；若已簽 Johnson 就放 Johnson。
   ⚠️ 位置限制：週六 9 人有賽但 6 個是後衛（Brunson、Booker、Fox、Harper、Podziemski、Holiday），後衛能放的只有 PG/SG/G/UTIL/UTIL 5 格，SF/PF/F 只有 Camara → Podziemski 坐板凳。
   教訓：排先發要看位置，不只看人數（Yahoo 位置：PG,SG,G,SF,PF,F,C,C,UTIL,UTIL）。串流挑人時優先補 SF/PF。
   週日：懂球帝 Holiday → Myles Turner；baek's 剩 1 add，週日看 FA 再決定。
