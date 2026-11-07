@@ -245,7 +245,9 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
         # 對話決定先坐板凳的人（state 的 sit_first，例如這週要拚阻攻就讓 Bey 坐板凳）排到最後
         sit_first = set(lg_state.get("sit_first", []))
         ranked = [pj.Member(**{**x.__dict__, "value": x.value - 1000}) if x.name in sit_first else x for x in mine]
-        started = pj.lineup(ranked, playing.get(day, set()), day, lg["starters"])
+        # 位置放不下、對話決定今天坐板凳的人（state 的 bench_today：{美東日期: [名字]}）
+        forced = set(lg_state.get("bench_today", {}).get(str(day), []))
+        started = [(x, p) for x, p in pj.lineup(ranked, playing.get(day, set()), day, lg["starters"]) if x.name not in forced]
         sit = [x for x in today_on if x.name not in {s.name for s, _ in started}]
         first_tip = min(tips[(day, x.team)] for x in today_on)
         # 只列需要注意的人（坐板凳、每日觀察）；全部人都上先發就不用一一列出
