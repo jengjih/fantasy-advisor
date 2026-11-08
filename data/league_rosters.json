@@ -59,7 +59,7 @@
     "Ayo Dosunmu",
     "Brandin Podziemski",
     "LeBron James",
-    "Dillon Brooks",
+    "Jrue Holiday",
     "Jalen Williams",
     "Cason Wallace"
    ],
@@ -207,7 +207,21 @@
    "18": "強力衝擊二連冠",
    "19": "桐生一馬"
   },
-  "standings_note": "11/2 依第 2 週比分推算（其他隊用 11/1 的比分，可能差 1–2 項）"
+  "standings_note": "11/2 依第 2 週比分推算（其他隊用 11/1 的比分，可能差 1–2 項）",
+  "sim_from": "2026-11-02",
+  "fixed_results": {
+   "0": [
+    [
+     "LeSunshine",
+     "Justin's Ingenious Team",
+     [
+      8,
+      2,
+      1
+     ]
+    ]
+   ]
+  }
  },
  "聯盟二": {
   "updated": "2026-10-30",
@@ -277,7 +291,6 @@
   "rosters": {
    "LeSunshine": [
     "Luka Dončić",
-    "Anthony Davis",
     "Myles Turner",
     "Jabari Smith Jr.",
     "Payton Pritchard",
@@ -287,9 +300,10 @@
     "Kyshawn George",
     "Saddiq Bey",
     "Joel Embiid",
-    "Collin Gillespie",
-    "Kon Knueppel",
-    "DeMar DeRozan"
+    "Day'Ron Sharpe",
+    "DeMar DeRozan",
+    "Anthony Davis",
+    "Kon Knueppel"
    ],
    "LALA好": [
     "Ja Morant",

@@ -111,7 +111,11 @@
   教訓：排先發要看位置，不只看人數（Yahoo 位置：PG,SG,G,SF,PF,F,C,C,UTIL,UTIL）。串流挑人時優先補 SF/PF。
   週日：懂球帝 Holiday → Myles Turner；baek's 剩 1 add，週日看 FA 再決定。
 
-- ⚠️ 11/8 更正：11/5「交易被否決後贏尚恩 82%」又多算了一個名單位（14 人＋串流），正確約 62%（2000 次）。
+- ✅ 11/8 全面檢查，找到並修正 3 個錯誤：①季末模擬從 10/26 開始，把已算進戰績的第 2 週又模擬一次、對手週次也錯位 → 改成從 sim_from（11/2）開始，第 3 週用目前比分（fixed_results）；
+  ②11/8 早上的基準把 Holiday 和 Dosunmu 都拿掉（少算一人），62% 是錯的；③league_rosters 我方陣容沒同步（還有 Brooks、Gillespie）。
+  修正後 10000 次：不交易 贏尚恩 94%、冠軍 64%；WCJ+Harper→Siakam+Rollins 98%、冠軍 76%、平均名次 2.1→1.3。
+  敏感度（3000 次）：每週串流 3 場 73%→89%、不串流 32%→57%、先驗 8 場 99%→99%、40 場 90%→97%——交易在每種假設下都更好。
+- （已作廢）11/8 更正：11/5「交易被否決後贏尚恩 82%」又多算了一個名單位（14 人＋串流），正確約 62%（2000 次）。
 - 11/8 Sun 交易選項（rival 2000 次，基準 62%）：斑馬→Murray+Şengün+Siakam 82%（要放 Podziemski、WCJ）、斑馬→Murray+Durant 75%、斑馬→Murray+Şengün 69%；
   不動斑馬：Harper→Siakam 79%、Fox→Şengün 78%、Camara→Siakam 73%。Durant+Şengün／Embiid 組合都比不換差。
 - 11/8 Sun 二對二方案（1200 次，基準 61%）：WCJ+Harper→Şengün+Rollins 85%、WCJ+Harper→Siakam+Rollins 84%、WCJ+Camara→Şengün+Rollins 80%；White→Siakam 62%（沒用）。

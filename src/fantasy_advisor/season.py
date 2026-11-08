@@ -143,8 +143,10 @@ def simulate_season(label: str, runs: int = 2000, seed: int = 0, log=print, twea
         tweak(rosters, scored, injuries, lg, empty)
     teams = list(rosters)
     playing = pj.teams_playing(schedule)
-    first = min(schedule["date"])
+    # 從「戰績表還沒算進去的那一週」開始模擬（data["sim_from"]，美東週一）；之前的週次已經在 standings 裡
+    first = date.fromisoformat(data["sim_from"]) if data.get("sim_from") else min(schedule["date"])
     first -= timedelta(days=first.weekday())
+    schedule = schedule[schedule["date"] >= first]
     regular, playoff = matchup_periods(schedule, first, SEASON_END[label], REG_MATCHUPS[label], PLAYOFF_WEEKS[label])
     rng = np.random.default_rng(seed)
 
@@ -182,10 +184,15 @@ def simulate_season(label: str, runs: int = 2000, seed: int = 0, log=print, twea
                     for c in lg["categories"]:
                         cat_rate[a][c] += per[c].mean()
                         cat_rate[b][c] += 1 - per[c].mean()
+        fixed = {tuple(sorted((x, y))): (x, res_) for x, y, res_ in (data.get("fixed_results", {}).get(str(p), []))}
         for r in range(runs):
             for a, b in schedules[r][p]:
                 a, b = sorted((a, b))
-                w, l = res[a, b][0][r], res[a, b][1][r]
+                if (a, b) in fixed:  # 這週已經快打完：用目前的真實比分（fixed_results，期數從 0 起算）
+                    who, (fw, fl, ft) = fixed[a, b]
+                    w, l = (fw, fl) if who == a else (fl, fw)
+                else:
+                    w, l = res[a, b][0][r], res[a, b][1][r]
                 W[a][r] += w; L[a][r] += l; T[a][r] += n - w - l
                 W[b][r] += l; L[b][r] += w; T[b][r] += n - w - l
     games_per_period = len(regular) * (len(teams) - 1)
