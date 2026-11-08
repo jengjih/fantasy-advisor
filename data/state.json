@@ -267,11 +267,11 @@
       "Saddiq Bey",
       "Joel Embiid",
       "Day'Ron Sharpe",
-      "DeMar DeRozan",
-      "Anthony Davis"
+      "DeMar DeRozan"
     ],
     "il": [
-      "Kon Knueppel"
+      "Kon Knueppel",
+      "Anthony Davis"
     ],
     "matchup": {
       "week": 3,
@@ -331,7 +331,7 @@
       "saved_ts": "2026-11-08T14:57+08:00",
       "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-08 14:57",
+    "updated_at": "2026-11-08 16:07",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -461,6 +461,13 @@
           "Anthony Davis"
         ],
         "drop": []
+      },
+      {
+        "date": "2026-11-08",
+        "add": [],
+        "drop": [
+          "Anthony Davis"
+        ]
       }
     ],
     "planned_adds": [],
