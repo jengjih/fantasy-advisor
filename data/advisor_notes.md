@@ -127,7 +127,10 @@
   3000 次：強力 Amen+D.Murray 97%／38%、強力 McDaniels+Amen 96%、永吉路 J.Allen+Garland 96%、Justin Jabari+Coward 97%、西瓜 Barnes/Anunoby+Hartenstein 91–93%（沒用）。
   雙方角度（2000 次，對方勝率變化／我冠軍）：Sun Harper→Siakam −.018／47%；Sun WCJ+Harper→Siakam+Rollins −.027／49%；桐生 Zubac+M.Bridges −.011／38%；
   桐生 Clingan+Giddey −.029／45%；桐生 Clingan+Lendeborg −.045／60%；永吉路 JJ+Wiggins −.041／48%；Justin Jabari+Coward −.026／42%；強力 Amen+D.Murray 季後賽 52→27%（不可能）。
-  ✅ 建議：先找 Sun 談 Harper→Siakam 一換一（對他傷害最小、對我幫助接近最大、名單不用調整），不成再提 2 換 2；備案桐生 Clingan+Giddey／Zubac+M.Bridges。
+  Sun 不缺後衛（Murray、NAW、Lillard、Quickley、Rollins、Powell、Morant），缺的是籃板／阻攻／FG%（長人）。Harper 對他的賣點只有「新秀」；WCJ 才是他需要的位置。
+  WCJ→Siakam 一換一：Sun −.023／我冠軍 40%；WCJ+Harper→Siakam+Rollins：Sun −.027／我 49%（後衛換後衛、長人換長人，最合 Sun 的需求）。
+  ✅（更新）開價改成 WCJ+Harper→Siakam+Rollins；Harper→Siakam 當備案。
+  （舊）建議：先找 Sun 談 Harper→Siakam 一換一（對他傷害最小、對我幫助接近最大、名單不用調整），不成再提 2 換 2；備案桐生 Clingan+Giddey／Zubac+M.Bridges。
   ⚠️ 更正：桐生不是在重建——Edwards、Kawhi、Haliburton 傷癒後模擬他會到第 2–3 名（勝率 .547）。從他角度：Clingan+Lendeborg 讓他 .547→.502、季後賽 99%→86%，理性不會接受；
   Clingan+M.Bridges .510；Zubac+M.Bridges 只降到 .535（對他較能接受，但對我幫助也小）。模型裡對我好的交易幾乎都對對方不利，能成交靠對方看重的點（新秀、名氣、位置需求、最近手感）。
 - 11/8 15:20 補上 Justin 陣容（VanVleet、Trae、A. Black、Jabari、Jaquez、Mobley、Sharpe、Jerome、N. Marshall＋板凳 Giannis、Acuff、LaVine、Coward、Tatum；IL Hart、Holmgren、Nurkić）→ 8 隊全部最新。
