@@ -1,15 +1,10 @@
 {
  "聯盟一": {
-  "updated": "2026-10-30",
+  "updated": "2026-11-08",
   "standings": {
    "LeSunshine": [
     14,
     8,
-    0
-   ],
-   "Sun": [
-    15,
-    7,
     0
    ],
    "Justin's Ingenious Team": [
@@ -17,9 +12,14 @@
     7,
     0
    ],
+   "Sun": [
+    15,
+    7,
+    0
+   ],
    "強力衝擊二連冠": [
-    12,
-    10,
+    15,
+    7,
     0
    ],
    "尚恩·李文斯頓": [
@@ -27,14 +27,14 @@
     13,
     0
    ],
-   "西瓜爸爸's Nice Team": [
-    9,
-    13,
-    0
-   ],
    "永吉路懂球帝": [
     8,
     14,
+    0
+   ],
+   "西瓜爸爸's Nice Team": [
+    6,
+    16,
     0
    ],
    "桐生一馬": [
@@ -64,38 +64,40 @@
     "Cason Wallace"
    ],
    "永吉路懂球帝": [
-    "Stephen Curry",
+    "De'Anthony Melton",
     "RJ Barrett",
-    "Dejounte Murray",
-    "Saddiq Bey",
-    "Jalen Johnson",
-    "Precious Achiuwa",
-    "Nikola Jokić",
-    "Jarrett Allen",
-    "Kyrie Irving",
-    "Robert Williams III",
-    "Andrew Wiggins",
+    "Nolan Traore",
     "Lauri Markkanen",
-    "Jalen Smith",
     "Paul George",
+    "Andrew Wiggins",
+    "Nikola Jokić",
+    "Alex Sarr",
+    "Stephen Curry",
+    "Duncan Robinson",
+    "Kyrie Irving",
+    "Jalen Smith",
+    "Darius Garland",
+    "Kel'el Ware",
+    "Jalen Johnson",
+    "Jarrett Allen",
     "Paolo Banchero"
    ],
    "尚恩·李文斯頓": [
+    "James Harden",
     "Luka Dončić",
-    "Cade Cunningham",
-    "Payton Pritchard",
-    "Mikal Bridges",
+    "Coby White",
+    "Kon Knueppel",
     "Deni Avdija",
     "Dyson Daniels",
     "Domantas Sabonis",
     "Rudy Gobert",
-    "Coby White",
     "Onyeka Okongwu",
-    "James Harden",
-    "Peyton Watson",
+    "Mikal Bridges",
+    "Payton Pritchard",
     "Zion Williamson",
     "Tyler Herro",
-    "Kon Knueppel"
+    "Cade Cunningham",
+    "Peyton Watson"
    ],
    "Justin's Ingenious Team": [
     "Darius Acuff Jr.",
@@ -109,7 +111,6 @@
     "Anthony Black",
     "Devin Vassell",
     "Ty Jerome",
-    "Aday Mara",
     "Jaime Jaquez Jr.",
     "Josh Hart",
     "Fred VanVleet",
@@ -117,20 +118,20 @@
     "Jusuf Nurkić"
    ],
    "強力衝擊二連冠": [
-    "Andrew Nembhard",
-    "Jaylen Brown",
-    "Ja'Kobe Walter",
-    "Jaden McDaniels",
-    "Michael Porter Jr.",
-    "Desmond Bane",
-    "Walker Kessler",
-    "Bobby Portis",
-    "Amen Thompson",
-    "Darius Garland",
-    "Shai Gilgeous-Alexander",
     "Donovan Mitchell",
-    "Kel'el Ware",
-    "Stephon Castle"
+    "Stephon Castle",
+    "Shai Gilgeous-Alexander",
+    "Desmond Bane",
+    "Michael Porter Jr.",
+    "Jaden McDaniels",
+    "Derik Queen",
+    "Aday Mara",
+    "Dejounte Murray",
+    "Amen Thompson",
+    "Walker Kessler",
+    "Jaylen Brown",
+    "Davion Mitchell",
+    "Moussa Diabaté"
    ],
    "Sun": [
     "Jamal Murray",
@@ -151,38 +152,39 @@
     "Ja Morant"
    ],
    "桐生一馬": [
-    "Josh Giddey",
-    "Ausar Thompson",
+    "Jeremiah Fears",
+    "Ajay Mitchell",
     "VJ Edgecombe",
-    "Brandon Miller",
     "Yaxel Lendeborg",
-    "Terrence Shannon Jr.",
+    "Kawhi Leonard",
+    "Julius Randle",
     "P.J. Washington",
     "Donovan Clingan",
-    "Julius Randle",
     "Miles Bridges",
-    "Ajay Mitchell",
-    "Jared McCain",
-    "Kawhi Leonard",
     "Anthony Edwards",
+    "Brandon Miller",
+    "Caleb Wilson",
+    "Ausar Thompson",
+    "Josh Giddey",
     "Tyrese Haliburton",
-    "Ivica Zubac"
+    "Ivica Zubac",
+    "Jalen Duren"
    ],
    "西瓜爸爸's Nice Team": [
     "Tyrese Maxey",
-    "Cooper Flagg",
-    "Duncan Robinson",
-    "Leonard Miller",
-    "Karl-Anthony Towns",
-    "Kyshawn George",
-    "Naz Reid",
-    "Paul Reed",
+    "Keyonte George",
+    "Anfernee Simons",
     "OG Anunoby",
+    "Mario Hezonja",
+    "Kyshawn George",
+    "Isaiah Hartenstein",
+    "Karl-Anthony Towns",
     "LaMelo Ball",
     "Trey Murphy III",
-    "Keyonte George",
-    "Isaiah Hartenstein",
     "Scottie Barnes",
+    "Cooper Flagg",
+    "Naz Reid",
+    "Paul Reed",
     "Jaren Jackson Jr."
    ]
   },
@@ -207,7 +209,7 @@
    "18": "強力衝擊二連冠",
    "19": "桐生一馬"
   },
-  "standings_note": "11/2 依第 2 週比分推算（其他隊用 11/1 的比分，可能差 1–2 項）",
+  "standings_note": "11/8 Yahoo 截圖（Justin、我方由總和反推）",
   "sim_from": "2026-11-02",
   "fixed_results": {
    "0": [
@@ -216,8 +218,35 @@
      "Justin's Ingenious Team",
      [
       8,
-      2,
-      1
+      3,
+      0
+     ]
+    ],
+    [
+     "Sun",
+     "永吉路懂球帝",
+     [
+      7,
+      4,
+      0
+     ]
+    ],
+    [
+     "桐生一馬",
+     "西瓜爸爸's Nice Team",
+     [
+      7,
+      4,
+      0
+     ]
+    ],
+    [
+     "強力衝擊二連冠",
+     "尚恩·李文斯頓",
+     [
+      8,
+      3,
+      0
      ]
     ]
    ]

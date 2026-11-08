@@ -122,6 +122,11 @@
   說服點：Sun 弱 REB/ST/BLK/FG%（所以想要斑馬）→ WCJ 補籃板命中率；Harper 是新秀有潛力；Rollins 是他的板凳。Şengün 排名 24，太貴可能談不成，Siakam 版較實際。
 - 11/8 Sun（懂球帝第 1 名）私下問 Wembanyama 能不能交易 → 建議不賣（全隊價值第一、遠超第二名，且 Sun 是奪冠最大對手）。真的開出具體條件再評估。
 
+- 11/8 15:00 同步：6 隊最新陣容（Justin 沒截，用 11/1 版、拿掉 Mara）、正式戰績、本週 4 場比分。強力衝擊二連冠變強：簽了 Diabaté、換來 Mara、D. Murray、Amen Thompson，戰績 15-7。尚恩本週 0 adds。
+  重算（10000 次）：不交易 贏尚恩 90%、冠軍 32%；WCJ+Harper→Siakam+Rollins 97%、冠軍 48%、平均名次 3.5→2.2。
+  3000 次：Harper→Siakam 96%、Fox→Şengün 96%、WCJ+Harper→Şengün+Rollins 97%（冠軍 53%）。
+- 本週：懂球帝 8-3（預測 8-2-1、~100%），週日 Holiday → Myles Turner 照做。baek's 5-4（74%），週日不加人（加人反而拉低 TO、FT%）；REB、AST、ST 大概輸，靠 FG%、3PTM、PTS、BLK＋TO 52% 拿 5-4。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
