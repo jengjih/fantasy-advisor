@@ -114,6 +114,8 @@
 - ⚠️ 11/8 更正：11/5「交易被否決後贏尚恩 82%」又多算了一個名單位（14 人＋串流），正確約 62%（2000 次）。
 - 11/8 Sun 交易選項（rival 2000 次，基準 62%）：斑馬→Murray+Şengün+Siakam 82%（要放 Podziemski、WCJ）、斑馬→Murray+Durant 75%、斑馬→Murray+Şengün 69%；
   不動斑馬：Harper→Siakam 79%、Fox→Şengün 78%、Camara→Siakam 73%。Durant+Şengün／Embiid 組合都比不換差。
+- 11/8 Sun 二對二方案（1200 次，基準 61%）：WCJ+Harper→Şengün+Rollins 85%、WCJ+Harper→Siakam+Rollins 84%、WCJ+Camara→Şengün+Rollins 80%；White→Siakam 62%（沒用）。
+  說服點：Sun 弱 REB/ST/BLK/FG%（所以想要斑馬）→ WCJ 補籃板命中率；Harper 是新秀有潛力；Rollins 是他的板凳。Şengün 排名 24，太貴可能談不成，Siakam 版較實際。
 - 11/8 Sun（懂球帝第 1 名）私下問 Wembanyama 能不能交易 → 建議不賣（全隊價值第一、遠超第二名，且 Sun 是奪冠最大對手）。真的開出具體條件再評估。
 
 ## 宿敵監控（10/30 截圖）
