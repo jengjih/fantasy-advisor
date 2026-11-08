@@ -140,6 +140,12 @@
   3000 次：Harper→Siakam 96%、Fox→Şengün 96%、WCJ+Harper→Şengün+Rollins 97%（冠軍 53%）。
 - 本週：懂球帝 8-3（預測 8-2-1、~100%），週日 Holiday → Myles Turner 照做。baek's 5-4（74%），週日不加人（加人反而拉低 TO、FT%）；REB、AST、ST 大概輸，靠 FG%、3PTM、PTS、BLK＋TO 52% 拿 5-4。
 
+## 第 4 週（11/9–11/15）
+- 懂球帝 vs 強力衝擊二連冠（15-7，變強）；baek's vs 柏毅's Nice Team。
+- 11/8 16:05：懂球帝 Holiday → Myles Turner 已做（adds 3/8）；FA 截圖 11/8 已存。
+- 懂球帝串流位接力（窮舉 1–2 人接力）：週一 Turner → Christian Braun（DEN 一三六）、週四 Braun → Daniel Gafford（DAL 四六日）＝ 48 場，只留 Turner 47 場。每天有賽：6/8/10/3/9/2/9。
+- baek's：等週一 FA 截圖；Knueppel 11/9 回來要移出 IL（先放一人）。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。

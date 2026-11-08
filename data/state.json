@@ -14,7 +14,7 @@
       "Ayo Dosunmu",
       "Brandin Podziemski",
       "LeBron James",
-      "Jrue Holiday"
+      "Myles Turner"
     ],
     "il": [
       "Jalen Williams",
@@ -80,7 +80,7 @@
           "opponent": "109"
         }
       ],
-      "adds_used": 2,
+      "adds_used": 3,
       "opp_games_left": 3,
       "my_games_left": 2,
       "note": "",
@@ -88,35 +88,35 @@
       "saved_ts": "2026-11-08T14:57+08:00",
       "week_monday": "2026-11-02"
     },
-    "updated_at": "2026-11-08 14:57",
+    "updated_at": "2026-11-08 16:04",
     "free_agents": {
       "names": [
         "Collin Gillespie",
-        "Jrue Holiday",
+        "Alex Caruso",
         "Cameron Johnson",
-        "Christian Braun",
         "John Collins",
+        "Christian Braun",
         "Darryn Peterson",
-        "Aaron Gordon",
-        "Myles Turner",
-        "Ja'Kobe Walter",
-        "Alex Sarr",
-        "Collin Murray-Boyles",
-        "CJ McCollum",
-        "Rui Hachimura",
-        "Zach Edey",
-        "Jared McCain",
-        "Derrick Jones Jr.",
-        "Dillon Brooks",
-        "Keaton Wagler",
-        "Tre Jones",
-        "Reed Sheppard",
-        "Matas Buzelis",
         "Miles McBride",
+        "Collin Murray-Boyles",
+        "Aaron Gordon",
+        "Devin Vassell",
+        "Ja'Kobe Walter",
+        "Jared McCain",
+        "Rui Hachimura",
+        "CJ McCollum",
+        "Derrick Jones Jr.",
+        "Reed Sheppard",
+        "Tre Jones",
         "Daniel Gafford",
-        "Derik Queen"
+        "Aaron Nesmith",
+        "Jaylen Wells",
+        "Neemias Queta",
+        "Bobby Portis",
+        "Mitchell Robinson",
+        "Kris Dunn"
       ],
-      "saved_ts": "2026-11-05T15:23+08:00"
+      "saved_ts": "2026-11-08T16:02+08:00"
     },
     "opponent_roster": {
       "opponent": "Justin's Ingenious Team",
@@ -212,13 +212,27 @@
         "drop": [
           "Dillon Brooks"
         ]
+      },
+      {
+        "date": "2026-11-08",
+        "add": [
+          "Myles Turner"
+        ],
+        "drop": [
+          "Jrue Holiday"
+        ]
       }
     ],
     "planned_adds": [
       {
-        "day": "2026-11-08",
-        "drop": "Jrue Holiday",
-        "add": "Myles Turner"
+        "day": "2026-11-09",
+        "drop": "Myles Turner",
+        "add": "Christian Braun"
+      },
+      {
+        "day": "2026-11-12",
+        "drop": "Christian Braun",
+        "add": "Daniel Gafford"
       }
     ],
     "keep": [
