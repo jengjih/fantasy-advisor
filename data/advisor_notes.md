@@ -111,6 +111,8 @@
   教訓：排先發要看位置，不只看人數（Yahoo 位置：PG,SG,G,SF,PF,F,C,C,UTIL,UTIL）。串流挑人時優先補 SF/PF。
   週日：懂球帝 Holiday → Myles Turner；baek's 剩 1 add，週日看 FA 再決定。
 
+- 11/8 Sun（懂球帝第 1 名）私下問 Wembanyama 能不能交易 → 建議不賣（全隊價值第一、遠超第二名，且 Sun 是奪冠最大對手）。真的開出具體條件再評估。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
