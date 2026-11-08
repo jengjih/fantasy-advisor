@@ -122,6 +122,8 @@
   說服點：Sun 弱 REB/ST/BLK/FG%（所以想要斑馬）→ WCJ 補籃板命中率；Harper 是新秀有潛力；Rollins 是他的板凳。Şengün 排名 24，太貴可能談不成，Siakam 版較實際。
 - 11/8 Sun（懂球帝第 1 名）私下問 Wembanyama 能不能交易 → 建議不賣（全隊價值第一、遠超第二名，且 Sun 是奪冠最大對手）。真的開出具體條件再評估。
 
+- 11/8 15:20 補上 Justin 陣容（VanVleet、Trae、A. Black、Jabari、Jaquez、Mobley、Sharpe、Jerome、N. Marshall＋板凳 Giannis、Acuff、LaVine、Coward、Tatum；IL Hart、Holmgren、Nurkić）→ 8 隊全部最新。
+  10000 次：不交易 91%／冠軍 29%；WCJ+Harper→Siakam+Rollins 97%／冠軍 47%／平均名次 3.6→2.2。
 - 11/8 15:00 同步：6 隊最新陣容（Justin 沒截，用 11/1 版、拿掉 Mara）、正式戰績、本週 4 場比分。強力衝擊二連冠變強：簽了 Diabaté、換來 Mara、D. Murray、Amen Thompson，戰績 15-7。尚恩本週 0 adds。
   重算（10000 次）：不交易 贏尚恩 90%、冠軍 32%；WCJ+Harper→Siakam+Rollins 97%、冠軍 48%、平均名次 3.5→2.2。
   3000 次：Harper→Siakam 96%、Fox→Şengün 96%、WCJ+Harper→Şengün+Rollins 97%（冠軍 53%）。
