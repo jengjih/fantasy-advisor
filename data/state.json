@@ -21,74 +21,18 @@
       "Cason Wallace"
     ],
     "matchup": {
-      "week": 3,
-      "opponent": "Justin's Ingenious Team",
-      "categories": [
-        {
-          "category": "FGM",
-          "mine": "287",
-          "opponent": "237"
-        },
-        {
-          "category": "FG%",
-          "mine": ".501",
-          "opponent": ".462"
-        },
-        {
-          "category": "FT%",
-          "mine": ".812",
-          "opponent": ".809"
-        },
-        {
-          "category": "3PTM",
-          "mine": "76",
-          "opponent": "80"
-        },
-        {
-          "category": "3PT%",
-          "mine": ".380",
-          "opponent": ".356"
-        },
-        {
-          "category": "PTS",
-          "mine": "823",
-          "opponent": "685"
-        },
-        {
-          "category": "REB",
-          "mine": "237",
-          "opponent": "221"
-        },
-        {
-          "category": "AST",
-          "mine": "152",
-          "opponent": "180"
-        },
-        {
-          "category": "ST",
-          "mine": "36",
-          "opponent": "38"
-        },
-        {
-          "category": "BLK",
-          "mine": "30",
-          "opponent": "28"
-        },
-        {
-          "category": "TO",
-          "mine": "84",
-          "opponent": "109"
-        }
-      ],
-      "adds_used": 3,
-      "opp_games_left": 3,
-      "my_games_left": 2,
+      "week": 4,
+      "opponent": "強力衝擊二連冠",
+      "categories": [],
+      "adds_used": 0,
+      "opp_games_left": -1,
+      "my_games_left": -1,
       "note": "",
-      "saved_at": "11-08 14:57",
-      "saved_ts": "2026-11-08T14:57+08:00",
-      "week_monday": "2026-11-02"
+      "saved_at": "11-09 16:52",
+      "saved_ts": "2026-11-09T16:52+08:00",
+      "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-08 16:04",
+    "updated_at": "2026-11-09 16:55",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -119,25 +63,25 @@
       "saved_ts": "2026-11-08T16:02+08:00"
     },
     "opponent_roster": {
-      "opponent": "Justin's Ingenious Team",
+      "opponent": "強力衝擊二連冠",
       "roster": [
-        "Darius Acuff Jr.",
-        "Zach LaVine",
-        "Trae Young",
-        "Cedric Coward",
-        "Jayson Tatum",
-        "Jabari Smith Jr.",
-        "Evan Mobley",
-        "Giannis Antetokounmpo",
-        "Anthony Black",
-        "Devin Vassell",
-        "Ty Jerome",
+        "Donovan Mitchell",
+        "Stephon Castle",
+        "Shai Gilgeous-Alexander",
+        "Desmond Bane",
+        "Michael Porter Jr.",
+        "Jaden McDaniels",
+        "Derik Queen",
         "Aday Mara",
-        "Jaime Jaquez Jr.",
-        "Josh Hart"
+        "Dejounte Murray",
+        "Amen Thompson",
+        "Walker Kessler",
+        "Jaylen Brown",
+        "Davion Mitchell",
+        "Moussa Diabaté"
       ],
-      "week_monday": "2026-11-02",
-      "saved_ts": "2026-11-02T09:15+08:00"
+      "week_monday": "2026-11-09",
+      "saved_ts": "2026-11-09T16:52+08:00"
     },
     "roster_log": [
       {
@@ -225,13 +169,8 @@
     ],
     "planned_adds": [
       {
-        "day": "2026-11-09",
-        "drop": "Myles Turner",
-        "add": "Christian Braun"
-      },
-      {
         "day": "2026-11-12",
-        "drop": "Christian Braun",
+        "drop": "Myles Turner",
         "add": "Daniel Gafford"
       }
     ],
@@ -247,12 +186,7 @@
     ],
     "sit_first": [],
     "plan_only": true,
-    "note": "11/4 交易：WCJ → Powell + Rollins，放 Diabaté（處理前不要動這兩人）",
-    "bench_today": {
-      "2026-11-07": [
-        "Brandin Podziemski"
-      ]
-    }
+    "note": "11/4 交易：WCJ → Powell + Rollins，放 Diabaté（處理前不要動這兩人）"
   },
   "聯盟二": {
     "roster": [
@@ -267,71 +201,25 @@
       "Saddiq Bey",
       "Joel Embiid",
       "Day'Ron Sharpe",
-      "DeMar DeRozan"
-    ],
-    "il": [
-      "Kon Knueppel",
+      "DeMar DeRozan",
       "Anthony Davis"
     ],
+    "il": [
+      "Kon Knueppel"
+    ],
     "matchup": {
-      "week": 3,
-      "opponent": "安國's Terrific Team",
-      "categories": [
-        {
-          "category": "FG%",
-          "mine": ".483",
-          "opponent": ".449"
-        },
-        {
-          "category": "FT%",
-          "mine": ".865",
-          "opponent": ".873"
-        },
-        {
-          "category": "3PTM",
-          "mine": "94",
-          "opponent": "68"
-        },
-        {
-          "category": "PTS",
-          "mine": "716",
-          "opponent": "656"
-        },
-        {
-          "category": "REB",
-          "mine": "199",
-          "opponent": "217"
-        },
-        {
-          "category": "AST",
-          "mine": "154",
-          "opponent": "173"
-        },
-        {
-          "category": "ST",
-          "mine": "35",
-          "opponent": "42"
-        },
-        {
-          "category": "BLK",
-          "mine": "30",
-          "opponent": "20"
-        },
-        {
-          "category": "TO",
-          "mine": "77",
-          "opponent": "80"
-        }
-      ],
-      "adds_used": 2,
-      "opp_games_left": 3,
-      "my_games_left": 5,
+      "week": 4,
+      "opponent": "柏毅's Nice Team",
+      "categories": [],
+      "adds_used": 0,
+      "opp_games_left": -1,
+      "my_games_left": -1,
       "note": "",
-      "saved_at": "11-08 14:57",
-      "saved_ts": "2026-11-08T14:57+08:00",
-      "week_monday": "2026-11-02"
+      "saved_at": "11-09 16:52",
+      "saved_ts": "2026-11-09T16:52+08:00",
+      "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-08 16:07",
+    "updated_at": "2026-11-09 16:55",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -358,24 +246,24 @@
       "saved_ts": "2026-11-05T15:23+08:00"
     },
     "opponent_roster": {
-      "opponent": "安國's Terrific Team",
+      "opponent": "柏毅's Nice Team",
       "roster": [
-        "Darius Acuff Jr.",
-        "James Harden",
-        "Derrick White",
-        "OG Anunoby",
-        "Julius Randle",
-        "Jayson Tatum",
-        "Walker Kessler",
-        "Moussa Diabaté",
-        "Jaden McDaniels",
-        "Brandin Podziemski",
-        "Jamal Murray",
-        "Devin Booker",
-        "Miles Bridges"
+        "De'Anthony Melton",
+        "Grayson Allen",
+        "Christian Braun",
+        "AJ Dybantsa",
+        "Yaxel Lendeborg",
+        "Jonathan Kuminga",
+        "Victor Wembanyama",
+        "P.J. Washington",
+        "Josh Hart",
+        "Trevor Brazile",
+        "Rui Hachimura",
+        "Anthony Edwards",
+        "Alex Caruso"
       ],
-      "week_monday": "2026-11-02",
-      "saved_ts": "2026-11-02T09:15+08:00"
+      "week_monday": "2026-11-09",
+      "saved_ts": "2026-11-09T16:54+08:00"
     },
     "roster_log": [
       {
@@ -468,6 +356,13 @@
         "drop": [
           "Anthony Davis"
         ]
+      },
+      {
+        "date": "2026-11-09",
+        "add": [
+          "Anthony Davis"
+        ],
+        "drop": []
       }
     ],
     "planned_adds": [],
@@ -478,6 +373,11 @@
     ],
     "sit_first": [],
     "plan_only": true,
-    "note": "11/7 DeRozan 移出 IL 前先放 Gillespie"
+    "note": "11/7 DeRozan 移出 IL 前先放 Gillespie",
+    "bench_today": {
+      "2026-11-09": [
+        "Luka Dončić"
+      ]
+    }
   }
 }

@@ -143,7 +143,9 @@
 ## 第 4 週（11/9–11/15）
 - 懂球帝 vs 強力衝擊二連冠（15-7，變強）；baek's vs 柏毅's Nice Team。
 - 11/8 16:05：懂球帝 Holiday → Myles Turner 已做（adds 3/8）；FA 截圖 11/8 已存。
-- 懂球帝串流位接力（窮舉 1–2 人接力）：週一 Turner → Christian Braun（DEN 一三六）、週四 Braun → Daniel Gafford（DAL 四六日）＝ 48 場，只留 Turner 47 場。每天有賽：6/8/10/3/9/2/9。
+- 懂球帝：Braun 11/9 掛 Q（小腿／生病）→ 改計劃：週四 Turner → Daniel Gafford（DAL 四六日），一次 add 48 場（只留 Turner 47）。每天有賽 6/8/10/3/9/2/9。
+- 11/9 baek's vs 柏毅's（3-15 墊底，Wemby、Lendeborg、Dybantsa、Kuminga…，Edwards O）。AD 改 Q 已移出 IL（13 人滿）；Knueppel 再評估 4 週（約 12/12），續放 IL。
+  Luka 週一 O（下背）→ 週一 Luka 坐板凳、AD 進先發。每天有賽 7/3/9/5/4/5/8，週二只 3 人。FA 名單是 11/2 的，要新截圖。
 - baek's：11/8 AD 又 O（腳踝）→ 移進 IL，空出名單位；今晚不簽人（模擬加人會拉低 TO/FT%）。Knueppel 回來時直接用這個空位移出 IL，不用放人。等週一 FA 截圖排第 4 週。
 
 ## 宿敵監控（10/30 截圖）
