@@ -23,7 +23,63 @@
     "matchup": {
       "week": 4,
       "opponent": "強力衝擊二連冠",
-      "categories": [],
+      "categories": [
+        {
+          "category": "FGM",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "FG%",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "FT%",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "3PTM",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "3PT%",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "PTS",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "REB",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "AST",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "ST",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "BLK",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "TO",
+          "mine": "0",
+          "opponent": "0"
+        }
+      ],
       "adds_used": 0,
       "opp_games_left": -1,
       "my_games_left": -1,
@@ -32,35 +88,32 @@
       "saved_ts": "2026-11-09T16:52+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-09 16:55",
+    "updated_at": "2026-11-09 20:51",
     "free_agents": {
       "names": [
         "Collin Gillespie",
-        "Alex Caruso",
-        "Cameron Johnson",
         "John Collins",
-        "Christian Braun",
-        "Darryn Peterson",
+        "Alex Caruso",
         "Miles McBride",
         "Collin Murray-Boyles",
-        "Aaron Gordon",
-        "Devin Vassell",
         "Ja'Kobe Walter",
-        "Jared McCain",
         "Rui Hachimura",
+        "Zach Edey",
+        "Jared McCain",
+        "Dillon Brooks",
         "CJ McCollum",
-        "Derrick Jones Jr.",
         "Reed Sheppard",
+        "Derrick Jones Jr.",
         "Tre Jones",
         "Daniel Gafford",
-        "Aaron Nesmith",
-        "Jaylen Wells",
+        "Keegan Murray",
         "Neemias Queta",
-        "Bobby Portis",
-        "Mitchell Robinson",
-        "Kris Dunn"
+        "Jaylen Wells",
+        "Andrew Wiggins",
+        "Aaron Nesmith",
+        "Bobby Portis"
       ],
-      "saved_ts": "2026-11-08T16:02+08:00"
+      "saved_ts": "2026-11-09T20:47+08:00"
     },
     "opponent_roster": {
       "opponent": "強力衝擊二連冠",
@@ -169,9 +222,14 @@
     ],
     "planned_adds": [
       {
-        "day": "2026-11-12",
+        "day": "2026-11-09",
         "drop": "Myles Turner",
-        "add": "Daniel Gafford"
+        "add": "Dillon Brooks"
+      },
+      {
+        "day": "2026-11-13",
+        "drop": "Dillon Brooks",
+        "add": "Zach Edey"
       }
     ],
     "keep": [
@@ -210,7 +268,53 @@
     "matchup": {
       "week": 4,
       "opponent": "柏毅's Nice Team",
-      "categories": [],
+      "categories": [
+        {
+          "category": "FG%",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "FT%",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "3PTM",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "PTS",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "REB",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "AST",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "ST",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "BLK",
+          "mine": "0",
+          "opponent": "0"
+        },
+        {
+          "category": "TO",
+          "mine": "0",
+          "opponent": "0"
+        }
+      ],
       "adds_used": 0,
       "opp_games_left": -1,
       "my_games_left": -1,
@@ -219,31 +323,32 @@
       "saved_ts": "2026-11-09T16:52+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-09 16:55",
+    "updated_at": "2026-11-09 20:51",
     "free_agents": {
       "names": [
+        "Keegan Murray",
         "Collin Gillespie",
         "Tre Jones",
-        "Cameron Johnson",
-        "Day'Ron Sharpe",
-        "Herbert Jones",
-        "Mitchell Robinson",
-        "Keaton Wagler",
-        "Aaron Nesmith",
+        "Ja'Kobe Walter",
         "Miles McBride",
-        "Jeremiah Fears",
-        "Morez Johnson Jr.",
+        "Kris Dunn",
+        "Aaron Nesmith",
         "Draymond Green",
-        "Sam Merrill",
+        "Daniss Jenkins",
+        "Keaton Wagler",
+        "Mitchell Robinson",
+        "Bobby Portis",
         "Obi Toppin",
-        "Jake LaRavia",
-        "Robert Williams III",
-        "Joan Beringer",
-        "Marcus Smart",
+        "Al Horford",
         "Jamal Shead",
-        "Bones Hyland"
+        "Kelly Oubre Jr.",
+        "Joan Beringer",
+        "Santi Aldama",
+        "Jake LaRavia",
+        "Marcus Smart",
+        "Sandro Mamukelashvili"
       ],
-      "saved_ts": "2026-11-05T15:23+08:00"
+      "saved_ts": "2026-11-09T20:47+08:00"
     },
     "opponent_roster": {
       "opponent": "柏毅's Nice Team",
@@ -365,7 +470,18 @@
         "drop": []
       }
     ],
-    "planned_adds": [],
+    "planned_adds": [
+      {
+        "day": "2026-11-09",
+        "drop": "Day'Ron Sharpe",
+        "add": "Collin Gillespie"
+      },
+      {
+        "day": "2026-11-11",
+        "drop": "Collin Gillespie",
+        "add": "Santi Aldama"
+      }
+    ],
     "keep": [
       "Kyshawn George",
       "Saddiq Bey",
