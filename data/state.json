@@ -14,7 +14,7 @@
       "Ayo Dosunmu",
       "Brandin Podziemski",
       "LeBron James",
-      "Myles Turner"
+      "Dillon Brooks"
     ],
     "il": [
       "Jalen Williams",
@@ -80,7 +80,7 @@
           "opponent": "0"
         }
       ],
-      "adds_used": 0,
+      "adds_used": 1,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
@@ -88,7 +88,7 @@
       "saved_ts": "2026-11-09T16:52+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-09 20:51",
+    "updated_at": "2026-11-09 23:16",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -218,14 +218,18 @@
         "drop": [
           "Jrue Holiday"
         ]
+      },
+      {
+        "date": "2026-11-09",
+        "add": [
+          "Dillon Brooks"
+        ],
+        "drop": [
+          "Myles Turner"
+        ]
       }
     ],
     "planned_adds": [
-      {
-        "day": "2026-11-09",
-        "drop": "Myles Turner",
-        "add": "Dillon Brooks"
-      },
       {
         "day": "2026-11-13",
         "drop": "Dillon Brooks",
@@ -258,9 +262,9 @@
       "Kyshawn George",
       "Saddiq Bey",
       "Joel Embiid",
-      "Day'Ron Sharpe",
       "DeMar DeRozan",
-      "Anthony Davis"
+      "Anthony Davis",
+      "Collin Gillespie"
     ],
     "il": [
       "Kon Knueppel"
@@ -315,7 +319,7 @@
           "opponent": "0"
         }
       ],
-      "adds_used": 0,
+      "adds_used": 1,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
@@ -323,7 +327,7 @@
       "saved_ts": "2026-11-09T16:52+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-09 20:51",
+    "updated_at": "2026-11-09 23:16",
     "free_agents": {
       "names": [
         "Keegan Murray",
@@ -468,6 +472,15 @@
           "Anthony Davis"
         ],
         "drop": []
+      },
+      {
+        "date": "2026-11-09",
+        "add": [
+          "Collin Gillespie"
+        ],
+        "drop": [
+          "Day'Ron Sharpe"
+        ]
       }
     ],
     "planned_adds": [
