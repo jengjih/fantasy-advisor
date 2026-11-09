@@ -129,6 +129,8 @@
   桐生 Clingan+Giddey −.029／45%；桐生 Clingan+Lendeborg −.045／60%；永吉路 JJ+Wiggins −.041／48%；Justin Jabari+Coward −.026／42%；強力 Amen+D.Murray 季後賽 52→27%（不可能）。
   Sun 不缺後衛（Murray、NAW、Lillard、Quickley、Rollins、Powell、Morant），缺的是籃板／阻攻／FG%（長人）。Harper 對他的賣點只有「新秀」；WCJ 才是他需要的位置。
   WCJ→Siakam 一換一：Sun −.023／我冠軍 40%；WCJ+Harper→Siakam+Rollins：Sun −.027／我 49%（後衛換後衛、長人換長人，最合 Sun 的需求）。
+  ❌ 11/9 Sun 回覆：Siakam 不可能換。→ 改提他 11/2 自己開過的 WCJ → Powell + Rollins（當時被聯盟否決）：4000 次 贏尚恩 91%→95%、冠軍 30%→43%（放 Camara；放 Dosunmu 則 93%／37%）。
+  第 4 週 vs 強力：計劃（Brooks→Edey）82%、不換 75%；強力 FG%、REB 偏強，我 3PTM、PTS、FGM 強。強力 11/9 撿了 Saddiq Bey（放誰未知）。
   ✅✅ 11/8 最終決定（不再更改）：跟 Sun 提 WCJ+Harper → Siakam+Rollins。Sun 拒絕才退 Harper→Siakam；其他隊不主動找。對方要求加 Fox/Camara/Booker 等主力一律先回報再算。
   （舊）建議：先找 Sun 談 Harper→Siakam 一換一（對他傷害最小、對我幫助接近最大、名單不用調整），不成再提 2 換 2；備案桐生 Clingan+Giddey／Zubac+M.Bridges。
   ⚠️ 更正：桐生不是在重建——Edwards、Kawhi、Haliburton 傷癒後模擬他會到第 2–3 名（勝率 .547）。從他角度：Clingan+Lendeborg 讓他 .547→.502、季後賽 99%→86%，理性不會接受；
