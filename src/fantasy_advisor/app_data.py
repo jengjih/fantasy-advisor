@@ -161,6 +161,7 @@ def _planned_steps(lg_state, mine, scored, injuries, lg, empty, focus, schedule,
         d = max(date.fromisoformat(p["day"]), day)
         if d > sunday or (p["drop"] and p["drop"] not in names) or p["add"] in names:
             continue
+        names.add(p["add"])  # 接力：下一步要放的人是這一步簽進來的
         new, _ = pj.resolve([p["add"]], scored, injuries, lg, empty, focus)
         if not new:
             continue
