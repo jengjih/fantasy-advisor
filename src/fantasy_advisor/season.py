@@ -147,7 +147,8 @@ def simulate_season(label: str, runs: int = 2000, seed: int = 0, log=print, twea
     first = date.fromisoformat(data["sim_from"]) if data.get("sim_from") else min(schedule["date"])
     first -= timedelta(days=first.weekday())
     schedule = schedule[schedule["date"] >= first]
-    regular, playoff = matchup_periods(schedule, first, SEASON_END[label], REG_MATCHUPS[label], PLAYOFF_WEEKS[label])
+    n_reg = REG_MATCHUPS[label] - (first - date(2026, 11, 2)).days // 7  # REG_MATCHUPS 是從第 3 週（11/2）起算
+    regular, playoff = matchup_periods(schedule, first, SEASON_END[label], n_reg, PLAYOFF_WEEKS[label])
     rng = np.random.default_rng(seed)
 
     rng = rng

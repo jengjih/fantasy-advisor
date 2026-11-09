@@ -151,6 +151,10 @@
   Luka 週一 O（下背）→ 週一 Luka 坐板凳、AD 進先發。每天有賽 7/3/9/5/4/5/8，週二只 3 人。FA 名單是 11/2 的，要新截圖。
 - baek's：11/8 AD 又 O（腳踝）→ 移進 IL，空出名單位；今晚不簽人（模擬加人會拉低 TO/FT%）。Knueppel 回來時直接用這個空位移出 IL，不用放人。等週一 FA 截圖排第 4 週。
 
+- 11/9 第 3 週結束戰績：懂球帝 我 21-11-1 第 2（強力 22-10-1 第 1；Sun 改名「傳奇lue教練」21-12）；尚恩 12-20-1 第 6。
+  baek's 我 15-11-1 第 6；伊古達拉 8-18-1 第 10。
+  季末模擬（10000 次，修正：sim_from 11/9、剩 16／17 期）：懂球帝 贏尚恩 90%（不串流 64%）、冠軍 31%；baek's 贏伊古達拉 100%、冠軍 10%、平均第 3.5 名。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
