@@ -162,6 +162,9 @@
   baek's 我 15-11-1 第 6；伊古達拉 8-18-1 第 10。
   季末模擬（10000 次，修正：sim_from 11/9、剩 16／17 期）：懂球帝 贏尚恩 90%（不串流 64%）、冠軍 31%；baek's 贏伊古達拉 100%、冠軍 10%、平均第 3.5 名。
 
+- 11/10 18:45（美東週一打完）：懂球帝 8-3（Wemby 40 分 11 板 9 阻、Booker 32、Podz 25／5 三分、Harper 17、Fox 15／9 板；Brooks 3-14 差），計劃 Brooks→Edey 90%。
+  baek's 2-5（柏毅 FG% .559、BLK 13）但 AD 44／13、Luka 32／10 助；計劃 Gillespie→Aldama 88%。Reaves Q（11/11）、對手 Diabaté Q。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。

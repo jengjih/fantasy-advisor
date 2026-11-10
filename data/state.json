@@ -26,94 +26,90 @@
       "categories": [
         {
           "category": "FGM",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "50",
+          "opponent": "31"
         },
         {
           "category": "FG%",
-          "mine": "0",
-          "opponent": "0"
+          "mine": ".575",
+          "opponent": ".437"
         },
         {
           "category": "FT%",
-          "mine": "0",
-          "opponent": "0"
+          "mine": ".821",
+          "opponent": ".793"
         },
         {
           "category": "3PTM",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "13",
+          "opponent": "4"
         },
         {
           "category": "3PT%",
-          "mine": "0",
-          "opponent": "0"
+          "mine": ".481",
+          "opponent": ".308"
         },
         {
           "category": "PTS",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "136",
+          "opponent": "89"
         },
         {
           "category": "REB",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "33",
+          "opponent": "38"
         },
         {
           "category": "AST",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "21",
+          "opponent": "26"
         },
         {
           "category": "ST",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "2",
+          "opponent": "5"
         },
         {
           "category": "BLK",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "11",
+          "opponent": "4"
         },
         {
           "category": "TO",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "3",
+          "opponent": "9"
         }
       ],
       "adds_used": 1,
-      "opp_games_left": -1,
-      "my_games_left": -1,
+      "opp_games_left": 19,
+      "my_games_left": 29,
       "note": "",
-      "saved_at": "11-09 16:52",
-      "saved_ts": "2026-11-09T16:52+08:00",
+      "saved_at": "11-10 18:45",
+      "saved_ts": "2026-11-10T18:45+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-09 23:16",
+    "updated_at": "2026-11-10 18:45",
     "free_agents": {
       "names": [
         "Collin Gillespie",
+        "Jrue Holiday",
+        "Cameron Johnson",
         "John Collins",
         "Alex Caruso",
+        "Christian Braun",
         "Miles McBride",
-        "Collin Murray-Boyles",
         "Ja'Kobe Walter",
+        "Aaron Gordon",
         "Rui Hachimura",
-        "Zach Edey",
         "Jared McCain",
-        "Dillon Brooks",
         "CJ McCollum",
-        "Reed Sheppard",
-        "Derrick Jones Jr.",
         "Tre Jones",
-        "Daniel Gafford",
-        "Keegan Murray",
-        "Neemias Queta",
-        "Jaylen Wells",
-        "Andrew Wiggins",
-        "Aaron Nesmith",
-        "Bobby Portis"
+        "Derrick Jones Jr.",
+        "Reed Sheppard",
+        "Zach Edey",
+        "Daniel Gafford"
       ],
-      "saved_ts": "2026-11-09T20:47+08:00"
+      "saved_ts": "2026-11-10T18:45+08:00"
     },
     "opponent_roster": {
       "opponent": "強力衝擊二連冠",
@@ -275,84 +271,79 @@
       "categories": [
         {
           "category": "FG%",
-          "mine": "0",
-          "opponent": "0"
+          "mine": ".464",
+          "opponent": ".559"
         },
         {
           "category": "FT%",
-          "mine": "0",
-          "opponent": "0"
+          "mine": ".963",
+          "opponent": ".684"
         },
         {
           "category": "3PTM",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "16",
+          "opponent": "19"
         },
         {
           "category": "PTS",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "144",
+          "opponent": "149"
         },
         {
           "category": "REB",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "41",
+          "opponent": "50"
         },
         {
           "category": "AST",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "29",
+          "opponent": "21"
         },
         {
           "category": "ST",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "9",
+          "opponent": "9"
         },
         {
           "category": "BLK",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "5",
+          "opponent": "13"
         },
         {
           "category": "TO",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "15",
+          "opponent": "15"
         }
       ],
       "adds_used": 1,
-      "opp_games_left": -1,
-      "my_games_left": -1,
+      "opp_games_left": 25,
+      "my_games_left": 26,
       "note": "",
-      "saved_at": "11-09 16:52",
-      "saved_ts": "2026-11-09T16:52+08:00",
+      "saved_at": "11-10 18:45",
+      "saved_ts": "2026-11-10T18:45+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-09 23:16",
+    "updated_at": "2026-11-10 18:45",
     "free_agents": {
       "names": [
-        "Keegan Murray",
-        "Collin Gillespie",
         "Tre Jones",
+        "Cameron Johnson",
         "Ja'Kobe Walter",
         "Miles McBride",
         "Kris Dunn",
         "Aaron Nesmith",
         "Draymond Green",
-        "Daniss Jenkins",
         "Keaton Wagler",
         "Mitchell Robinson",
         "Bobby Portis",
-        "Obi Toppin",
         "Al Horford",
-        "Jamal Shead",
+        "Obi Toppin",
+        "Santi Aldama",
         "Kelly Oubre Jr.",
         "Joan Beringer",
-        "Santi Aldama",
-        "Jake LaRavia",
-        "Marcus Smart",
-        "Sandro Mamukelashvili"
+        "Jake LaRavia"
       ],
-      "saved_ts": "2026-11-09T20:47+08:00"
+      "saved_ts": "2026-11-10T18:45+08:00"
     },
     "opponent_roster": {
       "opponent": "柏毅's Nice Team",
