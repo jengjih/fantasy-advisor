@@ -165,6 +165,8 @@
 - 11/10 18:45（美東週一打完）：懂球帝 8-3（Wemby 40 分 11 板 9 阻、Booker 32、Podz 25／5 三分、Harper 17、Fox 15／9 板；Brooks 3-14 差），計劃 Brooks→Edey 90%。
   baek's 2-5（柏毅 FG% .559、BLK 13）但 AD 44／13、Luka 32／10 助；計劃 Gillespie→Aldama 88%。Reaves Q（11/11）、對手 Diabaté Q。
 
+- 11/10 baek's 改計劃：週五 Gillespie→Kris Dunn、週六 Dunn→Aldama（91%、平均 5.7-3.1）優於週三換 Aldama（87%）；多放 Bey 換長人反而更差。FG%（~20%）、BLK（~33%）是結構性弱點，柏毅有 Wemby。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。

@@ -323,7 +323,7 @@
       "saved_ts": "2026-11-10T18:45+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-10 18:45",
+    "updated_at": "2026-11-10 19:26",
     "free_agents": {
       "names": [
         "Tre Jones",
@@ -476,13 +476,13 @@
     ],
     "planned_adds": [
       {
-        "day": "2026-11-09",
-        "drop": "Day'Ron Sharpe",
-        "add": "Collin Gillespie"
+        "day": "2026-11-13",
+        "drop": "Collin Gillespie",
+        "add": "Kris Dunn"
       },
       {
-        "day": "2026-11-11",
-        "drop": "Collin Gillespie",
+        "day": "2026-11-14",
+        "drop": "Kris Dunn",
         "add": "Santi Aldama"
       }
     ],
