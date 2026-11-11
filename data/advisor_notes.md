@@ -167,6 +167,10 @@
 
 - 11/10 baek's 改計劃：週五 Gillespie→Kris Dunn、週六 Dunn→Aldama（91%、平均 5.7-3.1）優於週三換 Aldama（87%）；多放 Bey 換長人反而更差。FG%（~20%）、BLK（~33%）是結構性弱點，柏毅有 Wemby。
 
+- 11/11 19:10（美東週二打完）：懂球帝 9-2（85%，照計劃 88%）；baek's 6-3（79%，照計劃 91%）。BOS 123-101 贏 PHI（George 36）。
+  週二：懂球帝 Brunson 23、Booker 17、Bam 11/8/4 抄 2 阻但 1-8、WCJ 11 板 3 阻、Brooks 又 4-12；baek's Pritchard 18（4 三分）、Gillespie 12/8 助、Embiid 2-9、Turner 1-7。
+  搖擺：懂球帝 AST、ST、REB；baek's REB、ST。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
