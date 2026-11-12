@@ -171,6 +171,8 @@
   週二：懂球帝 Brunson 23、Booker 17、Bam 11/8/4 抄 2 阻但 1-8、WCJ 11 板 3 阻、Brooks 又 4-12；baek's Pritchard 18（4 三分）、Gillespie 12/8 助、Embiid 2-9、Turner 1-7。
   搖擺：懂球帝 AST、ST、REB；baek's REB、ST。
 
+- 11/12 13:50：懂球帝 11-0（95%）；週三 Harper 18/10 助/4 抄、White 19/7 助/4 阻、Brunson 27、Wemby 32/5 阻、Podz 22。baek's 5-3（ST 平；不換 67%，照計劃見 App），Kyshawn 25（5 三分）、Luka 32、AD 21/13。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
