@@ -181,6 +181,7 @@
 - 11/12 14:10 懂球帝：Reaves Q、LAL 週日才有賽 → Reaves 移 IL（新規則），空位簽 Daniel Gafford（DAL 四六日）；週日 LAL 開打前放 Gafford、Reaves 移回。模擬 96.9%→98%+。
   baek's 週四不加人：IL 只收 O（Luka／Turner／Embiid 都 Q），串流位 Gillespie 週四有賽，加人要永久放主力不划算。
 
+- 11/12 11:34 John Collins 也被永吉路簽走 → 改簽 Gillespie（PHX 週四、日，11-0 14.9%；Morez Johnson Jr. 15.7% 但掛 P）。
 - 11/12 11:33 Gafford 被傳奇lue教練（Sun）簽走 → 空位改簽 John Collins（DET 週四、六，11-0 19.3%）。
 - 11/12 使用者想衝 11-0：計劃 Gafford＋Brooks→Edey 11-0 機率 15%；加週日 Edey→CJ McCollum 19%（贏 99.6%）。最弱項 ST 64%、3PT% 61%。週日 Reaves 回來前放 Gafford。
 
