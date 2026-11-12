@@ -258,7 +258,7 @@ def simulate(lg: dict, m: dict, mine: list[Member], opp: list[Member], schedule:
         wins += a > b
         losses += a < b
         cats[c] = float((a > b).mean())
-    return {"cats": cats, "win": float((wins > losses).mean()),
+    return {"cats": cats, "win": float((wins > losses).mean()), "sweep": float((wins == len(cats)).mean()),
             "w": float(wins.mean()), "l": float(losses.mean())}
 
 
