@@ -88,7 +88,7 @@
       "saved_ts": "2026-11-12T13:51+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-12 23:31",
+    "updated_at": "2026-11-12 23:33",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -106,8 +106,7 @@
         "Tre Jones",
         "Derrick Jones Jr.",
         "Reed Sheppard",
-        "Zach Edey",
-        "Daniel Gafford"
+        "Zach Edey"
       ],
       "saved_ts": "2026-11-10T18:45+08:00"
     },
@@ -229,7 +228,7 @@
       {
         "day": "2026-11-12",
         "drop": "",
-        "add": "Daniel Gafford"
+        "add": "John Collins"
       },
       {
         "day": "2026-11-13",
