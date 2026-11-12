@@ -173,6 +173,11 @@
 
 - 11/12 13:50：懂球帝 11-0（95%）；週三 Harper 18/10 助/4 抄、White 19/7 助/4 阻、Brunson 27、Wemby 32/5 阻、Podz 22。baek's 5-3（ST 平；不換 67%，照計劃見 App），Kyshawn 25（5 三分）、Luka 32、AD 21/13。
 
+- 11/12：桐生拒絕 WCJ+Harper→Clingan+M.Bridges。交易暫停，主力靠串流（贏尚恩約 90%）。
+- 11/12 懂球帝新規則：掛 Q、P 的人也能放 IL（IL 3 格，目前用 2：J. Williams、Wallace）→ 有人掛 Q 時可移進 IL、空出名單位多串一人；他恢復後要先放一人才能移回。
+- ⚠️ 11/12 漏算：美東週三 Brooks、Gillespie 都沒賽（PHX 一二四日），當時可以在週二晚上換成 Ja'Kobe Walter（TOR 三四都有賽、兩聯盟都是 FA），各多 1 場、不多用 adds。
+  原因：接力只在週一排一次，之後沒有每天重算。改進：每次同步都重跑「串流位接力」窮舉，檢查明天串流位有沒有比賽。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
