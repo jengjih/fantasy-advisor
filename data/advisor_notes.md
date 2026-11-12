@@ -178,6 +178,9 @@
 - ⚠️ 11/12 漏算：美東週三 Brooks、Gillespie 都沒賽（PHX 一二四日），當時可以在週二晚上換成 Ja'Kobe Walter（TOR 三四都有賽、兩聯盟都是 FA），各多 1 場、不多用 adds。
   原因：接力只在週一排一次，之後沒有每天重算。改進：每次同步都重跑「串流位接力」窮舉，檢查明天串流位有沒有比賽。
 
+- 11/12 14:10 懂球帝：Reaves Q、LAL 週日才有賽 → Reaves 移 IL（新規則），空位簽 Daniel Gafford（DAL 四六日）；週日 LAL 開打前放 Gafford、Reaves 移回。模擬 96.9%→98%+。
+  baek's 週四不加人：IL 只收 O（Luka／Turner／Embiid 都 Q），串流位 Gillespie 週四有賽，加人要永久放主力不划算。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。

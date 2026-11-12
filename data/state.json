@@ -88,7 +88,7 @@
       "saved_ts": "2026-11-12T13:51+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-12 13:51",
+    "updated_at": "2026-11-12 23:26",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -226,6 +226,11 @@
       }
     ],
     "planned_adds": [
+      {
+        "day": "2026-11-12",
+        "drop": "",
+        "add": "Daniel Gafford"
+      },
       {
         "day": "2026-11-13",
         "drop": "Dillon Brooks",
