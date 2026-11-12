@@ -181,6 +181,8 @@
 - 11/12 14:10 懂球帝：Reaves Q、LAL 週日才有賽 → Reaves 移 IL（新規則），空位簽 Daniel Gafford（DAL 四六日）；週日 LAL 開打前放 Gafford、Reaves 移回。模擬 96.9%→98%+。
   baek's 週四不加人：IL 只收 O（Luka／Turner／Embiid 都 Q），串流位 Gillespie 週四有賽，加人要永久放主力不划算。
 
+- 11/12 使用者想衝 11-0：計劃 Gafford＋Brooks→Edey 11-0 機率 15%；加週日 Edey→CJ McCollum 19%（贏 99.6%）。最弱項 ST 64%、3PT% 61%。週日 Reaves 回來前放 Gafford。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。

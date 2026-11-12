@@ -88,7 +88,7 @@
       "saved_ts": "2026-11-12T13:51+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-12 23:26",
+    "updated_at": "2026-11-12 23:31",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -235,6 +235,11 @@
         "day": "2026-11-13",
         "drop": "Dillon Brooks",
         "add": "Zach Edey"
+      },
+      {
+        "day": "2026-11-15",
+        "drop": "Zach Edey",
+        "add": "CJ McCollum"
       }
     ],
     "keep": [
