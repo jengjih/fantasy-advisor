@@ -186,6 +186,7 @@
 - 11/12 使用者想衝 11-0：計劃 Gafford＋Brooks→Edey 11-0 機率 15%；加週日 Edey→CJ McCollum 19%（贏 99.6%）。最弱項 ST 64%、3PT% 61%。週日 Reaves 回來前放 Gafford。
 
 - 11/13 18:25：懂球帝 10-1（REB 127-142 被反超，模擬追回只剩 ~3%，11-0 已無望 <1%），本週贏 98%。baek's 6-3（贏 FT%、3PTM、PTS、REB、AST、ST）。計劃照舊。
+- 11/13 晚：Edey 掛 O → 取消 Brooks→Edey。改 **週五 Brooks→Tre Jones（CHI，週五 ATL、週六 @MIN；台北 11/14 09:00 前）**，週日 Tre Jones→CJ McCollum。模擬（6000 次）：不換 97.0%、Tre Jones 98.0%（ST 72%）、Derrick Jones Jr. 98.0%、Derik Queen 97.8%、Stewart 97.6%、Portis 97.3%。REB 怎麼換都只剩 1–3%。
 
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
