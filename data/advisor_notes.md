@@ -185,6 +185,8 @@
 - 11/12 11:33 Gafford 被傳奇lue教練（Sun）簽走 → 空位改簽 John Collins（DET 週四、六，11-0 19.3%）。
 - 11/12 使用者想衝 11-0：計劃 Gafford＋Brooks→Edey 11-0 機率 15%；加週日 Edey→CJ McCollum 19%（贏 99.6%）。最弱項 ST 64%、3PT% 61%。週日 Reaves 回來前放 Gafford。
 
+- 11/13 18:25：懂球帝 10-1（REB 127-142 被反超，模擬追回只剩 ~3%，11-0 已無望 <1%），本週贏 98%。baek's 6-3（贏 FT%、3PTM、PTS、REB、AST、ST）。計劃照舊。
+
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
   板凳 Harden、Peyton Watson、Zion、Herro；IL Knueppel。第 2 週對 Justin（8-3 第 1）目前 8-3 領先，但模擬只有 48% 贏（對手剩餘場次多）。
