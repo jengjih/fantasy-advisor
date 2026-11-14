@@ -26,69 +26,69 @@
       "categories": [
         {
           "category": "FGM",
-          "mine": "179",
-          "opponent": "143"
+          "mine": "227",
+          "opponent": "189"
         },
         {
           "category": "FG%",
-          "mine": ".488",
-          "opponent": ".440"
+          "mine": ".487",
+          "opponent": ".449"
         },
         {
           "category": "FT%",
-          "mine": ".860",
-          "opponent": ".793"
+          "mine": ".872",
+          "opponent": ".787"
         },
         {
           "category": "3PTM",
-          "mine": "51",
-          "opponent": "38"
+          "mine": "63",
+          "opponent": "55"
         },
         {
           "category": "3PT%",
-          "mine": ".364",
-          "opponent": ".322"
+          "mine": ".360",
+          "opponent": ".348"
         },
         {
           "category": "PTS",
-          "mine": "483",
-          "opponent": "412"
+          "mine": "619",
+          "opponent": "544"
         },
         {
           "category": "REB",
-          "mine": "127",
-          "opponent": "142"
+          "mine": "176",
+          "opponent": "174"
         },
         {
           "category": "AST",
-          "mine": "103",
-          "opponent": "90"
+          "mine": "132",
+          "opponent": "131"
         },
         {
           "category": "ST",
-          "mine": "31",
-          "opponent": "24"
+          "mine": "40",
+          "opponent": "27"
         },
         {
           "category": "BLK",
-          "mine": "31",
-          "opponent": "21"
+          "mine": "37",
+          "opponent": "23"
         },
         {
           "category": "TO",
-          "mine": "25",
-          "opponent": "53"
+          "mine": "40",
+          "opponent": "68"
         }
       ],
       "adds_used": 2,
-      "opp_games_left": 19,
-      "my_games_left": 13,
+      "opp_games_left": 11,
+      "my_games_left": 7,
       "note": "",
-      "saved_at": "11-13 18:26",
-      "saved_ts": "2026-11-13T18:26+08:00",
+      "saved_at": "11-14 15:59",
+      "saved_ts": "2026-11-14T15:59+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-13 18:32",
+    "updated_at": "2026-11-14 16:01",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -226,19 +226,9 @@
     ],
     "planned_adds": [
       {
-        "day": "2026-11-12",
-        "drop": "",
-        "add": "Collin Gillespie"
-      },
-      {
-        "day": "2026-11-13",
+        "day": "2026-11-14",
         "drop": "Dillon Brooks",
-        "add": "Tre Jones"
-      },
-      {
-        "day": "2026-11-15",
-        "drop": "Tre Jones",
-        "add": "CJ McCollum"
+        "add": "Santi Aldama"
       }
     ],
     "keep": [
@@ -280,59 +270,59 @@
       "categories": [
         {
           "category": "FG%",
-          "mine": ".447",
-          "opponent": ".514"
+          "mine": ".441",
+          "opponent": ".471"
         },
         {
           "category": "FT%",
-          "mine": ".843",
-          "opponent": ".667"
+          "mine": ".826",
+          "opponent": ".662"
         },
         {
           "category": "3PTM",
-          "mine": "57",
-          "opponent": "36"
+          "mine": "69",
+          "opponent": "38"
         },
         {
           "category": "PTS",
-          "mine": "439",
-          "opponent": "298"
+          "mine": "507",
+          "opponent": "321"
         },
         {
           "category": "REB",
-          "mine": "123",
-          "opponent": "114"
+          "mine": "156",
+          "opponent": "142"
         },
         {
           "category": "AST",
-          "mine": "83",
-          "opponent": "50"
+          "mine": "95",
+          "opponent": "64"
         },
         {
           "category": "ST",
-          "mine": "22",
-          "opponent": "19"
+          "mine": "27",
+          "opponent": "21"
         },
         {
           "category": "BLK",
-          "mine": "15",
-          "opponent": "23"
+          "mine": "18",
+          "opponent": "27"
         },
         {
           "category": "TO",
-          "mine": "51",
-          "opponent": "36"
+          "mine": "58",
+          "opponent": "41"
         }
       ],
       "adds_used": 1,
-      "opp_games_left": 13,
-      "my_games_left": 13,
+      "opp_games_left": 9,
+      "my_games_left": 10,
       "note": "",
-      "saved_at": "11-13 18:26",
-      "saved_ts": "2026-11-13T18:26+08:00",
+      "saved_at": "11-14 15:59",
+      "saved_ts": "2026-11-14T15:59+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-13 18:26",
+    "updated_at": "2026-11-14 16:01",
     "free_agents": {
       "names": [
         "Tre Jones",
@@ -485,13 +475,8 @@
     ],
     "planned_adds": [
       {
-        "day": "2026-11-13",
-        "drop": "Collin Gillespie",
-        "add": "Kris Dunn"
-      },
-      {
         "day": "2026-11-14",
-        "drop": "Kris Dunn",
+        "drop": "Collin Gillespie",
         "add": "Santi Aldama"
       }
     ],

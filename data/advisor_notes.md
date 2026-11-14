@@ -187,6 +187,9 @@
 
 - 11/13 18:25：懂球帝 10-1（REB 127-142 被反超，模擬追回只剩 ~3%，11-0 已無望 <1%），本週贏 98%。baek's 6-3（贏 FT%、3PTM、PTS、REB、AST、ST）。計劃照舊。
 - 11/13 晚：Edey 掛 O → 取消 Brooks→Edey。改 **週五 Brooks→Tre Jones（CHI，週五 ATL、週六 @MIN；台北 11/14 09:00 前）**，週日 Tre Jones→CJ McCollum。模擬（6000 次）：不換 97.0%、Tre Jones 98.0%（ST 72%）、Derrick Jones Jr. 98.0%、Derik Queen 97.8%、Stewart 97.6%、Portis 97.3%。REB 怎麼換都只剩 1–3%。
+- 11/14 16:00（美東週五打完）：懂球帝 **11-0**（REB 176-174 追回；Bam 37 分 14 板、Brunson 33 分 11 助）。但對手剩 11 場、我剩 7 場，模擬 REB 只剩 5%、AST 60%、3PT% 66%，本週贏 ~100%，11-0 機率 2%。
+  計劃改成：週六 DAL 開打前（台北 11/15 08:30）串流位（Brooks，若週五已換成 Tre Jones 就放 Tre Jones）→ **Santi Aldama**（DAL 週六週日，搶籃板），11-0 機率 2%→6%、REB 15%。McCollum 接力取消。備案 Risacher（DAL）。週日 Reaves 從 IL 回來補空位（Gillespie 沒簽）。
+  baek's 6-3（輸 FG% .441/.471、BLK 18-27、TO），贏 99%。Gillespie（若已換 Kris Dunn 就放 Dunn）→ Santi Aldama，台北 11/15 08:30 前。Dosunmu 不放。
 
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
