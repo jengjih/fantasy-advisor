@@ -195,6 +195,8 @@
   代價：Camara（第 88）、WCJ（第 86）進 waiver，可能被撿走；本週共用 7 次 adds。被簽走的備案：Gafford、Aaron Gordon、Risacher。keep 改成 Dosunmu、Podziemski、Harper。
 - 11/14 晚 **撤回 Camara→Reese、WCJ→Portis**：使用者指正「死守 11-0 不能毀後面賽季」。Camara、WCJ 是先發級長期戰力，為一週一個比項放掉、還可能被 waiver 撿走，不划算。教訓：衝單週比項時，不釋出 keep／長期價值高的人，只用串流位和空位。
   最終計劃：串流位→Aldama、空位→Claxton（11-0 約 14.5%、REB 31%、AST 78%）；週日 Reaves 回來前放 Claxton。keep 恢復 Camara、WCJ。
+- 11/14 20:52 陣容截圖：懂球帝週五已 Brooks→Tre Jones，Gillespie 也簽了（占 Reaves 的 IL 空位，名單 14 人滿）。baek's 已 Gillespie→Kris Dunn（adds 2/4）。
+  **定案（同一套：串流位換人，不動主力）**：懂球帝 Gillespie→Aldama（08:30 前）、Tre Jones→Claxton（09:00 前），週日放 Claxton、Reaves 回先發 → 11-0 14.3%、REB 32%、AST 77%、本週贏 100%。baek's Dunn→Aldama（08:30 前）。
 
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；

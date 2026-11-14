@@ -7,18 +7,19 @@
       "Bam Adebayo",
       "De'Aaron Fox",
       "Derrick White",
-      "Austin Reaves",
       "Wendell Carter Jr.",
       "Dylan Harper",
       "Toumani Camara",
       "Ayo Dosunmu",
       "Brandin Podziemski",
       "LeBron James",
-      "Dillon Brooks"
+      "Tre Jones",
+      "Collin Gillespie"
     ],
     "il": [
       "Jalen Williams",
-      "Cason Wallace"
+      "Cason Wallace",
+      "Austin Reaves"
     ],
     "matchup": {
       "week": 4,
@@ -88,7 +89,7 @@
       "saved_ts": "2026-11-14T15:59+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-14 20:47",
+    "updated_at": "2026-11-14 20:53",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -222,23 +223,29 @@
         "drop": [
           "Myles Turner"
         ]
+      },
+      {
+        "date": "2026-11-14",
+        "add": [
+          "Tre Jones",
+          "Collin Gillespie"
+        ],
+        "drop": [
+          "Dillon Brooks",
+          "Austin Reaves"
+        ]
       }
     ],
     "planned_adds": [
       {
         "day": "2026-11-14",
-        "drop": "Dillon Brooks",
+        "drop": "Collin Gillespie",
         "add": "Santi Aldama"
       },
       {
         "day": "2026-11-14",
-        "drop": "",
+        "drop": "Tre Jones",
         "add": "Nic Claxton"
-      },
-      {
-        "day": "2026-11-15",
-        "drop": "Nic Claxton",
-        "add": ""
       }
     ],
     "keep": [
@@ -269,7 +276,7 @@
       "Joel Embiid",
       "DeMar DeRozan",
       "Anthony Davis",
-      "Collin Gillespie"
+      "Kris Dunn"
     ],
     "il": [
       "Kon Knueppel"
@@ -324,7 +331,7 @@
           "opponent": "41"
         }
       ],
-      "adds_used": 1,
+      "adds_used": 2,
       "opp_games_left": 9,
       "my_games_left": 10,
       "note": "",
@@ -332,7 +339,7 @@
       "saved_ts": "2026-11-14T15:59+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-14 16:01",
+    "updated_at": "2026-11-14 20:53",
     "free_agents": {
       "names": [
         "Tre Jones",
@@ -481,12 +488,21 @@
         "drop": [
           "Day'Ron Sharpe"
         ]
+      },
+      {
+        "date": "2026-11-14",
+        "add": [
+          "Kris Dunn"
+        ],
+        "drop": [
+          "Collin Gillespie"
+        ]
       }
     ],
     "planned_adds": [
       {
         "day": "2026-11-14",
-        "drop": "Collin Gillespie",
+        "drop": "Kris Dunn",
         "add": "Santi Aldama"
       }
     ],
