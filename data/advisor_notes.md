@@ -190,6 +190,9 @@
 - 11/14 16:00（美東週五打完）：懂球帝 **11-0**（REB 176-174 追回；Bam 37 分 14 板、Brunson 33 分 11 助）。但對手剩 11 場、我剩 7 場，模擬 REB 只剩 5%、AST 60%、3PT% 66%，本週贏 ~100%，11-0 機率 2%。
   計劃改成：週六 DAL 開打前（台北 11/15 08:30）串流位（Brooks，若週五已換成 Tre Jones 就放 Tre Jones）→ **Santi Aldama**（DAL 週六週日，搶籃板），11-0 機率 2%→6%、REB 15%。McCollum 接力取消。備案 Risacher（DAL）。週日 Reaves 從 IL 回來補空位（Gillespie 沒簽）。
   baek's 6-3（輸 FG% .441/.471、BLK 18-27、TO），贏 99%。Gillespie（若已換 Kris Dunn 就放 Dunn）→ Santi Aldama，台北 11/15 08:30 前。Dosunmu 不放。
+- 11/14 使用者要「死守 11-0」→ 週六一次堆長人（模擬 8000 次）：只換 Aldama 6.5%；＋空位 Claxton 14.5%；＋Camara→Julian Reese 25%；＋WCJ→Portis **34%**（REB 69%、AST 85%、3PT% 61% 變最弱項）。
+  採用：串流位→Aldama、IL 空位→Claxton（週六打完、週日 Reaves 回來前放掉）、Camara→Reese、WCJ→Portis，全部台北 11/15 08:00 前（NOP 08:00 開打）。Podziemski（全聯盟第 46）不放。
+  代價：Camara（第 88）、WCJ（第 86）進 waiver，可能被撿走；本週共用 7 次 adds。被簽走的備案：Gafford、Aaron Gordon、Risacher。keep 改成 Dosunmu、Podziemski、Harper。
 
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；

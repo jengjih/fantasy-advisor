@@ -88,7 +88,7 @@
       "saved_ts": "2026-11-14T15:59+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-14 16:01",
+    "updated_at": "2026-11-14 16:03",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -229,14 +229,32 @@
         "day": "2026-11-14",
         "drop": "Dillon Brooks",
         "add": "Santi Aldama"
+      },
+      {
+        "day": "2026-11-14",
+        "drop": "",
+        "add": "Nic Claxton"
+      },
+      {
+        "day": "2026-11-14",
+        "drop": "Toumani Camara",
+        "add": "Julian Reese"
+      },
+      {
+        "day": "2026-11-14",
+        "drop": "Wendell Carter Jr.",
+        "add": "Bobby Portis"
+      },
+      {
+        "day": "2026-11-15",
+        "drop": "Nic Claxton",
+        "add": ""
       }
     ],
     "keep": [
       "Ayo Dosunmu",
       "Brandin Podziemski",
-      "Dylan Harper",
-      "Toumani Camara",
-      "Wendell Carter Jr."
+      "Dylan Harper"
     ],
     "stream_slots": [
       "Ayo Dosunmu"
