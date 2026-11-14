@@ -193,6 +193,8 @@
 - 11/14 使用者要「死守 11-0」→ 週六一次堆長人（模擬 8000 次）：只換 Aldama 6.5%；＋空位 Claxton 14.5%；＋Camara→Julian Reese 25%；＋WCJ→Portis **34%**（REB 69%、AST 85%、3PT% 61% 變最弱項）。
   採用：串流位→Aldama、IL 空位→Claxton（週六打完、週日 Reaves 回來前放掉）、Camara→Reese、WCJ→Portis，全部台北 11/15 08:00 前（NOP 08:00 開打）。Podziemski（全聯盟第 46）不放。
   代價：Camara（第 88）、WCJ（第 86）進 waiver，可能被撿走；本週共用 7 次 adds。被簽走的備案：Gafford、Aaron Gordon、Risacher。keep 改成 Dosunmu、Podziemski、Harper。
+- 11/14 晚 **撤回 Camara→Reese、WCJ→Portis**：使用者指正「死守 11-0 不能毀後面賽季」。Camara、WCJ 是先發級長期戰力，為一週一個比項放掉、還可能被 waiver 撿走，不划算。教訓：衝單週比項時，不釋出 keep／長期價值高的人，只用串流位和空位。
+  最終計劃：串流位→Aldama、空位→Claxton（11-0 約 14.5%、REB 31%、AST 78%）；週日 Reaves 回來前放 Claxton。keep 恢復 Camara、WCJ。
 
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
