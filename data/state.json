@@ -13,8 +13,8 @@
       "Ayo Dosunmu",
       "Brandin Podziemski",
       "LeBron James",
-      "Tre Jones",
-      "Collin Gillespie"
+      "Santi Aldama",
+      "Julian Reese"
     ],
     "il": [
       "Jalen Williams",
@@ -27,69 +27,69 @@
       "categories": [
         {
           "category": "FGM",
-          "mine": "227",
-          "opponent": "189"
+          "mine": "249",
+          "opponent": "204"
         },
         {
           "category": "FG%",
-          "mine": ".487",
-          "opponent": ".449"
+          "mine": ".499",
+          "opponent": ".454"
         },
         {
           "category": "FT%",
-          "mine": ".872",
-          "opponent": ".787"
+          "mine": ".859",
+          "opponent": ".785"
         },
         {
           "category": "3PTM",
-          "mine": "63",
-          "opponent": "55"
+          "mine": "65",
+          "opponent": "62"
         },
         {
           "category": "3PT%",
-          "mine": ".360",
-          "opponent": ".348"
+          "mine": ".361",
+          "opponent": ".360"
         },
         {
           "category": "PTS",
-          "mine": "619",
-          "opponent": "544"
+          "mine": "679",
+          "opponent": "587"
         },
         {
           "category": "REB",
-          "mine": "176",
-          "opponent": "174"
+          "mine": "186",
+          "opponent": "188"
         },
         {
           "category": "AST",
-          "mine": "132",
-          "opponent": "131"
+          "mine": "140",
+          "opponent": "150"
         },
         {
           "category": "ST",
-          "mine": "40",
-          "opponent": "27"
+          "mine": "46",
+          "opponent": "33"
         },
         {
           "category": "BLK",
-          "mine": "37",
-          "opponent": "23"
+          "mine": "41",
+          "opponent": "26"
         },
         {
           "category": "TO",
-          "mine": "40",
-          "opponent": "68"
+          "mine": "47",
+          "opponent": "77"
         }
       ],
       "adds_used": 2,
-      "opp_games_left": 11,
-      "my_games_left": 7,
+      "opp_games_left": -1,
+      "my_games_left": -1,
       "note": "",
-      "saved_at": "11-14 15:59",
-      "saved_ts": "2026-11-14T15:59+08:00",
+      "saved_at": "11-15 23:14",
+      "saved_ts": "2026-11-15T23:14+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-14 21:10",
+    "updated_at": "2026-11-15 23:14",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -234,18 +234,24 @@
           "Dillon Brooks",
           "Austin Reaves"
         ]
+      },
+      {
+        "date": "2026-11-15",
+        "add": [
+          "Santi Aldama",
+          "Julian Reese"
+        ],
+        "drop": [
+          "Collin Gillespie",
+          "Tre Jones"
+        ]
       }
     ],
     "planned_adds": [
       {
-        "day": "2026-11-14",
-        "drop": "Collin Gillespie",
-        "add": "Santi Aldama"
-      },
-      {
-        "day": "2026-11-14",
-        "drop": "Tre Jones",
-        "add": "Julian Reese"
+        "day": "2026-11-15",
+        "drop": "Julian Reese",
+        "add": "Neemias Queta"
       }
     ],
     "keep": [
@@ -273,13 +279,13 @@
       "Nickeil Alexander-Walker",
       "Kyshawn George",
       "Saddiq Bey",
-      "Joel Embiid",
       "DeMar DeRozan",
       "Anthony Davis",
-      "Kris Dunn"
+      "Santi Aldama"
     ],
     "il": [
-      "Kon Knueppel"
+      "Kon Knueppel",
+      "Joel Embiid"
     ],
     "matchup": {
       "week": 4,
@@ -287,59 +293,59 @@
       "categories": [
         {
           "category": "FG%",
-          "mine": ".441",
-          "opponent": ".471"
+          "mine": ".434",
+          "opponent": ".461"
         },
         {
           "category": "FT%",
-          "mine": ".826",
-          "opponent": ".662"
+          "mine": ".833",
+          "opponent": ".685"
         },
         {
           "category": "3PTM",
-          "mine": "69",
-          "opponent": "38"
+          "mine": "75",
+          "opponent": "41"
         },
         {
           "category": "PTS",
-          "mine": "507",
-          "opponent": "321"
+          "mine": "575",
+          "opponent": "364"
         },
         {
           "category": "REB",
-          "mine": "156",
-          "opponent": "142"
+          "mine": "178",
+          "opponent": "159"
         },
         {
           "category": "AST",
-          "mine": "95",
-          "opponent": "64"
+          "mine": "107",
+          "opponent": "69"
         },
         {
           "category": "ST",
-          "mine": "27",
-          "opponent": "21"
+          "mine": "35",
+          "opponent": "26"
         },
         {
           "category": "BLK",
           "mine": "18",
-          "opponent": "27"
+          "opponent": "29"
         },
         {
           "category": "TO",
-          "mine": "58",
-          "opponent": "41"
+          "mine": "64",
+          "opponent": "45"
         }
       ],
-      "adds_used": 2,
-      "opp_games_left": 9,
-      "my_games_left": 10,
+      "adds_used": 3,
+      "opp_games_left": -1,
+      "my_games_left": -1,
       "note": "",
-      "saved_at": "11-14 15:59",
-      "saved_ts": "2026-11-14T15:59+08:00",
+      "saved_at": "11-15 23:14",
+      "saved_ts": "2026-11-15T23:14+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-14 20:53",
+    "updated_at": "2026-11-15 23:14",
     "free_agents": {
       "names": [
         "Tre Jones",
@@ -497,13 +503,23 @@
         "drop": [
           "Collin Gillespie"
         ]
+      },
+      {
+        "date": "2026-11-15",
+        "add": [
+          "Santi Aldama"
+        ],
+        "drop": [
+          "Kris Dunn",
+          "Joel Embiid"
+        ]
       }
     ],
     "planned_adds": [
       {
-        "day": "2026-11-14",
-        "drop": "Kris Dunn",
-        "add": "Santi Aldama"
+        "day": "2026-11-15",
+        "drop": "",
+        "add": "Mitchell Robinson"
       }
     ],
     "keep": [

@@ -198,6 +198,9 @@
 - 11/14 20:52 陣容截圖：懂球帝週五已 Brooks→Tre Jones，Gillespie 也簽了（占 Reaves 的 IL 空位，名單 14 人滿）。baek's 已 Gillespie→Kris Dunn（adds 2/4）。
   **定案（同一套：串流位換人，不動主力）**：懂球帝 Gillespie→Aldama（08:30 前）、Tre Jones→Claxton（09:00 前），週日放 Claxton、Reaves 回先發 → 11-0 14.3%、REB 32%、AST 77%、本週贏 100%。baek's Dunn→Aldama（08:30 前）。
 - 11/14 21:08 Claxton 被 Justin 簽走 → 改 **Tre Jones→Julian Reese**（NOP，週六 08:00 開打前；週日放 Reese、Reaves 回）：11-0 13.1%、REB 30%。備案 Portis 12.2%、Danny Wolf 12.3%、Gafford 12.7%（多半已被簽）；不換保留 Tre Jones 9.7%。
+- 11/15（美東週六打完）：已簽 Aldama、Reese（放 Gillespie、Tre Jones）；Reaves 變 **O**，留在 IL。Yahoo 8-2(-1)，ESPN 估 9-2（REB 186-188、AST 140-150 落後，3PT% .361/.360）。
+  週日計劃：**Reese→Neemias Queta**（BOS，台北 11/16 07:00 前）→ 平均 9.58 勝、REB 38%、AST 78%、3PT% 43%；備案 Kel'el Ware（MIL 09:00）。
+  baek's：Dunn→Aldama 已做；Embiid O 移 IL，名單空一格、adds 3/4 → **簽 Mitchell Robinson**（BOS 07:00，排 UTIL）。FG% 10%→13%、BLK 已輸、本週贏 100%。Embiid 恢復後要立刻移出 IL。
 
 ## 宿敵監控（10/30 截圖）
 - 誰是懂球帝「尚恩·李文斯頓」（第 1 週 5-6-0、8 隊第 6）：Luka、Cade Cunningham、Pritchard、Mikal Bridges、Avdija、Dyson Daniels、Sabonis、Gobert、Coby White（O）、Okongwu；
