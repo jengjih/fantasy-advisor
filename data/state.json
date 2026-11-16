@@ -89,7 +89,7 @@
       "saved_ts": "2026-11-15T23:14+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-15 23:14",
+    "updated_at": "2026-11-16 17:19",
     "free_agents": {
       "names": [
         "Collin Gillespie",
@@ -247,13 +247,7 @@
         ]
       }
     ],
-    "planned_adds": [
-      {
-        "day": "2026-11-15",
-        "drop": "Julian Reese",
-        "add": "Neemias Queta"
-      }
-    ],
+    "planned_adds": [],
     "keep": [
       "Ayo Dosunmu",
       "Brandin Podziemski",
@@ -345,7 +339,7 @@
       "saved_ts": "2026-11-15T23:14+08:00",
       "week_monday": "2026-11-09"
     },
-    "updated_at": "2026-11-15 23:14",
+    "updated_at": "2026-11-16 17:19",
     "free_agents": {
       "names": [
         "Tre Jones",
@@ -515,13 +509,7 @@
         ]
       }
     ],
-    "planned_adds": [
-      {
-        "day": "2026-11-15",
-        "drop": "",
-        "add": "Mitchell Robinson"
-      }
-    ],
+    "planned_adds": [],
     "keep": [
       "Kyshawn George",
       "Saddiq Bey",
