@@ -1,46 +1,46 @@
 {
  "聯盟一": {
-  "updated": "2026-11-08",
+  "updated": "2026-11-16",
   "standings": {
-   "強力衝擊二連冠": [
-    22,
-    10,
-    1
-   ],
    "LeSunshine": [
-    21,
-    11,
+    30,
+    13,
     1
    ],
    "Sun": [
-    21,
-    12,
-    0
-   ],
-   "Justin's Ingenious Team": [
-    18,
+    29,
     14,
     1
    ],
-   "永吉路懂球帝": [
-    13,
-    20,
-    0
-   ],
-   "尚恩·李文斯頓": [
-    12,
-    20,
+   "強力衝擊二連冠": [
+    24,
+    19,
     1
    ],
-   "桐生一馬": [
-    12,
+   "Justin's Ingenious Team": [
+    22,
     21,
+    1
+   ],
+   "尚恩·李文斯頓": [
+    20,
+    22,
+    2
+   ],
+   "永吉路懂球帝": [
+    20,
+    24,
     0
    ],
+   "桐生一馬": [
+    14,
+    29,
+    1
+   ],
    "西瓜爸爸's Nice Team": [
-    11,
-    22,
-    0
+    13,
+    30,
+    1
    ]
   },
   "week2_now": [],
@@ -52,16 +52,17 @@
     "Bam Adebayo",
     "De'Aaron Fox",
     "Derrick White",
-    "Austin Reaves",
     "Wendell Carter Jr.",
     "Dylan Harper",
     "Toumani Camara",
     "Ayo Dosunmu",
     "Brandin Podziemski",
     "LeBron James",
-    "Dillon Brooks",
+    "Santi Aldama",
+    "Julian Reese",
     "Jalen Williams",
-    "Cason Wallace"
+    "Cason Wallace",
+    "Austin Reaves"
    ],
    "永吉路懂球帝": [
     "De'Anthony Melton",
@@ -211,70 +212,70 @@
    "19": "桐生一馬"
   },
   "standings_note": "11/9 Yahoo（第 3 週結束；Sun 改名「傳奇lue教練」）",
-  "sim_from": "2026-11-09",
+  "sim_from": "2026-11-16",
   "fixed_results": {}
  },
  "聯盟二": {
-  "updated": "2026-10-30",
+  "updated": "2026-11-16",
   "standings": {
    "無慼's Remarkable Team": [
-    20,
-    7,
-    0
-   ],
-   "溜馬三劍客": [
-    16,
-    9,
-    2
-   ],
-   "扣愛的麵包房": [
-    17,
-    10,
+    24,
+    12,
     0
    ],
    "安國's Terrific Team": [
-    17,
-    10,
-    0
-   ],
-   "eric's Dazzling Team": [
-    16,
-    11,
-    0
+    22,
+    13,
+    1
    ],
    "LeSunshine": [
+    21,
+    14,
+    1
+   ],
+   "eric's Dazzling Team": [
+    21,
     15,
-    11,
+    0
+   ],
+   "溜馬三劍客": [
+    19,
+    14,
+    3
+   ],
+   "扣愛的麵包房": [
+    20,
+    15,
     1
    ],
    "火箭發射": [
-    14,
-    13,
-    0
-   ],
-   "滑到什麼用什麼吧": [
-    12,
-    14,
-    1
-   ],
-   "子毅's Expert Team": [
-    10,
+    19,
     16,
     1
    ],
-   "安卓·伊古達拉": [
-    8,
-    18,
+   "滑到什麼用什麼吧": [
+    17,
+    17,
+    2
+   ],
+   "子毅's Expert Team": [
+    15,
+    20,
     1
    ],
    "LALA好": [
-    8,
-    19,
+    12,
+    24,
     0
    ],
+   "安卓·伊古達拉": [
+    11,
+    23,
+    2
+   ],
    "柏毅's Nice Team": [
-    6,
-    21,
+    9,
+    27,
     0
    ]
   },
@@ -290,11 +291,11 @@
     "Nickeil Alexander-Walker",
     "Kyshawn George",
     "Saddiq Bey",
-    "Joel Embiid",
     "DeMar DeRozan",
     "Anthony Davis",
-    "Collin Gillespie",
-    "Kon Knueppel"
+    "Santi Aldama",
+    "Kon Knueppel",
+    "Joel Embiid"
    ],
    "LALA好": [
     "Ja Morant",
@@ -500,7 +501,7 @@
    "20": "火箭發射"
   },
   "standings_note": "11/9 Yahoo（第 3 週結束）",
-  "sim_from": "2026-11-09",
+  "sim_from": "2026-11-16",
   "fixed_results": {}
  }
 }
