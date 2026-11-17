@@ -298,3 +298,4 @@
   ③ 11/18 11:00 後～11/19 09:00 前 McBride→CJ McCollum（ATL 三五日）④ 11/22 11:30 後～11/23 08:00 前 DJJ→Christian Braun（DEN 日）。
   籃板預測 226 vs 266 偏輸；搖擺 FG%、FT%、3PT%、BLK。Reaves（O 腳跟，ESPN 預估 11/18）回來時要用一個串流位換回。
 - baek's 計劃：不換 94%；週五 Robinson→Cameron Johnson、週六 CJ→McBride（94%，平均 6.2-2.7）。週三 11 人有賽，DeRozan 坐板凳。
+- 11/17 21:52 已做：懂球帝 Queta→McBride、Aldama→DJJ；baek's 放 Aldama、Embiid 移出 IL。週二先發兩邊都排好（懂球帝 8 人、baek's 3 人有賽全上）。

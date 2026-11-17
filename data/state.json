@@ -13,8 +13,8 @@
       "Ayo Dosunmu",
       "Brandin Podziemski",
       "LeBron James",
-      "Santi Aldama",
-      "Neemias Queta"
+      "Miles McBride",
+      "Derrick Jones Jr."
     ],
     "il": [
       "Jalen Williams",
@@ -81,15 +81,15 @@
           "opponent": "19"
         }
       ],
-      "adds_used": -1,
+      "adds_used": 2,
       "opp_games_left": 36,
-      "my_games_left": 29,
+      "my_games_left": 31,
       "note": "",
       "saved_at": "11-17 21:43",
       "saved_ts": "2026-11-17T21:43+08:00",
       "week_monday": "2026-11-16"
     },
-    "updated_at": "2026-11-17 21:45",
+    "updated_at": "2026-11-17 21:52",
     "free_agents": {
       "names": [
         "Cameron Johnson",
@@ -265,6 +265,17 @@
         ],
         "drop": [
           "Julian Reese"
+        ]
+      },
+      {
+        "date": "2026-11-17",
+        "add": [
+          "Miles McBride",
+          "Derrick Jones Jr."
+        ],
+        "drop": [
+          "Neemias Queta",
+          "Santi Aldama"
         ]
       }
     ],
