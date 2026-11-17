@@ -288,3 +288,13 @@
 - 第 5 週待辦：等使用者傳兩個聯盟第 5 週 Matchup＋對手陣容截圖，確認有沒有簽 Queta／Mitchell Robinson，再跑 plan.py 排本週串流。baek's 週一到週四不用 adds。
 - 11/16 修正版季末模擬（13 人＋串流位，3000 次）：懂球帝 贏尚恩 99%、冠軍 53%、平均第 1.5 名（不串流 93%／29%）；baek's 贏伊古達拉 100%、冠軍 10%、平均第 3.0 名。
 - 第 4 週檢討：懂球帝賽前預測 81% 贏強力 → 實際 9-2（超出預期：核心爆發＋串流多打場次＋強力後段 Mitchell、MPJ 缺陣）；baek's 賽前 93% → 6-3（符合預期，輸 FG%、BLK、TO 是結構性）。
+
+## 第 5 週（11/16–11/22）
+- 懂球帝 vs 桐生一馬（14-29-1 第 7）；baek's vs 扣愛的麵包房（20-15-1 第 6）。
+- 11/17 21:43（美東週一打完）：懂球帝 1-10（週一 8 人次 vs 8；LeBron、Queta 休、Bam 髖傷沒打）；baek's 2-7（adds 0/4）。週日已 Reese→Queta、baek's 已簽 Mitchell Robinson。
+- baek's：Embiid 已無傷 → **立刻移出 IL、放 Aldama（Q 腳踝）**，否則 Add/Drop 會被鎖。
+- 懂球帝計劃（plan.py，FA 11/15 截圖）：不換 80% → 照計劃 95%（平均 7.6-3.2）：
+  ① 台北 11/18 08:30 前 Queta→Miles McBride（NYK 二四六日）② 11:30 前 Aldama→Derrick Jones Jr.（LAC 二四六）
+  ③ 11/18 11:00 後～11/19 09:00 前 McBride→CJ McCollum（ATL 三五日）④ 11/22 11:30 後～11/23 08:00 前 DJJ→Christian Braun（DEN 日）。
+  籃板預測 226 vs 266 偏輸；搖擺 FG%、FT%、3PT%、BLK。Reaves（O 腳跟，ESPN 預估 11/18）回來時要用一個串流位換回。
+- baek's 計劃：不換 94%；週五 Robinson→Cameron Johnson、週六 CJ→McBride（94%，平均 6.2-2.7）。週三 11 人有賽，DeRozan 坐板凳。

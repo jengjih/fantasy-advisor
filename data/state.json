@@ -14,7 +14,7 @@
       "Brandin Podziemski",
       "LeBron James",
       "Santi Aldama",
-      "Julian Reese"
+      "Neemias Queta"
     ],
     "il": [
       "Jalen Williams",
@@ -22,115 +22,127 @@
       "Austin Reaves"
     ],
     "matchup": {
-      "week": 4,
-      "opponent": "強力衝擊二連冠",
+      "week": 5,
+      "opponent": "桐生一馬",
       "categories": [
         {
           "category": "FGM",
-          "mine": "249",
-          "opponent": "204"
+          "mine": "17",
+          "opponent": "45"
         },
         {
           "category": "FG%",
-          "mine": ".499",
-          "opponent": ".454"
+          "mine": ".293",
+          "opponent": ".495"
         },
         {
           "category": "FT%",
-          "mine": ".859",
-          "opponent": ".785"
+          "mine": ".783",
+          "opponent": ".893"
         },
         {
           "category": "3PTM",
-          "mine": "65",
-          "opponent": "62"
+          "mine": "7",
+          "opponent": "9"
         },
         {
           "category": "3PT%",
-          "mine": ".361",
-          "opponent": ".360"
+          "mine": ".212",
+          "opponent": ".281"
         },
         {
           "category": "PTS",
-          "mine": "679",
-          "opponent": "587"
+          "mine": "59",
+          "opponent": "124"
         },
         {
           "category": "REB",
-          "mine": "186",
-          "opponent": "188"
+          "mine": "19",
+          "opponent": "55"
         },
         {
           "category": "AST",
-          "mine": "140",
-          "opponent": "150"
+          "mine": "17",
+          "opponent": "29"
         },
         {
           "category": "ST",
-          "mine": "46",
-          "opponent": "33"
+          "mine": "5",
+          "opponent": "7"
         },
         {
           "category": "BLK",
-          "mine": "41",
-          "opponent": "26"
+          "mine": "2",
+          "opponent": "10"
         },
         {
           "category": "TO",
-          "mine": "47",
-          "opponent": "77"
+          "mine": "9",
+          "opponent": "19"
         }
       ],
-      "adds_used": 2,
-      "opp_games_left": -1,
-      "my_games_left": -1,
+      "adds_used": -1,
+      "opp_games_left": 36,
+      "my_games_left": 29,
       "note": "",
-      "saved_at": "11-15 23:14",
-      "saved_ts": "2026-11-15T23:14+08:00",
-      "week_monday": "2026-11-09"
+      "saved_at": "11-17 21:43",
+      "saved_ts": "2026-11-17T21:43+08:00",
+      "week_monday": "2026-11-16"
     },
-    "updated_at": "2026-11-16 17:19",
+    "updated_at": "2026-11-17 21:45",
     "free_agents": {
       "names": [
-        "Collin Gillespie",
-        "Jrue Holiday",
         "Cameron Johnson",
-        "John Collins",
-        "Alex Caruso",
         "Christian Braun",
         "Miles McBride",
+        "Alex Caruso",
+        "Kel'el Ware",
+        "Jalen Suggs",
+        "Egor Dëmin",
         "Ja'Kobe Walter",
         "Aaron Gordon",
         "Rui Hachimura",
-        "Jared McCain",
         "CJ McCollum",
-        "Tre Jones",
+        "Myles Turner",
+        "Devin Vassell",
         "Derrick Jones Jr.",
+        "Dillon Brooks",
+        "Tre Jones",
         "Reed Sheppard",
-        "Zach Edey"
+        "Coby White",
+        "Andrew Wiggins",
+        "Ryan Rollins",
+        "Sandro Mamukelashvili",
+        "De'Anthony Melton",
+        "Bobby Portis",
+        "Jaylon Tyson",
+        "Kris Dunn",
+        "Derik Queen",
+        "Julian Reese",
+        "Collin Gillespie"
       ],
-      "saved_ts": "2026-11-10T18:45+08:00"
+      "saved_ts": "2026-11-17T21:44+08:00"
     },
     "opponent_roster": {
-      "opponent": "強力衝擊二連冠",
+      "opponent": "桐生一馬",
       "roster": [
-        "Donovan Mitchell",
-        "Stephon Castle",
-        "Shai Gilgeous-Alexander",
-        "Desmond Bane",
-        "Michael Porter Jr.",
-        "Jaden McDaniels",
-        "Derik Queen",
-        "Aday Mara",
-        "Dejounte Murray",
+        "VJ Edgecombe",
         "Amen Thompson",
-        "Walker Kessler",
-        "Jaylen Brown",
-        "Davion Mitchell",
-        "Moussa Diabaté"
+        "Josh Giddey",
+        "Brandon Miller",
+        "Miles Bridges",
+        "Julius Randle",
+        "P.J. Washington",
+        "Donovan Clingan",
+        "Anthony Edwards",
+        "Darius Garland",
+        "Jeremiah Fears",
+        "Yaxel Lendeborg",
+        "Ajay Mitchell",
+        "Ivica Zubac"
       ],
-      "week_monday": "2026-11-09",
-      "saved_ts": "2026-11-09T16:52+08:00"
+      "week_monday": "2026-11-16",
+      "saved_ts": "2026-11-17T21:43+08:00"
     },
     "roster_log": [
       {
@@ -245,9 +257,39 @@
           "Collin Gillespie",
           "Tre Jones"
         ]
+      },
+      {
+        "date": "2026-11-17",
+        "add": [
+          "Neemias Queta"
+        ],
+        "drop": [
+          "Julian Reese"
+        ]
       }
     ],
-    "planned_adds": [],
+    "planned_adds": [
+      {
+        "day": "2026-11-17",
+        "drop": "Neemias Queta",
+        "add": "Miles McBride"
+      },
+      {
+        "day": "2026-11-17",
+        "drop": "Santi Aldama",
+        "add": "Derrick Jones Jr."
+      },
+      {
+        "day": "2026-11-18",
+        "drop": "Miles McBride",
+        "add": "CJ McCollum"
+      },
+      {
+        "day": "2026-11-22",
+        "drop": "Derrick Jones Jr.",
+        "add": "Christian Braun"
+      }
+    ],
     "keep": [
       "Ayo Dosunmu",
       "Brandin Podziemski",
@@ -275,111 +317,122 @@
       "Saddiq Bey",
       "DeMar DeRozan",
       "Anthony Davis",
-      "Santi Aldama"
-    ],
-    "il": [
-      "Kon Knueppel",
+      "Mitchell Robinson",
       "Joel Embiid"
     ],
+    "il": [
+      "Kon Knueppel"
+    ],
     "matchup": {
-      "week": 4,
-      "opponent": "柏毅's Nice Team",
+      "week": 5,
+      "opponent": "扣愛的麵包房",
       "categories": [
         {
           "category": "FG%",
-          "mine": ".434",
-          "opponent": ".461"
+          "mine": ".416",
+          "opponent": ".523"
         },
         {
           "category": "FT%",
-          "mine": ".833",
-          "opponent": ".685"
+          "mine": ".773",
+          "opponent": ".778"
         },
         {
           "category": "3PTM",
-          "mine": "75",
-          "opponent": "41"
+          "mine": "16",
+          "opponent": "12"
         },
         {
           "category": "PTS",
-          "mine": "575",
-          "opponent": "364"
+          "mine": "117",
+          "opponent": "163"
         },
         {
           "category": "REB",
-          "mine": "178",
-          "opponent": "159"
+          "mine": "46",
+          "opponent": "56"
         },
         {
           "category": "AST",
-          "mine": "107",
-          "opponent": "69"
+          "mine": "15",
+          "opponent": "28"
         },
         {
           "category": "ST",
-          "mine": "35",
-          "opponent": "26"
+          "mine": "6",
+          "opponent": "9"
         },
         {
           "category": "BLK",
-          "mine": "18",
-          "opponent": "29"
+          "mine": "4",
+          "opponent": "5"
         },
         {
           "category": "TO",
-          "mine": "64",
-          "opponent": "45"
+          "mine": "10",
+          "opponent": "16"
         }
       ],
-      "adds_used": 3,
-      "opp_games_left": -1,
-      "my_games_left": -1,
+      "adds_used": 0,
+      "opp_games_left": 28,
+      "my_games_left": 29,
       "note": "",
-      "saved_at": "11-15 23:14",
-      "saved_ts": "2026-11-15T23:14+08:00",
-      "week_monday": "2026-11-09"
+      "saved_at": "11-17 21:43",
+      "saved_ts": "2026-11-17T21:43+08:00",
+      "week_monday": "2026-11-16"
     },
-    "updated_at": "2026-11-16 17:19",
+    "updated_at": "2026-11-17 21:45",
     "free_agents": {
       "names": [
-        "Tre Jones",
+        "Jalen Suggs",
         "Cameron Johnson",
+        "Tre Jones",
         "Ja'Kobe Walter",
         "Miles McBride",
-        "Kris Dunn",
-        "Aaron Nesmith",
-        "Draymond Green",
-        "Keaton Wagler",
-        "Mitchell Robinson",
+        "Morez Johnson Jr.",
+        "Kobe Sanders",
+        "Khaman Maluach",
         "Bobby Portis",
+        "Jaylon Tyson",
+        "Robert Williams III",
         "Al Horford",
         "Obi Toppin",
+        "Jake LaRavia",
+        "Isaiah Jackson",
+        "Mikel Brown Jr.",
+        "Johnny Beringer",
+        "Herbert Jones",
+        "DeAndre Hunter",
+        "Ronald Holland II",
+        "Keldon Johnson",
+        "Sam Hauser",
+        "Bones Hyland",
+        "Naji Marshall",
         "Santi Aldama",
-        "Kelly Oubre Jr.",
-        "Joan Beringer",
-        "Jake LaRavia"
+        "Kris Dunn",
+        "Collin Gillespie"
       ],
-      "saved_ts": "2026-11-10T18:45+08:00"
+      "saved_ts": "2026-11-17T21:44+08:00"
     },
     "opponent_roster": {
-      "opponent": "柏毅's Nice Team",
+      "opponent": "扣愛的麵包房",
       "roster": [
-        "De'Anthony Melton",
-        "Grayson Allen",
-        "Christian Braun",
-        "AJ Dybantsa",
-        "Yaxel Lendeborg",
-        "Jonathan Kuminga",
-        "Victor Wembanyama",
-        "P.J. Washington",
-        "Josh Hart",
-        "Trevor Brazile",
-        "Rui Hachimura",
-        "Anthony Edwards",
-        "Alex Caruso"
+        "Darius Garland",
+        "Jaylen Brown",
+        "Jamal Shead",
+        "Paul George",
+        "Franz Wagner",
+        "Bam Adebayo",
+        "Nic Claxton",
+        "Sandro Mamukelashvili",
+        "Amen Thompson",
+        "Michael Porter Jr.",
+        "Donovan Mitchell",
+        "Jarrett Allen",
+        "CJ McCollum"
       ],
-      "week_monday": "2026-11-09",
-      "saved_ts": "2026-11-09T16:54+08:00"
+      "week_monday": "2026-11-16",
+      "saved_ts": "2026-11-17T21:43+08:00"
     },
     "roster_log": [
       {
@@ -507,9 +560,36 @@
           "Kris Dunn",
           "Joel Embiid"
         ]
+      },
+      {
+        "date": "2026-11-17",
+        "add": [
+          "Mitchell Robinson"
+        ],
+        "drop": []
+      },
+      {
+        "date": "2026-11-17",
+        "add": [
+          "Joel Embiid"
+        ],
+        "drop": [
+          "Santi Aldama"
+        ]
       }
     ],
-    "planned_adds": [],
+    "planned_adds": [
+      {
+        "day": "2026-11-20",
+        "drop": "Mitchell Robinson",
+        "add": "Cameron Johnson"
+      },
+      {
+        "day": "2026-11-21",
+        "drop": "Cameron Johnson",
+        "add": "Miles McBride"
+      }
+    ],
     "keep": [
       "Kyshawn George",
       "Saddiq Bey",
