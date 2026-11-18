@@ -299,3 +299,4 @@
   籃板預測 226 vs 266 偏輸；搖擺 FG%、FT%、3PT%、BLK。Reaves（O 腳跟，ESPN 預估 11/18）回來時要用一個串流位換回。
 - baek's 計劃：不換 94%；週五 Robinson→Cameron Johnson、週六 CJ→McBride（94%，平均 6.2-2.7）。週三 11 人有賽，DeRozan 坐板凳。
 - 11/17 21:52 已做：懂球帝 Queta→McBride、Aldama→DJJ；baek's 放 Aldama、Embiid 移出 IL。週二先發兩邊都排好（懂球帝 8 人、baek's 3 人有賽全上）。
+- 11/18 19:12（美東週二打完）：Yahoo 懂球帝 2-9（場次 16/39 vs 13/45）、baek's 1-8。週二串流位很差：McBride 只打 9 分鐘 3 分、DJJ 5 分、Fox 3-10、Camara 4-16；好的有 Brunson 31、Dosunmu 30（7 三分）、Wemby 25/18、Harper 20。ESPN 估算懂球帝 4-6-1，本週勝率降到約 65%（FG% 26%、AST 30%、BLK 17%、REB 1%）；baek's 約 95%。使用者質疑「騙我」→ 說明機率不是保證，等 Matchup 截圖重算。
