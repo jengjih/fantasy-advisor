@@ -27,101 +27,95 @@
       "categories": [
         {
           "category": "FGM",
-          "mine": "17",
-          "opponent": "45"
+          "mine": "66",
+          "opponent": "66"
         },
         {
           "category": "FG%",
-          "mine": ".293",
-          "opponent": ".495"
+          "mine": ".398",
+          "opponent": ".475"
         },
         {
           "category": "FT%",
-          "mine": ".783",
-          "opponent": ".893"
+          "mine": ".778",
+          "opponent": ".857"
         },
         {
           "category": "3PTM",
-          "mine": "7",
-          "opponent": "9"
+          "mine": "22",
+          "opponent": "16"
         },
         {
           "category": "3PT%",
-          "mine": ".212",
-          "opponent": ".281"
+          "mine": ".268",
+          "opponent": ".296"
         },
         {
           "category": "PTS",
-          "mine": "59",
-          "opponent": "124"
+          "mine": "189",
+          "opponent": "184"
         },
         {
           "category": "REB",
-          "mine": "19",
-          "opponent": "55"
+          "mine": "61",
+          "opponent": "72"
         },
         {
           "category": "AST",
-          "mine": "17",
-          "opponent": "29"
+          "mine": "38",
+          "opponent": "45"
         },
         {
           "category": "ST",
-          "mine": "5",
-          "opponent": "7"
+          "mine": "10",
+          "opponent": "9"
         },
         {
           "category": "BLK",
-          "mine": "2",
-          "opponent": "10"
+          "mine": "5",
+          "opponent": "13"
         },
         {
           "category": "TO",
-          "mine": "9",
-          "opponent": "19"
+          "mine": "26",
+          "opponent": "28"
         }
       ],
       "adds_used": 2,
-      "opp_games_left": 36,
-      "my_games_left": 31,
+      "opp_games_left": -1,
+      "my_games_left": -1,
       "note": "",
-      "saved_at": "11-17 21:43",
-      "saved_ts": "2026-11-17T21:43+08:00",
+      "saved_at": "11-19 02:39",
+      "saved_ts": "2026-11-19T02:39+08:00",
       "week_monday": "2026-11-16"
     },
-    "updated_at": "2026-11-17 21:52",
+    "updated_at": "2026-11-19 02:40",
     "free_agents": {
       "names": [
-        "Cameron Johnson",
         "Christian Braun",
-        "Miles McBride",
         "Alex Caruso",
-        "Kel'el Ware",
-        "Jalen Suggs",
-        "Egor Dëmin",
-        "Ja'Kobe Walter",
-        "Aaron Gordon",
-        "Rui Hachimura",
-        "CJ McCollum",
-        "Myles Turner",
-        "Devin Vassell",
-        "Derrick Jones Jr.",
-        "Dillon Brooks",
+        "Nic Claxton",
+        "Fred VanVleet",
         "Tre Jones",
-        "Reed Sheppard",
-        "Coby White",
-        "Andrew Wiggins",
-        "Ryan Rollins",
-        "Sandro Mamukelashvili",
+        "Zach Edey",
+        "Cameron Johnson",
+        "Collin Gillespie",
+        "Kel'el Ware",
+        "Daniel Gafford",
+        "Keegan Murray",
+        "Jalen Suggs",
+        "Jaylen Wells",
+        "Devin Vassell",
         "De'Anthony Melton",
-        "Bobby Portis",
-        "Jaylon Tyson",
-        "Kris Dunn",
+        "Myles Turner",
+        "Dillon Brooks",
+        "Aaron Gordon",
+        "Ja'Kobe Walter",
+        "Rui Hachimura",
         "Derik Queen",
-        "Julian Reese",
-        "Collin Gillespie"
+        "Josh Hart"
       ],
-      "saved_ts": "2026-11-17T21:44+08:00"
+      "saved_ts": "2026-11-19T02:39+08:00"
     },
     "opponent_roster": {
       "opponent": "桐生一馬",
@@ -281,24 +275,24 @@
     ],
     "planned_adds": [
       {
-        "day": "2026-11-17",
-        "drop": "Neemias Queta",
-        "add": "Miles McBride"
-      },
-      {
-        "day": "2026-11-17",
-        "drop": "Santi Aldama",
-        "add": "Derrick Jones Jr."
+        "day": "2026-11-18",
+        "drop": "Derrick Jones Jr.",
+        "add": "Christian Braun"
       },
       {
         "day": "2026-11-18",
         "drop": "Miles McBride",
-        "add": "CJ McCollum"
+        "add": "Jalen Suggs"
       },
       {
-        "day": "2026-11-22",
-        "drop": "Derrick Jones Jr.",
-        "add": "Christian Braun"
+        "day": "2026-11-21",
+        "drop": "Jalen Suggs",
+        "add": "Josh Hart"
+      },
+      {
+        "day": "2026-11-21",
+        "drop": "Christian Braun",
+        "add": "Daniel Gafford"
       }
     ],
     "keep": [
