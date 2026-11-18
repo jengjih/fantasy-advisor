@@ -301,3 +301,4 @@
 - 11/17 21:52 已做：懂球帝 Queta→McBride、Aldama→DJJ；baek's 放 Aldama、Embiid 移出 IL。週二先發兩邊都排好（懂球帝 8 人、baek's 3 人有賽全上）。
 - 11/18 19:12（美東週二打完）：Yahoo 懂球帝 2-9（場次 16/39 vs 13/45）、baek's 1-8。週二串流位很差：McBride 只打 9 分鐘 3 分、DJJ 5 分、Fox 3-10、Camara 4-16；好的有 Brunson 31、Dosunmu 30（7 三分）、Wemby 25/18、Harper 20。ESPN 估算懂球帝 4-6-1，本週勝率降到約 65%（FG% 26%、AST 30%、BLK 17%、REB 1%）；baek's 約 95%。使用者質疑「騙我」→ 說明機率不是保證，等 Matchup 截圖重算。
 - 11/19 02:39：McCollum 掛 O（小腿，4 週）取消。改：DJJ→Christian Braun（DEN 三五日，10:30 前）、McBride→Jalen Suggs（ORL 三五日，08:00 前）；週六 Suggs→Josh Hart、Braun→Daniel Gafford。用 ESPN 估算比分（4-6-1）模擬：不換 74% → 90%。Reaves Q（DTD），確定能打再用串流位換回。
+- 11/19 02:44：已 McBride→Suggs、DJJ→Braun（adds 4/8）。使用者要 Reaves（Q）出 IL、Harper（Q，週二摔倒）進 IL：直接在 Yahoo 對調兩人。Yahoo 真實比分 2-9、baek's 1-8；模擬懂球帝 76%→照週六 Suggs→Hart、Braun→Gafford 82%；baek's 83–86%。Harper 恢復後要放一個串流位才能移回。

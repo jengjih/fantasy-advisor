@@ -8,18 +8,18 @@
       "De'Aaron Fox",
       "Derrick White",
       "Wendell Carter Jr.",
-      "Dylan Harper",
       "Toumani Camara",
       "Ayo Dosunmu",
       "Brandin Podziemski",
       "LeBron James",
-      "Miles McBride",
-      "Derrick Jones Jr."
+      "Austin Reaves",
+      "Jalen Suggs",
+      "Christian Braun"
     ],
     "il": [
       "Jalen Williams",
       "Cason Wallace",
-      "Austin Reaves"
+      "Dylan Harper"
     ],
     "matchup": {
       "week": 5,
@@ -28,12 +28,12 @@
         {
           "category": "FGM",
           "mine": "66",
-          "opponent": "66"
+          "opponent": "73"
         },
         {
           "category": "FG%",
           "mine": ".398",
-          "opponent": ".475"
+          "opponent": ".480"
         },
         {
           "category": "FT%",
@@ -48,27 +48,27 @@
         {
           "category": "3PT%",
           "mine": ".268",
-          "opponent": ".296"
+          "opponent": ".291"
         },
         {
           "category": "PTS",
           "mine": "189",
-          "opponent": "184"
+          "opponent": "198"
         },
         {
           "category": "REB",
           "mine": "61",
-          "opponent": "72"
+          "opponent": "81"
         },
         {
           "category": "AST",
           "mine": "38",
-          "opponent": "45"
+          "opponent": "57"
         },
         {
           "category": "ST",
           "mine": "10",
-          "opponent": "9"
+          "opponent": "14"
         },
         {
           "category": "BLK",
@@ -78,18 +78,18 @@
         {
           "category": "TO",
           "mine": "26",
-          "opponent": "28"
+          "opponent": "30"
         }
       ],
-      "adds_used": 2,
+      "adds_used": 4,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
-      "saved_at": "11-19 02:39",
-      "saved_ts": "2026-11-19T02:39+08:00",
+      "saved_at": "11-19 02:45",
+      "saved_ts": "2026-11-19T02:45+08:00",
       "week_monday": "2026-11-16"
     },
-    "updated_at": "2026-11-19 02:40",
+    "updated_at": "2026-11-19 02:46",
     "free_agents": {
       "names": [
         "Christian Braun",
@@ -271,19 +271,22 @@
           "Neemias Queta",
           "Santi Aldama"
         ]
+      },
+      {
+        "date": "2026-11-18",
+        "add": [
+          "Jalen Suggs",
+          "Christian Braun",
+          "Austin Reaves"
+        ],
+        "drop": [
+          "Miles McBride",
+          "Derrick Jones Jr.",
+          "Dylan Harper"
+        ]
       }
     ],
     "planned_adds": [
-      {
-        "day": "2026-11-18",
-        "drop": "Derrick Jones Jr.",
-        "add": "Christian Braun"
-      },
-      {
-        "day": "2026-11-18",
-        "drop": "Miles McBride",
-        "add": "Jalen Suggs"
-      },
       {
         "day": "2026-11-21",
         "drop": "Jalen Suggs",
@@ -334,59 +337,59 @@
       "categories": [
         {
           "category": "FG%",
-          "mine": ".416",
-          "opponent": ".523"
+          "mine": ".427",
+          "opponent": ".474"
         },
         {
           "category": "FT%",
-          "mine": ".773",
-          "opponent": ".778"
+          "mine": ".750",
+          "opponent": ".780"
         },
         {
           "category": "3PTM",
-          "mine": "16",
-          "opponent": "12"
+          "mine": "31",
+          "opponent": "15"
         },
         {
           "category": "PTS",
-          "mine": "117",
-          "opponent": "163"
+          "mine": "201",
+          "opponent": "207"
         },
         {
           "category": "REB",
-          "mine": "46",
-          "opponent": "56"
+          "mine": "66",
+          "opponent": "71"
         },
         {
           "category": "AST",
-          "mine": "15",
-          "opponent": "28"
+          "mine": "29",
+          "opponent": "55"
         },
         {
           "category": "ST",
-          "mine": "6",
-          "opponent": "9"
+          "mine": "9",
+          "opponent": "16"
         },
         {
           "category": "BLK",
-          "mine": "4",
-          "opponent": "5"
+          "mine": "5",
+          "opponent": "6"
         },
         {
           "category": "TO",
-          "mine": "10",
-          "opponent": "16"
+          "mine": "24",
+          "opponent": "21"
         }
       ],
       "adds_used": 0,
-      "opp_games_left": 28,
-      "my_games_left": 29,
+      "opp_games_left": -1,
+      "my_games_left": -1,
       "note": "",
-      "saved_at": "11-17 21:43",
-      "saved_ts": "2026-11-17T21:43+08:00",
+      "saved_at": "11-19 02:45",
+      "saved_ts": "2026-11-19T02:45+08:00",
       "week_monday": "2026-11-16"
     },
-    "updated_at": "2026-11-17 21:45",
+    "updated_at": "2026-11-19 02:45",
     "free_agents": {
       "names": [
         "Jalen Suggs",
