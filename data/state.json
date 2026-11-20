@@ -27,69 +27,69 @@
       "categories": [
         {
           "category": "FGM",
-          "mine": "66",
-          "opponent": "73"
+          "mine": "153",
+          "opponent": "143"
         },
         {
           "category": "FG%",
-          "mine": ".398",
-          "opponent": ".480"
+          "mine": ".420",
+          "opponent": ".491"
         },
         {
           "category": "FT%",
-          "mine": ".778",
-          "opponent": ".857"
+          "mine": ".800",
+          "opponent": ".892"
         },
         {
           "category": "3PTM",
-          "mine": "22",
-          "opponent": "16"
+          "mine": "48",
+          "opponent": "36"
         },
         {
           "category": "3PT%",
-          "mine": ".268",
-          "opponent": ".291"
+          "mine": ".294",
+          "opponent": ".333"
         },
         {
           "category": "PTS",
-          "mine": "189",
-          "opponent": "198"
+          "mine": "438",
+          "opponent": "388"
         },
         {
           "category": "REB",
-          "mine": "61",
-          "opponent": "81"
+          "mine": "125",
+          "opponent": "161"
         },
         {
           "category": "AST",
-          "mine": "38",
-          "opponent": "57"
+          "mine": "99",
+          "opponent": "119"
         },
         {
           "category": "ST",
-          "mine": "10",
-          "opponent": "14"
+          "mine": "25",
+          "opponent": "29"
         },
         {
           "category": "BLK",
-          "mine": "5",
-          "opponent": "13"
+          "mine": "12",
+          "opponent": "25"
         },
         {
           "category": "TO",
-          "mine": "26",
-          "opponent": "30"
+          "mine": "53",
+          "opponent": "57"
         }
       ],
       "adds_used": 4,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
-      "saved_at": "11-19 02:45",
-      "saved_ts": "2026-11-19T02:45+08:00",
+      "saved_at": "11-20 15:27",
+      "saved_ts": "2026-11-20T15:27+08:00",
       "week_monday": "2026-11-16"
     },
-    "updated_at": "2026-11-19 02:46",
+    "updated_at": "2026-11-20 15:28",
     "free_agents": {
       "names": [
         "Christian Braun",
@@ -288,14 +288,19 @@
     ],
     "planned_adds": [
       {
+        "day": "2026-11-20",
+        "drop": "Cason Wallace",
+        "add": "Tre Jones"
+      },
+      {
         "day": "2026-11-21",
         "drop": "Jalen Suggs",
-        "add": "Josh Hart"
+        "add": "Daniel Gafford"
       },
       {
         "day": "2026-11-21",
         "drop": "Christian Braun",
-        "add": "Daniel Gafford"
+        "add": "Josh Hart"
       }
     ],
     "keep": [
@@ -337,59 +342,59 @@
       "categories": [
         {
           "category": "FG%",
-          "mine": ".427",
-          "opponent": ".474"
+          "mine": ".423",
+          "opponent": ".475"
         },
         {
           "category": "FT%",
-          "mine": ".750",
-          "opponent": ".780"
+          "mine": ".818",
+          "opponent": ".798"
         },
         {
           "category": "3PTM",
-          "mine": "31",
-          "opponent": "15"
+          "mine": "55",
+          "opponent": "31"
         },
         {
           "category": "PTS",
-          "mine": "201",
-          "opponent": "207"
+          "mine": "393",
+          "opponent": "416"
         },
         {
           "category": "REB",
-          "mine": "66",
-          "opponent": "71"
+          "mine": "131",
+          "opponent": "122"
         },
         {
           "category": "AST",
-          "mine": "29",
-          "opponent": "55"
+          "mine": "83",
+          "opponent": "94"
         },
         {
           "category": "ST",
-          "mine": "9",
-          "opponent": "16"
+          "mine": "18",
+          "opponent": "31"
         },
         {
           "category": "BLK",
-          "mine": "5",
-          "opponent": "6"
+          "mine": "15",
+          "opponent": "10"
         },
         {
           "category": "TO",
-          "mine": "24",
-          "opponent": "21"
+          "mine": "53",
+          "opponent": "41"
         }
       ],
       "adds_used": 0,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
-      "saved_at": "11-19 02:45",
-      "saved_ts": "2026-11-19T02:45+08:00",
+      "saved_at": "11-20 15:27",
+      "saved_ts": "2026-11-20T15:27+08:00",
       "week_monday": "2026-11-16"
     },
-    "updated_at": "2026-11-19 02:45",
+    "updated_at": "2026-11-20 15:28",
     "free_agents": {
       "names": [
         "Jalen Suggs",
@@ -590,12 +595,7 @@
       {
         "day": "2026-11-20",
         "drop": "Mitchell Robinson",
-        "add": "Cameron Johnson"
-      },
-      {
-        "day": "2026-11-21",
-        "drop": "Cameron Johnson",
-        "add": "Miles McBride"
+        "add": "Jalen Suggs"
       }
     ],
     "keep": [
