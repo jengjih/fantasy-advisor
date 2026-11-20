@@ -310,3 +310,4 @@
   ② 週初勝率只是「照平均表現」的估計，誤差很大（之後兩天 Harper 受傷、Reaves 又 O、命中率連兩天很差），我卻講得像很確定。
   ③ 以後週一到週三報勝率時要附「信心範圍」，並說明哪幾項一壞就會翻盤；每天用 Yahoo 截圖重算，掉超過 15% 要主動通知。
 - 11/20 baek's：Suggs 被簽走 → 改 Robinson→Tre Jones（CHI 五日，95.8%；台北 11/21 09:00 前）。懂球帝也簽 Tre Jones（兩個聯盟各自獨立）。
+- 11/20 baek's：Tre Jones 也被簽走 → 改 Robinson→Cameron Johnson（DEN 五日，93.8%；台北 11/21 11:00 前）。懂球帝 Tre Jones 若也沒了，備案 Keegan Murray（SAC 五六）／VanVleet（HOU 五）。
