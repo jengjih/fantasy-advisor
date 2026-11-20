@@ -156,9 +156,14 @@ def _planned_steps(lg_state, mine, scored, injuries, lg, empty, focus, schedule,
     playing = pj.teams_playing(schedule)
     _, sunday = an.week_range(day)
     names = {x.name for x in mine}
+    il = set(lg_state.get("il", []))
     steps, members, roster = [], [], list(mine)
     for p in lg_state.get("planned_adds", []):
         d = max(date.fromisoformat(p["day"]), day)
+        title = p.get("title")
+        if p["drop"] in il:  # 放掉 IL 上的人：名單空出一格（例如再把別人移進 IL）
+            title = title or f"放 IL 的 {p['drop']} → 簽 {p['add']}"
+            p = {**p, "drop": ""}
         if d > sunday or (p["drop"] and p["drop"] not in names) or p["add"] in names:
             continue
         names.add(p["add"])  # 接力：下一步要放的人是這一步簽進來的
@@ -167,6 +172,7 @@ def _planned_steps(lg_state, mine, scored, injuries, lg, empty, focus, schedule,
             continue
         members.append(new[0])
         step = {"day": d, "drop": p["drop"], "add": p["add"], "team": new[0].team, "planned": True,
+                "title": title, "note": p.get("note", ""),
                 "add_days": [x for x in pj.days_between(d, sunday) if new[0].team in playing.get(x, ())]}
         days = pj.days_between(day, sunday)
         before = pj.expected(roster, playing, days, lg["starters"])[0]
@@ -326,9 +332,9 @@ def build_league(label: str, st: dict, players: pd.DataFrame, injuries: pd.DataF
             actions.append({
                 "id": f"{monday}|{label}|add|{s['drop']}|{s['add']}", "league": label, "league_name": name,
                 "type": "add", "priority": "high" if d == day else "normal",
-                "title": f"放 {s['drop']} → 簽 {s['add']}" if s["drop"] else f"簽 {s['add']}（名單有空位，不用釋出）",
+                "title": s.get("title") or (f"放 {s['drop']} → 簽 {s['add']}" if s["drop"] else f"簽 {s['add']}（名單有空位，不用釋出）"),
                 "detail": (f"{s['add']}（{zh.team(cand_m.team)}）{game_days}有比賽" if game_days else f"{s['add']}（{zh.team(cand_m.team)}）")
-                          + f"，多打 {s['games']:.0f} 場" + (f"；強項：{strong}" if strong else "") + f"。{decided}"
+                          + f"，多打 {s['games']:.0f} 場" + (f"；強項：{strong}" if strong else "") + f"。{s.get('note') or ''}{decided}"
                           + ("" if s.get("planned") else f"{fa_note}。"),
                 "deadline": deadline.isoformat() if deadline else None,
                 "deadline_label": (_tpe_label(deadline) + " 前") if deadline else f"{_wd(d)}開打前",
