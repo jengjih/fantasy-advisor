@@ -311,3 +311,6 @@
   ③ 以後週一到週三報勝率時要附「信心範圍」，並說明哪幾項一壞就會翻盤；每天用 Yahoo 截圖重算，掉超過 15% 要主動通知。
 - 11/20 baek's：Suggs 被簽走 → 改 Robinson→Tre Jones（CHI 五日，95.8%；台北 11/21 09:00 前）。懂球帝也簽 Tre Jones（兩個聯盟各自獨立）。
 - 11/20 baek's：Tre Jones 也被簽走 → 改 Robinson→Cameron Johnson（DEN 五日，93.8%；台北 11/21 11:00 前）。懂球帝 Tre Jones 若也沒了，備案 Keegan Murray（SAC 五六）／VanVleet（HOU 五）。
+- 11/21 02:00 同步：懂球帝已放 Wallace、Reaves 進 IL、簽 Tre Jones（adds 5/8）；baek's 放 Robinson 簽 **Keegan Murray**（Cam Johnson 沒簽到）。比分未變（美東週五還沒開打）。
+  懂球帝模擬 27%（不換）→ 31%：週六 Tre Jones→Gafford、Suggs→Hart（兩人週五打完再換）。搖擺 ST 79%、TO 72%、3PT% 23%、AST 24%。
+  baek's 95%，不再換（Suggs 已被簽走），plan_only。

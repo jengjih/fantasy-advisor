@@ -12,14 +12,14 @@
       "Ayo Dosunmu",
       "Brandin Podziemski",
       "LeBron James",
-      "Austin Reaves",
       "Jalen Suggs",
-      "Christian Braun"
+      "Christian Braun",
+      "Tre Jones"
     ],
     "il": [
       "Jalen Williams",
-      "Cason Wallace",
-      "Dylan Harper"
+      "Dylan Harper",
+      "Austin Reaves"
     ],
     "matchup": {
       "week": 5,
@@ -81,7 +81,7 @@
           "opponent": "57"
         }
       ],
-      "adds_used": 4,
+      "adds_used": 5,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
@@ -89,7 +89,7 @@
       "saved_ts": "2026-11-20T15:27+08:00",
       "week_monday": "2026-11-16"
     },
-    "updated_at": "2026-11-20 15:28",
+    "updated_at": "2026-11-21 02:01",
     "free_agents": {
       "names": [
         "Christian Braun",
@@ -284,23 +284,27 @@
           "Derrick Jones Jr.",
           "Dylan Harper"
         ]
+      },
+      {
+        "date": "2026-11-20",
+        "add": [
+          "Tre Jones"
+        ],
+        "drop": [
+          "Cason Wallace",
+          "Austin Reaves"
+        ]
       }
     ],
     "planned_adds": [
       {
-        "day": "2026-11-20",
-        "drop": "Cason Wallace",
-        "add": "Tre Jones",
-        "note": "步驟：① 放掉 IL 的 Cason Wallace ② 把 Reaves（O）移進 IL ③ 空出的名單位簽 Tre Jones 並排先發。"
-      },
-      {
         "day": "2026-11-21",
-        "drop": "Jalen Suggs",
+        "drop": "Tre Jones",
         "add": "Daniel Gafford"
       },
       {
         "day": "2026-11-21",
-        "drop": "Christian Braun",
+        "drop": "Jalen Suggs",
         "add": "Josh Hart"
       }
     ],
@@ -331,8 +335,8 @@
       "Saddiq Bey",
       "DeMar DeRozan",
       "Anthony Davis",
-      "Mitchell Robinson",
-      "Joel Embiid"
+      "Joel Embiid",
+      "Keegan Murray"
     ],
     "il": [
       "Kon Knueppel"
@@ -387,7 +391,7 @@
           "opponent": "41"
         }
       ],
-      "adds_used": 0,
+      "adds_used": 1,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
@@ -395,7 +399,7 @@
       "saved_ts": "2026-11-20T15:27+08:00",
       "week_monday": "2026-11-16"
     },
-    "updated_at": "2026-11-21 01:56",
+    "updated_at": "2026-11-21 02:01",
     "free_agents": {
       "names": [
         "Jalen Suggs",
@@ -590,15 +594,18 @@
         "drop": [
           "Santi Aldama"
         ]
-      }
-    ],
-    "planned_adds": [
+      },
       {
-        "day": "2026-11-20",
-        "drop": "Mitchell Robinson",
-        "add": "Cameron Johnson"
+        "date": "2026-11-20",
+        "add": [
+          "Keegan Murray"
+        ],
+        "drop": [
+          "Mitchell Robinson"
+        ]
       }
     ],
+    "planned_adds": [],
     "keep": [
       "Kyshawn George",
       "Saddiq Bey",
