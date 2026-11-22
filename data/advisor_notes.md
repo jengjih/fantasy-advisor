@@ -317,3 +317,5 @@
 - 11/21 12:51（美東週五打完）：懂球帝 2-9（FGM 179-193、PTS 508-518 被反超）；Booker 9-22、Suggs 3-10 差，Braun 19 分 4 抄好；桐生 Randle 27/9/6、Zubac 21/10、Fears 22、Miles Bridges 18。剩餘 14.5 vs 9.5 人次，預測 5-6，勝率 24%→31%。
   Gafford 已不在 FA → 改 **Suggs→Josh Hart（08:30 前）、Tre Jones→Sam Hauser（11:00 前）**（台北 11/22）。
   baek's 5-4（AD 36/11、Jabari 7-8、Bey 21、Murray 13）；剩 12 vs 5.6，88%→90%：週日 Murray→Kelly Oubre Jr.（11/22 13:30 後～11/23 09:00 前）。
+- 11/22 12:00（美東週六打完）：已 Suggs→Hart、Tre Jones→Hauser（adds 7/8）。懂球帝 5-6（贏 FGM、3PTM、PTS、ST 43-41、TO 80-81），剩 7.8 vs 4.8 人次，勝率約 3%（只差 TO 54%；AST 148-169、3PT%、FT% 追不回）。不再換。
+  baek's 5-4，89% → 放 Keegan Murray 簽 Draymond Green（GSW，台北 11/23 09:30 前）96%（AST 147-147 搖擺）。

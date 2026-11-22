@@ -12,9 +12,9 @@
       "Ayo Dosunmu",
       "Brandin Podziemski",
       "LeBron James",
-      "Jalen Suggs",
       "Christian Braun",
-      "Tre Jones"
+      "Josh Hart",
+      "Sam Hauser"
     ],
     "il": [
       "Jalen Williams",
@@ -27,94 +27,86 @@
       "categories": [
         {
           "category": "FGM",
-          "mine": "179",
-          "opponent": "193"
+          "mine": "236",
+          "opponent": "221"
         },
         {
           "category": "FG%",
-          "mine": ".422",
-          "opponent": ".484"
+          "mine": ".439",
+          "opponent": ".492"
         },
         {
           "category": "FT%",
-          "mine": ".807",
-          "opponent": ".842"
+          "mine": ".815",
+          "opponent": ".860"
         },
         {
           "category": "3PTM",
-          "mine": "54",
-          "opponent": "47"
+          "mine": "71",
+          "opponent": "55"
         },
         {
           "category": "3PT%",
-          "mine": ".297",
-          "opponent": ".326"
+          "mine": ".302",
+          "opponent": ".335"
         },
         {
           "category": "PTS",
-          "mine": "508",
-          "opponent": "518"
+          "mine": "653",
+          "opponent": "601"
         },
         {
           "category": "REB",
-          "mine": "147",
-          "opponent": "217"
+          "mine": "201",
+          "opponent": "239"
         },
         {
           "category": "AST",
-          "mine": "116",
-          "opponent": "153"
+          "mine": "148",
+          "opponent": "169"
         },
         {
           "category": "ST",
-          "mine": "31",
-          "opponent": "36"
+          "mine": "43",
+          "opponent": "41"
         },
         {
           "category": "BLK",
-          "mine": "15",
-          "opponent": "29"
+          "mine": "22",
+          "opponent": "33"
         },
         {
           "category": "TO",
-          "mine": "61",
-          "opponent": "72"
+          "mine": "80",
+          "opponent": "81"
         }
       ],
-      "adds_used": 5,
+      "adds_used": 7,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
-      "saved_at": "11-22 00:53",
-      "saved_ts": "2026-11-22T00:53+08:00",
+      "saved_at": "11-23 00:07",
+      "saved_ts": "2026-11-23T00:07+08:00",
       "week_monday": "2026-11-16"
     },
-    "updated_at": "2026-11-22 00:53",
+    "updated_at": "2026-11-23 00:07",
     "free_agents": {
       "names": [
         "Matisse Thybulle",
         "Nic Claxton",
-        "Miles McBride",
         "Fred VanVleet",
-        "Zach Edey",
+        "Miles McBride",
         "Collin Gillespie",
         "Cameron Johnson",
+        "Zach Edey",
         "Day'Ron Sharpe",
-        "Jaylen Wells",
         "Kel'el Ware",
-        "Josh Hart",
-        "Derrick Jones Jr.",
-        "Devin Vassell",
         "Dillon Brooks",
-        "Keegan Murray",
-        "Matas Buzelis",
-        "Andrew Nembhard",
-        "Myles Turner",
-        "Rui Hachimura",
-        "Aaron Gordon",
-        "Sam Hauser"
+        "Jaylen Wells",
+        "Devin Vassell",
+        "Rui Hachimura"
       ],
-      "saved_ts": "2026-11-22T00:53+08:00"
+      "saved_ts": "2026-11-23T00:07+08:00"
     },
     "opponent_roster": {
       "opponent": "桐生一馬",
@@ -293,20 +285,20 @@
           "Cason Wallace",
           "Austin Reaves"
         ]
-      }
-    ],
-    "planned_adds": [
-      {
-        "day": "2026-11-21",
-        "drop": "Tre Jones",
-        "add": "Sam Hauser"
       },
       {
-        "day": "2026-11-21",
-        "drop": "Jalen Suggs",
-        "add": "Josh Hart"
+        "date": "2026-11-22",
+        "add": [
+          "Josh Hart",
+          "Sam Hauser"
+        ],
+        "drop": [
+          "Jalen Suggs",
+          "Tre Jones"
+        ]
       }
     ],
+    "planned_adds": [],
     "keep": [
       "Ayo Dosunmu",
       "Brandin Podziemski",
@@ -346,47 +338,47 @@
       "categories": [
         {
           "category": "FG%",
-          "mine": ".438",
+          "mine": ".426",
           "opponent": ".468"
         },
         {
           "category": "FT%",
-          "mine": ".794",
+          "mine": ".793",
           "opponent": ".786"
         },
         {
           "category": "3PTM",
-          "mine": "69",
+          "mine": "70",
           "opponent": "38"
         },
         {
           "category": "PTS",
-          "mine": "554",
+          "mine": "602",
           "opponent": "537"
         },
         {
           "category": "REB",
-          "mine": "176",
+          "mine": "215",
           "opponent": "169"
         },
         {
           "category": "AST",
-          "mine": "114",
+          "mine": "130",
           "opponent": "132"
         },
         {
           "category": "ST",
-          "mine": "23",
+          "mine": "25",
           "opponent": "37"
         },
         {
           "category": "BLK",
-          "mine": "18",
+          "mine": "23",
           "opponent": "17"
         },
         {
           "category": "TO",
-          "mine": "71",
+          "mine": "77",
           "opponent": "60"
         }
       ],
@@ -394,35 +386,31 @@
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
-      "saved_at": "11-22 00:53",
-      "saved_ts": "2026-11-22T00:53+08:00",
+      "saved_at": "11-23 00:07",
+      "saved_ts": "2026-11-23T00:07+08:00",
       "week_monday": "2026-11-16"
     },
-    "updated_at": "2026-11-22 00:53",
+    "updated_at": "2026-11-23 00:07",
     "free_agents": {
       "names": [
+        "Devin Vassell",
         "Cameron Johnson",
         "Miles McBride",
+        "Draymond Green",
         "Kelly Oubre Jr.",
         "Kobe Sanders",
-        "Isaiah Jackson",
         "Aaron Nesmith",
-        "Khaman Maluach",
         "Bobby Portis",
         "Al Horford",
+        "Khaman Maluach",
+        "Isaiah Jackson",
         "Robert Williams III",
         "Moussa Johnson Jr.",
         "Max Thomas",
         "Zaccharie Risacher",
-        "Sam Hauser",
-        "Obi Toppin",
-        "Santi Aldama",
-        "Johnny Beringer",
-        "Marcus Smart",
-        "Herbert Jones",
-        "Jake LaRavia"
+        "Obi Toppin"
       ],
-      "saved_ts": "2026-11-22T00:53+08:00"
+      "saved_ts": "2026-11-23T00:07+08:00"
     },
     "opponent_roster": {
       "opponent": "扣愛的麵包房",
@@ -601,7 +589,7 @@
       {
         "day": "2026-11-22",
         "drop": "Keegan Murray",
-        "add": "Kelly Oubre Jr."
+        "add": "Draymond Green"
       }
     ],
     "keep": [
