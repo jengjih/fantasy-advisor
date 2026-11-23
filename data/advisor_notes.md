@@ -327,3 +327,4 @@
   ② 週初大量用串流位換人，但串流的人（McBride、DJJ、Suggs、Tre Jones）表現普遍低於平均，換人次數多不等於贏。
   ③ 勝率講太滿。以後：搖擺項（差距在一天能翻的範圍）一律標「五五波」，不給 90% 以上的數字；最後一天要把對手可能補的人算進去。
 - 第 6 週：懂球帝 vs 西瓜爸爸（墊底）；baek's vs eric's Dazzling Team。Wemby、Fox 掛 Q。
+- 第 6 週計劃（使用者不截圖，用 league_rosters 的對手陣容估）：懂球帝 Hart→VanVleet（HOU 一三六）、Hauser→Day'Ron Sharpe（BKN 一三五六），台北 11/24 08:00 前；不換 49%→74%（對手陣容可能過時，視為參考）。baek's 週五 Murray→Devin Vassell（SAS 五日）87%→90%。

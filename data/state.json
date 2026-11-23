@@ -22,74 +22,74 @@
       "Austin Reaves"
     ],
     "matchup": {
-      "week": 5,
-      "opponent": "桐生一馬",
+      "week": 6,
+      "opponent": "西瓜爸爸's Nice Team",
       "categories": [
         {
           "category": "FGM",
-          "mine": "236",
-          "opponent": "221"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "FG%",
-          "mine": ".439",
-          "opponent": ".492"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "FT%",
-          "mine": ".815",
-          "opponent": ".860"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "3PTM",
-          "mine": "71",
-          "opponent": "55"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "3PT%",
-          "mine": ".302",
-          "opponent": ".335"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "PTS",
-          "mine": "653",
-          "opponent": "601"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "REB",
-          "mine": "201",
-          "opponent": "239"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "AST",
-          "mine": "148",
-          "opponent": "169"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "ST",
-          "mine": "43",
-          "opponent": "41"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "BLK",
-          "mine": "22",
-          "opponent": "33"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "TO",
-          "mine": "80",
-          "opponent": "81"
+          "mine": "0",
+          "opponent": "0"
         }
       ],
-      "adds_used": 7,
+      "adds_used": 0,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
-      "saved_at": "11-23 00:07",
-      "saved_ts": "2026-11-23T00:07+08:00",
-      "week_monday": "2026-11-16"
+      "saved_at": "11-23 23:36",
+      "saved_ts": "2026-11-23T23:36+08:00",
+      "week_monday": "2026-11-23"
     },
-    "updated_at": "2026-11-23 00:07",
+    "updated_at": "2026-11-23 23:37",
     "free_agents": {
       "names": [
         "Matisse Thybulle",
@@ -109,25 +109,26 @@
       "saved_ts": "2026-11-23T00:07+08:00"
     },
     "opponent_roster": {
-      "opponent": "桐生一馬",
+      "opponent": "西瓜爸爸's Nice Team",
       "roster": [
-        "VJ Edgecombe",
-        "Amen Thompson",
-        "Josh Giddey",
-        "Brandon Miller",
-        "Miles Bridges",
-        "Julius Randle",
-        "P.J. Washington",
-        "Donovan Clingan",
-        "Anthony Edwards",
-        "Darius Garland",
-        "Jeremiah Fears",
-        "Yaxel Lendeborg",
-        "Ajay Mitchell",
-        "Ivica Zubac"
+        "Tyrese Maxey",
+        "Keyonte George",
+        "Anfernee Simons",
+        "OG Anunoby",
+        "Mario Hezonja",
+        "Kyshawn George",
+        "Isaiah Hartenstein",
+        "Karl-Anthony Towns",
+        "LaMelo Ball",
+        "Trey Murphy III",
+        "Scottie Barnes",
+        "Cooper Flagg",
+        "Naz Reid",
+        "Paul Reed",
+        "Jaren Jackson Jr."
       ],
-      "week_monday": "2026-11-16",
-      "saved_ts": "2026-11-17T21:43+08:00"
+      "week_monday": "2026-11-23",
+      "saved_ts": "2026-11-23T23:36+08:00"
     },
     "roster_log": [
       {
@@ -298,7 +299,18 @@
         ]
       }
     ],
-    "planned_adds": [],
+    "planned_adds": [
+      {
+        "day": "2026-11-23",
+        "drop": "Josh Hart",
+        "add": "Fred VanVleet"
+      },
+      {
+        "day": "2026-11-23",
+        "drop": "Sam Hauser",
+        "add": "Day'Ron Sharpe"
+      }
+    ],
     "keep": [
       "Ayo Dosunmu",
       "Brandin Podziemski",
@@ -333,64 +345,64 @@
       "Kon Knueppel"
     ],
     "matchup": {
-      "week": 5,
-      "opponent": "扣愛的麵包房",
+      "week": 6,
+      "opponent": "eric's Dazzling Team",
       "categories": [
         {
           "category": "FG%",
-          "mine": ".426",
-          "opponent": ".468"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "FT%",
-          "mine": ".793",
-          "opponent": ".786"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "3PTM",
-          "mine": "70",
-          "opponent": "38"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "PTS",
-          "mine": "602",
-          "opponent": "537"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "REB",
-          "mine": "215",
-          "opponent": "169"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "AST",
-          "mine": "130",
-          "opponent": "132"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "ST",
-          "mine": "25",
-          "opponent": "37"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "BLK",
-          "mine": "23",
-          "opponent": "17"
+          "mine": "0",
+          "opponent": "0"
         },
         {
           "category": "TO",
-          "mine": "77",
-          "opponent": "60"
+          "mine": "0",
+          "opponent": "0"
         }
       ],
-      "adds_used": 1,
+      "adds_used": 0,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
-      "saved_at": "11-23 00:07",
-      "saved_ts": "2026-11-23T00:07+08:00",
-      "week_monday": "2026-11-16"
+      "saved_at": "11-23 23:36",
+      "saved_ts": "2026-11-23T23:36+08:00",
+      "week_monday": "2026-11-23"
     },
-    "updated_at": "2026-11-23 00:07",
+    "updated_at": "2026-11-23 23:37",
     "free_agents": {
       "names": [
         "Devin Vassell",
@@ -413,24 +425,25 @@
       "saved_ts": "2026-11-23T00:07+08:00"
     },
     "opponent_roster": {
-      "opponent": "扣愛的麵包房",
+      "opponent": "eric's Dazzling Team",
       "roster": [
-        "Darius Garland",
-        "Jaylen Brown",
-        "Jamal Shead",
-        "Paul George",
-        "Franz Wagner",
-        "Bam Adebayo",
-        "Nic Claxton",
-        "Sandro Mamukelashvili",
-        "Amen Thompson",
-        "Michael Porter Jr.",
-        "Donovan Mitchell",
-        "Jarrett Allen",
-        "CJ McCollum"
+        "Jalen Brunson",
+        "Dyson Daniels",
+        "Stephon Castle",
+        "Cooper Flagg",
+        "Paul Reed",
+        "LeBron James",
+        "Naz Reid",
+        "Kel'el Ware",
+        "Dejounte Murray",
+        "Tyler Herro",
+        "Jaime Jaquez Jr.",
+        "Lauri Markkanen",
+        "Mikal Bridges",
+        "Jaren Jackson Jr."
       ],
-      "week_monday": "2026-11-16",
-      "saved_ts": "2026-11-17T21:43+08:00"
+      "week_monday": "2026-11-23",
+      "saved_ts": "2026-11-23T23:36+08:00"
     },
     "roster_log": [
       {
@@ -587,9 +600,9 @@
     ],
     "planned_adds": [
       {
-        "day": "2026-11-22",
+        "day": "2026-11-27",
         "drop": "Keegan Murray",
-        "add": "Draymond Green"
+        "add": "Devin Vassell"
       }
     ],
     "keep": [
