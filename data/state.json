@@ -89,7 +89,7 @@
       "saved_ts": "2026-11-23T23:36+08:00",
       "week_monday": "2026-11-23"
     },
-    "updated_at": "2026-11-23 23:37",
+    "updated_at": "2026-11-23 23:39",
     "free_agents": {
       "names": [
         "Matisse Thybulle",
@@ -303,12 +303,12 @@
       {
         "day": "2026-11-23",
         "drop": "Josh Hart",
-        "add": "Fred VanVleet"
+        "add": "Dillon Brooks"
       },
       {
         "day": "2026-11-23",
         "drop": "Sam Hauser",
-        "add": "Day'Ron Sharpe"
+        "add": "Kel'el Ware"
       }
     ],
     "keep": [
