@@ -13,8 +13,8 @@
       "Brandin Podziemski",
       "LeBron James",
       "Christian Braun",
-      "Josh Hart",
-      "Sam Hauser"
+      "Dillon Brooks",
+      "Kel'el Ware"
     ],
     "il": [
       "Jalen Williams",
@@ -27,69 +27,69 @@
       "categories": [
         {
           "category": "FGM",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "35",
+          "opponent": "57"
         },
         {
           "category": "FG%",
-          "mine": "0",
-          "opponent": "0"
+          "mine": ".479",
+          "opponent": ".399"
         },
         {
           "category": "FT%",
-          "mine": "0",
-          "opponent": "0"
+          "mine": ".778",
+          "opponent": ".857"
         },
         {
           "category": "3PTM",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "14",
+          "opponent": "19"
         },
         {
           "category": "3PT%",
-          "mine": "0",
-          "opponent": "0"
+          "mine": ".467",
+          "opponent": ".306"
         },
         {
           "category": "PTS",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "98",
+          "opponent": "169"
         },
         {
           "category": "REB",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "27",
+          "opponent": "47"
         },
         {
           "category": "AST",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "26",
+          "opponent": "37"
         },
         {
           "category": "ST",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "4",
+          "opponent": "9"
         },
         {
           "category": "BLK",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "4",
+          "opponent": "8"
         },
         {
           "category": "TO",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "9",
+          "opponent": "17"
         }
       ],
-      "adds_used": 0,
+      "adds_used": 2,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
-      "saved_at": "11-23 23:36",
-      "saved_ts": "2026-11-23T23:36+08:00",
+      "saved_at": "11-24 23:52",
+      "saved_ts": "2026-11-24T23:52+08:00",
       "week_monday": "2026-11-23"
     },
-    "updated_at": "2026-11-23 23:39",
+    "updated_at": "2026-11-24 23:53",
     "free_agents": {
       "names": [
         "Matisse Thybulle",
@@ -297,20 +297,20 @@
           "Jalen Suggs",
           "Tre Jones"
         ]
-      }
-    ],
-    "planned_adds": [
-      {
-        "day": "2026-11-23",
-        "drop": "Josh Hart",
-        "add": "Dillon Brooks"
       },
       {
-        "day": "2026-11-23",
-        "drop": "Sam Hauser",
-        "add": "Kel'el Ware"
+        "date": "2026-11-24",
+        "add": [
+          "Dillon Brooks",
+          "Kel'el Ware"
+        ],
+        "drop": [
+          "Josh Hart",
+          "Sam Hauser"
+        ]
       }
     ],
+    "planned_adds": [],
     "keep": [
       "Ayo Dosunmu",
       "Brandin Podziemski",
@@ -350,59 +350,59 @@
       "categories": [
         {
           "category": "FG%",
-          "mine": "0",
-          "opponent": "0"
+          "mine": ".481",
+          "opponent": ".440"
         },
         {
           "category": "FT%",
-          "mine": "0",
-          "opponent": "0"
+          "mine": ".815",
+          "opponent": ".929"
         },
         {
           "category": "3PTM",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "19",
+          "opponent": "17"
         },
         {
           "category": "PTS",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "143",
+          "opponent": "131"
         },
         {
           "category": "REB",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "32",
+          "opponent": "37"
         },
         {
           "category": "AST",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "23",
+          "opponent": "32"
         },
         {
           "category": "ST",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "4",
+          "opponent": "4"
         },
         {
           "category": "BLK",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "4",
+          "opponent": "4"
         },
         {
           "category": "TO",
-          "mine": "0",
-          "opponent": "0"
+          "mine": "14",
+          "opponent": "10"
         }
       ],
       "adds_used": 0,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
-      "saved_at": "11-23 23:36",
-      "saved_ts": "2026-11-23T23:36+08:00",
+      "saved_at": "11-24 23:52",
+      "saved_ts": "2026-11-24T23:52+08:00",
       "week_monday": "2026-11-23"
     },
-    "updated_at": "2026-11-23 23:37",
+    "updated_at": "2026-11-24 23:52",
     "free_agents": {
       "names": [
         "Devin Vassell",
