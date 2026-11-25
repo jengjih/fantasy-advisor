@@ -27,69 +27,69 @@
       "categories": [
         {
           "category": "FGM",
-          "mine": "35",
-          "opponent": "57"
+          "mine": "45",
+          "opponent": "77"
         },
         {
           "category": "FG%",
-          "mine": ".479",
-          "opponent": ".399"
+          "mine": ".446",
+          "opponent": ".414"
         },
         {
           "category": "FT%",
-          "mine": ".778",
-          "opponent": ".857"
+          "mine": ".818",
+          "opponent": ".828"
         },
         {
           "category": "3PTM",
-          "mine": "14",
-          "opponent": "19"
+          "mine": "20",
+          "opponent": "24"
         },
         {
           "category": "3PT%",
-          "mine": ".467",
-          "opponent": ".306"
+          "mine": ".444",
+          "opponent": ".308"
         },
         {
           "category": "PTS",
-          "mine": "98",
-          "opponent": "169"
+          "mine": "128",
+          "opponent": "226"
         },
         {
           "category": "REB",
-          "mine": "27",
-          "opponent": "47"
+          "mine": "49",
+          "opponent": "68"
         },
         {
           "category": "AST",
-          "mine": "26",
-          "opponent": "37"
+          "mine": "37",
+          "opponent": "53"
         },
         {
           "category": "ST",
-          "mine": "4",
-          "opponent": "9"
+          "mine": "9",
+          "opponent": "12"
         },
         {
           "category": "BLK",
-          "mine": "4",
+          "mine": "5",
           "opponent": "8"
         },
         {
           "category": "TO",
-          "mine": "9",
-          "opponent": "17"
+          "mine": "11",
+          "opponent": "21"
         }
       ],
       "adds_used": 2,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
-      "saved_at": "11-24 23:52",
-      "saved_ts": "2026-11-24T23:52+08:00",
+      "saved_at": "11-25 23:28",
+      "saved_ts": "2026-11-25T23:28+08:00",
       "week_monday": "2026-11-23"
     },
-    "updated_at": "2026-11-24 23:53",
+    "updated_at": "2026-11-25 23:28",
     "free_agents": {
       "names": [
         "Matisse Thybulle",
@@ -350,59 +350,59 @@
       "categories": [
         {
           "category": "FG%",
-          "mine": ".481",
-          "opponent": ".440"
+          "mine": ".473",
+          "opponent": ".463"
         },
         {
           "category": "FT%",
-          "mine": ".815",
-          "opponent": ".929"
+          "mine": ".833",
+          "opponent": ".857"
         },
         {
           "category": "3PTM",
-          "mine": "19",
-          "opponent": "17"
+          "mine": "28",
+          "opponent": "22"
         },
         {
           "category": "PTS",
-          "mine": "143",
-          "opponent": "131"
+          "mine": "223",
+          "opponent": "202"
         },
         {
           "category": "REB",
-          "mine": "32",
-          "opponent": "37"
+          "mine": "63",
+          "opponent": "59"
         },
         {
           "category": "AST",
-          "mine": "23",
-          "opponent": "32"
+          "mine": "30",
+          "opponent": "50"
         },
         {
           "category": "ST",
-          "mine": "4",
-          "opponent": "4"
+          "mine": "9",
+          "opponent": "7"
         },
         {
           "category": "BLK",
-          "mine": "4",
-          "opponent": "4"
+          "mine": "5",
+          "opponent": "6"
         },
         {
           "category": "TO",
-          "mine": "14",
-          "opponent": "10"
+          "mine": "21",
+          "opponent": "17"
         }
       ],
       "adds_used": 0,
       "opp_games_left": -1,
       "my_games_left": -1,
       "note": "",
-      "saved_at": "11-24 23:52",
-      "saved_ts": "2026-11-24T23:52+08:00",
+      "saved_at": "11-25 23:28",
+      "saved_ts": "2026-11-25T23:28+08:00",
       "week_monday": "2026-11-23"
     },
-    "updated_at": "2026-11-24 23:52",
+    "updated_at": "2026-11-25 23:28",
     "free_agents": {
       "names": [
         "Devin Vassell",
