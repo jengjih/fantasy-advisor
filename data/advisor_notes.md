@@ -331,3 +331,4 @@
 - 11/23 Sharpe、VanVleet 都被簽走 → 改 Hart→Dillon Brooks（PHX）、Hauser→Kel'el Ware（MIL），兩人本週各 4 場；備案 Vassell、Hachimura、Gillespie。約 6 成（對手陣容舊資料）。
 - 11/24 11:51：已 Hart→Brooks、Hauser→Ware（懂球帝 adds 2/8）。週一後 懂球帝 3-8（8 vs 10 場），本週約 4 成；baek's 3-4 約 55–60%（FT%、AST、ST、TO 偏輸）。週二只有 White、Braun、WCJ 有賽，不用換。baek's 週五 Murray→Vassell 照舊。
 - 11/25 11:27（美東週二打完）：懂球帝 3-8（11 vs 13 場），本週約五五波；換 FA 名單內的人都沒有幫助（VanVleet 已被簽），不換。baek's 5-4 約 56–60%，週五 Murray→Vassell 照舊。
+- 11/27：懂球帝 5-5、baek's 3-4。週五（美東）懂球帝 13 人有賽：Bam 移 C、Braun 進 UTIL、Ware 坐板凳（Braun 每場價值 14.6 > Ware 9.8），Fox（Q）、White 坐。baek's AD 沒賽、板凳無人有賽 → 現在 Murray→Vassell（SAS 台北 11/28 10:30 前），補進先發。
